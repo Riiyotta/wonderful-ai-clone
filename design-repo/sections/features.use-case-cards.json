@@ -1,0 +1,135 @@
+{
+  "id": "features.use-case-cards",
+  "title": "Use-case cards",
+  "status": "measured",
+  "source": {
+    "id": "src:UseCards#export-default-function-UseCards",
+    "file": "src/pages/product/agents/UseCards.jsx",
+    "tag": "export default function UseCards",
+    "lines": "40-51",
+    "citation": "src/pages/product/agents/UseCards.jsx:40-51"
+  },
+  "semantic": {
+    "id": "features.use-case-cards",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Three tall image cards, each a use-case title and sentence over a photo.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "measured headingWordsMax=5 for features.use-case-cards at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 8,
+              "x-maxWordsEvidence": "card titles up to 6 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 27,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=21 for features.use-case-cards at 1440px"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "image"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "stack",
+        "detail": "Column, 1020x700 cards with H2-size titles."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "342x510 cards."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.overlay-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 901.8,
+      "max": 901.8
+    },
+    "samples": [
+      {
+        "route": "/agents",
+        "instance": 0,
+        "heightPx": 901.8
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/agents"
+  ]
+}

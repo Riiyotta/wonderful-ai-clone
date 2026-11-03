@@ -1,0 +1,20 @@
+{
+  "id": "primitive.media-image",
+  "kind": "primitive",
+  "title": "Image",
+  "purpose": "Cover/contain image with a closed asset role.",
+  "props": {
+    "media": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/pages/content/Card.jsx",
+    "tag": "export function CardImage",
+    "lines": "29-38",
+    "citation": "src/pages/content/Card.jsx:29-38"
+  }
+}

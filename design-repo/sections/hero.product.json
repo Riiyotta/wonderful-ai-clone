@@ -1,0 +1,189 @@
+{
+  "id": "hero.product",
+  "title": "Product hero",
+  "status": "measured",
+  "source": {
+    "id": "src:ProductHero#export-default-function-ProductHero",
+    "file": "src/pages/product/shared/ProductHero.jsx",
+    "tag": "export default function ProductHero",
+    "lines": "8-45",
+    "citation": "src/pages/product/shared/ProductHero.jsx:8-45",
+    "variantSources": {
+      "dashboard": {
+        "file": "src/pages/platform/Gateway.jsx",
+        "tag": "function Hero",
+        "lines": "12-56",
+        "citation": "src/pages/platform/Gateway.jsx:12-56"
+      }
+    }
+  },
+  "semantic": {
+    "id": "hero.product",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Product page opener: product lockup, display H1 and lead over a full-bleed image, lattice or live dashboard.",
+  "themes": [
+    "dark"
+  ],
+  "variants": [
+    "lattice",
+    "image",
+    "dashboard"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "lockup": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.source-product-lockup",
+          "brand-mark.generated",
+          "brand-mark.user-supplied"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 14,
+        "x-maxWordsEvidence": "measured headingWordsMax=11 for hero.product at 1440px"
+      },
+      "lead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 22,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=17 for hero.product at 1440px"
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "illustration.source-texture",
+          "illustration.generated-abstract"
+        ]
+      },
+      "visual": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "lead"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "word-reveal-paragraph",
+      "lattice-loop"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "80vh (ai-os 90vh), padding 0 40; H1 48px."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "90vh, padding 0 24, H1 38px; gateway dashboard becomes a static image."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".lockup",
+      "assetRoles": [
+        "logo.source-product-lockup",
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ]
+    },
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "illustration.source-texture",
+        "illustration.generated-abstract"
+      ]
+    },
+    {
+      "field": ".visual",
+      "assetRoles": [
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "brand-mark.generated",
+    "brand-mark.user-supplied",
+    "copy.original",
+    "illustration.generated-abstract",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.brand-mark",
+    "component.lattice-graphic"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 4,
+    "routes": 4,
+    "heightPx": {
+      "min": 855,
+      "max": 1252.4
+    },
+    "samples": [
+      {
+        "route": "/ai-os",
+        "variant": "lattice",
+        "instance": 0,
+        "heightPx": 855
+      },
+      {
+        "route": "/agents",
+        "variant": "image",
+        "instance": 0,
+        "heightPx": 855
+      },
+      {
+        "route": "/systems",
+        "variant": "image",
+        "instance": 0,
+        "heightPx": 855
+      },
+      {
+        "route": "/ai-gateway",
+        "variant": "dashboard",
+        "instance": 0,
+        "heightPx": 1252.4
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/agents",
+    "/ai-gateway",
+    "/ai-os",
+    "/systems"
+  ]
+}

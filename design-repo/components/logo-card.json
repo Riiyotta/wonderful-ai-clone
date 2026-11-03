@@ -1,0 +1,25 @@
+{
+  "id": "component.logo-card",
+  "kind": "component",
+  "title": "Logo card",
+  "purpose": "80px grey card holding a logo at 0.47 opacity.",
+  "props": {
+    "logo": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "component.logo-card.height",
+    "component.logo-card.opacity",
+    "radius.xs"
+  ],
+  "source": {
+    "file": "src/components/Clients.jsx",
+    "tag": "function ClientCard",
+    "lines": "26-38",
+    "citation": "src/components/Clients.jsx:26-38"
+  },
+  "composes": [
+    "primitive.media-image"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "primitive.hairline",
+  "kind": "primitive",
+  "title": "Hairline rule",
+  "purpose": "1px divider line on light or dark surfaces.",
+  "props": {
+    "tone": {
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  },
+  "tokens": [
+    "color.border.default"
+  ],
+  "source": {
+    "file": "src/pages/product/shared/Divider.jsx",
+    "tag": "export default function Divider",
+    "lines": "4-10",
+    "citation": "src/pages/product/shared/Divider.jsx:4-10"
+  }
+}

@@ -1,0 +1,64 @@
+/* "White L" footer variant (Framer lam9x, variant 1mncy5c / tablet 7nabgf / phone elu6vo). Only /legal uses it.
+   Values transcribed from _source/pages/legal.html. Breakpoints follow the page: >=1200 / 810–1199.98 / <=809.98. */
+.lf { --border-bottom-width: 0px; --border-color: var(--token-7dd2d051-a767-40b0-9ba0-2e67df2a03f1); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 1px; background-color: #fff; width: 100%; flex-flow: column; place-content: center flex-end; align-items: center; gap: 0; height: min-content; padding: 0; display: flex; position: relative; overflow: hidden; }
+.lf-cta-wrap { flex-flow: column; flex: none; place-content: center; align-items: center; gap: 10px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; background-color: #fff; }
+.lf-band { height: min-content; min-height: 480px; overflow: clip; z-index: 4; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 0; width: 100%; padding: 0; display: flex; position: relative; background-color: rgb(247, 250, 255); }
+.lf-tag { z-index: 10; flex-flow: column; flex: none; place-content: center flex-start; align-items: center; gap: 34px; width: 100%; max-width: 1680px; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; }
+.lf-title { --framer-text-wrap-override: balance; --extracted-1of0zx5: var(--token-131554be-526d-44ca-b5e0-fc9be840a862, rgb(57, 57, 57)); z-index: 0; flex: none; width: 100%; max-width: 60%; height: auto; position: relative; }
+.lf-btn-wrap { flex: none; width: auto; height: auto; position: relative; }
+.lf-canvas-a { mix-blend-mode: multiply; pointer-events: none; z-index: 9; flex: none; width: 100%; position: absolute; top: -280px; bottom: -574px; left: 0; opacity: .8; }
+.lf-canvas-b { mix-blend-mode: overlay; z-index: 9; flex: none; width: 100%; height: 132%; position: absolute; top: -5.375%; left: 0; }
+
+/* Framer JDuFS buttons */
+.lf-main-btn { cursor: pointer; position: relative; display: flex; flex-flow: row; place-content: center; align-items: center; gap: 10px; width: min-content; min-width: 140px; height: 50px; padding: 6px 18px; overflow: hidden; text-decoration: none; border-radius: 50px; background-color: rgb(0, 0, 0); box-shadow: 0 0 0 0 rgba(79, 26, 214, 0.3); }
+.lf-btn-text { --extracted-r6o4lv: rgb(255, 255, 255); white-space: pre; flex: none; width: auto; height: auto; position: relative; }
+.lf-pill { cursor: pointer; position: relative; display: flex; flex-flow: row; place-content: center; align-items: center; gap: 10px; width: min-content; height: 37px; padding: 6px 16px; overflow: hidden; text-decoration: none; border-radius: 50px; background-color: rgb(0, 0, 0); }
+
+/* Top (logo + columns): same geometry as the dark footer */
+.lf-main { z-index: 7; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 0; width: 100%; height: min-content; padding: 0; display: flex; position: relative; overflow: hidden; background-color: #fff; }
+.lf-top { z-index: 2; flex-flow: row; flex: none; place-content: flex-start center; align-items: flex-start; gap: 10px; width: 100%; height: min-content; padding: 60px; display: flex; position: relative; overflow: visible; }
+.lf-inner { flex-flow: row; flex: 1 0 0; place-content: center space-between; align-items: center; width: 1px; max-width: 1200px; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; }
+.lf-left { flex-flow: column; flex: none; place-content: flex-start center; align-items: flex-start; gap: 32px; width: min-content; height: min-content; padding: 0 50px 0 0; display: flex; position: relative; overflow: visible; }
+.lf-brand { flex-flow: column; flex: none; place-content: flex-start center; align-items: flex-start; gap: 10px; width: min-content; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; }
+.lf-logo { aspect-ratio: 4.08; cursor: pointer; flex: none; width: 122px; height: auto; text-decoration: none; position: relative; overflow: visible; display: block; color: rgb(20, 20, 20); }
+.lf-logo svg { position: absolute; top: 0; left: 0; width: 122px; height: 30px; }
+.lf-brand-text { --extracted-r6o4lv: var(--token-31794b1a-15a5-479d-a023-90cee9928db8); white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 183px; height: auto; position: relative; }
+.lf-nowrap { white-space: pre; flex: none; width: auto; height: auto; position: relative; }
+.lf-right { flex-flow: row; flex: none; place-content: flex-start flex-end; align-items: flex-start; gap: 60px; width: min-content; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; }
+.lf-col { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 12px; width: min-content; height: min-content; padding: 0; display: flex; position: relative; overflow: hidden; }
+.lf-col-head { flex-flow: row; flex: none; place-content: center flex-start; align-items: center; gap: 10px; width: min-content; height: min-content; padding: 0; display: flex; position: relative; overflow: hidden; opacity: .65; }
+.lf-col-head.is-visible { overflow: visible; }
+.lf-links { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 10px; width: min-content; height: min-content; padding: 0; display: flex; position: relative; overflow: hidden; }
+.lf-col.flat > .lf-links { display: contents; }
+.lf-cookie { opacity: 0; flex: none; width: auto; height: auto; position: relative; }
+.lf-cookie button { width: 100%; height: 100%; background: none; display: flex; border: none; padding: 0; color: rgba(0, 0, 0, 0.8); font-size: 14px; cursor: pointer; font-family: "Inter", "Inter Placeholder", sans-serif; font-style: normal; font-weight: 400; letter-spacing: 0em; line-height: 1em; }
+
+/* Bottom wordmark */
+.lf-mark { --border-bottom-width: 0px; --border-color: var(--token-f04b9278-3483-40a1-b7ce-6caada87e319); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 1px; max-width: 1680px; height: 173px; overflow: clip; flex-flow: column; flex: none; place-content: center flex-start; align-items: center; gap: 0; width: 100%; padding: 0 17px 0 0; display: flex; position: relative; }
+.lf-mark-img { flex-flow: column; flex: none; place-content: center flex-start; align-items: center; gap: 10px; width: 95%; max-width: 1400px; height: auto; aspect-ratio: 4.17910447761194; opacity: .1; padding: 0; display: flex; position: relative; overflow: visible; }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .lf-band { padding: 120px 24px; }
+  .lf-tag { max-width: 600px; }
+  .lf-title { max-width: 100%; }
+  .lf-top { flex-direction: column; justify-content: flex-start; gap: 42px; }
+  .lf-inner { flex: none; place-content: flex-start; align-items: flex-start; gap: 64px; width: 100%; }
+  .lf-right { align-content: unset; align-items: unset; flex: 1 0 0; grid-template-rows: repeat(2, minmax(0, 1fr)); grid-template-columns: repeat(2, minmax(50px, 1fr)); grid-auto-rows: minmax(0, 1fr); justify-content: center; width: 1px; display: grid; }
+  .lf-col { place-self: start; width: 100%; }
+  .lf-mark { height: 136px; }
+  .lf-mark-img { width: 93%; height: 187px; }
+}
+@media (max-width: 809.98px) {
+  .lf-band { padding: 64px 32px; }
+  .lf-canvas-a { top: -320px; bottom: -343px; }
+  .lf-canvas-b { top: -21.8333%; }
+  .lf-title { max-width: 100%; }
+  .lf-main { overflow: clip; }
+  .lf-top { flex-direction: column; justify-content: flex-start; gap: 42px; padding: 60px 24px 24px; }
+  .lf-inner { flex-direction: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 60px; width: 100%; }
+  .lf-right { flex-wrap: wrap; justify-content: flex-start; gap: 32px 42px; width: 100%; }
+  .lf-col:not(:first-child) { width: 133px; }
+  .lf-mark { height: 80px; padding: 20px 17px 0 0; }
+  .lf-mark-img { width: 87%; height: min-content; min-height: 91px; }
+  .lf-cookie { display: none; }
+}

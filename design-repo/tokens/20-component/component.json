@@ -1,0 +1,71 @@
+{
+  "$description": "Component-scoped tokens: approved application of foundation values (refs) or measured component dimensions.",
+  "tokens": {
+    "component.button.pill.radius": {
+      "ref": "radius.pill"
+    },
+    "component.button.pill.height-lg": {
+      "value": "50px",
+      "evidence": "CLONE_SPEC.md:198"
+    },
+    "component.button.pill.height-sm": {
+      "value": "37px",
+      "evidence": "CLONE_SPEC.md:277"
+    },
+    "component.button.pill.padding-lg": {
+      "value": "6px 18px",
+      "evidence": "CLONE_SPEC.md:198"
+    },
+    "component.button.pill.padding-sm": {
+      "value": "6px 16px",
+      "evidence": "CLONE_SPEC.md:276"
+    },
+    "component.card.radius": {
+      "ref": "radius.sm"
+    },
+    "component.card.padding": {
+      "ref": "space.32"
+    },
+    "component.carousel-card.size": {
+      "value": "583px",
+      "evidence": "CLONE_SPEC.md:229"
+    },
+    "component.logo-card.height": {
+      "value": "80px",
+      "evidence": "CLONE_SPEC.md:211"
+    },
+    "component.logo-card.opacity": {
+      "value": 0.47,
+      "evidence": "CLONE_SPEC.md:212"
+    },
+    "component.feature-cell.padding": {
+      "ref": "space.32"
+    },
+    "component.feature-cell.icon-size": {
+      "value": "32px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:34"
+    },
+    "component.tab.track-padding": {
+      "ref": "space.4"
+    },
+    "component.tab.chip-padding": {
+      "value": "9px 16px",
+      "evidence": "CLONE_SPEC.md:289"
+    },
+    "component.input.height": {
+      "value": "40px",
+      "evidence": "CLONE_SPEC_COMPANY.md:116"
+    },
+    "component.input.radius": {
+      "ref": "radius.input"
+    },
+    "component.nav.height": {
+      "value": "109px",
+      "evidence": "CLONE_SPEC.md:108"
+    },
+    "component.footer.wordmark-opacity": {
+      "value": 0.1,
+      "evidence": "CLONE_SPEC.md:344"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "component.hover-row",
+  "kind": "component",
+  "title": "Hover-reveal row",
+  "purpose": "Full-width row: title left, image + description right; hover tints the row and fades the image in.",
+  "props": {
+    "title": {
+      "maxWords": 8
+    },
+    "body": {
+      "maxWords": 40
+    },
+    "image": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "color.surface.chip"
+  ],
+  "source": {
+    "file": "src/pages/product/aios/Enterprise.jsx",
+    "tag": "function Row",
+    "lines": "13-37",
+    "citation": "src/pages/product/aios/Enterprise.jsx:13-37"
+  },
+  "motion": [
+    "hover-reveal-row"
+  ]
+}

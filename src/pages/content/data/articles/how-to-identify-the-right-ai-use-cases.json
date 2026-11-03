@@ -1,0 +1,91 @@
+{
+ "slug": "how-to-identify-the-right-ai-use-cases",
+ "path": "/blog-articles/how-to-identify-the-right-ai-use-cases",
+ "category": "Perspectives",
+ "pageTitle": "How to Identify the Right AI Use Cases",
+ "author": "Bar Winkler",
+ "date": "Oct 6, 2025",
+ "datetime": "2025-10-06T00:00:00.000Z",
+ "title": "How to Identify the Right AI Use Cases",
+ "titleTag": "h1",
+ "description": "A Practical Guide from Real Support Data",
+ "hero": {
+  "image": {
+   "src": "/assets/Itc1Ows1l440WurljOPCDfzxk.png",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Every executive today is being told the same story: agentic AI is ready to transform your operations. Agents can hold context, take actions, navigate systems, and increasingly behave like digital teammates. The promise is compelling - automate entire journeys, resolve customer issues end-to-end, and finally escape the gravity of manual workflows.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But here’s the part that gets lost in the excitement: agents don’t magically know which problems are worth solving.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agentic AI often fails not because the models are weak, but because the use cases are wrong. Teams gravitate toward the workflows they assume are worth automating, the ones that feel important or visible from the outside. Meanwhile, the real operational bottlenecks - the places where agents could deliver disproportionate value - remain untouched.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A few months ago, an executive from a large automotive services company came to us with exactly this challenge. His support organization was exploring agents with the goal of reducing cost, but early prototypes weren’t landing. “We’re trying to automate everything,” he admitted. “But nothing is moving the needle.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The problem wasn’t the agent. The problem was where the agent was being pointed.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">So we walked his team through a different approach - one grounded not in intuition, but in operational truth. What follows is the guide that emerged from that work: a practical, data-driven way to identify high-impact automation opportunities in customer support - the kind that allow agentic systems to actually demonstrate their value.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Start With Evidence, Not Assumptions</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Every support team carries a mental model of its workload. A shared folklore about the issues customers raise, the conversations that consume time, the moments where human reps struggle. The reality is almost always different. If you want to deploy agents responsibly and effectively, you need a factual picture of what customers are actually asking for, not the story that has grown inside the organization.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The moment we examined the call transcripts, the support operation revealed itself in a way the team hadn’t seen before. The workload wasn’t as broad or evenly distributed as they assumed; it was concentrated, patterned, and moving along far more consistent paths than any reporting system suggested. What they believed was a wide field of disparate issues turned out to be something much more structured. That structure is what ultimately defined the automation roadmap.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Map the Support Landscape - Then Validate It With Real Data</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Once we established the landscape, the next step was to actually map it. We created a structured view of the support domain and used the call data to populate it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">What emerged was a support operation that looked very different from what the team had imagined. Two domains: Appointment &amp; Booking on one side, and Damage &amp; Diagnostics on the other, were carrying most of the organization’s weight. Together, they accounted for nearly three-quarters of all support interactions. Everything else, from billing to insurance to general inquiries, was riding in the margins.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">And the shape of the customer journey mattered just as much as the categories themselves. A typical call wasn’t a single question with a clean handoff. It involved multiple decisions, clarifications, and follow-ups - about four distinct topics per call, on average. More importantly, no matter where customers started, many of their paths bent toward the same outcome. Nearly 80% of calls that touched on “booking,” even in passing, eventually turned into a booking journey. Booking wasn’t just a support category; it was the gravitational center pulling most conversations toward it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Every support organization has its own gravitational center. The only question is whether you’ve uncovered it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Identify the High-Leverage Support Use Cases</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Recognizing where conversations cluster is a start, but it’s not enough to decide what to automate. To understand where agents can have meaningful impact in reducing cost, you need to know not only what customers ask about, but where human agents spend their time.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">When we layered handling time onto the conversation volumes, the leverage points became obvious. A small set of issues, the same ones that appeared frequently, were consistently consuming a disproportionate share of human effort. Booking complex services, rescheduling or confirming appointments: these were not scattered, exotic interactions - they repeatedly represented a drain on human agent time.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The combination of volume and effort creates the clearest signal an enterprise can hope for. These high-load journeys are where AI agents can demonstrate unmistakable value. They’re structured enough to automate, common enough to matter, and costly enough that improved efficiency changes not just metrics, but the lived experience of customers and staff.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Every organization has a handful of these high-leverage flows. They rarely match the internal mythology. But once you find them, the roadmap becomes surprisingly clear.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Prioritize the Flows With the Highest Implementability</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Identifying the high-leverage flows is the moment where things finally come into focus - but it also creates a new kind of decision. Once you can clearly see the set of conversations that dominate your support workload, the question shifts from what matters to what’s actually feasible to automate first.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is where the real-world analysis became invaluable. The ranking of call drivers didn’t just expose the issues carrying the most load; it revealed which of those issues repeated with a level of clarity and structural stability that made them suitable for agentic automation. Some flows, like booking a service or diagnosing straightforward damage, appeared hundreds of times with almost the same conversational shape. The questions were predictable. The decision logic was stable. The transitions between steps rarely deviated.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">These weren’t just important flows - they were implementable ones. They had the operational maturity that allows an agent to perform reliably without getting lost in exceptions or ambiguity. In practice, this meant we could build, evaluate, and iterate with confidence because the underlying workflow behaved the same way across thousands of real interactions.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Other flows, however, told a very different story. Billing issues, certain insurance questions, and long-tail service concerns showed up in the data as structurally messy - inconsistent phrasing, context-heavy reasoning, unclear boundaries, or highly individualized decisions. Even if they mattered to the business, they weren’t the right place to begin. Their variability would have slowed progress, created friction, and undermined trust in the early agentic deployments.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">By starting with the flows that combined high leverage with high implementability, the customer was able to generate early wins that were both meaningful and repeatable. And once those foundational workflows were automated, adjacent ones - often sharing similar vocabulary, logic, or patterns - became dramatically easier to extend into. Implementability isn’t just a way to pick a starting point; it defines the rest of the automation roadmap.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">The Best Automation Strategy Starts With Operational Truth</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">What ultimately enabled this customer to make real progress wasn’t a bold vision for AI or a long list of potential automations. It was the decision to root the roadmap in how the support operation actually worked. Once the team saw where conversations concentrated, where handling time accumulated, and which flows had the structural consistency to support automation, the path forward became straightforward. The early deployments weren’t chosen because they were conceptually exciting - they were chosen because the data showed they would work.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That clarity accelerated everything. In this case, the first measurable gains showed up in cost reduction, but the same method can be aimed at improving NPS, reducing wait times, increasing conversion, or strengthening compliance. The specific outcome shifts with the business goal; the approach stays the same.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Operational truth doesn’t eliminate the complexity of automation, but it focuses the effort. It prevents teams from spreading attention across low-value ideas and directs agents toward the work that meaningfully shapes the customer experience. When you start there, adoption is faster, trust builds sooner, and each subsequent deployment becomes easier to justify - and easier to deliver.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agentic AI isn’t about automating everything. It’s about automating the right things first.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Begin with what the evidence shows. Begin with the flows that actually define your operation.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s where meaningful impact comes from - and where automation becomes durable instead of experimental.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "open-by-default-competitive-by-design",
+ "path": "/blog-articles/open-by-default-competitive-by-design",
+ "category": "Perspectives",
+ "pageTitle": "Open by default, competitive by design",
+ "author": "Roey Lalazar",
+ "date": "Jun 10, 2026",
+ "datetime": "2026-06-10T00:00:00.000Z",
+ "title": "Open by default, competitive by design ",
+ "titleTag": "h1",
+ "description": "Leaving Wonderful should be easy",
+ "hero": {
+  "image": {
+   "src": "/assets/eKecJ2roidLhTKbjenx06bQ7Y.jpeg",
+   "width": 2048,
+   "height": 1365,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Enterprises are starting to run huge parts of their business on AI platforms. There's no way they'd let anyone trap them inside one. If your CRM sucks, you migrate it in three years. It’s not great, but it’s theoretically manageable. If your AI platform becomes the operational layer of the company, getting trapped there becomes an existential problem.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">So we made a decision most platforms won't: <em class=\"framer-text\">leaving Wonderful should be easy</em>. Every agent, skill, tool, governance config and app can be exported. Individually, in bulk, through our UI, or an API. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">We expose the full API surface, publishing a Swagger file with hundreds of endpoints, and the platform runs headless. Customers can build their own interfaces on top of it, use Wonderful purely as an orchestration layer, run external agents inside Wonderful, or run Wonderful agents elsewhere.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most early agent interoperability work in this industry was one-directional: bring external agents into a platform, but not the other way around. We took a different approach, making Wonderful bi-directional from day one. We even built a Python connector that converts Wonderful agents into Azure agents. A customer can run a script and leave for a competitor if they want.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The real reason to build this way isn't just about giving customers options. Open architecture forces discipline. Open architecture keeps us honest. We cannot raise prices arbitrarily. We cannot inflate switching costs. We cannot coast on inertia. If Wonderful isn't genuinely better, customers can leave - and they know it. That pressure forces us to stay at the frontier technically and stay fair commercially. It's the best accountability mechanism out there.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We think of it as a two-sided door. Customers aren’t making a permanent commitment; they're choosing us again every day. That changes the relationship. An enterprise that knows it can take its IP and walk doesn't need to agonize over the decision to start. The friction of entry drops. And once they're building with us, the question shifts from \"are we trapped?\" to \"is this working?\" Which is the only question that should ever matter.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This also changes the build vs. buy discussion. Most vendors have an implicit answer baked into their architecture. Some want you to buy everything from them. Others assume you'll build internally and position themselves as infrastructure. The truth is, most large enterprises will do both, and the mix is different for each one.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful is designed for that reality. The platform is fully modular. Enterprises can integrate whatever they've already built or want to build: proprietary risk or claims algorithms, an internal governance framework, a skill repository. Forcing a large enterprise to choose between what they've already built and what we offer is a false constraint, and the architecture reflects that.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The same logic extends to models and cloud providers. Wonderful is model-agnostic and runs on any major cloud provider. Customers aren't steered toward a preferred stack. We’re constantly benchmarking models against tasks, and if a better model emerges for a specific task, we’ll use it. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most platform bets are really bets on switching costs. Ours is a bet on the technology itself, and our ability to make it usable in the enterprise. Openness is a constraint we imposed on ourselves deliberately. If we can't win on merit, we shouldn't win.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

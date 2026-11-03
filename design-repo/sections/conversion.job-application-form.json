@@ -1,0 +1,155 @@
+{
+  "id": "conversion.job-application-form",
+  "title": "Job application form",
+  "status": "unverified",
+  "source": {
+    "id": "src:AshbySubmit#export-default-function-AshbySubmit",
+    "file": "src/pages/regional/AshbySubmit.jsx",
+    "tag": "export default function AshbySubmit",
+    "lines": "7-18",
+    "citation": "src/pages/regional/AshbySubmit.jsx:7-18",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/regional/AshbyApplicationForm.jsx",
+        "tag": "export default function AshbyApplicationForm",
+        "lines": "17-68",
+        "citation": "src/pages/regional/AshbyApplicationForm.jsx:17-68"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "conversion.job-application-form",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Application page: \"Go back\" chip and a 779x1059 scroll box holding the application form (name, email, resume, phone, profile link).",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for conversion.job-application-form at 1440px"
+      },
+      "meta": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=9 for conversion.job-application-form at 1440px"
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "labels"
+            },
+            "kind": {
+              "enum": [
+                "text",
+                "email",
+                "tel",
+                "url",
+                "file"
+              ]
+            },
+            "required": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "label",
+            "kind"
+          ]
+        }
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "button label"
+      },
+      "back": {
+        "$ref": "#/definitions/cta"
+      },
+      "action": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "fields",
+      "submitLabel"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "fixed-box",
+        "detail": "Scroll box 779x1059 at every width."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.form-field"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 1339,
+      "max": 1339
+    },
+    "samples": [
+      {
+        "route": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+        "instance": 0,
+        "heightPx": 1339
+      },
+      {
+        "route": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+        "instance": 0,
+        "heightPx": 1339
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+    "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit"
+  ],
+  "notes": [
+    "UNVERIFIED: the live form is a jobs.ashbyhq.com iframe that this machine's network policy blocked; the clone renders a stand-in in the default hosted layout. Only the outer box is measured."
+  ]
+}

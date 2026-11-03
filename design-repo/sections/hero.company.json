@@ -1,0 +1,134 @@
+{
+  "id": "hero.company",
+  "title": "Company hero",
+  "status": "measured",
+  "source": {
+    "id": "src:AboutUs#div-className-cab-hero",
+    "file": "src/pages/company/AboutUs.jsx",
+    "tag": "<div className=\"cab-hero\"",
+    "lines": "42-54",
+    "citation": "src/pages/company/AboutUs.jsx:42-54",
+    "variantSources": {
+      "careers": {
+        "file": "src/pages/company/Careers.jsx",
+        "tag": "<div className=\"ccr-hero\"",
+        "lines": "85-99",
+        "citation": "src/pages/company/Careers.jsx:85-99"
+      }
+    }
+  },
+  "semantic": {
+    "id": "hero.company",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Company page opener: large H1 beside a short lead, followed by an 800px-tall photo.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "about",
+    "careers"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for hero.company at 1440px"
+      },
+      "lead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 30,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=24 for hero.company at 1440px"
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "lead",
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "appear-fade-tween",
+      "word-reveal-paragraph"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "H1 54px; lead 440 wide."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "H1 38px; image 400px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 1092,
+      "max": 1254.6
+    },
+    "samples": [
+      {
+        "route": "/about-us",
+        "variant": "about",
+        "instance": 0,
+        "heightPx": 1254.6
+      },
+      {
+        "route": "/careers",
+        "variant": "careers",
+        "instance": 0,
+        "heightPx": 1092
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/about-us",
+    "/careers"
+  ]
+}

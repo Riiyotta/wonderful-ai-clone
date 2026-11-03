@@ -1,0 +1,157 @@
+{
+  "id": "overlay.mega-menu",
+  "title": "Mega-menu panel",
+  "status": "measured",
+  "source": {
+    "id": "src:MegaMenu#export-default-function-MegaMenu",
+    "file": "src/components/nav/MegaMenu.jsx",
+    "tag": "export default function MegaMenu",
+    "lines": "101-120",
+    "citation": "src/components/nav/MegaMenu.jsx:101-120"
+  },
+  "semantic": {
+    "id": "overlay.mega-menu",
+    "category": "OVERLAY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Hover-triggered dropdown overlay attached to the fixed header; it never occupies page flow.",
+  "purpose": "Hover dropdown under the nav with a link grid and a feature card per menu.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "menus": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "trigger labels"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "title": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 5,
+                    "x-maxWordsEvidence": "mega-menu item titles up to 4 words"
+                  },
+                  "description": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxWords": 10,
+                    "x-maxWordsEvidence": "item descriptions up to 8 words (CLONE_SPEC.md 1)"
+                  },
+                  "link": {
+                    "$ref": "#/definitions/cta"
+                  }
+                },
+                "required": [
+                  "title",
+                  "link"
+                ]
+              }
+            },
+            "feature": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 14,
+                  "x-maxWordsEvidence": "feature card titles up to 11 words"
+                },
+                "image": {
+                  "$ref": "#/definitions/media",
+                  "x-assetRoles": [
+                    "photo.source-scene",
+                    "photo.generated-scene"
+                  ]
+                },
+                "link": {
+                  "$ref": "#/definitions/cta"
+                }
+              },
+              "required": [
+                "title",
+                "link"
+              ]
+            }
+          },
+          "required": [
+            "label",
+            "items"
+          ]
+        }
+      }
+    },
+    "required": [
+      "menus"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "mega-menu-open"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "hide",
+        "detail": "Replaced by overlay.mobile-menu-drawer."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".menus[].feature.image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.mega-menu-panel"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

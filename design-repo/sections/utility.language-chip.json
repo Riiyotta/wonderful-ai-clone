@@ -1,0 +1,75 @@
+{
+  "id": "utility.language-chip",
+  "title": "Language chip",
+  "status": "measured",
+  "source": {
+    "id": "src:Navbar#className-nv-lang",
+    "file": "src/components/Navbar.jsx",
+    "tag": "className=\"nv-lang\"",
+    "lines": "94-96",
+    "citation": "src/components/Navbar.jsx:94-96"
+  },
+  "semantic": {
+    "id": "utility.language-chip",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Third-party translator widget placeholder inside the header; runtime utility, not content.",
+  "purpose": "Static \"EN\" chip in the nav standing in for a third-party website-translator widget.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 1,
+        "x-maxWordsEvidence": "chip text \"EN\""
+      }
+    },
+    "required": [
+      "label"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "44x44 slot."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

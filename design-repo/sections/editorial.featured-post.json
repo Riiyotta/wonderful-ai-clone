@@ -1,0 +1,123 @@
+{
+  "id": "editorial.featured-post",
+  "title": "Featured post",
+  "status": "measured",
+  "source": {
+    "id": "src:Blog#function-Featured",
+    "file": "src/pages/content/Blog.jsx",
+    "tag": "function Featured",
+    "lines": "13-37",
+    "citation": "src/pages/content/Blog.jsx:13-37"
+  },
+  "semantic": {
+    "id": "editorial.featured-post",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Large featured article card: wide image beside date, title and description.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "measured headingWordsMax=13 for editorial.featured-post at 1440px"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 18,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=14 for editorial.featured-post at 1440px"
+      },
+      "date": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "dates"
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      },
+      "link": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "title",
+      "image",
+      "link"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "content-rise",
+      "card-hover-dim"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "restack",
+        "detail": "Card variant bj21h1: title, description, date."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.post-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 462.9,
+      "max": 462.9
+    },
+    "samples": [
+      {
+        "route": "/blog",
+        "instance": 0,
+        "heightPx": 462.9
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog"
+  ]
+}

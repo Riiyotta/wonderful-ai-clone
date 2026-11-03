@@ -1,0 +1,5 @@
+/* Extra Framer font faces used only by the industry / case-study templates (latin subset files from framerusercontent). */
+@font-face { font-family: "Inter"; src: url(/fonts/syRNPWzAMIrcJ3wIlPIP43KjQs.woff2) format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter"; src: url(/fonts/8mwKwShtYEXIZ5diRBT74yn9jdQ.woff2) format("woff2"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Inter Display"; src: url(/fonts/bHYNJqzTyl2lqvmMiRRS6Y16Es.woff2) format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter Display Placeholder"; src: local("Arial"); }

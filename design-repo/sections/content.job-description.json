@@ -1,0 +1,125 @@
+{
+  "id": "content.job-description",
+  "title": "Job description",
+  "status": "measured",
+  "source": {
+    "id": "src:AshbyJob#div-className-rg-rt",
+    "file": "src/pages/regional/AshbyJob.jsx",
+    "tag": "<div className=\"rg-rt\"",
+    "lines": "45-45",
+    "citation": "src/pages/regional/AshbyJob.jsx:45-45"
+  },
+  "semantic": {
+    "id": "content.job-description",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Rich-text job description (paragraphs, lists) — clipped by the 1080px canvas on live.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 40,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "heading",
+                "paragraph",
+                "list"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 55,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=44 for content.job-description at 1440px"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 20,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 60,
+                "x-maxWordsEvidence": "list items"
+              }
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        }
+      }
+    },
+    "required": [
+      "blocks"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "clip",
+        "detail": "Page height is 1080 at every width; the rest is clipped (live quirk)."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.rich-text"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 711.3,
+      "max": 1366.8
+    },
+    "samples": [
+      {
+        "route": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+        "instance": 0,
+        "heightPx": 1366.8
+      },
+      {
+        "route": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+        "instance": 0,
+        "heightPx": 711.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+    "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba"
+  ],
+  "notes": [
+    "Live job posts are cut at 1080px; the Brazil post prints the Poland post id (live quirk, kept)."
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "media.scroll-video-stage",
+  "title": "Scroll video stage",
+  "status": "measured",
+  "source": {
+    "id": "src:VideoSection#export-default-function-VideoSection",
+    "file": "src/pages/platform/gateway/VideoSection.jsx",
+    "tag": "export default function VideoSection",
+    "lines": "165-184",
+    "citation": "src/pages/platform/gateway/VideoSection.jsx:165-184"
+  },
+  "semantic": {
+    "id": "media.scroll-video-stage",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky 240vh stage where a video frame grows with scroll as a split title slides apart; a play button opens the lightbox.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "measured headingWordsMax=3 for media.scroll-video-stage at 1440px"
+      },
+      "poster": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      },
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "video.source-loop",
+          "video.generated-loop"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "poster"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "scroll-video-stage",
+      "video-loop"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "simplify",
+        "detail": "Under 810px or reduced motion: static 16:9 frame, play button always on."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".poster",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    },
+    {
+      "field": ".video",
+      "assetRoles": [
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [
+    "component.video-frame"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 2160,
+      "max": 2160
+    },
+    "samples": [
+      {
+        "route": "/ai-gateway",
+        "instance": 0,
+        "heightPx": 2160
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-gateway"
+  ]
+}

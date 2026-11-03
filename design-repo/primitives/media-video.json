@@ -1,0 +1,18 @@
+{
+  "id": "primitive.media-video",
+  "kind": "primitive",
+  "title": "Background video",
+  "purpose": "Muted, looping, inline video (autoplay) with optional poster.",
+  "props": {
+    "media": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [],
+  "source": {
+    "file": "src/components/Hero.jsx",
+    "tag": "<video",
+    "lines": "82-93",
+    "citation": "src/components/Hero.jsx:82-93"
+  }
+}

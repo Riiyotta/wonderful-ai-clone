@@ -1,0 +1,128 @@
+{
+  "id": "listing.role-rows",
+  "title": "Role rows",
+  "status": "measured",
+  "source": {
+    "id": "src:Careers#div-className-ccr-roles",
+    "file": "src/pages/company/Careers.jsx",
+    "tag": "<div className=\"ccr-roles\"",
+    "lines": "142-169",
+    "citation": "src/pages/company/Careers.jsx:142-169"
+  },
+  "semantic": {
+    "id": "listing.role-rows",
+    "category": "LISTING"
+  },
+  "retrievalEligible": true,
+  "purpose": "\"Main Roles\" heading over four role rows (title, description, image) with a desktop hover reveal.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for listing.role-rows at 1440px"
+      },
+      "roles": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "role titles up to 4 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 48,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=38 for listing.role-rows at 1440px"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "roles"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "hover-reveal-row"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Rows stack; image always visible."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".roles[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.hover-row"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 1360.3,
+      "max": 1360.3
+    },
+    "samples": [
+      {
+        "route": "/careers",
+        "instance": 0,
+        "heightPx": 1360.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/careers"
+  ]
+}

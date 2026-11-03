@@ -1,0 +1,368 @@
+{
+  "$description": "Closed asset-role registry. availability is the three-way contract (reference-only | generation-safe | blocked-for-generation). The same values are pinned in code (PINNED_AVAILABILITY in schema/semantic_validate.py and extraction/verify_all.py) so editing this file alone cannot loosen them.",
+  "version": "1.0.0",
+  "sourceIsRealCompany": true,
+  "generationRules": [
+    "mode=generated: every media assetRole must be generation-safe AND listed in that section's generatedAssetRoles.",
+    "Never reproduce real logos (customers, investors, press outlets, partners), real people's photos or identities, the source wordmark or product lockups, source product UI, or source copy.",
+    "Generated media src must use generated://, placeholder:// or user-supplied:// schemes, or an https URL on a reserved .example / .invalid domain.",
+    "Generated links must be relative paths, fragments, or reserved .example / .invalid domains; mailto only to .example addresses."
+  ],
+  "availabilityEnum": [
+    "reference-only",
+    "generation-safe",
+    "blocked-for-generation"
+  ],
+  "generationPolicyEnum": [
+    "reference-evidence-only",
+    "must-not-fabricate",
+    "must-not-reuse-live-endpoint",
+    "may-generate-new",
+    "must-reuse-exact"
+  ],
+  "roles": [
+    {
+      "id": "logo.source-wordmark",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "The source company wordmark (nav, footer, footer watermark).",
+      "evidence": [
+        "src/components/nav/Logos.jsx:25",
+        "CLONE_SPEC.md:344"
+      ],
+      "generationSafeSubstitutes": [
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ],
+      "licensing": "Wonderful AI B.V. is a real, live company. Never reproduce, trace, re-colour or imitate this asset in generated output. A real wordmark is never must-reuse-exact in generated mode."
+    },
+    {
+      "id": "logo.source-product-lockup",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source product lockups (AI OS, Agents, Systems, AI Gateway SVG wordmarks).",
+      "evidence": [
+        "CLONE_SPEC_PRODUCT.md:21"
+      ],
+      "generationSafeSubstitutes": [
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ],
+      "licensing": "Wonderful AI B.V. is a real, live company. Never reproduce, trace, re-colour or imitate this asset in generated output."
+    },
+    {
+      "id": "logo.customer",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Real customer and partner logos (OTE, Banco Caja Social, Telefonica, PPC, Petrol Ofisi and others in the client grids, carousels and quote cards).",
+      "evidence": [
+        "CLONE_SPEC.md:214",
+        "CLONE_SPEC.md:234"
+      ],
+      "generationSafeSubstitutes": [
+        "logo.fictional-company"
+      ],
+      "licensing": "Third-party trademarks. Never reproduce, approximate or invent a real company logo; use clearly fictional marks."
+    },
+    {
+      "id": "logo.investor",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Real investor logos on the about page (\"Backed by the best\").",
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:45"
+      ],
+      "generationSafeSubstitutes": [
+        "logo.fictional-company"
+      ],
+      "licensing": "Third-party trademarks; never reproduce."
+    },
+    {
+      "id": "logo.press-outlet",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Real media-outlet logos on press cards.",
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:102"
+      ],
+      "generationSafeSubstitutes": [
+        "logo.fictional-company"
+      ],
+      "licensing": "Third-party trademarks; never reproduce."
+    },
+    {
+      "id": "logo.partner-crest",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Sports-club crest and partner marks (announcement ticker, campaign lockups).",
+      "evidence": [
+        "CLONE_SPEC.md:114",
+        "CLONE_SPEC_REGIONAL.md:103"
+      ],
+      "generationSafeSubstitutes": [
+        "logo.fictional-company"
+      ],
+      "licensing": "Third-party trademark; never reproduce."
+    },
+    {
+      "id": "photo.real-person",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Photos of real employees, executives, customers and press subjects.",
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:48"
+      ],
+      "generationSafeSubstitutes": [
+        "avatar.fictional",
+        "photo.generated-scene"
+      ],
+      "licensing": "Real people's likeness; never reproduce or synthesise a look-alike."
+    },
+    {
+      "id": "person.real-identity",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Names, titles and LinkedIn identities of real people (quote authors, article authors, country leads).",
+      "evidence": [
+        "CLONE_SPEC_REGIONAL.md:68"
+      ],
+      "generationSafeSubstitutes": [
+        "person.fictional"
+      ],
+      "licensing": "Real personal data; generated pages use fictional people only."
+    },
+    {
+      "id": "photo.source-scene",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source editorial/stock photography (industry heroes, card and banner images, about/careers heroes).",
+      "evidence": [
+        "CLONE_SPEC.md:299"
+      ],
+      "generationSafeSubstitutes": [
+        "photo.generated-scene"
+      ],
+      "licensing": "Licensed to the source company; do not reuse outside reference reconstruction."
+    },
+    {
+      "id": "illustration.source-texture",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source background textures and glows (dark-band image, CTA radial glow, hero lattice backdrops).",
+      "evidence": [
+        "CLONE_SPEC.md:260"
+      ],
+      "generationSafeSubstitutes": [
+        "illustration.generated-abstract"
+      ],
+      "licensing": "Wonderful AI B.V. is a real, live company. Never reproduce, trace, re-colour or imitate this asset in generated output."
+    },
+    {
+      "id": "product.source-visual",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source product UI renders (gateway dashboard, infrastructure panel, systems cards).",
+      "evidence": [
+        "CLONE_SPEC_PLATFORM.md:47"
+      ],
+      "generationSafeSubstitutes": [
+        "product.generated-visual"
+      ],
+      "licensing": "Proprietary product UI; never reproduce in generated mode."
+    },
+    {
+      "id": "video.source-loop",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source brand and customer videos (homepage hero, PPC stories, gateway announcement).",
+      "evidence": [
+        "CLONE_SPEC.md:190"
+      ],
+      "generationSafeSubstitutes": [
+        "video.generated-loop"
+      ],
+      "licensing": "Wonderful AI B.V. is a real, live company. Never reproduce, trace, re-colour or imitate this asset in generated output."
+    },
+    {
+      "id": "url.source-site",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Links into the source domain and its subdomains (www, trust, cdn) and its social profiles.",
+      "evidence": [
+        "CLONE_SPEC.md:334"
+      ],
+      "generationSafeSubstitutes": [
+        "url.placeholder"
+      ],
+      "licensing": "Never emit source URLs in generated pages."
+    },
+    {
+      "id": "endpoint.third-party-live",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-reuse-live-endpoint",
+      "purpose": "Live third-party endpoints: the hosted job-application iframe, the campaign form backend, mailto inboxes.",
+      "evidence": [
+        "CLONE_SPEC_REGIONAL.md:184",
+        "CLONE_SPEC_REGIONAL.md:125"
+      ],
+      "generationSafeSubstitutes": [
+        "url.placeholder"
+      ],
+      "licensing": "Never wire a generated form to a real endpoint."
+    },
+    {
+      "id": "copy.source",
+      "availability": "reference-only",
+      "generationPolicy": "reference-evidence-only",
+      "purpose": "Source marketing, editorial and legal copy (see schema/reference-copy-corpus.json).",
+      "evidence": [
+        "schema/reference-copy-corpus.json"
+      ],
+      "generationSafeSubstitutes": [
+        "copy.original"
+      ],
+      "licensing": "Copyrighted text of the source company."
+    },
+    {
+      "id": "rating.source-review",
+      "availability": "blocked-for-generation",
+      "generationPolicy": "must-not-fabricate",
+      "purpose": "Third-party review scores. The source renders none; any rating attributed to a real review platform is fabricated.",
+      "evidence": [
+        "extraction/measured-values.json#/notes/noRatingsOnSource"
+      ],
+      "generationSafeSubstitutes": [
+        "rating.placeholder"
+      ],
+      "licensing": "Never invent real-platform ratings."
+    },
+    {
+      "id": "brand-mark.generated",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "A newly generated, fictional brand mark for a generated page.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "brand-mark.user-supplied",
+      "availability": "generation-safe",
+      "generationPolicy": "must-reuse-exact",
+      "purpose": "The requesting user's own mark, reused exactly as supplied (never the source mark).",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "logo.fictional-company",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Clearly fictional company logos for logo grids, carousels and quote cards.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "avatar.fictional",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Fictional portraits or abstract avatars.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "person.fictional",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Fictional names and titles for quotes, authors and contacts.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "photo.generated-scene",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Newly generated scene photography in the source's cinematic, dark-graded style.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "illustration.generated-abstract",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Generated abstract glows, gradients and textures.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "product.generated-visual",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Generated, fictional product UI or diagram visuals.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "video.generated-loop",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Generated or placeholder muted loop video.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "rating.placeholder",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Clearly placeholder rating copy (no real platform names). No source section renders ratings; kept for the baseline contract.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "url.placeholder",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Relative paths, fragment links, or reserved .example / .invalid domains only.",
+      "evidence": [
+        "BASELINE R3",
+        "RFC 2606"
+      ]
+    },
+    {
+      "id": "copy.original",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Newly written copy that shares no sentence with the source corpus.",
+      "evidence": [
+        "BASELINE R3"
+      ]
+    },
+    {
+      "id": "icon.phosphor",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Phosphor regular icons (open source, MIT) as used in feature cells.",
+      "evidence": [
+        "src/pages/product/shared/icons.jsx:19"
+      ],
+      "licensing": "MIT-licensed icon set."
+    },
+    {
+      "id": "icon.ui-glyph",
+      "availability": "generation-safe",
+      "generationPolicy": "may-generate-new",
+      "purpose": "Generic UI glyphs: arrows, chevrons, play, close.",
+      "evidence": [
+        "src/components/nav/Logos.jsx:43"
+      ]
+    }
+  ]
+}

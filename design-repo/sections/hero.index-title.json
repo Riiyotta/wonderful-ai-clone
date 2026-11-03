@@ -1,0 +1,110 @@
+{
+  "id": "hero.index-title",
+  "title": "Index title",
+  "status": "measured",
+  "source": {
+    "id": "src:Press#div-className-cpr-head",
+    "file": "src/pages/company/Press.jsx",
+    "tag": "<div className=\"cpr-head\">",
+    "lines": "83-90",
+    "citation": "src/pages/company/Press.jsx:83-90",
+    "variantSources": {
+      "legal": {
+        "file": "src/pages/content/LegalIndex.jsx",
+        "tag": "<div className=\"cli-head\">",
+        "lines": "39-43",
+        "citation": "src/pages/content/LegalIndex.jsx:39-43"
+      }
+    }
+  },
+  "semantic": {
+    "id": "hero.index-title",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Title-only opener for index pages (press, legal): a display H1 followed by a hairline.",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "variants": [
+    "press",
+    "legal"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for hero.index-title at 1440px"
+      }
+    },
+    "required": [
+      "title"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-paragraph",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "H1 54px."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "H1 38px."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 75.6,
+      "max": 184.6
+    },
+    "samples": [
+      {
+        "route": "/legal",
+        "variant": "legal",
+        "instance": 0,
+        "heightPx": 75.6
+      },
+      {
+        "route": "/press",
+        "variant": "press",
+        "instance": 0,
+        "heightPx": 184.6
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/legal",
+    "/press"
+  ]
+}

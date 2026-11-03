@@ -1,0 +1,68 @@
+/* /press (CLONE_SPEC_COMPANY §3). Framer breakpoints: >=1200 desktop, 810-1199.98 tablet, <810 mobile.
+   Cards are absolutely placed from measured linear layouts (data/pressLayout.js) inside a 100cqw container. */
+.cpr-root { width: 100%; background: #080808; display: flex; flex-direction: column; align-items: center; overflow: clip; }
+.cpr-cq { width: 100%; max-width: 1680px; container-type: inline-size; }
+.cpr-sec { position: relative; width: 100%; padding: 190px 20px 100px; overflow: clip; }
+.cpr-head { display: flex; flex-direction: column; align-items: center; gap: 64px; width: 100%; padding: 0 0 44px; overflow: clip; }
+.cpr-h1 { margin: 0; width: 100%; color: #fafafa; text-align: left; white-space: pre-wrap; word-break: break-word;
+  font-size: 72px; line-height: 1.05; letter-spacing: -.06em; font-feature-settings: "ss04", "ss05"; text-wrap: balance; }
+.cpr-rule { width: 100%; max-width: 1680px; height: 1px; background: rgba(255,255,255,.18); opacity: .13; flex: none; }
+.cpr-layout { display: none; position: absolute; inset: 0; pointer-events: none; }
+.cpr-layout--d { display: block; }
+.cpr-item { position: absolute; pointer-events: auto; }
+.cpr-anim { width: 100%; }
+
+/* card */
+.cpr-card { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; width: 100%; text-decoration: none; cursor: pointer; }
+.cpr-img { position: relative; width: 100%; aspect-ratio: 1; border-radius: 8px; overflow: clip; flex: none; }
+.cpr-img > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: inherit; display: block; }
+.cpr-scrim { position: absolute; left: 0; right: 0; bottom: 0; height: 60%; z-index: 0; background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.2) 100%); }
+.cpr-badge { position: absolute; top: 16px; left: 16px; z-index: 1; display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 6px; }
+.cpr-dot { width: 6px; height: 6px; border-radius: 50%; background: #fafafa; flex: none; }
+.cpr-badge p { margin: 0; white-space: pre; color: #fafafa; font-family: Inter, "Inter Placeholder", sans-serif; }
+.cpr-badge--l p { font-size: 17px; line-height: 1.28; letter-spacing: -.02em; font-feature-settings: "blwf", "cv09", "cv03", "cv04"; }
+.cpr-badge--s p { font-size: 14px; line-height: 1.5; letter-spacing: -.02em; font-feature-settings: "ss03"; text-align: left; }
+.cpr-content { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 20px 16px; }
+.cpr-meta { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 8px; width: 100%; }
+.cpr-source { margin: 0; white-space: pre; color: rgba(255,255,255,.7); font-family: Inter, "Inter Placeholder", sans-serif; font-size: 14px; line-height: 1.45;
+  letter-spacing: -.01em; font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11"; }
+.cpr-source--big { font-size: 20px; line-height: 1.25; letter-spacing: -.4px; }
+.cpr-title { width: 100%; max-width: 650px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: clip;
+  white-space: pre-line; word-break: break-word; }
+.cpr-title > * { margin: 0; color: #fafafa; font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 300; line-height: 1.15; letter-spacing: -.05em;
+  text-align: left; font-feature-settings: normal; }
+.cpr-title .cpr-h3 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-size: 22px; letter-spacing: -.04em; font-feature-settings: "ss02", "ss04", "ss05", "ss11"; }
+.cpr-card--end .cpr-title > * { text-align: start; }
+.cpr-title h4 { font-size: 26px; }
+.cpr-title h5 { font-size: 16px; }
+.cpr-title .cpr-heb { font-family: "Google Sans", Inter, sans-serif; font-weight: 400; font-size: 20px; }
+.cpr-title .cpr-heb--m { font-size: 16px; }
+.cpr-logo-ov { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-end; padding: 16px; }
+.cpr-logo { flex: none; display: block; }
+.cpr-logo img { display: block; }
+.cpr-logo--h48 img { height: 48px; width: auto; }
+.cpr-logo--h26 img { height: 26px; width: auto; }
+.cpr-logo--w200 img { width: 200px; height: auto; }
+.cpr-logo--w120 img { width: 120px; height: auto; }
+.cpr-card--clogo .cpr-logo-ov { justify-content: center; align-items: center; padding: 0; }
+.cpr-card--ctext .cpr-content { align-items: center; justify-content: center; }
+.cpr-card--ctext .cpr-meta { justify-content: center; }
+.cpr-card--ctext .cpr-source, .cpr-card--ctext .cpr-title > * { text-align: center; }
+.cpr-card--end .cpr-content { align-items: flex-end; justify-content: flex-end; }
+.cpr-card--end .cpr-meta { justify-content: flex-end; }
+.cpr-card--end .cpr-source { text-align: end; }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .cpr-sec { padding: 160px 20px 60px; }
+  .cpr-h1 { font-size: 54px; letter-spacing: -.07em; }
+  .cpr-layout--d { display: none; } .cpr-layout--t { display: block; }
+}
+@media (max-width: 809.98px) {
+  .cpr-sec { padding: 120px 20px 60px; }
+  .cpr-head { gap: 42px; }
+  .cpr-h1 { font-size: 38px; line-height: 1.2; letter-spacing: -.09em; text-align: center; }
+  .cpr-layout--d { display: none; } .cpr-layout--m { display: block; }
+}
+.cpr-sec { height: var(--pr-h-d); }
+@media (min-width: 810px) and (max-width: 1199.98px) { .cpr-sec { height: var(--pr-h-t); } }
+@media (max-width: 809.98px) { .cpr-sec { height: var(--pr-h-m); } }

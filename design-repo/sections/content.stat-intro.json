@@ -1,0 +1,159 @@
+{
+  "id": "content.stat-intro",
+  "title": "Stat intro",
+  "status": "measured",
+  "source": {
+    "id": "src:Deployment#function-Teams",
+    "file": "src/pages/platform/Deployment.jsx",
+    "tag": "function Teams",
+    "lines": "63-100",
+    "citation": "src/pages/platform/Deployment.jsx:63-100"
+  },
+  "semantic": {
+    "id": "content.stat-intro",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 + paragraph beside a large animated stat, followed by a pair of role cards that expand on hover.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "measured headingWordsMax=5 for content.stat-intro at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 40,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=32 for content.stat-intro at 1440px"
+      },
+      "stat": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "value": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 2,
+            "x-maxWordsEvidence": "stat value \"40+\""
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 40,
+            "x-maxWordsEvidence": "measured paragraphWordsMax=32 for content.stat-intro at 1440px"
+          }
+        },
+        "required": [
+          "value",
+          "label"
+        ]
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "card titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 40,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=32 for content.stat-intro at 1440px"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "image"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "stat"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-paragraph",
+      "counter-up",
+      "expand-card-spring"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Cards stacked, both expanded."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.stat-block",
+    "component.expanding-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 1027,
+      "max": 1027
+    },
+    "samples": [
+      {
+        "route": "/deployment",
+        "instance": 0,
+        "heightPx": 1027
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/deployment"
+  ]
+}

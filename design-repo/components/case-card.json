@@ -1,0 +1,31 @@
+{
+  "id": "component.case-card",
+  "kind": "component",
+  "title": "Case-study carousel card",
+  "purpose": "583px square image card with title, arrow and customer logo.",
+  "props": {
+    "title": {
+      "maxWords": 10
+    },
+    "image": {
+      "$ref": "media"
+    },
+    "logo": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "component.carousel-card.size",
+    "radius.carousel"
+  ],
+  "source": {
+    "file": "src/components/CaseStudies.jsx",
+    "tag": "function Card",
+    "lines": "33-66",
+    "citation": "src/components/CaseStudies.jsx:33-66"
+  },
+  "composes": [
+    "primitive.media-image",
+    "primitive.arrow-icon"
+  ]
+}

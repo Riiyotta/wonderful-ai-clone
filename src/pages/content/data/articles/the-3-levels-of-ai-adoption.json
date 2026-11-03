@@ -1,0 +1,91 @@
+{
+ "slug": "the-3-levels-of-ai-adoption",
+ "path": "/blog-articles/the-3-levels-of-ai-adoption",
+ "category": "Perspectives",
+ "pageTitle": "The 3 Levels of AI Adoption",
+ "author": "Noam Makavy, VP Product",
+ "date": "Mar 17, 2026",
+ "datetime": "2026-03-17T00:00:00.000Z",
+ "title": "The 3 Levels of AI Adoption",
+ "titleTag": "h1",
+ "description": "Efficiency is just the entry point",
+ "hero": {
+  "image": {
+   "src": "/assets/Tp3wKHE5RVeV86jtiQyqoSVvdI.png",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Enterprise AI is starting to move from a capability story to an adoption story. That shift matters, because the companies that benefit most will not be the ones that simply use the technology first, but the ones that learn how to reorganize around it. This essay outlines the shape of the adoption curve.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most enterprise AI adoption begins as substitution. A company takes a task currently done by a person and asks whether an agent can do it faster, cheaper, more consistently, or around the clock. That is a rational place to start. It is also the least interesting stage.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">AI adoption tends to move through three levels. First, agents follow a human playbook. Then the playbook itself gets rewritten around agent capabilities. Eventually, operations become programmable: not just automated, but instrumented, testable, and continuously improvable.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">These levels matter because they build on each other. Early AI adoption is not just about near-term efficiency. It is how an organization develops the judgment, infrastructure, and operating habits required for the deeper changes that come later. That is why investment in AI adoption compounds.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><img alt=\"\" width=\"750\" height=\"500\" src=\"/assets/FHVLwNkcId3gc5viyFuXGFlqxQ.jpg\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:1500 / 1000\"><h3 class=\"framer-text framer-styles-preset-pyuk04\"><br class=\"framer-text trailing-break\"></h3><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Level 1: Agents follow a human playbook</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">This is where most enterprises start, and for good reason.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">At Level 1, the organization keeps the workflow largely intact and asks an agent to perform part of it. Answer support questions. Qualify inbound leads. Summarize documents. Draft follow-ups. Pull information from one system into another. Assist a human operator in real time.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The structure of the work is still a human one. The agent is being evaluated on whether it can execute reliably inside that structure.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This phase matters more than people sometimes admit. It is where companies learn the disciplines that turn AI from a demo into a system: how to scope the problem, connect the agent to the right company information, evaluate output quality, contain failure modes, and decide where human review belongs.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">For many organizations, Level 1 already creates meaningful value. Response times improve. Coverage expands. Repetitive work gets absorbed. Service quality rises in narrow but important parts of the business.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But it is still only the first level.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The workflow itself usually remains linear, handoff-heavy, and built around the limits of human attention. A person can only hold so much context, look up so much information, and make so many decisions in the time available. Most enterprise processes quietly encode those constraints.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Level 1 proves that an agent can participate in the work. It does not yet ask what the work should look like if those constraints start to change.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Level 2: The playbook gets rewritten for agents</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">This is where AI adoption becomes strategically interesting.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Once agent systems are reliable enough, the question changes. It is no longer, “Can an agent do this step?” It becomes, “What should this workflow look like if it is designed around the strengths of agent systems rather than the constraints of human labor?”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That shift is bigger than it sounds.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most operating playbooks were designed for a world in which skilled attention is scarce, specialized knowledge is fragmented, and response speed is limited by how fast a person can read, reason, and act. That is why so many workflows depend on queues, callbacks, escalation trees, rigid intake forms, and specialist handoffs.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agent systems change those constraints. They can gather context before responding. They can work across multiple systems at once. They can draw on a much broader body of relevant company knowledge than a single employee could realistically retrieve in the moment. They can run parallel analyses where a human process would force serial work.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That changes what a good workflow looks like.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Take a customer who is about to cancel. In a traditional process, the front-line representative has limited context, limited authority, and limited time. The safest move is often to route the case, offer a generic response, or follow a narrow script. In a workflow designed around agent capabilities, the system can assemble the relevant customer context immediately, compare retention options against policy, and propose the best next action in the moment.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Or take an inbound request for a product demo. In many companies, the request enters a queue, gets assigned, and eventually produces a generic follow-up. A workflow built around agents can research the account, prepare a tailored environment, populate it with relevant example data, and coordinate the next step immediately.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This pattern shows up across the enterprise. Support workflows need fewer handoffs. Sales motions become more responsive and more tailored. Internal teams can collapse layers of triage and routing that existed mainly because no individual had enough time or enough context to handle the issue directly.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is the point where AI stops fitting into the organization and starts reshaping it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">It is also where many of the biggest gains in AI adoption come from: not from asking agents to mimic human workflows more cheaply, but from recognizing that those workflows were built around constraints that no longer fully apply.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Level 3: Operations become programmable</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Level 2 changes how work gets done. Level 3 changes how the organization improves that work.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">At Level 3, the company is no longer just using agents to execute tasks. It is using agent systems to make execution legible.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In most human organizations, leaders know what the official playbook is, but they have only partial visibility into how work is actually performed. They can review calls, inspect outcomes, and coach teams. But they still struggle to isolate variables. Ask a sales organization to push a little harder for longer-term contracts, and you will get dozens of slightly different interpretations expressed with different timing, tone, and conviction. When results move, it is often unclear what actually changed.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agent-mediated operations are different. Every retrieval, decision, escalation, handoff, and deviation from policy can be logged. When the system changes, the organization can see much more clearly what changed with it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That turns operations into a tunable system.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A retention motion can be adjusted by customer segment and measured quickly. A support workflow can test different escalation thresholds and resolution strategies. A sales process can systematically vary how it frames pricing, qualification, or contract length and observe the downstream effects with much greater precision than a purely human organization usually can.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is the deepest level of AI adoption, and it is where the strategic advantage begins to compound.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">At Level 1, you get automation.<br class=\"framer-text\">At Level 2, you get redesigned workflows.<br class=\"framer-text\">At Level 3, you get a faster learning system.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That is why AI adoption often lags behind the technology itself. In many cases, the limiting factor is no longer whether the model can perform the work in principle. It is whether the organization has built the systems, confidence, and operating discipline required to redesign work around it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That is also why early investment matters. A company that starts at Level 1 is not just buying efficiency. It is building the foundation for better workflows, better instrumentation, and faster iteration later on.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

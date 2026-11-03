@@ -1,0 +1,3124 @@
+[
+ {
+  "p": "/deployment",
+  "w": 1440,
+  "live": 4417,
+  "clone": 4417,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/deployment",
+  "w": 1100,
+  "live": 5712,
+  "clone": 5712,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/",
+  "w": 1440,
+  "live": 7078,
+  "clone": 7078,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/",
+  "w": 1100,
+  "live": 7313,
+  "clone": 7313,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/",
+  "w": 390,
+  "live": 7624,
+  "clone": 7624,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/deployment",
+  "w": 390,
+  "live": 5990,
+  "clone": 5990,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-transformation",
+  "w": 1440,
+  "live": 4350,
+  "clone": 4350,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-transformation",
+  "w": 390,
+  "live": 5956,
+  "clone": 5956,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog",
+  "w": 390,
+  "live": 19611,
+  "clone": 19611,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-transformation",
+  "w": 1100,
+  "live": 4621,
+  "clone": 4620,
+  "d": -1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog",
+  "w": 1440,
+  "live": 8258,
+  "clone": 8258,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog",
+  "w": 1100,
+  "live": 13023,
+  "clone": 13023,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/about-us",
+  "w": 390,
+  "live": 5980,
+  "clone": 5980,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers",
+  "w": 1440,
+  "live": 6479,
+  "clone": 6479,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers",
+  "w": 1100,
+  "live": 9154,
+  "clone": 9154,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers",
+  "w": 390,
+  "live": 7136,
+  "clone": 7137,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/about-us",
+  "w": 1100,
+  "live": 6124,
+  "clone": 6123,
+  "d": -1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/about-us",
+  "w": 1440,
+  "live": 4709,
+  "clone": 4709,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal",
+  "w": 1440,
+  "live": 1877,
+  "clone": 1877,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/contact",
+  "w": 1440,
+  "live": 900,
+  "clone": 900,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal",
+  "w": 1100,
+  "live": 2363,
+  "clone": 2363,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/contact",
+  "w": 390,
+  "live": 1416,
+  "clone": 1416,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/contact",
+  "w": 1100,
+  "live": 1467,
+  "clone": 1467,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/greece",
+  "w": 1440,
+  "live": 2770,
+  "clone": 2770,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal",
+  "w": 390,
+  "live": 2324,
+  "clone": 2324,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/greece",
+  "w": 1100,
+  "live": 3375,
+  "clone": 3375,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/romania",
+  "w": 1100,
+  "live": 2931,
+  "clone": 2931,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/adriatics",
+  "w": 1440,
+  "live": 2873,
+  "clone": 2873,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/romania",
+  "w": 1440,
+  "live": 2359,
+  "clone": 2359,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/romania",
+  "w": 390,
+  "live": 3433,
+  "clone": 3433,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/greece",
+  "w": 390,
+  "live": 3899,
+  "clone": 3899,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/adriatics",
+  "w": 1100,
+  "live": 3445,
+  "clone": 3445,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/adriatics",
+  "w": 390,
+  "live": 4465,
+  "clone": 4465,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/switzerland",
+  "w": 1440,
+  "live": 2362,
+  "clone": 2362,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/italy",
+  "w": 1440,
+  "live": 2242,
+  "clone": 2242,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/italy",
+  "w": 390,
+  "live": 3260,
+  "clone": 3260,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/italy",
+  "w": 1100,
+  "live": 2814,
+  "clone": 2814,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/switzerland",
+  "w": 1100,
+  "live": 2877,
+  "clone": 2877,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/switzerland",
+  "w": 390,
+  "live": 3404,
+  "clone": 3404,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/baltics",
+  "w": 1440,
+  "live": 1977,
+  "clone": 1977,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/baltics",
+  "w": 390,
+  "live": 2668,
+  "clone": 2668,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/baltics",
+  "w": 1100,
+  "live": 2501,
+  "clone": 2501,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/belgium",
+  "w": 1440,
+  "live": 2295,
+  "clone": 2295,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/netherlands",
+  "w": 1100,
+  "live": 2939,
+  "clone": 2939,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/netherlands",
+  "w": 1440,
+  "live": 2367,
+  "clone": 2367,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/netherlands",
+  "w": 390,
+  "live": 3485,
+  "clone": 3485,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/belgium",
+  "w": 1100,
+  "live": 2891,
+  "clone": 2891,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/belgium",
+  "w": 390,
+  "live": 3375,
+  "clone": 3375,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/uae",
+  "w": 1440,
+  "live": 2815,
+  "clone": 2815,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/uae",
+  "w": 390,
+  "live": 4074,
+  "clone": 4074,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/uae",
+  "w": 1100,
+  "live": 3420,
+  "clone": 3420,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/poland",
+  "w": 1440,
+  "live": 2391,
+  "clone": 2391,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/poland",
+  "w": 1100,
+  "live": 2939,
+  "clone": 2939,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/poland",
+  "w": 390,
+  "live": 3447,
+  "clone": 3447,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/archive/comeet-style",
+  "w": 1440,
+  "live": 905,
+  "clone": 905,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/archive/comeet-style",
+  "w": 1100,
+  "live": 1412,
+  "clone": 1412,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/archive/comeet-style",
+  "w": 390,
+  "live": 1433,
+  "clone": 1433,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby",
+  "w": 390,
+  "live": 1685,
+  "clone": 1685,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby",
+  "w": 1440,
+  "live": 1088,
+  "clone": 1088,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby",
+  "w": 1100,
+  "live": 1518,
+  "clone": 1518,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/thank-you",
+  "w": 1440,
+  "live": 1803,
+  "clone": 1804,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers/candidate_notice",
+  "w": 1440,
+  "live": 9476,
+  "clone": 9475,
+  "d": -1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers/candidate_notice",
+  "w": 1100,
+  "live": 9362,
+  "clone": 9362,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/thank-you",
+  "w": 390,
+  "live": 2840,
+  "clone": 2841,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/thank-you",
+  "w": 1100,
+  "live": 2687,
+  "clone": 2687,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/careers/candidate_notice",
+  "w": 390,
+  "live": 20056,
+  "clone": 20056,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-os",
+  "w": 1100,
+  "live": 9983,
+  "clone": 9983,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-os",
+  "w": 1440,
+  "live": 6600,
+  "clone": 6600,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/press",
+  "w": 390,
+  "live": 10408,
+  "clone": 10408,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-os",
+  "w": 390,
+  "live": 9234,
+  "clone": 9234,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/agents",
+  "w": 1440,
+  "live": 6121,
+  "clone": 6121,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/agents",
+  "w": 390,
+  "live": 8802,
+  "clone": 8803,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/press",
+  "w": 1440,
+  "live": 6628,
+  "clone": 6628,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/press",
+  "w": 1100,
+  "live": 20172,
+  "clone": 20172,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/agents",
+  "w": 1100,
+  "live": 9872,
+  "clone": 9872,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/systems",
+  "w": 1440,
+  "live": 6278,
+  "clone": 6278,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/systems",
+  "w": 1100,
+  "live": 7730,
+  "clone": 7730,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-gateway",
+  "w": 1100,
+  "live": 8396,
+  "clone": 8396,
+  "d": 0,
+  "errs": [
+   "Error: <rect> attribute width: A negative value is not valid. (\"-5.5196271001965975\")"
+  ],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/systems",
+  "w": 390,
+  "live": 8856,
+  "clone": 8856,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-gateway",
+  "w": 1440,
+  "live": 7455,
+  "clone": 7455,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ai-gateway",
+  "w": 390,
+  "live": 7484,
+  "clone": 7483,
+  "d": -1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/msa",
+  "w": 1100,
+  "live": 11537,
+  "clone": 11537,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/sla",
+  "w": 1100,
+  "live": 3363,
+  "clone": 3363,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/sla",
+  "w": 1440,
+  "live": 3476,
+  "clone": 3476,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/msa",
+  "w": 390,
+  "live": 25945,
+  "clone": 25945,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/sla",
+  "w": 390,
+  "live": 6857,
+  "clone": 6857,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/msa",
+  "w": 1440,
+  "live": 11741,
+  "clone": 11741,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dpa",
+  "w": 1100,
+  "live": 8903,
+  "clone": 8903,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dpa",
+  "w": 390,
+  "live": 18046,
+  "clone": 18046,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/aup",
+  "w": 1100,
+  "live": 3148,
+  "clone": 3148,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dpa",
+  "w": 1440,
+  "live": 9158,
+  "clone": 9158,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/aup",
+  "w": 390,
+  "live": 5696,
+  "clone": 5696,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/aup",
+  "w": 1440,
+  "live": 3238,
+  "clone": 3238,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/data-act",
+  "w": 1440,
+  "live": 6017,
+  "clone": 6017,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/data-act",
+  "w": 1100,
+  "live": 5826,
+  "clone": 5826,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/data-act",
+  "w": 390,
+  "live": 10328,
+  "clone": 10328,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dora",
+  "w": 1100,
+  "live": 6941,
+  "clone": 6941,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dora",
+  "w": 1440,
+  "live": 7079,
+  "clone": 7079,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/dora",
+  "w": 390,
+  "live": 13822,
+  "clone": 13822,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/privacy",
+  "w": 1440,
+  "live": 14609,
+  "clone": 14609,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/privacy",
+  "w": 1100,
+  "live": 14513,
+  "clone": 14513,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/privacy",
+  "w": 390,
+  "live": 34368,
+  "clone": 34368,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/bug-bounty-terms",
+  "w": 1440,
+  "live": 6126,
+  "clone": 6126,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/bug-bounty-terms",
+  "w": 390,
+  "live": 10714,
+  "clone": 10714,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/bug-bounty-terms",
+  "w": 1100,
+  "live": 5850,
+  "clone": 5850,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/websiteterms",
+  "w": 1440,
+  "live": 3842,
+  "clone": 3842,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/websiteterms",
+  "w": 1100,
+  "live": 3756,
+  "clone": 3756,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/legal/websiteterms",
+  "w": 390,
+  "live": 6874,
+  "clone": 6874,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/airlines",
+  "w": 1440,
+  "live": 5860,
+  "clone": 5860,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/airlines",
+  "w": 1100,
+  "live": 8599,
+  "clone": 8599,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/retail",
+  "w": 1440,
+  "live": 5860,
+  "clone": 5860,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/airlines",
+  "w": 390,
+  "live": 7757,
+  "clone": 7757,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/retail",
+  "w": 1100,
+  "live": 8621,
+  "clone": 8621,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/retail",
+  "w": 390,
+  "live": 7821,
+  "clone": 7822,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/healthcare",
+  "w": 1100,
+  "live": 8659,
+  "clone": 8659,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/healthcare",
+  "w": 1440,
+  "live": 5836,
+  "clone": 5836,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/telecommunication",
+  "w": 1440,
+  "live": 5860,
+  "clone": 5860,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/healthcare",
+  "w": 390,
+  "live": 7609,
+  "clone": 7609,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/telecommunication",
+  "w": 1100,
+  "live": 8621,
+  "clone": 8621,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/telecommunication",
+  "w": 390,
+  "live": 7693,
+  "clone": 7694,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/banking",
+  "w": 390,
+  "live": 7714,
+  "clone": 7714,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/utilities",
+  "w": 1100,
+  "live": 9499,
+  "clone": 9499,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/banking",
+  "w": 1100,
+  "live": 8578,
+  "clone": 8578,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/banking",
+  "w": 1440,
+  "live": 5860,
+  "clone": 5860,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/utilities",
+  "w": 1440,
+  "live": 6676,
+  "clone": 6676,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/utilities",
+  "w": 390,
+  "live": 9023,
+  "clone": 9024,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/insurance",
+  "w": 1440,
+  "live": 5860,
+  "clone": 5860,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/insurance",
+  "w": 390,
+  "live": 7736,
+  "clone": 7737,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/slavia-prague",
+  "w": 1440,
+  "live": 3095,
+  "clone": 3095,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/slavia-prague",
+  "w": 390,
+  "live": 2698,
+  "clone": 2698,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/industries/insurance",
+  "w": 1100,
+  "live": 8621,
+  "clone": 8621,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/slavia-prague",
+  "w": 1100,
+  "live": 3901,
+  "clone": 3901,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/arsenal",
+  "w": 1100,
+  "live": 3923,
+  "clone": 3923,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/arsenal",
+  "w": 1440,
+  "live": 3095,
+  "clone": 3095,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/arsenal",
+  "w": 390,
+  "live": 2720,
+  "clone": 2719,
+  "d": -1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/financial-services",
+  "w": 1100,
+  "live": 3241,
+  "clone": 3241,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/financial-services",
+  "w": 1440,
+  "live": 2752,
+  "clone": 2752,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/financial-services",
+  "w": 390,
+  "live": 3912,
+  "clone": 3912,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/telecommunication",
+  "w": 1100,
+  "live": 3387,
+  "clone": 3387,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/telecommunication",
+  "w": 1440,
+  "live": 2843,
+  "clone": 2843,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/healthcare",
+  "w": 1440,
+  "live": 2984,
+  "clone": 2984,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/healthcare",
+  "w": 1100,
+  "live": 3531,
+  "clone": 3531,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/telecommunication",
+  "w": 390,
+  "live": 3987,
+  "clone": 3987,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/case-studies/healthcare",
+  "w": 390,
+  "live": 4127,
+  "clone": 4127,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+  "w": 1440,
+  "live": 3324,
+  "clone": 3324,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+  "w": 390,
+  "live": 4853,
+  "clone": 4853,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-ai-gateway",
+  "w": 1100,
+  "live": 6115,
+  "clone": 6115,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-ai-gateway",
+  "w": 1440,
+  "live": 5354,
+  "clone": 5354,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+  "w": 1100,
+  "live": 4094,
+  "clone": 4094,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+  "w": 1440,
+  "live": 4369,
+  "clone": 4369,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-ai-gateway",
+  "w": 390,
+  "live": 6867,
+  "clone": 6867,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+  "w": 1100,
+  "live": 5199,
+  "clone": 5199,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+  "w": 390,
+  "live": 5847,
+  "clone": 5848,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-united-kingdom",
+  "w": 1100,
+  "live": 3878,
+  "clone": 3878,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-united-kingdom",
+  "w": 1440,
+  "live": 3046,
+  "clone": 3046,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/let-the-field-build-the-product",
+  "w": 1440,
+  "live": 4429,
+  "clone": 4429,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-united-kingdom",
+  "w": 390,
+  "live": 4434,
+  "clone": 4434,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/let-the-field-build-the-product",
+  "w": 1100,
+  "live": 5174,
+  "clone": 5174,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+  "w": 1440,
+  "live": 4861,
+  "clone": 4861,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/let-the-field-build-the-product",
+  "w": 390,
+  "live": 6391,
+  "clone": 6391,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership",
+  "w": 1440,
+  "live": 2906,
+  "clone": 2906,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+  "w": 1100,
+  "live": 5816,
+  "clone": 5816,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+  "w": 390,
+  "live": 6963,
+  "clone": 6964,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-550m-series-c",
+  "w": 1440,
+  "live": 4618,
+  "clone": 4618,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership",
+  "w": 390,
+  "live": 4239,
+  "clone": 4239,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership",
+  "w": 1100,
+  "live": 3736,
+  "clone": 3736,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-550m-series-c",
+  "w": 1100,
+  "live": 5412,
+  "clone": 5412,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-550m-series-c",
+  "w": 390,
+  "live": 6979,
+  "clone": 6979,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/building-an-ai-platform-won%E2%80%99t-transform-your-business",
+  "w": 1440,
+  "live": 4971,
+  "clone": 4971,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/building-an-ai-platform-won%E2%80%99t-transform-your-business",
+  "w": 1100,
+  "live": 5719,
+  "clone": 5719,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/maccabi",
+  "w": 1100,
+  "live": 5434,
+  "clone": 5434,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/maccabi",
+  "w": 1440,
+  "live": 4320,
+  "clone": 4320,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/building-an-ai-platform-won%E2%80%99t-transform-your-business",
+  "w": 390,
+  "live": 7222,
+  "clone": 7222,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/maccabi",
+  "w": 390,
+  "live": 6627,
+  "clone": 6627,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-india",
+  "w": 1440,
+  "live": 3585,
+  "clone": 3585,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-india",
+  "w": 1100,
+  "live": 4417,
+  "clone": 4417,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-india",
+  "w": 390,
+  "live": 5430,
+  "clone": 5430,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/unlocking-capacity-the-real-roi-of-ai",
+  "w": 390,
+  "live": 6160,
+  "clone": 6160,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/unlocking-capacity-the-real-roi-of-ai",
+  "w": 1100,
+  "live": 4907,
+  "clone": 4907,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/unlocking-capacity-the-real-roi-of-ai",
+  "w": 1440,
+  "live": 4075,
+  "clone": 4075,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/elta",
+  "w": 1440,
+  "live": 4062,
+  "clone": 4062,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/elta",
+  "w": 390,
+  "live": 5910,
+  "clone": 5910,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/elta",
+  "w": 1100,
+  "live": 4785,
+  "clone": 4785,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/when-the-ceo-means-it",
+  "w": 1100,
+  "live": 4330,
+  "clone": 4330,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/when-the-ceo-means-it",
+  "w": 1440,
+  "live": 3498,
+  "clone": 3498,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/when-the-ceo-means-it",
+  "w": 390,
+  "live": 5195,
+  "clone": 5195,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ai-doesnt-care-about-your-org-chart",
+  "w": 1100,
+  "live": 5093,
+  "clone": 5093,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ai-doesnt-care-about-your-org-chart",
+  "w": 1440,
+  "live": 4260,
+  "clone": 4260,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ai-doesnt-care-about-your-org-chart",
+  "w": 390,
+  "live": 6367,
+  "clone": 6367,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/we-walked-out-with-a-real-deployment-path",
+  "w": 1440,
+  "live": 3665,
+  "clone": 3665,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/we-walked-out-with-a-real-deployment-path",
+  "w": 1100,
+  "live": 4447,
+  "clone": 4447,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/we-walked-out-with-a-real-deployment-path",
+  "w": 390,
+  "live": 5221,
+  "clone": 5221,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-agent-needed-a-map",
+  "w": 390,
+  "live": 7309,
+  "clone": 7309,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-agent-needed-a-map",
+  "w": 1100,
+  "live": 5813,
+  "clone": 5813,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-agent-needed-a-map",
+  "w": 1440,
+  "live": 5111,
+  "clone": 5111,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/open-by-default-competitive-by-design",
+  "w": 1440,
+  "live": 3506,
+  "clone": 3506,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/open-by-default-competitive-by-design",
+  "w": 1100,
+  "live": 4338,
+  "clone": 4338,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/open-by-default-competitive-by-design",
+  "w": 390,
+  "live": 5264,
+  "clone": 5264,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/computer-use",
+  "w": 1440,
+  "live": 4431,
+  "clone": 4431,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-australia",
+  "w": 1440,
+  "live": 3011,
+  "clone": 3011,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-australia",
+  "w": 1100,
+  "live": 3843,
+  "clone": 3843,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-australia",
+  "w": 390,
+  "live": 4409,
+  "clone": 4409,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/computer-use",
+  "w": 1100,
+  "live": 5130,
+  "clone": 5130,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/banco-caja-social",
+  "w": 1440,
+  "live": 4215,
+  "clone": 4215,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/banco-caja-social",
+  "w": 1100,
+  "live": 5008,
+  "clone": 5008,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/banco-caja-social",
+  "w": 390,
+  "live": 6218,
+  "clone": 6219,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/petrol-ofisi",
+  "w": 1440,
+  "live": 3533,
+  "clone": 3533,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/computer-use",
+  "w": 390,
+  "live": 5627,
+  "clone": 5627,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/petrol-ofisi",
+  "w": 1100,
+  "live": 4329,
+  "clone": 4329,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ote",
+  "w": 1100,
+  "live": 5033,
+  "clone": 5033,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/petrol-ofisi",
+  "w": 390,
+  "live": 5035,
+  "clone": 5035,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ote",
+  "w": 1440,
+  "live": 3642,
+  "clone": 3642,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ote",
+  "w": 390,
+  "live": 5781,
+  "clone": 5781,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve",
+  "w": 1440,
+  "live": 4628,
+  "clone": 4628,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve",
+  "w": 1100,
+  "live": 5352,
+  "clone": 5352,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve",
+  "w": 390,
+  "live": 6002,
+  "clone": 6002,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+  "w": 1440,
+  "live": 5686,
+  "clone": 5686,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+  "w": 1100,
+  "live": 6374,
+  "clone": 6374,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ppc-energie",
+  "w": 1100,
+  "live": 5058,
+  "clone": 5058,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ppc-energie",
+  "w": 390,
+  "live": 6096,
+  "clone": 6097,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/ppc-energie",
+  "w": 1440,
+  "live": 4262,
+  "clone": 4262,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+  "w": 390,
+  "live": 8308,
+  "clone": 8308,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-singapore",
+  "w": 1100,
+  "live": 3996,
+  "clone": 3996,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-singapore",
+  "w": 1440,
+  "live": 3164,
+  "clone": 3164,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-singapore",
+  "w": 390,
+  "live": 4728,
+  "clone": 4728,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/telefonica",
+  "w": 1440,
+  "live": 3691,
+  "clone": 3691,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/telefonica",
+  "w": 1100,
+  "live": 4486,
+  "clone": 4486,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/telefonica",
+  "w": 390,
+  "live": 5329,
+  "clone": 5329,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+  "w": 390,
+  "live": 6167,
+  "clone": 6167,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+  "w": 1100,
+  "live": 5835,
+  "clone": 5835,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+  "w": 1440,
+  "live": 5076,
+  "clone": 5076,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+  "w": 1440,
+  "live": 3595,
+  "clone": 3595,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+  "w": 1100,
+  "live": 4377,
+  "clone": 4377,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+  "w": 390,
+  "live": 5254,
+  "clone": 5255,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/bank-hapoalim",
+  "w": 390,
+  "live": 5440,
+  "clone": 5441,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/bank-hapoalim",
+  "w": 1440,
+  "live": 3781,
+  "clone": 3781,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-hard-part-of-ai-agents-isn%E2%80%99t-building-them",
+  "w": 1440,
+  "live": 5915,
+  "clone": 5915,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/bank-hapoalim",
+  "w": 1100,
+  "live": 4576,
+  "clone": 4576,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-hard-part-of-ai-agents-isn%E2%80%99t-building-them",
+  "w": 1100,
+  "live": 6566,
+  "clone": 6566,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-3-levels-of-ai-adoption",
+  "w": 1100,
+  "live": 7001,
+  "clone": 7001,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-3-levels-of-ai-adoption",
+  "w": 1440,
+  "live": 6252,
+  "clone": 6252,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-hard-part-of-ai-agents-isn%E2%80%99t-building-them",
+  "w": 390,
+  "live": 8349,
+  "clone": 8350,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-3-levels-of-ai-adoption",
+  "w": 390,
+  "live": 8826,
+  "clone": 8827,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+  "w": 1440,
+  "live": 3853,
+  "clone": 3853,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+  "w": 1100,
+  "live": 4683,
+  "clone": 4683,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+  "w": 390,
+  "live": 5839,
+  "clone": 5839,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/going-codeless",
+  "w": 390,
+  "live": 7602,
+  "clone": 7602,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/going-codeless",
+  "w": 1100,
+  "live": 6162,
+  "clone": 6162,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-asia-pacific",
+  "w": 1100,
+  "live": 4134,
+  "clone": 4134,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-asia-pacific",
+  "w": 1440,
+  "live": 3301,
+  "clone": 3301,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/latam",
+  "w": 1440,
+  "live": 6344,
+  "clone": 6344,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/going-codeless",
+  "w": 1440,
+  "live": 5435,
+  "clone": 5435,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-asia-pacific",
+  "w": 390,
+  "live": 4881,
+  "clone": 4881,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/latam",
+  "w": 1100,
+  "live": 7153,
+  "clone": 7153,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/latam",
+  "w": 390,
+  "live": 9562,
+  "clone": 9562,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/owning-the-last-mile",
+  "w": 1440,
+  "live": 5363,
+  "clone": 5363,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/owning-the-last-mile",
+  "w": 1100,
+  "live": 6087,
+  "clone": 6087,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/owning-the-last-mile",
+  "w": 390,
+  "live": 7830,
+  "clone": 7830,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-italy",
+  "w": 1440,
+  "live": 3061,
+  "clone": 3061,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-italy",
+  "w": 1100,
+  "live": 3893,
+  "clone": 3893,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-italy",
+  "w": 390,
+  "live": 4445,
+  "clone": 4445,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-learning-curve-you-can%E2%80%99t-skip",
+  "w": 1440,
+  "live": 4530,
+  "clone": 4530,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-learning-curve-you-can%E2%80%99t-skip",
+  "w": 390,
+  "live": 6770,
+  "clone": 6770,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/being-long-ai",
+  "w": 1440,
+  "live": 6009,
+  "clone": 6009,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/being-long-ai",
+  "w": 1100,
+  "live": 6749,
+  "clone": 6749,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-learning-curve-you-can%E2%80%99t-skip",
+  "w": 1100,
+  "live": 5339,
+  "clone": 5339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/being-long-ai",
+  "w": 390,
+  "live": 8722,
+  "clone": 8722,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-gradium",
+  "w": 1440,
+  "live": 8549,
+  "clone": 8549,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-gradium",
+  "w": 1100,
+  "live": 9147,
+  "clone": 9147,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-gradium",
+  "w": 390,
+  "live": 12459,
+  "clone": 12459,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-france",
+  "w": 1100,
+  "live": 5608,
+  "clone": 5608,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-france",
+  "w": 1440,
+  "live": 4776,
+  "clone": 4776,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-execution-gap-no-model-can-close",
+  "w": 1100,
+  "live": 5837,
+  "clone": 5837,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-france",
+  "w": 390,
+  "live": 7066,
+  "clone": 7067,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-execution-gap-no-model-can-close",
+  "w": 390,
+  "live": 7531,
+  "clone": 7531,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/the-execution-gap-no-model-can-close",
+  "w": 1440,
+  "live": 5024,
+  "clone": 5024,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-an-enterprise-platform-to-turn-ai-ambition-into-agents-in-production",
+  "w": 1100,
+  "live": 6680,
+  "clone": 6680,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-an-enterprise-platform-to-turn-ai-ambition-into-agents-in-production",
+  "w": 1440,
+  "live": 5920,
+  "clone": 5920,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-an-enterprise-platform-to-turn-ai-ambition-into-agents-in-production",
+  "w": 390,
+  "live": 8741,
+  "clone": 8741,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fast-iteration-as-a-strategy",
+  "w": 1440,
+  "live": 6592,
+  "clone": 6592,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fast-iteration-as-a-strategy",
+  "w": 1100,
+  "live": 7400,
+  "clone": 7400,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/fast-iteration-as-a-strategy",
+  "w": 390,
+  "live": 9279,
+  "clone": 9279,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-switzerland",
+  "w": 1440,
+  "live": 3054,
+  "clone": 3054,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-switzerland",
+  "w": 1100,
+  "live": 3886,
+  "clone": 3886,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-switzerland",
+  "w": 390,
+  "live": 4481,
+  "clone": 4481,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-netherlands",
+  "w": 1440,
+  "live": 3177,
+  "clone": 3177,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-netherlands",
+  "w": 390,
+  "live": 4656,
+  "clone": 4656,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-netherlands",
+  "w": 1100,
+  "live": 4009,
+  "clone": 4009,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/how-to-identify-the-right-ai-use-cases",
+  "w": 1440,
+  "live": 6265,
+  "clone": 6265,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/how-to-identify-the-right-ai-use-cases",
+  "w": 1100,
+  "live": 7036,
+  "clone": 7036,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/how-to-identify-the-right-ai-use-cases",
+  "w": 390,
+  "live": 9204,
+  "clone": 9204,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-greece",
+  "w": 390,
+  "live": 4569,
+  "clone": 4569,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-greece",
+  "w": 1440,
+  "live": 3149,
+  "clone": 3149,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/build-vs-buy-isn%E2%80%99t-a-technical-choice",
+  "w": 390,
+  "live": 7703,
+  "clone": 7704,
+  "d": 1,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/build-vs-buy-isn%E2%80%99t-a-technical-choice",
+  "w": 1440,
+  "live": 5136,
+  "clone": 5136,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/build-vs-buy-isn%E2%80%99t-a-technical-choice",
+  "w": 1100,
+  "live": 5949,
+  "clone": 5949,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/blog-articles/wonderful-greece",
+  "w": 1100,
+  "live": 3982,
+  "clone": 3982,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+  "w": 1440,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+  "w": 1100,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+  "w": 390,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+  "w": 1440,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+  "w": 1100,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+  "w": 390,
+  "live": 1080,
+  "clone": 1080,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+  "w": 1440,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+  "w": 1100,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+  "w": 390,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+  "w": 1440,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+  "w": 390,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+  "w": 1100,
+  "live": 1339,
+  "clone": 1339,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/thank-you",
+  "w": 1100,
+  "live": 1402,
+  "clone": 1402,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/thank-you",
+  "w": 1440,
+  "live": 1646,
+  "clone": 1646,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ },
+ {
+  "p": "/fcb/x/thank-you",
+  "w": 390,
+  "live": 991,
+  "clone": 991,
+  "d": 0,
+  "errs": [],
+  "fails": [],
+  "nf": false
+ }
+]

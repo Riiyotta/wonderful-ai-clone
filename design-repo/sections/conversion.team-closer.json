@@ -1,0 +1,135 @@
+{
+  "id": "conversion.team-closer",
+  "title": "Team closer",
+  "status": "measured",
+  "source": {
+    "id": "src:Closer#export-default-function-Closer",
+    "file": "src/components/Closer.jsx",
+    "tag": "export default function Closer",
+    "lines": "17-80",
+    "citation": "src/components/Closer.jsx:17-80"
+  },
+  "semantic": {
+    "id": "conversion.team-closer",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Closing recruitment/company block over a background image: H2 and paragraph, then two expanding link cards (About us, Careers).",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "measured headingWordsMax=8 for conversion.team-closer at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 34,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=27 for conversion.team-closer at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "card labels are 2 words"
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "label",
+            "link"
+          ]
+        }
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "body",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "word-reveal-paragraph",
+      "expand-card-spring"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Cards stack 342x118 with a visible white button."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.expanding-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 715.8,
+      "max": 715.8
+    },
+    "samples": [
+      {
+        "route": "/",
+        "instance": 0,
+        "heightPx": 715.8
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

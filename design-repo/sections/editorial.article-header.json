@@ -1,0 +1,151 @@
+{
+  "id": "editorial.article-header",
+  "title": "Article header",
+  "status": "measured",
+  "source": {
+    "id": "src:Article#div-className-ca-head-data-cx-head",
+    "file": "src/pages/content/Article.jsx",
+    "tag": "<div className=\"ca-head\" data-cx=\"head\">",
+    "lines": "143-153",
+    "citation": "src/pages/content/Article.jsx:143-153"
+  },
+  "semantic": {
+    "id": "editorial.article-header",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Article opener: author | date meta row, centred H1 and description.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "author": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxWords": 10,
+            "x-maxWordsEvidence": "author bylines up to 9 words"
+          },
+          "identityRole": {
+            "enum": [
+              "person.real-identity",
+              "person.fictional"
+            ]
+          }
+        },
+        "required": [
+          "name",
+          "identityRole"
+        ]
+      },
+      "date": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "dates"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 25,
+        "x-maxWordsEvidence": "measured headingWordsMax=20 for editorial.article-header at 1440px"
+      },
+      "description": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 30,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=24 for editorial.article-header at 1440px"
+      }
+    },
+    "required": [
+      "title",
+      "date"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "content-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "restack",
+        "detail": "Meta row becomes a column; description opacity .66."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "person.fictional",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 51,
+    "routes": 51,
+    "heightPx": {
+      "min": 115.2,
+      "max": 281.3
+    },
+    "samples": [
+      {
+        "route": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+        "instance": 0,
+        "heightPx": 165.6
+      },
+      {
+        "route": "/blog-articles/announcing-wonderful-ai-gateway",
+        "instance": 0,
+        "heightPx": 187.3
+      },
+      {
+        "route": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+        "instance": 0,
+        "heightPx": 187.3
+      },
+      {
+        "route": "/blog-articles/wonderful-united-kingdom",
+        "instance": 0,
+        "heightPx": 136.9
+      },
+      {
+        "route": "/blog-articles/let-the-field-build-the-product",
+        "instance": 0,
+        "heightPx": 115.2
+      },
+      {
+        "route": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+        "instance": 0,
+        "heightPx": 216
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog-articles/ai-doesnt-care-about-your-org-chart",
+    "/blog-articles/announcing-wonderful-ai-gateway",
+    "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+    "/blog-articles/banco-caja-social",
+    "/blog-articles/bank-hapoalim",
+    "/blog-articles/being-long-ai",
+    "/blog-articles/build-vs-buy-isn’t-a-technical-choice",
+    "/blog-articles/building-an-ai-platform-won’t-transform-your-business"
+  ]
+}

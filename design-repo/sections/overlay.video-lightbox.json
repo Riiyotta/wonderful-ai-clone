@@ -1,0 +1,99 @@
+{
+  "id": "overlay.video-lightbox",
+  "title": "Video lightbox",
+  "status": "measured",
+  "source": {
+    "id": "src:VideoLightbox#export-default-function-VideoLightbox",
+    "file": "src/pages/industries/sections/VideoLightbox.jsx",
+    "tag": "export default function VideoLightbox",
+    "lines": "88-103",
+    "citation": "src/pages/industries/sections/VideoLightbox.jsx:88-103",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/platform/gateway/lightbox.js",
+        "tag": "// Video lightbox, ported",
+        "lines": "1-134",
+        "citation": "src/pages/platform/gateway/lightbox.js:1-134"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "overlay.video-lightbox",
+    "category": "OVERLAY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Modal dialog overlay opened on demand from a play button; runtime UI that never sits in page flow.",
+  "purpose": "Modal video player with minimise-to-dock and close, opened from a play button.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "video.source-loop",
+          "video.generated-loop"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "dialog label"
+      }
+    },
+    "required": [
+      "video"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "lightbox-open"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "size",
+        "detail": "Dialog min(1100, 90vw, 90vh*16/9), 16:9."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".video",
+      "assetRoles": [
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

@@ -1,0 +1,147 @@
+{
+  "id": "media.video-metrics",
+  "title": "Video with metrics",
+  "status": "measured",
+  "source": {
+    "id": "src:VideoSection#export-default-function-VideoSection",
+    "file": "src/pages/industries/sections/VideoSection.jsx",
+    "tag": "export default function VideoSection",
+    "lines": "8-53",
+    "citation": "src/pages/industries/sections/VideoSection.jsx:8-53"
+  },
+  "semantic": {
+    "id": "media.video-metrics",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Full-height customer-story video background with a title, Watch now button, description and three animated metrics.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 14,
+        "x-maxWordsEvidence": "measured headingWordsMax=11 for media.video-metrics at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 23,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=18 for media.video-metrics at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "metrics": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "metric values like \"75%\""
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "metric labels"
+            }
+          },
+          "required": [
+            "value",
+            "label"
+          ]
+        }
+      },
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "video.source-loop",
+          "video.generated-loop"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "cta",
+      "metrics",
+      "video"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "video-loop",
+      "counter-up",
+      "lightbox-open"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.industry",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "crop",
+        "detail": "9:16 loop below 1400px."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Metrics wrap into rows."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".video",
+      "assetRoles": [
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [
+    "component.stat-block",
+    "component.video-frame"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 900,
+      "max": 900
+    },
+    "samples": [
+      {
+        "route": "/industries/utilities",
+        "instance": 0,
+        "heightPx": 900
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/industries/utilities"
+  ]
+}

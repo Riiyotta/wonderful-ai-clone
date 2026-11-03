@@ -1,0 +1,91 @@
+{
+ "slug": "being-long-ai",
+ "path": "/blog-articles/being-long-ai",
+ "category": "Perspectives",
+ "pageTitle": "Being Long On AI",
+ "author": "Roey Lalazar",
+ "date": "Jan 19, 2026",
+ "datetime": "2026-01-19T00:00:00.000Z",
+ "title": "Being Long On AI",
+ "titleTag": "h1",
+ "description": "How to Build Products that Self-Improve",
+ "hero": {
+  "image": {
+   "src": "/assets/jJaLOOY2WbMyRbAmxbJCp1E2Udc.png",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">The riskiest product decisions in AI rarely look risky when you make them.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Models are improving rapidly, but they’re still imperfect. They miss edge cases. They sometimes fail to follow instructions. Faced with that reality, teams do what good engineers have always done - they design around the limitations. This results in products based on decision trees and sub-agents, rigid workflows and deterministic fallbacks, and guardrails everywhere.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">I get it. In many cases, taking this approach is what makes a system usable in the short term. It reduces risk, increases predictability, and helps teams ship something that works <em class=\"framer-text\">today</em>. But there’s a distinction here that I think the industry is still underestimating - and it matters hugely when it comes to AI.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Compensating for Models vs. Baking Their Limits Into Your Product</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Not all “pragmatic” decisions are the same. Some decisions acknowledge current model limitations while keeping the architecture flexible. Others quietly bake those limitations into the foundation of the system itself. The second category is where real technical debt starts to accumulate.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In AI, the most expensive technical debt isn’t messy code or missing abstractions. It’s architectural assumptions that only make sense if models don’t get significantly better.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In investing, being “long” on something simply means believing in its long-term trajectory. Most people in AI would say they’re long on model improvement. The interesting question isn’t whether you believe that, it’s whether your product architecture actually <strong class=\"framer-text\">reflects</strong> it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Designing for Model Improvement</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Designing for model improvement means accepting real short-term pain. Early implementations are harder. You spend more time wrestling with edge cases, like writing crazy ‘YOU MUST’ prompts when the model doesn’t follow instructions. You sweat blood to make systems work when the models aren’t quite there yet. But you do that work once, rather than repeatedly rewriting your architecture every time models cross another capability threshold.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The alternative feels safer early on. You deliver faster. You control behavior more tightly. But over time, those safety mechanisms harden into constraints. When models improve - as they consistently have - your system starts fighting its own design. To take the example above, if you added deterministic behavior instead of fighting the prompt with ‘you must,’ once the models improve, you would be unable to benefit. Your agents wouldn’t be able to be fully autonomous because you would have hamstrung your infra with determinism.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Those same constraints often show up at the model boundary. When you design around the quirks of OpenAI or Anthropic or any other model, you’re not just compensating for today’s behavior - you’re encoding an assumption about <em class=\"framer-text\">which</em> model you’ll be using. Switching providers down the line stops being a configuration choice and starts looking like a rewrite.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In practice, this tension shows up in very concrete product decisions, as it did for us, from how we chose to build our agents, to betting on fully-generative vs. deterministic workflows, and ReAg vs. RAG.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Dynamic Skills Instead of Sub-Agents</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">A common pattern in agent systems until recently was to split behavior across multiple sub-agents. A year ago this was the mainstream approach. The reasoning was straightforward: models couldn’t reliably decide which capability to use, so you routed requests deterministically.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We made a different assumption. Most of what people call “agent logic” actually lives inside the model. The difference between many sub-agents is often just the prompt. If a model is capable of reasoning, it should be able to load and unload the right instructions dynamically based on context.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But when we made this decision, that assumption wasn’t fully true yet. Models struggled with instruction following and context management. Making this work required a huge amount of engineering effort - it would have been easier to use orchestration layers and sub-agent hierarchies.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But doing so would have introduced permanent complexity for what we believed was a temporary limitation. So we built our agent architecture on dynamic skills, and as models improved, that bet paid off. The architecture didn’t need to be unwound. It simply became easier to operate, and dynamic skills have become the industry standard.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s what designing for model improvement looks like in practice: doing the hard thing early so you don’t have to undo the “safe” thing later.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Refusing the Determinism of Decision Trees</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Decision trees feel enterprise-friendly. They look auditable and controllable, and give teams the sense that behavior is fully specced out with no surprises.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The problem is that humans don’t operate this way. People don’t follow decision trees. They reason. They adapt. They handle ambiguity. Deterministic workflows are a workaround for agents that can’t be trusted to do that yet.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Choosing not to encode that workaround into the product makes early systems harder to build. Getting agents to follow complex instructions reliably is genuinely difficult, especially when models are less capable.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But that scaffolding comes at a cost. Once you design autonomy out of the system, adding it back later is extremely hard. You end up with agents that can only handle the simplest cases - and break down as soon as real-world complexity shows up.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Betting Early on ReAG</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">A similar dynamic showed up with retrieval.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">For a long time, traditional RAG approaches were considered safer. They were deterministic. They avoided hallucinations. LLM-based reasoning over large contexts was expensive and, early on, imperfect.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Relying on ReAG came with real costs: higher compute, more engineering work to manage accuracy and performance, and a willingness to tolerate early imperfections. We had to run multiple LLMs concurrently, and then run another one just to summarize the findings across all of them. But the underlying assumption was straightforward: context windows would grow, reasoning would improve, costs would fall, and accuracy would increase.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s exactly what happened. Because the architecture was already aligned with where models were heading, there was no painful migration later. No legacy retrieval logic to unwind. The system simply benefited from the improvement curve.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">How AI Products Should Be Evaluated</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The broader implication here isn’t about specific techniques. It’s about how we evaluate AI systems altogether. A useful question to ask of any AI product today isn’t just <em class=\"framer-text\">“what does it do?”</em> but <em class=\"framer-text\">“what assumptions does it make about model limitations?”</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">Which parts of the system exist purely to compensate for today’s weaknesses? Which of those parts would become unnecessary, or actively harmful, if models got meaningfully better? Products that look stable early on often age poorly. Products that feel rougher early but are aligned with model trajectories tend to compound in strength.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The Cost of Playing It Safe</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">In AI, “playing it safe” often means baking yesterday’s constraints into today’s architecture. That can buy short-term confidence, but can also create long-term fragility.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The hardest part of building AI products right now isn’t integrating the latest model. It’s having the conviction to design as if improvement is inevitable, and the discipline to avoid locking in assumptions you already suspect won’t hold. The idea that models will keep getting better isn’t new. What’s still rare is designing systems as if that belief is actually true.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That tradeoff is uncomfortable. But in my experience, it’s the only one that allows you to succeed long term.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

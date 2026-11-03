@@ -1,0 +1,26 @@
+/* CLONE_SPEC §2.4 / §4.4 — scroll-linked word colour reveal */
+.rv-p {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  text-wrap: pretty;
+  font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif;
+  font-size: 62px;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.05em;
+  text-transform: none;
+}
+.rv-word {
+  display: inline-block;
+  margin-right: 0.25em;
+  margin-bottom: 0.1em;
+  will-change: color;
+  color: rgba(144, 144, 144, 0.26);
+}
+.rv-group { position: relative; display: inline; cursor: default; }
+@media (min-width: 880px) and (max-width: 1439.98px) { .rv-p { font-size: 52px; } } /* live 1100: 52/59.8/-2.6 */
+@media (max-width: 879.98px) {
+  .rv-p { font-size: 28px; }
+  .rv-word { margin-right: 0.2em; } /* live M: 5.6px at 28px */
+}

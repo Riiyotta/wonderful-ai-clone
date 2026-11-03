@@ -1,0 +1,26 @@
+{
+  "id": "primitive.tab-chip",
+  "kind": "primitive",
+  "title": "Tab chip",
+  "purpose": "Pill-shaped tab inside a rounded track (industries, phases, blog filter).",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 3
+    },
+    "active": {
+      "type": "boolean"
+    }
+  },
+  "tokens": [
+    "radius.tab",
+    "component.tab.chip-padding",
+    "color.surface.chip"
+  ],
+  "source": {
+    "file": "src/pages/content/Blog.jsx",
+    "tag": "function Tabs",
+    "lines": "39-62",
+    "citation": "src/pages/content/Blog.jsx:39-62"
+  }
+}

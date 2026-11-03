@@ -1,0 +1,164 @@
+{
+  "id": "media.banner-image",
+  "title": "Banner image",
+  "status": "measured",
+  "source": {
+    "id": "src:Article#function-Banner",
+    "file": "src/pages/content/Article.jsx",
+    "tag": "function Banner",
+    "lines": "61-73",
+    "citation": "src/pages/content/Article.jsx:61-73",
+    "variantSources": {
+      "case-study": {
+        "file": "src/pages/industries/CaseStudyPage.jsx",
+        "tag": "<div className=\"cs-banner\"",
+        "lines": "79-81",
+        "citation": "src/pages/industries/CaseStudyPage.jsx:79-81"
+      }
+    }
+  },
+  "semantic": {
+    "id": "media.banner-image",
+    "category": "MEDIA"
+  },
+  "retrievalEligible": true,
+  "purpose": "Wide rounded banner image (optionally a looping video) under an article or case-study header.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "article",
+    "case-study"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      },
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "video.source-loop",
+          "video.generated-loop"
+        ]
+      }
+    },
+    "required": [
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "card-image-appear",
+      "video-loop",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "resize",
+        "detail": "100% wide, aspect 1.7778."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    },
+    {
+      "field": ".video",
+      "assetRoles": [
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 54,
+    "routes": 54,
+    "heightPx": {
+      "min": 400,
+      "max": 598.5
+    },
+    "samples": [
+      {
+        "route": "/case-studies/financial-services",
+        "variant": "case-study",
+        "instance": 0,
+        "heightPx": 400
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "variant": "case-study",
+        "instance": 0,
+        "heightPx": 400
+      },
+      {
+        "route": "/case-studies/healthcare",
+        "variant": "case-study",
+        "instance": 0,
+        "heightPx": 400
+      },
+      {
+        "route": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+        "variant": "article",
+        "instance": 0,
+        "heightPx": 598.5
+      },
+      {
+        "route": "/blog-articles/announcing-wonderful-ai-gateway",
+        "variant": "article",
+        "instance": 0,
+        "heightPx": 598.5
+      },
+      {
+        "route": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+        "variant": "article",
+        "instance": 0,
+        "heightPx": 598.5
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog-articles/ai-doesnt-care-about-your-org-chart",
+    "/blog-articles/announcing-wonderful-ai-gateway",
+    "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+    "/blog-articles/banco-caja-social",
+    "/blog-articles/bank-hapoalim",
+    "/blog-articles/being-long-ai",
+    "/blog-articles/build-vs-buy-isn’t-a-technical-choice",
+    "/blog-articles/building-an-ai-platform-won’t-transform-your-business"
+  ]
+}

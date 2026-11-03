@@ -1,0 +1,153 @@
+{
+  "id": "features.expanding-card-pair",
+  "title": "Expanding card pair",
+  "status": "measured",
+  "source": {
+    "id": "src:Deployed#export-default-function-Deployed",
+    "file": "src/pages/product/systems/Deployed.jsx",
+    "tag": "export default function Deployed",
+    "lines": "45-63",
+    "citation": "src/pages/product/systems/Deployed.jsx:45-63",
+    "variantSources": {
+      "linked": {
+        "file": "src/pages/platform/PlatformCards.jsx",
+        "tag": "export default function PlatformCards",
+        "lines": "13-63",
+        "citation": "src/pages/platform/PlatformCards.jsx:13-63"
+      }
+    }
+  },
+  "semantic": {
+    "id": "features.expanding-card-pair",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 over two side-by-side cards; hovering the collapsed card expands it to reveal its image and copy.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "hover-swap",
+    "linked"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 9,
+        "x-maxWordsEvidence": "measured headingWordsMax=7 for features.expanding-card-pair at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 8,
+              "x-maxWordsEvidence": "card titles up to 6 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 33,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=26 for features.expanding-card-pair at 1440px"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "image"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "expand-card-spring"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "expand",
+        "detail": "Both cards expanded, side by side (tablet) or stacked (mobile)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.expanding-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 705.8,
+      "max": 945.8
+    },
+    "samples": [
+      {
+        "route": "/ai-transformation",
+        "variant": "linked",
+        "instance": 0,
+        "heightPx": 705.8
+      },
+      {
+        "route": "/systems",
+        "variant": "hover-swap",
+        "instance": 0,
+        "heightPx": 945.8
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-transformation",
+    "/systems"
+  ]
+}

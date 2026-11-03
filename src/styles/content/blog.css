@@ -1,0 +1,53 @@
+/* /blog (Framer page jVSVd). Page breakpoints: desktop >=1200, tablet 810–1199.98, mobile <=809.98. */
+.cb-page { flex-flow: column; place-content: center flex-start; align-items: center; gap: 0; width: 100%; padding: 0; display: flex; position: relative; overflow: clip; background-color: #fff; }
+.cb-content { height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 0; width: 100%; padding: 0; display: flex; position: relative; }
+.cb-all { --border-bottom-width: 1px; --border-color: var(--token-7dd2d051-a767-40b0-9ba0-2e67df2a03f1); --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; background: linear-gradient(#0000 50.1443%, #fff 100%); flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 60px; width: 100%; max-width: 1440px; height: min-content; padding: 144px 60px 60px; display: flex; position: relative; overflow: hidden; }
+.cb-feat-grid { flex: none; grid-template-columns: repeat(1, minmax(50px, 1fr)); grid-auto-rows: minmax(0, 1fr); justify-content: center; gap: 30px 10px; width: 100%; height: min-content; padding: 0; display: grid; position: relative; }
+.cb-feat-link { flex-flow: column; flex: none; place-content: flex-start; place-self: start; align-items: flex-start; gap: 20px; width: 100%; height: min-content; padding: 0; text-decoration: none; display: flex; position: relative; color: rgb(0, 0, 238); }
+.cb-feat-wrap { flex: none; width: 100%; height: auto; position: relative; }
+.cb-head { height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 24px; width: 100%; padding: 0; display: flex; position: relative; }
+.cb-head-text { height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 8px; width: 100%; padding: 0; display: flex; position: relative; }
+.cb-h1 { --framer-link-text-color: #09f; --framer-link-text-decoration: underline; white-space: pre; flex: none; width: auto; height: auto; position: relative; }
+.cb-sub { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 100%; height: auto; position: relative; }
+.cb-divider { background-color: var(--token-f04b9278-3483-40a1-b7ce-6caada87e319); flex: none; width: 100%; height: 1px; position: relative; }
+.cb-tabs { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 8px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+.cb-tabs-row { flex-flow: wrap; flex: none; place-content: center flex-start; align-items: center; gap: 10px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+.cb-tab-wrap { flex: none; width: auto; height: auto; position: relative; }
+.cb-tab { cursor: pointer; flex-flow: row; place-content: flex-start; align-items: flex-start; gap: 10px; width: min-content; height: min-content; padding: 4px 12px; display: flex; position: relative; border-radius: 1000px; background-color: rgba(0, 0, 0, 0); border: 0; outline: none; font: inherit; }
+.cb-tab.is-active { background-color: var(--token-b61d08c7-7fe6-4a74-ad14-5aa623fd7761, rgb(245, 245, 245)); }
+.cb-tab-title { white-space: pre; flex: none; width: auto; height: auto; position: relative; --extracted-r6o4lv: rgb(110, 110, 110); }
+.cb-tab.is-active .cb-tab-title { --extracted-r6o4lv: var(--token-a8e7404c-6b78-46b2-a6de-2abafc63f26f, rgb(0, 0, 0)); }
+.cb-grid { flex: none; grid-template-columns: repeat(auto-fill, minmax(409px, 1fr)); grid-auto-rows: minmax(0, 1fr); justify-content: center; gap: 50px 30px; width: 100%; height: min-content; padding: 0; display: grid; position: relative; }
+.cb-card { flex-flow: column; flex: none; place-content: flex-start; place-self: start; align-items: flex-start; gap: 24px; width: 100%; height: min-content; padding: 0; text-decoration: none; display: flex; position: relative; color: rgb(0, 0, 238); }
+.cb-card-img { aspect-ratio: 1.7778; border-radius: 8px; flex: none; width: 100%; height: auto; position: relative; }
+.cb-card-text { height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 8px; width: 100%; padding: 0 0 0 8px; display: flex; position: relative; }
+.cb-card-title { --framer-text-wrap-override: none; --text-truncation-display-inline-for-safari-16: inline; --text-truncation-display-none-for-safari-16: none; --text-truncation-line-break-for-safari-16: "\a "; -webkit-line-clamp: 2; max-width: 80%; height: auto; overflow: clip; -webkit-box-orient: vertical; flex: none; width: 100%; display: -webkit-box; position: relative; }
+.cb-card-date { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 440px; height: auto; position: relative; }
+
+/* Featured card = shared Card component, variant 18fb6ag (desktop/tablet) / bj21h1 (phone) */
+.cc-card.v-feat { flex-flow: wrap; justify-content: flex-start; gap: 40px; width: 100%; }
+.cc-card.v-feat .cc-image { width: 823px; min-width: 640px; }
+.cc-card.v-feat .cc-text { flex: 1 0 0; align-self: stretch; gap: 12px; width: 1px; min-width: 100px; max-width: 33%; height: auto; padding: 0 24px 0 0; }
+.cc-card.v-feat .cc-title { order: 1; }
+.cc-card.v-feat .cc-date { order: 0; }
+.cc-card.v-feat .cc-desc { order: 2; }
+.cc-card.v-phone .cc-image { min-width: 0; }
+.cc-card.v-phone .cc-text { gap: 12px; min-width: 100px; max-width: 100%; }
+.cc-card.v-phone .cc-title { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; order: 0; }
+.cc-card.v-phone .cc-desc { order: 1; }
+.cc-card.v-phone .cc-date { order: 2; }
+.cc-desc { --extracted-r6o4lv: var(--token-3ac1333f-ede6-4ae6-bc1c-88560a943b79, rgb(107, 107, 107)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .cb-all { padding: 140px 40px 60px; }
+  .cb-feat-link { flex-direction: row; }
+  .cb-feat-wrap { flex: 1 0 0; width: 1px; }
+}
+@media (max-width: 809.98px) {
+  .cb-all { gap: 40px; padding: 130px 20px 40px; }
+  .cb-feat-grid { flex-flow: column; align-content: flex-start; align-items: flex-start; gap: 24px 10px; display: flex; }
+  .cb-feat-link { align-self: unset; }
+  .cb-feat-wrap { order: 0; }
+  .cb-head { padding: 60px 0 0; }
+  .cb-grid { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+}

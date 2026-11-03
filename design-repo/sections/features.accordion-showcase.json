@@ -1,0 +1,141 @@
+{
+  "id": "features.accordion-showcase",
+  "title": "Accordion showcase",
+  "status": "measured",
+  "source": {
+    "id": "src:RealWork#export-default-function-RealWork",
+    "file": "src/pages/product/agents/RealWork.jsx",
+    "tag": "export default function RealWork",
+    "lines": "115-122",
+    "citation": "src/pages/product/agents/RealWork.jsx:115-122"
+  },
+  "semantic": {
+    "id": "features.accordion-showcase",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 + subtitle and a one-open accordion of capabilities beside a large image.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "measured headingWordsMax=5 for features.accordion-showcase at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 23,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=18 for features.accordion-showcase at 1440px"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "item titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 23,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=18 for features.accordion-showcase at 1440px"
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "items",
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "accordion-spring",
+      "static"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "flatten",
+        "detail": "Static list, all items open, no \"Tested\" item."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.accordion-item"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 862.7,
+      "max": 862.7
+    },
+    "samples": [
+      {
+        "route": "/agents",
+        "instance": 0,
+        "heightPx": 862.7
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/agents"
+  ]
+}

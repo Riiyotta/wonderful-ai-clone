@@ -1,0 +1,91 @@
+{
+ "slug": "the-experience-problem-your-ai-agent-didnt-solve",
+ "path": "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve",
+ "category": "Product",
+ "pageTitle": "The experience problem your AI agent didn't solve",
+ "author": "The Wonderful Team ",
+ "date": "May 19, 2026",
+ "datetime": "2026-05-19T00:00:00.000Z",
+ "title": "The experience problem your AI agent didn't solve",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/riMu7CKt8tHbHiPutwCBl3fCKU.png",
+   "width": 3840,
+   "height": 2160,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Enterprise AI agents can understand intent, pull from complex back-end systems, handle nuance across languages, and resolve issues that used to require a human. But what they hand back to the customer is still, in many cases, a few lines of text.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">So you get a capable AI explaining an overcharge in a paragraph, when the customer needs to see it on their invoice, or describing which stadium seats have a good view when a fan needs a map to pick their seat. <br class=\"framer-text\"><br class=\"framer-text\">The agents got better, but the experience didn’t.</p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><br class=\"framer-text trailing-break\"></h3><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">When the answer isn’t enough</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Text is a better medium for communication than for completion. A chat interface was built to exchange messages, not for the moment when a customer needs to compare options or take action without leaving the conversation.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent's answer is already specific: It understood the customer's question, retrieved their data, and determined exactly what they needed. The problem is what comes next. A comparison table converted into bullet points loses the comparison. A spending chart reduced to sentences loses the one thing a chart is for: seeing patterns at a glance.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"> The customer ends up doing the translation themselves: leave the chat, find the right screen, act on what they just read. The agent finished its turn. But the work isn’t done.</p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><br class=\"framer-text trailing-break\"></h3><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The shift: Every conversation gets a dynamic interface</strong></h3><img alt=\"\" width=\"960\" height=\"540\" src=\"/assets/gGnOo3p5t1i4qzLu5ZICBC2EFE.png\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:1920 / 1080\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\"><br class=\"framer-text\"></strong>Wonderful agents now deliver dynamic, interactive interfaces directly inside the conversation. When a customer states their intent, the agent determines not just the answer but the form it should take: a spend breakdown chart, a plan comparison table, a seat map with pricing tiers, a booking flow. And because the agent knows who it’s talking to, the interface reflects that: a member sees their next upgrade tier, a non-member sees an invitation to join.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A banking customer asking about mortgage options gets a simulation widget inside the chat: adjustable loan terms, live rate comparisons, monthly payment calculations, and scenario modeling side by side. They can explore options and act without leaving the chat.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A customer asking about last month’s spending gets a breakdown chart. They ask about the month before, and the chart updates. They ask to compare two upgrade plans, and an interactive table appears. The interface adapts to each follow-up as naturally as the conversation does.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Every interface is generated from the company's own design system: their fonts, their color palette, their components, and their imagery. The agent selects from components the enterprise has already approved, and arranges them for what the moment calls for, so the customer gets something tailored to this moment, that looks like the brand they're already talking to. </p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><br class=\"framer-text trailing-break\"></h3><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The downstream effects</strong></h3><img alt=\"\" width=\"964\" height=\"544\" src=\"/assets/tmIfT06b0TUsabOXdVTkAEEZJSQ.png\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:1928 / 1088\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\"><br class=\"framer-text\"></strong>When the interface adapts to what a customer is actually doing, every next moment in the conversation becomes more relevant. The upsell opportunity surfaces from the context of what they just compared, rather than arriving as a generic prompt at the end of a resolution. Personalized content comes from what they said and did in this conversation, not from a customer segment.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent knows what customers looked at and what they didn't choose. That context is what makes the next moment in the interaction actually useful, and is the practical difference between an agent that handles volume and one that drives outcomes.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

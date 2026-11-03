@@ -1,0 +1,164 @@
+{
+  "id": "social-proof.case-study-carousel",
+  "title": "Case-study carousel",
+  "status": "measured",
+  "source": {
+    "id": "src:CaseStudies#export-default-function-CaseStudies",
+    "file": "src/components/CaseStudies.jsx",
+    "tag": "export default function CaseStudies",
+    "lines": "68-126",
+    "citation": "src/components/CaseStudies.jsx:68-126",
+    "variantSources": {
+      "dark": {
+        "file": "src/pages/product/agents/AgentCases.jsx",
+        "tag": "export default function AgentCases",
+        "lines": "71-111",
+        "citation": "src/pages/product/agents/AgentCases.jsx:71-111"
+      }
+    }
+  },
+  "semantic": {
+    "id": "social-proof.case-study-carousel",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "Horizontal scroll of square customer-outcome cards (image, outcome headline, customer logo) with arrow buttons.",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "variants": [
+    "light",
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 9,
+        "x-maxWordsEvidence": "measured headingWordsMax=7 for social-proof.case-study-carousel at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "x-maxWordsEvidence": "card titles up to 8 words (CLONE_SPEC.md 2.3)"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            },
+            "logo": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "logo.customer",
+                "logo.fictional-company"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "image",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "carousel-scroll"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Cards 330x391, arrows hidden, H2 34px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    },
+    {
+      "field": ".cards[].logo",
+      "assetRoles": [
+        "logo.customer",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-company",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.case-card",
+    "component.carousel-arrows"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 840.4,
+      "max": 996.4
+    },
+    "samples": [
+      {
+        "route": "/",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 840.4
+      },
+      {
+        "route": "/agents",
+        "variant": "dark",
+        "instance": 0,
+        "heightPx": 996.4
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/agents"
+  ]
+}

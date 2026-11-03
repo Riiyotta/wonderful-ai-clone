@@ -1,0 +1,163 @@
+{
+  "id": "social-proof.logo-grid",
+  "title": "Customer logo grid",
+  "status": "measured",
+  "source": {
+    "id": "src:Clients#export-default-function-Clients",
+    "file": "src/components/Clients.jsx",
+    "tag": "export default function Clients",
+    "lines": "40-77",
+    "citation": "src/components/Clients.jsx:40-77",
+    "variantSources": {
+      "strip": {
+        "file": "src/pages/industries/sections/LogoStrip.jsx",
+        "tag": "export default function LogoStrip",
+        "lines": "17-39",
+        "citation": "src/pages/industries/sections/LogoStrip.jsx:17-39"
+      }
+    }
+  },
+  "semantic": {
+    "id": "social-proof.logo-grid",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "Centred \"trusted by\" heading over a grid of grey logo cards (12 on home, 6 or 8 on industry pages).",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "grid-12",
+    "strip"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for social-proof.logo-grid at 1440px"
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 6,
+        "maxItems": 12,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "logo.customer",
+            "logo.fictional-company"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "logos"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "regrid",
+        "detail": "Home: 3 columns x 4 rows; industries: 2 columns."
+      },
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "Industries 6-logo strip becomes 3x2."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".logos[]",
+      "assetRoles": [
+        "logo.customer",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-company",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.logo-card",
+    "component.section-heading"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 8,
+    "routes": 8,
+    "heightPx": {
+      "min": 400.5,
+      "max": 500.5
+    },
+    "samples": [
+      {
+        "route": "/",
+        "variant": "grid-12",
+        "instance": 0,
+        "heightPx": 400.5
+      },
+      {
+        "route": "/industries/airlines",
+        "variant": "strip",
+        "instance": 0,
+        "heightPx": 500.5
+      },
+      {
+        "route": "/industries/retail",
+        "variant": "strip",
+        "instance": 0,
+        "heightPx": 500.5
+      },
+      {
+        "route": "/industries/healthcare",
+        "variant": "strip",
+        "instance": 0,
+        "heightPx": 416.5
+      },
+      {
+        "route": "/industries/telecommunication",
+        "variant": "strip",
+        "instance": 0,
+        "heightPx": 500.5
+      },
+      {
+        "route": "/industries/banking",
+        "variant": "strip",
+        "instance": 0,
+        "heightPx": 500.5
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare",
+    "/industries/insurance",
+    "/industries/retail",
+    "/industries/telecommunication",
+    "/industries/utilities"
+  ]
+}

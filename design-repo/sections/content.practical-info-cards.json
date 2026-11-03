@@ -1,0 +1,136 @@
+{
+  "id": "content.practical-info-cards",
+  "title": "Practical info cards",
+  "status": "measured",
+  "source": {
+    "id": "src:FcbMatchday#section-className-fcb-info",
+    "file": "src/pages/regional/FcbMatchday.jsx",
+    "tag": "<section className=\"fcb-info\">",
+    "lines": "122-148",
+    "citation": "src/pages/regional/FcbMatchday.jsx:122-148"
+  },
+  "semantic": {
+    "id": "content.practical-info-cards",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Event logistics: a fit-to-width title and 3-4 cards (arrival, venue, timing) over a masked pitch image.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "fit-text title"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "card titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=8 for content.practical-info-cards at 1440px"
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "2-column grid."
+      },
+      {
+        "at": "mobile",
+        "change": "scroll",
+        "detail": "Horizontal scroll of 320x430 cards."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 925,
+      "max": 925
+    },
+    "samples": [
+      {
+        "route": "/fcb/x/slavia-prague",
+        "instance": 0,
+        "heightPx": 925
+      },
+      {
+        "route": "/fcb/x/arsenal",
+        "instance": 0,
+        "heightPx": 925
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/fcb/x/arsenal",
+    "/fcb/x/slavia-prague"
+  ]
+}

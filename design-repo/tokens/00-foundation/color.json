@@ -1,0 +1,161 @@
+{
+  "$description": "Foundation color tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "color",
+  "tokens": {
+    "color.black": {
+      "value": "#000000",
+      "evidence": "tailwind.config.js:15",
+      "usage": "hero/AIOS mobile surface, primary pill text"
+    },
+    "color.band": {
+      "value": "#080808",
+      "evidence": "tailwind.config.js:16",
+      "usage": "dark band, footer, product pages surface"
+    },
+    "color.white": {
+      "value": "#ffffff",
+      "evidence": "src/index.css:6",
+      "usage": "page background, white pills"
+    },
+    "color.offwhite": {
+      "value": "#fafafa",
+      "evidence": "tailwind.config.js:17",
+      "usage": "headline text on dark, logo cards, legal page bg"
+    },
+    "color.chip": {
+      "value": "#f5f5f5",
+      "evidence": "tailwind.config.js:18",
+      "usage": "tab track, arrow buttons, hover rows, closer card"
+    },
+    "color.ink.default": {
+      "value": "#171719",
+      "evidence": "tailwind.config.js:19",
+      "usage": "primary text on light"
+    },
+    "color.ink.900": {
+      "value": "#141414",
+      "evidence": "tailwind.config.js:19",
+      "usage": "active tab text, arrow icon stroke"
+    },
+    "color.ink.700": {
+      "value": "#393939",
+      "evidence": "tailwind.config.js:19",
+      "usage": "body/rich text, section H2 on light"
+    },
+    "color.ink.600": {
+      "value": "#494949",
+      "evidence": "tailwind.config.js:19",
+      "usage": "nav links (light variant)"
+    },
+    "color.ink.500": {
+      "value": "#4a4a4a",
+      "evidence": "tailwind.config.js:19",
+      "usage": "reveal statement final word colour"
+    },
+    "color.ink.400": {
+      "value": "#6e6e6e",
+      "evidence": "tailwind.config.js:19",
+      "usage": "inactive tab text"
+    },
+    "color.ink.300": {
+      "value": "#777777",
+      "evidence": "tailwind.config.js:19",
+      "usage": "muted descriptions"
+    },
+    "color.grey.6b": {
+      "value": "#6b6b6b",
+      "evidence": "src/styles/content/richtext.gen.css:2",
+      "usage": "blog/about secondary copy"
+    },
+    "color.grey.69": {
+      "value": "#696969",
+      "evidence": "extraction/measured-values.json#/histograms/color rgb(105, 105, 105) x158",
+      "usage": "card dates"
+    },
+    "color.grey.99": {
+      "value": "#999999",
+      "evidence": "extraction/measured-values.json#/histograms/color rgb(153, 153, 153) x53",
+      "usage": "quote role, job meta"
+    },
+    "color.grey.9e": {
+      "value": "#9e9e9e",
+      "evidence": "extraction/measured-values.json#/histograms/color rgb(158, 158, 158) x30",
+      "usage": "feature subtitles on dark"
+    },
+    "color.grey.e6": {
+      "value": "#e6e6e6",
+      "evidence": "extraction/measured-values.json#/histograms/bg rgb(230, 230, 230) x82",
+      "usage": "article/country dividers"
+    },
+    "color.alpha.white-70": {
+      "value": "rgba(255,255,255,0.7)",
+      "evidence": "extraction/measured-values.json#/histograms/color x2983",
+      "usage": "muted text on dark, footer links"
+    },
+    "color.alpha.white-18": {
+      "value": "rgba(255,255,255,0.18)",
+      "evidence": "extraction/measured-values.json#/histograms/bg x73",
+      "usage": "dividers on dark"
+    },
+    "color.alpha.white-54": {
+      "value": "rgba(255,255,255,0.54)",
+      "evidence": "CLONE_SPEC.md:76",
+      "usage": "lattice dots"
+    },
+    "color.alpha.black-10": {
+      "value": "rgba(0,0,0,0.1)",
+      "evidence": "extraction/measured-values.json#/histograms/bg x15",
+      "usage": "dividers on light"
+    },
+    "color.alpha.black-80": {
+      "value": "rgba(0,0,0,0.8)",
+      "evidence": "extraction/measured-values.json#/histograms/color x669",
+      "usage": "lead copy on light (about, thank-you)"
+    },
+    "color.alpha.ink-80": {
+      "value": "rgba(31,31,31,0.8)",
+      "evidence": "extraction/measured-values.json#/histograms/color x193",
+      "usage": "article meta author, light footer links"
+    },
+    "color.alpha.ink-60": {
+      "value": "rgba(49,49,49,0.6)",
+      "evidence": "extraction/measured-values.json#/histograms/color x114",
+      "usage": "intro grey, accordion numbers"
+    },
+    "color.alpha.reveal-start": {
+      "value": "rgba(144,144,144,0.26)",
+      "evidence": "CLONE_SPEC.md:256",
+      "usage": "scroll reveal initial word colour"
+    },
+    "color.accent.orange": {
+      "value": "#fc762f",
+      "evidence": "tailwind.config.js:20",
+      "usage": "lattice dots (data accent)"
+    },
+    "color.accent.blue": {
+      "value": "#1c7fff",
+      "evidence": "src/pages/platform/Deployment.jsx:182",
+      "usage": "phase progress fill and percentage"
+    },
+    "color.blue.link": {
+      "value": "#3286f5",
+      "evidence": "src/styles/company/richtext.css:36",
+      "usage": "rich-text links (legal/notice)"
+    },
+    "color.blue.legal-index": {
+      "value": "#0066cc",
+      "evidence": "src/styles/content/legal.css:38",
+      "usage": "legal index policy links"
+    },
+    "color.focus": {
+      "value": "#0099ff",
+      "evidence": "src/styles/company/contact.css:45",
+      "usage": "input focus ring"
+    },
+    "color.legal-band": {
+      "value": "#f7faff",
+      "evidence": "src/styles/content/lightfooter.css:5",
+      "usage": "light footer band"
+    }
+  }
+}

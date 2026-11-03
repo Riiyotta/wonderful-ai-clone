@@ -1,0 +1,91 @@
+{
+ "slug": "building-an-ai-platform-won’t-transform-your-business",
+ "path": "/blog-articles/building-an-ai-platform-won’t-transform-your-business",
+ "category": "Perspectives",
+ "pageTitle": "Building an AI Platform Won’t Transform Your Business",
+ "author": "Roey Lalazar ",
+ "date": "Aug 31, 2026",
+ "datetime": "2026-08-31T00:00:00.000Z",
+ "title": "Building an AI Platform Won’t Transform Your Business",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/UawiIY7xYnvEzlgEHXIUB9jDUM.png",
+   "width": 1080,
+   "height": 720,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">The biggest mistake I see is companies believing they're in the AI platform business when they're actually in the business they're trying to improve with AI. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">The first thing to make clear is that it’s a false dichotomy. Most enterprises will both build and buy. The trick is knowing which layers are worth building and which are worth buying. What I’ve seen is that many enterprises end up building the generic infrastructure every enterprise eventually needs, instead of the agents that are unique to their business.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A team builds an agent on top of the cloud infrastructure they already have. A few months later they want to expose it through another channel, monitor it in production, evaluate it, share capabilities with another agent, or let another team build on top of it. That's usually when they start to understand the difference between an impressive AI MVP and transforming their entire organization.  </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Now they need orchestration. Evaluations. Observability. Governance. Model routing. Deployment tooling. Reusable skills. Every capability required to run agents reliably in production. Before long, engineers are maintaining model routing, evaluation infrastructure and provider abstractions. None of that was part of the original business case, but all of it becomes necessary once AI moves into production.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most of these decisions make sense in isolation. Existing cloud commitments make building feel convenient. Vendor lock-in concerns make it feel safer. Months of engineering investment make it feel difficult to reverse. But then gradually your best engineers stop building the workflows that power your business and start building the infrastructure every enterprise eventually discovers it needs.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Building an enterprise AI platform is a full-time engineering problem. By the time many companies realise the platform itself isn't the transformation, they've already spent months or years building infrastructure instead of deploying agents that create measurable business value at scale.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That's why \"build versus buy\" isn't a particularly useful way to think about enterprise AI. It combines two different questions into one: what infrastructure should you run on, and what capability should you own?</p><p class=\"framer-text framer-styles-preset-1ln1alt\">History - and economics - tell us enterprises should buy the infrastructure and build the agents.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Economies of scale matter</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">An AI platform isn't something you build once. Every few months there are new models, new modalities, new evaluation techniques, new protocols, new failure modes and new capabilities that business users would want to leverage. The platform has to track the frontier.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">For a platform company, spread across hundreds of customers, that investment compounds. Every production deployment, every edge case and every failure makes the platform better for the next customer. Inside a single enterprise, the same work becomes an internal engineering project with no scale effects. It has to compete for budget every year against the business itself. If you believe a platform company can build this well, recreating it internally means committing hundreds of engineers to infrastructure your customers will never see.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Requirements aren't reasons to build</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The two arguments I hear most often for building in-house are vendor lock-in and sovereignty. They're both legitimate requirements, but neither means you need to build an AI platform. If portability matters, require open protocols, model independence and the ability to export everything. If sovereignty matters, deploy the platform in your own cloud or on-premise. Those are architecture and procurement decisions. Building years of infrastructure to satisfy requirements that can be written into a contract is an expensive way to solve the problem.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">We've seen this movie before</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">This isn't the first infrastructure decision enterprises have faced. When companies moved from monoliths to microservices, they didn't build their own virtualization engine. They bought VMware, OpenShift or Kubernetes, then used that infrastructure to migrate their applications and build new services on top of it. Instead of trying to reinvent virtualization, they used virtualization infrastructure as a foundation to reinvent the software that was unique to their business.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">AI doesn't fundamentally change that equation, but it does obscure it. Coding agents make almost everything feel buildable, which blurs the distinction between <em class=\"framer-text\">can we build this?</em> and <em class=\"framer-text\">should we own this? </em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our engineers use those same coding agents every day. Building the platform is still our full-time job because coding agents don’t give you the experience that comes from running agents in production across hundreds of enterprises. That part still has to be learned the hard way. It takes a lot of field experience, endless iterations, and full time ownership of engineers, product, designers and machine learning folks to make something truly enterprise grade.  </p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Buying infrastructure is what lets you build the right things</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">I don't think enterprises should outsource their AI capability. In fact the opposite - your engineers should build and own your agents.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Those agents encode your products, your policies, your customers and your internal processes. That's where your competitive advantage lives. Every month your engineers spend building orchestration, governance, model routing or evaluation infrastructure is another month they aren't building the agents that actually transform the business.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The infrastructure underneath those agents also changes continuously, but for a completely different reason. It changes because the industry keeps moving. That's work that benefits from being shared across hundreds of companies instead of being repeated inside every enterprise.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The value isn't in building an AI platform. The value is in transforming your business with AI.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

@@ -1,0 +1,144 @@
+{
+  "id": "hero.industry",
+  "title": "Industry hero",
+  "status": "measured",
+  "source": {
+    "id": "src:IndustryHero#export-default-function-IndustryHero",
+    "file": "src/pages/industries/sections/IndustryHero.jsx",
+    "tag": "export default function IndustryHero",
+    "lines": "30-61",
+    "citation": "src/pages/industries/sections/IndustryHero.jsx:30-61"
+  },
+  "semantic": {
+    "id": "hero.industry",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Full-viewport photo hero with a giant one-word industry title and a bordered intro block.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "industry titles are 1 word, fitted to the column"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 22,
+        "x-maxWordsEvidence": "intro block up to ~17 words (measured headingWordsMax=17 incl. intro heading)"
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "intro",
+      "background"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "word-reveal-paragraph"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.industry",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "stack",
+        "detail": "H1 160px, max 75%; columns stack."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Portrait crop, H1 70px, intro as a paragraph."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 7,
+    "routes": 7,
+    "heightPx": {
+      "min": 900,
+      "max": 900
+    },
+    "samples": [
+      {
+        "route": "/industries/airlines",
+        "instance": 0,
+        "heightPx": 900
+      },
+      {
+        "route": "/industries/retail",
+        "instance": 0,
+        "heightPx": 900
+      },
+      {
+        "route": "/industries/healthcare",
+        "instance": 0,
+        "heightPx": 900
+      },
+      {
+        "route": "/industries/telecommunication",
+        "instance": 0,
+        "heightPx": 900
+      },
+      {
+        "route": "/industries/banking",
+        "instance": 0,
+        "heightPx": 900
+      },
+      {
+        "route": "/industries/utilities",
+        "instance": 0,
+        "heightPx": 900
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare",
+    "/industries/insurance",
+    "/industries/retail",
+    "/industries/telecommunication",
+    "/industries/utilities"
+  ]
+}

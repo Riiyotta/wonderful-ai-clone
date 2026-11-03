@@ -1,0 +1,281 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "blog-article",
+  "route": "/journal/tide-tables",
+  "meta": {
+    "title": "What tide tables taught us about scheduling"
+  },
+  "brand": {
+    "name": "Halcyon Grid",
+    "mark": {
+      "assetRole": "brand-mark.generated",
+      "alt": "Halcyon Grid",
+      "src": "generated://halcyon/mark.svg"
+    }
+  },
+  "nodes": [
+    {
+      "section": "shell.site-header",
+      "variant": "standard",
+      "theme": "dark",
+      "motion": {
+        "pattern": "nav-theme-swap",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "menus": [
+          "Products",
+          "Sectors",
+          "About"
+        ],
+        "links": [
+          {
+            "label": "Journal",
+            "href": "/journal"
+          }
+        ],
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        }
+      }
+    },
+    {
+      "section": "editorial.article-header",
+      "motion": {
+        "pattern": "content-rise",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "author": {
+          "name": "Mara Quillfeather",
+          "identityRole": "person.fictional"
+        },
+        "date": "Mar 3, 2031",
+        "title": "What tide tables taught us about scheduling",
+        "description": "A short field note on planning around things you cannot move."
+      }
+    },
+    {
+      "section": "media.banner-image",
+      "variant": "article",
+      "motion": {
+        "pattern": "card-image-appear",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "image": {
+          "assetRole": "photo.generated-scene",
+          "alt": "A tide board at low water",
+          "src": "generated://halcyon/tide-board.jpg"
+        }
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "Harbour planners have always worked around a clock they do not control. We borrowed that habit when we designed our dispatch queue."
+          }
+        ]
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "Plan around the fixed points",
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "Start with the moments that cannot shift, then place flexible work in the gaps between them."
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Mark the hard deadlines first",
+              "Leave slack after every crossing",
+              "Review the plan when the forecast changes"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "Let the queue breathe",
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "A queue that is full at dawn is brittle by noon. Keeping a tenth of capacity free made late arrivals routine instead of urgent."
+          }
+        ]
+      }
+    },
+    {
+      "section": "structure.hairline-divider",
+      "variant": "light",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {}
+    },
+    {
+      "section": "editorial.related-posts",
+      "motion": {
+        "pattern": "card-image-appear",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "More Posts",
+        "posts": [
+          {
+            "title": "Field kit, version two",
+            "date": "Feb 2, 2031",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/kit.jpg"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/journal/field-kit"
+            }
+          },
+          {
+            "title": "Notes from a night shift",
+            "date": "Jan 9, 2031",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/night.jpg"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/journal/night-shift"
+            }
+          },
+          {
+            "title": "Why we log every handover",
+            "date": "Dec 1, 2030",
+            "image": {
+              "assetRole": "product.generated-visual",
+              "alt": "",
+              "src": "generated://halcyon/handover-ui.png"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/journal/handover"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "theme": "dark",
+      "motion": {
+        "pattern": "appear-fade-tween",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "tagline": "Calm infrastructure for busy operations teams.",
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        },
+        "legalLine": "© 2031 Halcyon Grid Ltd.",
+        "columns": [
+          {
+            "title": "Products",
+            "links": [
+              {
+                "label": "Relay core",
+                "href": "/relay"
+              },
+              {
+                "label": "Field kit",
+                "href": "/field-kit"
+              }
+            ]
+          },
+          {
+            "title": "Sectors",
+            "links": [
+              {
+                "label": "Shipping",
+                "href": "/sectors/shipping"
+              },
+              {
+                "label": "Water",
+                "href": "/sectors/water"
+              }
+            ]
+          },
+          {
+            "title": "About",
+            "links": [
+              {
+                "label": "Our story",
+                "href": "/story"
+              },
+              {
+                "label": "Journal",
+                "href": "/journal"
+              },
+              {
+                "label": "Status page",
+                "href": "https://status.halcyon-grid.example/"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              }
+            ]
+          }
+        ],
+        "watermark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "",
+          "src": "generated://halcyon/wordmark-wide.png"
+        }
+      }
+    }
+  ]
+}

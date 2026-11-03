@@ -1,0 +1,412 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "home",
+  "route": "/",
+  "meta": {
+    "title": "Halcyon Grid | Quiet automation for port and water operators",
+    "description": "Fictional brand, original copy, placeholder media only."
+  },
+  "brand": {
+    "name": "Halcyon Grid",
+    "mark": {
+      "assetRole": "brand-mark.generated",
+      "alt": "Halcyon Grid",
+      "src": "generated://halcyon/mark.svg"
+    }
+  },
+  "nodes": [
+    {
+      "section": "shell.site-header",
+      "variant": "standard",
+      "theme": "dark",
+      "motion": {
+        "pattern": "nav-theme-swap",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "menus": [
+          "Products",
+          "Sectors",
+          "About"
+        ],
+        "links": [
+          {
+            "label": "Journal",
+            "href": "/journal"
+          }
+        ],
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        }
+      }
+    },
+    {
+      "section": "hero.video-statement",
+      "theme": "dark",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Keep every harbour shift running on time",
+        "lead": "Halcyon Grid routes requests, alerts and paperwork so crews can stay on deck.",
+        "ctas": [
+          {
+            "label": "Talk to us",
+            "href": "/talk"
+          },
+          {
+            "label": "Tour the relay",
+            "href": "/relay"
+          }
+        ],
+        "video": {
+          "assetRole": "video.generated-loop",
+          "alt": "Cranes moving containers at dawn",
+          "src": "generated://halcyon/harbour-dawn.mp4"
+        }
+      }
+    },
+    {
+      "section": "social-proof.logo-grid",
+      "variant": "grid-12",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Chosen by operators along three coastlines",
+        "logos": [
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 1",
+            "src": "generated://halcyon/fictional-logo-1.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 2",
+            "src": "generated://halcyon/fictional-logo-2.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 3",
+            "src": "generated://halcyon/fictional-logo-3.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 4",
+            "src": "generated://halcyon/fictional-logo-4.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 5",
+            "src": "generated://halcyon/fictional-logo-5.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional operator 6",
+            "src": "generated://halcyon/fictional-logo-6.svg"
+          }
+        ]
+      }
+    },
+    {
+      "section": "social-proof.case-study-carousel",
+      "variant": "light",
+      "theme": "light",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Small fixes that clear the morning queue.",
+        "cards": [
+          {
+            "title": "Berth bookings confirmed in minutes",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/berth.jpg"
+            },
+            "logo": {
+              "assetRole": "logo.fictional-company",
+              "alt": "",
+              "src": "generated://halcyon/fictional-logo-1.svg"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/stories/berths"
+            }
+          },
+          {
+            "title": "Meter readings reconciled before lunch",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/meters.jpg"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/stories/meters"
+            }
+          },
+          {
+            "title": "Crew rosters rebuilt after every storm",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/storm.jpg"
+            },
+            "logo": {
+              "assetRole": "logo.fictional-company",
+              "alt": "",
+              "src": "generated://halcyon/fictional-logo-3.svg"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/stories/rosters"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.reveal-statement",
+      "variant": "scroll-color",
+      "motion": {
+        "pattern": "scroll-color-reveal",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "statement": "One relay connects the people, sensors and ledgers that keep a working coast moving.",
+        "emphasis": [
+          "relay",
+          "sensors"
+        ]
+      }
+    },
+    {
+      "section": "features.platform-lattice-intro",
+      "theme": "dark",
+      "tokens": {
+        "surface": "color.surface.band",
+        "text": "color.text.on-dark",
+        "fontFamily": "font.family.display"
+      },
+      "motion": {
+        "pattern": "lattice-loop",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "lockup": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Relay core",
+          "src": "generated://halcyon/relay-lockup.svg"
+        },
+        "title": "A single relay for requests, alerts and records",
+        "cta": {
+          "label": "Tour the relay",
+          "href": "/relay"
+        },
+        "latticeTags": [
+          "Queues",
+          "Sensors",
+          "Ledgers",
+          "Rosters"
+        ]
+      }
+    },
+    {
+      "section": "features.industry-tabs",
+      "motion": {
+        "pattern": "tab-crossfade",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Built for coasts, canals and reservoirs",
+        "tabs": [
+          {
+            "label": "Shipping",
+            "cardTitle": "Shipping",
+            "cardBody": "Berths, manifests, tides",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/shipping.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/sectors/shipping"
+            }
+          },
+          {
+            "label": "Water",
+            "cardTitle": "Water",
+            "cardBody": "Meters, crews, outages",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/water.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/sectors/water"
+            }
+          },
+          {
+            "label": "Ferries",
+            "cardTitle": "Ferries",
+            "cardBody": "Timetables, tickets, weather",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/ferry.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/sectors/ferries"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "conversion.team-closer",
+      "theme": "dark",
+      "motion": {
+        "pattern": "expand-card-spring",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Meet the crew behind the relay.",
+        "body": "We are a small group of former dispatchers and engineers. Come and see how we work, or join us on the next build.",
+        "cards": [
+          {
+            "label": "Our story",
+            "link": {
+              "label": "Our story",
+              "href": "/story"
+            }
+          },
+          {
+            "label": "Open roles",
+            "link": {
+              "label": "Open roles",
+              "href": "/roles"
+            }
+          }
+        ],
+        "background": {
+          "assetRole": "photo.generated-scene",
+          "alt": "",
+          "src": "generated://halcyon/crew.jpg"
+        }
+      }
+    },
+    {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "theme": "dark",
+      "motion": {
+        "pattern": "appear-fade-tween",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "tagline": "Calm infrastructure for busy operations teams.",
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        },
+        "legalLine": "© 2031 Halcyon Grid Ltd.",
+        "columns": [
+          {
+            "title": "Products",
+            "links": [
+              {
+                "label": "Relay core",
+                "href": "/relay"
+              },
+              {
+                "label": "Field kit",
+                "href": "/field-kit"
+              }
+            ]
+          },
+          {
+            "title": "Sectors",
+            "links": [
+              {
+                "label": "Shipping",
+                "href": "/sectors/shipping"
+              },
+              {
+                "label": "Water",
+                "href": "/sectors/water"
+              }
+            ]
+          },
+          {
+            "title": "About",
+            "links": [
+              {
+                "label": "Our story",
+                "href": "/story"
+              },
+              {
+                "label": "Journal",
+                "href": "/journal"
+              },
+              {
+                "label": "Status page",
+                "href": "https://status.halcyon-grid.example/"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              }
+            ]
+          }
+        ],
+        "watermark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "",
+          "src": "generated://halcyon/wordmark-wide.png"
+        }
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "section": "utility.language-chip",
+      "retrievalEligible": false,
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "label": "EN"
+      }
+    }
+  ]
+}

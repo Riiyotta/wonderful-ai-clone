@@ -1,0 +1,22 @@
+{
+  "id": "primitive.nav-trigger",
+  "kind": "primitive",
+  "title": "Nav dropdown trigger",
+  "purpose": "Top-bar label that opens a mega-menu panel.",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 2
+    }
+  },
+  "tokens": [
+    "type.label.nav",
+    "color.ink.600"
+  ],
+  "source": {
+    "file": "src/components/Navbar.jsx",
+    "tag": "className=\"nv-trigger\"",
+    "lines": "81-85",
+    "citation": "src/components/Navbar.jsx:81-85"
+  }
+}

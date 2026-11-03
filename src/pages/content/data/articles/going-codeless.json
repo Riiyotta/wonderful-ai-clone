@@ -1,0 +1,91 @@
+{
+ "slug": "going-codeless",
+ "path": "/blog-articles/going-codeless",
+ "category": "Perspectives",
+ "pageTitle": "Going Codeless",
+ "author": "Daniel Sikorskiy, Chief Architect",
+ "date": "Mar 10, 2026",
+ "datetime": "2026-03-10T00:00:00.000Z",
+ "title": "Going Codeless",
+ "titleTag": "h1",
+ "description": "How embedding AI changed the economics of building",
+ "hero": {
+  "image": {
+   "src": "/assets/ZjigpsuWwn7MWHBKaLDSqD1po.png",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Four months ago, we banned manual coding at Wonderful. Not \"encouraged AI adoption.\" Banned.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most companies are somewhere in the middle right now. A few engineers are using Cursor or Copilot, and leadership is calling it \"AI-enabled\" and moving on. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">The problem with that is what it does to your org: The engineers who go all-in start moving faster every week, and the ones who don't are falling behind and getting defensive. The gap widens every week, and so does the gap between you and the competitor who committed to going codeless months ago.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We saw that pattern forming and rolled it out across the entire org. No phased rollout, no exceptions. What followed was messy, instructive, and one of the best engineering decisions we've made.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Different models are like different engineers</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Models have different personalities, and picking the wrong one costs you.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Codex is the engineer who sits at the back of the room in a hoodie, headphones on, doesn't say much, and will silently read your entire codebase for 15 minutes before writing a single line. That used to annoy me. Now I think it's one of the most important behaviors a model can have, because it greatly increases the chance it fixes the right thing. We use it for low-latency systems work: real-time voice pipelines, infrastructure, performance-sensitive code you'd normally trust only a senior with 10 years of systems experience. The assumption that AI can't handle serious engineering is wrong.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Claude is different. Better product sense, better at knowing what would <em class=\"framer-text\">feel</em> right. We use it for UI, front-end, and anything where you'd ask a person \"does this seem off to you?\" and trust the answer.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Figuring out which model to use for what was just the start. It sounds simple, but it took time to internalize because the way you think about a task changes completely. You're now thinking about who to give it to, how long to let it run, how much of the codebase it might touch. It's a different kind of engineering instinct.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The self-verification problem (and why most teams give up here)</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Early on, models would confidently produce code that didn't work. They’d hand back something that looked right, and it was only when you ran it that you’d find out it wasn’t. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is exactly where most teams conclude that AI can't really code, and retreat to optional adoption. But that’s the part worth pushing through.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We built infrastructure that required models to test their own work before a task was considered complete. A lot of the effort went into getting them to write their own verification tooling, scaffolding they could use to validate output before handing it back. It felt deeply meta. But it was completely necessary.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We also had Codex maintain a notebook inside the codebase: a running log of learned patterns, past failures, and decisions made. It was like a memory layer. Over time the underlying models improved on their own, but the internal feedback loop we built accelerated it considerably.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Making it part of the company</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Out of the box, models know nothing about your systems. They can't read your Slack, query your logs, open a ticket, or browse your internal docs. You have to build that.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We built CLI tooling connecting models to Slack, Linear, our logging stack, and browsers. Once that was in place, something shifted we hadn't anticipated: the model became a kind of company expert. You could run:</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">\"Go through the last 3 months of #ask-rnd-anything. Identify recurring voice-agent failures. Open tickets ranked by severity.\"</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">And it would actually do it, scanning six months of conversations in minutes and surfacing patterns that no individual engineer would ever have the bandwidth to notice.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">90,000 lines in two weeks</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The clearest proof point is the Agent Builder. It's roughly 90,000 lines of code, built in about two weeks. A human engineer working traditionally would have needed close to a year to produce that.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But the line counts aren't the point. What changed was the economics of trying things.</p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Cloning a full customer app as a customized solution went from a weeks-long project to about two hours. </p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Standing up an automated red team trained on known vulnerability classes took a few days. </p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Testing an implementation idea before committing to it became an afternoon's work rather than a reason to schedule three meetings. </p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">When the cost of trying something drops that much, you try more things and you find the right answer faster.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The engineers who adapted fastest</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">It wasn’t the ones with the deepest language expertise or the most years of experience. The engineers who adapted the fastest were the ones who already knew how to work with junior developers: how to break down a task clearly, give enough context, review output, and redirect without rewriting everything from scratch.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The constraint in engineering has shifted. It's no longer <strong class=\"framer-text\">how</strong> we build this, because that part, the models largely handle. It's what should we build, why this and not that, and what does good actually look like. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Product sense, architectural intuition, and judgment. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">These are the things AI can't automate, and they're now the things that actually determine output quality.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The gap is widening</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The technology is ready, so the hard part is organizational.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Companies that force this transition in 2026 will not only have a headstart, but years of compounding advantage. Every month of AI-native engineering builds habits, tooling, and institutional knowledge that makes the next month faster. <br class=\"framer-text\"><br class=\"framer-text\">The companies waiting for organic adoption are gambling that their competitors are doing the same, but they're not.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Mandate it now while it's still a competitive edge.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

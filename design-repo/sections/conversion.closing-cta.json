@@ -1,0 +1,164 @@
+{
+  "id": "conversion.closing-cta",
+  "title": "Closing CTA band",
+  "status": "measured",
+  "source": {
+    "id": "src:Closer#export-default-function-Closer",
+    "file": "src/pages/platform/Closer.jsx",
+    "tag": "export default function Closer",
+    "lines": "6-41",
+    "citation": "src/pages/platform/Closer.jsx:6-41",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/product/aios/Cta.jsx",
+        "tag": "export default function Cta",
+        "lines": "6-30",
+        "citation": "src/pages/product/aios/Cta.jsx:6-30"
+      },
+      {
+        "file": "src/pages/industries/sections/ClosingCta.jsx",
+        "tag": "export default function ClosingCta",
+        "lines": "10-37",
+        "citation": "src/pages/industries/sections/ClosingCta.jsx:10-37"
+      },
+      {
+        "file": "src/pages/company/sections/CtaBand.jsx",
+        "tag": "export default function CtaBand",
+        "lines": "8-26",
+        "citation": "src/pages/company/sections/CtaBand.jsx:8-26"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "conversion.closing-cta",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Dark 640-700px band with a radial-glow image, a centred H2 and one \"Get in touch\" pill.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for conversion.closing-cta at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "illustration.source-texture",
+          "illustration.generated-abstract"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustPrecedeFooter": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "appear-fade-tween",
+      "button-hover-fade"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "Title 549 wide; mask 82%."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Title 370 wide; mask 90%; height auto on approach pages."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".background",
+      "assetRoles": [
+        "illustration.source-texture",
+        "illustration.generated-abstract"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "illustration.generated-abstract",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.pill-button"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "routes": 12,
+    "heightPx": {
+      "min": 640,
+      "max": 700
+    },
+    "samples": [
+      {
+        "route": "/deployment",
+        "instance": 0,
+        "heightPx": 640
+      },
+      {
+        "route": "/ai-transformation",
+        "instance": 0,
+        "heightPx": 640
+      },
+      {
+        "route": "/about-us",
+        "instance": 0,
+        "heightPx": 640
+      },
+      {
+        "route": "/careers",
+        "instance": 0,
+        "heightPx": 640
+      },
+      {
+        "route": "/ai-os",
+        "instance": 0,
+        "heightPx": 640
+      },
+      {
+        "route": "/industries/airlines",
+        "instance": 0,
+        "heightPx": 700
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/about-us",
+    "/ai-os",
+    "/ai-transformation",
+    "/careers",
+    "/deployment",
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare"
+  ]
+}

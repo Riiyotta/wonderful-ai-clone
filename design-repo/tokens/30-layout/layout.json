@@ -1,0 +1,32 @@
+{
+  "$description": "Layout tokens: section rhythm and grid column counts per breakpoint.",
+  "tokens": {
+    "layout.section.padding-x": {
+      "desktop": "space.section-x.desktop",
+      "tablet": "space.section-x.tablet",
+      "mobile": "space.section-x.mobile"
+    },
+    "layout.section.padding-y": {
+      "desktop": "space.section-y.lg",
+      "tablet": "space.section-y.lg",
+      "mobile": "space.section-y.md"
+    },
+    "layout.grid.feature-columns": {
+      "desktop": 4,
+      "tablet": 2,
+      "mobile": 1,
+      "evidence": "CLONE_SPEC_PLATFORM.md:100"
+    },
+    "layout.grid.post-columns": {
+      "desktop": 3,
+      "tablet": 2,
+      "mobile": 1,
+      "evidence": "CLONE_SPEC_CONTENT.md:84"
+    },
+    "layout.nav.fixed-height": {
+      "value": "109px",
+      "collapsedValue": "61px",
+      "evidence": "CLONE_SPEC.md:131"
+    }
+  }
+}

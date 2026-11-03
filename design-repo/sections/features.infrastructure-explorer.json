@@ -1,0 +1,133 @@
+{
+  "id": "features.infrastructure-explorer",
+  "title": "Infrastructure explorer",
+  "status": "measured",
+  "source": {
+    "id": "src:Infra#export-default-function-Infra",
+    "file": "src/pages/product/aios/Infra.jsx",
+    "tag": "export default function Infra",
+    "lines": "86-114",
+    "citation": "src/pages/product/aios/Infra.jsx:86-114"
+  },
+  "semantic": {
+    "id": "features.infrastructure-explorer",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Interactive capability map: H2 and active-state description beside a panel of clickable capability blocks that switch the description.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for features.infrastructure-explorer at 1440px"
+      },
+      "states": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "block labels 1-2 words"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "state titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 24,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=19 for features.infrastructure-explorer at 1440px"
+            }
+          },
+          "required": [
+            "label",
+            "title",
+            "body"
+          ]
+        }
+      },
+      "visual": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "states"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Title, then panel, then a 176px state-content block."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".visual",
+      "assetRoles": [
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 842.7,
+      "max": 842.7
+    },
+    "samples": [
+      {
+        "route": "/ai-os",
+        "instance": 0,
+        "heightPx": 842.7
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-os"
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "id": "conversion.contact-form-split",
+  "title": "Contact form split",
+  "status": "measured",
+  "source": {
+    "id": "src:Contact#export-default-function-Contact",
+    "file": "src/pages/company/Contact.jsx",
+    "tag": "export default function Contact",
+    "lines": "82-177",
+    "citation": "src/pages/company/Contact.jsx:82-177"
+  },
+  "semantic": {
+    "id": "conversion.contact-form-split",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two-half contact page: image panel with H1, lead and inquiry emails on the left; meeting-request form on the right.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for conversion.contact-form-split at 1440px"
+      },
+      "lead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=28 for conversion.contact-form-split at 1440px"
+      },
+      "formTitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "form heading \"Set a meeting with our team\""
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 10,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "field labels"
+            },
+            "kind": {
+              "enum": [
+                "text",
+                "email",
+                "select",
+                "tel"
+              ]
+            },
+            "required": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "label",
+            "kind"
+          ]
+        }
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "button \"Send\""
+      },
+      "privacyNote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=28 for conversion.contact-form-split at 1440px"
+      },
+      "inquiries": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "$ref": "#/definitions/cta"
+        }
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "illustration.source-texture",
+          "illustration.generated-abstract"
+        ]
+      },
+      "action": {
+        "type": "string",
+        "description": "Navigation target after a valid submit. The source never posts form data (navigates to the confirmation route)."
+      }
+    },
+    "required": [
+      "title",
+      "formTitle",
+      "fields",
+      "submitLabel"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "stack",
+        "detail": "598px image hero above the form."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "360px hero; fields stack."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "illustration.source-texture",
+        "illustration.generated-abstract"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "illustration.generated-abstract",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.form-field",
+    "primitive.pill-button"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 900,
+      "max": 900
+    },
+    "samples": [
+      {
+        "route": "/contact",
+        "instance": 0,
+        "heightPx": 900
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/contact"
+  ],
+  "notes": [
+    "Forms never submit: a valid submit navigates to /thank-you; no non-GET request is made (CLONE_SPEC_COMPANY.md section 4)."
+  ]
+}

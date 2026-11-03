@@ -1,0 +1,13 @@
+@import './styles/fonts.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body { background: #ffffff; }
+body { font-family: Inter, "Inter Placeholder", sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+img, video { display: block; }
+
+/* Word-by-word reveal (CLONE_SPEC §4.2/§4.3). Easing comes from springEase() via --ease. */
+.wr-word { display: inline-block; white-space: pre; will-change: transform, opacity, filter; }
+.wr-word[data-state="hidden"] { opacity: .001; }
+.wr-word[data-state="shown"] { opacity: 1; filter: blur(0); transform: none; }

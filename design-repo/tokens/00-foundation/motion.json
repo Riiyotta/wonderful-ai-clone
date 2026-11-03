@@ -1,0 +1,86 @@
+{
+  "$description": "Foundation motion tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "motion",
+  "tokens": {
+    "motion.spring.heading": {
+      "value": {
+        "stiffness": 175,
+        "damping": 22,
+        "mass": 1
+      },
+      "evidence": "src/lib/spring.js:22",
+      "measured": "CLONE_SPEC.md:394"
+    },
+    "motion.spring.paragraph": {
+      "value": {
+        "stiffness": 340,
+        "damping": 56,
+        "mass": 1
+      },
+      "evidence": "src/lib/spring.js:23",
+      "measured": "CLONE_SPEC.md:402"
+    },
+    "motion.spring.soft": {
+      "value": {
+        "stiffness": 200,
+        "damping": 60,
+        "mass": 1
+      },
+      "evidence": "CLONE_SPEC.md:378",
+      "usage": "appear opacity springs, white-pill hover"
+    },
+    "motion.spring.card-expand": {
+      "value": {
+        "stiffness": 480,
+        "damping": 44,
+        "mass": 1
+      },
+      "evidence": "CLONE_SPEC.md:364",
+      "correction": "MOTION_QA.md:6",
+      "note": "MOTION_QA: live tail is longer (.97@339ms, 1.0@672ms) than this first fit"
+    },
+    "motion.tween.fade": {
+      "value": {
+        "duration": "0.6s",
+        "easing": "cubic-bezier(.44,0,.56,1)"
+      },
+      "evidence": "src/lib/spring.js:24",
+      "measured": "CLONE_SPEC.md:376"
+    },
+    "motion.tween.card-text": {
+      "value": {
+        "duration": "0.4s",
+        "easing": "cubic-bezier(.5,0,.88,.77)",
+        "delay": "0.16s",
+        "y": "10px"
+      },
+      "evidence": "CLONE_SPEC.md:380"
+    },
+    "motion.ease.overlay": {
+      "value": "cubic-bezier(.22,1,.36,1)",
+      "evidence": "CLONE_SPEC_PLATFORM.md:73"
+    },
+    "motion.stagger.word": {
+      "value": "0.05s",
+      "evidence": "src/components/WordReveal.jsx:13",
+      "measured": "CLONE_SPEC.md:393"
+    },
+    "motion.inview.heading": {
+      "value": 0.25,
+      "evidence": "src/components/WordReveal.jsx:7",
+      "correction": "MOTION_QA.md:7"
+    },
+    "motion.inview.paragraph": {
+      "value": 0,
+      "evidence": "src/components/WordReveal.jsx:8"
+    },
+    "motion.duration.ticker-interval": {
+      "value": "7.0s",
+      "evidence": "CLONE_SPEC.md:433"
+    },
+    "motion.duration.lattice-cycle": {
+      "value": "17.05s",
+      "evidence": "CLONE_SPEC.md:448"
+    }
+  }
+}

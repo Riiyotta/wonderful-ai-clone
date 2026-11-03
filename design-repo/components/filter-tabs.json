@@ -1,0 +1,23 @@
+{
+  "id": "component.filter-tabs",
+  "kind": "component",
+  "title": "Filter tabs",
+  "purpose": "Category tab row that rewrites a query parameter.",
+  "props": {
+    "tabs": {
+      "type": "array"
+    }
+  },
+  "tokens": [
+    "radius.tab"
+  ],
+  "source": {
+    "file": "src/pages/content/Blog.jsx",
+    "tag": "function Tabs",
+    "lines": "39-62",
+    "citation": "src/pages/content/Blog.jsx:39-62"
+  },
+  "composes": [
+    "primitive.tab-chip"
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "editorial.post-grid",
+  "title": "Post grid",
+  "status": "measured",
+  "source": {
+    "id": "src:Blog#div-className-cb-grid-data-cx-grid",
+    "file": "src/pages/content/Blog.jsx",
+    "tag": "<div className=\"cb-grid\" data-cx=\"grid\">",
+    "lines": "121-123",
+    "citation": "src/pages/content/Blog.jsx:121-123"
+  },
+  "semantic": {
+    "id": "editorial.post-grid",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Auto-fill grid of post cards (image, 2-line title, date) for the blog index.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "posts": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 60,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "x-maxWordsEvidence": "grid titles up to 20 words (measured headingWordsMax=20)"
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "dates"
+            },
+            "category": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "category"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene",
+                "product.source-visual",
+                "product.generated-visual"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "posts"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "card-image-appear"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "2 columns (minmax 409px)."
+      },
+      {
+        "at": "mobile",
+        "change": "regrid",
+        "detail": "1 column (minmax 220px)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".posts[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.post-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 6822,
+      "max": 6822
+    },
+    "samples": [
+      {
+        "route": "/blog",
+        "instance": 0,
+        "heightPx": 6822
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog"
+  ],
+  "notes": [
+    "One grid listing all posts: genuinely a single semantic unit; whitelisted in the wrapper gate (agent attestation)."
+  ]
+}

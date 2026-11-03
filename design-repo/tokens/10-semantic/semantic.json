@@ -1,0 +1,86 @@
+{
+  "$description": "Semantic roles. Each resolves to a foundation token per theme (light = white-surface sections, dark = #080808/#000 sections). Evidence: nav light/dark variants and per-section data-nav-theme in the clone (CLONE_SPEC.md section 1, \"Variant switch by section underneath\").",
+  "evidence": "CLONE_SPEC.md:132",
+  "tokens": {
+    "color.surface.page": {
+      "light": "color.white",
+      "dark": "color.band"
+    },
+    "color.surface.band": {
+      "light": "color.band",
+      "dark": "color.band"
+    },
+    "color.surface.black": {
+      "light": "color.black",
+      "dark": "color.black"
+    },
+    "color.surface.subtle": {
+      "light": "color.offwhite",
+      "dark": "color.band"
+    },
+    "color.surface.chip": {
+      "light": "color.chip",
+      "dark": "color.ink.900"
+    },
+    "color.surface.card-dark": {
+      "light": "color.ink.900",
+      "dark": "color.ink.900"
+    },
+    "color.surface.legal-band": {
+      "light": "color.legal-band",
+      "dark": "color.legal-band"
+    },
+    "color.text.primary": {
+      "light": "color.ink.default",
+      "dark": "color.offwhite"
+    },
+    "color.text.secondary": {
+      "light": "color.ink.700",
+      "dark": "color.alpha.white-70"
+    },
+    "color.text.muted": {
+      "light": "color.ink.300",
+      "dark": "color.grey.9e"
+    },
+    "color.text.on-dark": {
+      "light": "color.offwhite",
+      "dark": "color.offwhite"
+    },
+    "color.text.on-dark-muted": {
+      "light": "color.alpha.white-70",
+      "dark": "color.alpha.white-70"
+    },
+    "color.text.inverse": {
+      "light": "color.black",
+      "dark": "color.black"
+    },
+    "color.border.default": {
+      "light": "color.alpha.black-10",
+      "dark": "color.alpha.white-18"
+    },
+    "color.border.article": {
+      "light": "color.grey.e6",
+      "dark": "color.alpha.white-18"
+    },
+    "color.accent.data": {
+      "light": "color.accent.orange",
+      "dark": "color.accent.orange"
+    },
+    "color.accent.progress": {
+      "light": "color.accent.blue",
+      "dark": "color.accent.blue"
+    },
+    "color.link.inline": {
+      "light": "color.blue.link",
+      "dark": "color.blue.link"
+    },
+    "color.action.primary-bg": {
+      "light": "color.band",
+      "dark": "color.white"
+    },
+    "color.action.primary-fg": {
+      "light": "color.offwhite",
+      "dark": "color.black"
+    }
+  }
+}

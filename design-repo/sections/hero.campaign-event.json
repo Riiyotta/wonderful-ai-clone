@@ -1,0 +1,154 @@
+{
+  "id": "hero.campaign-event",
+  "title": "Campaign event hero",
+  "status": "measured",
+  "source": {
+    "id": "src:FcbMatchday#section-className-fcb-hero",
+    "file": "src/pages/regional/FcbMatchday.jsx",
+    "tag": "<section className=\"fcb-hero\">",
+    "lines": "59-82",
+    "citation": "src/pages/regional/FcbMatchday.jsx:59-82"
+  },
+  "semantic": {
+    "id": "hero.campaign-event",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Campaign landing opener with a co-brand lockup, two-line headline, subhead, match line and \"Request my seat\" pill.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "lockup": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 2,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "logo.partner-crest",
+            "logo.source-wordmark",
+            "logo.fictional-company",
+            "brand-mark.generated"
+          ]
+        }
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "measured headingWordsMax=9 for hero.campaign-event at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 37,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=29 for hero.campaign-event at 1440px"
+      },
+      "eventLine": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 16,
+        "x-maxWordsEvidence": "match line up to ~12 words"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "820px tall."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Auto height; copy presets step down."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".lockup[]",
+      "assetRoles": [
+        "logo.partner-crest",
+        "logo.source-wordmark",
+        "logo.fictional-company",
+        "brand-mark.generated"
+      ]
+    },
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "brand-mark.generated",
+    "copy.original",
+    "logo.fictional-company",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 960,
+      "max": 960
+    },
+    "samples": [
+      {
+        "route": "/fcb/x/slavia-prague",
+        "instance": 0,
+        "heightPx": 960
+      },
+      {
+        "route": "/fcb/x/arsenal",
+        "instance": 0,
+        "heightPx": 960
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/fcb/x/arsenal",
+    "/fcb/x/slavia-prague"
+  ],
+  "notes": [
+    "Campaign pages render their own lockup and no site nav (chrome none)."
+  ]
+}

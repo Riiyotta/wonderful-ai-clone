@@ -1,0 +1,79 @@
+{
+  "$description": "Rhythm / position rules a JSON Schema cannot express. Every rule id here is implemented under the same id in schema/semantic_validate.py (GRAPH_RULE_IDS); extraction/verify_all.py fails if the two sets differ.",
+  "version": "1.0.0",
+  "rules": [
+    {
+      "id": "HEADER_FIRST",
+      "severity": "error",
+      "rule": "shell.site-header, when present, is the first node."
+    },
+    {
+      "id": "FOOTER_LAST",
+      "severity": "error",
+      "rule": "shell.site-footer / shell.campaign-footer, when present, is the last node."
+    },
+    {
+      "id": "ONE_HERO",
+      "severity": "error",
+      "rule": "At most one HERO-category node per page.",
+      "exceptions": "Templates with hasHero=false (blog-index, blog-article, case-study, contact, legal-document, job-detail, job-application, embed-shell) must have zero HERO nodes; their openers are EDITORIAL/CONTENT/CONVERSION."
+    },
+    {
+      "id": "HERO_OPENS_PAGE",
+      "severity": "error",
+      "rule": "The HERO node is the first node after the header (or the first node when the template has no header)."
+    },
+    {
+      "id": "NO_CONSECUTIVE_DIVIDERS",
+      "severity": "error",
+      "rule": "structure.hairline-divider never directly follows another divider and never sits directly after the header. (A divider directly before a footer is real: /fcb/x/thank-you.)"
+    },
+    {
+      "id": "CLOSING_CTA_BEFORE_FOOTER",
+      "severity": "error",
+      "rule": "conversion.closing-cta and conversion.team-closer are immediately followed by the site footer."
+    },
+    {
+      "id": "PRODUCT_CROSS_SELL_ONCE",
+      "severity": "error",
+      "rule": "Template product has exactly one features.product-cross-sell (all four product routes do: /ai-os, /agents, /systems, /ai-gateway)."
+    },
+    {
+      "id": "INELIGIBLE_ONLY_AS_OVERLAY",
+      "severity": "error",
+      "rule": "retrievalEligible=false sections appear only in overlays[].",
+      "exceptions": "utility.third-party-embed-slot is the in-flow body of template embed-shell."
+    },
+    {
+      "id": "NO_ADJACENT_SAME_CATEGORY",
+      "severity": "warn",
+      "rule": "Two adjacent nodes should not share a category.",
+      "exceptions": "Categories FEATURES, EDITORIAL, CONTENT, STRUCTURE and TESTIMONIAL repeat legitimately (product bodies, article chapters, legal sections, country columns); careers has conversion.apply-contact followed by conversion.closing-cta; home has social-proof.logo-grid followed by social-proof.case-study-carousel."
+    },
+    {
+      "id": "MOTION_LOOP_BUDGET",
+      "severity": "warn",
+      "rule": "At most 3 nodes per page use a continuously looping pattern (video-loop, lattice-loop, globe-autorotate, gradient-blob-spin, canvas-shader-loop). Home uses 2 in nodes (video-loop, lattice-loop)."
+    }
+  ],
+  "adjacency": {
+    "recommendedAfter": {
+      "social-proof.logo-grid": [
+        "hero.video-statement",
+        "hero.industry"
+      ],
+      "features.product-cross-sell": [
+        "structure.hairline-divider",
+        "features.icon-feature-grid",
+        "features.expanding-card-pair"
+      ],
+      "editorial.related-posts": [
+        "structure.hairline-divider"
+      ]
+    },
+    "mustPrecedeFooter": [
+      "conversion.closing-cta",
+      "conversion.team-closer"
+    ]
+  }
+}

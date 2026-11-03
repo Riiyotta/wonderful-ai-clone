@@ -1,0 +1,190 @@
+{
+  "id": "features.hover-reveal-rows",
+  "title": "Hover-reveal rows",
+  "status": "measured",
+  "source": {
+    "id": "src:Enterprise#export-default-function-Enterprise",
+    "file": "src/pages/product/aios/Enterprise.jsx",
+    "tag": "export default function Enterprise",
+    "lines": "39-59",
+    "citation": "src/pages/product/aios/Enterprise.jsx:39-59",
+    "variantSources": {
+      "why-choose": {
+        "file": "src/pages/industries/sections/WhyChoose.jsx",
+        "tag": "export default function WhyChoose",
+        "lines": "58-70",
+        "citation": "src/pages/industries/sections/WhyChoose.jsx:58-70"
+      }
+    }
+  },
+  "semantic": {
+    "id": "features.hover-reveal-rows",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "White section of 4 full-width rows (title left, description + image right) that tint and reveal their image on hover.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "enterprise",
+    "why-choose"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "section H2 up to 10 words"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 32,
+        "x-maxWordsEvidence": "why-choose intro H2 measured up to ~25 words (headingWordsMax=31 includes the stacked title+intro)"
+      },
+      "rows": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 8,
+              "x-maxWordsEvidence": "row titles up to 6 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 37,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=29 for features.hover-reveal-rows at 1440px"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene",
+                "product.source-visual",
+                "product.generated-visual"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "rows"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "hover-reveal-row",
+      "static"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Rows stack title/description/image; image always visible; no hover."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".rows[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.hover-row"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 8,
+    "routes": 8,
+    "heightPx": {
+      "min": 1671.3,
+      "max": 1682.3
+    },
+    "samples": [
+      {
+        "route": "/ai-os",
+        "variant": "enterprise",
+        "instance": 0,
+        "heightPx": 1671.3
+      },
+      {
+        "route": "/industries/airlines",
+        "variant": "why-choose",
+        "instance": 0,
+        "heightPx": 1682.3
+      },
+      {
+        "route": "/industries/retail",
+        "variant": "why-choose",
+        "instance": 0,
+        "heightPx": 1682.3
+      },
+      {
+        "route": "/industries/healthcare",
+        "variant": "why-choose",
+        "instance": 0,
+        "heightPx": 1682.3
+      },
+      {
+        "route": "/industries/telecommunication",
+        "variant": "why-choose",
+        "instance": 0,
+        "heightPx": 1682.3
+      },
+      {
+        "route": "/industries/banking",
+        "variant": "why-choose",
+        "instance": 0,
+        "heightPx": 1682.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-os",
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare",
+    "/industries/insurance",
+    "/industries/retail",
+    "/industries/telecommunication",
+    "/industries/utilities"
+  ]
+}

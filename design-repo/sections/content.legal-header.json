@@ -1,0 +1,140 @@
+{
+  "id": "content.legal-header",
+  "title": "Legal header",
+  "status": "measured",
+  "source": {
+    "id": "src:LegalDoc#div-className-cl-head-data-cx-head",
+    "file": "src/pages/content/LegalDoc.jsx",
+    "tag": "<div className=\"cl-head\" data-cx=\"head\">",
+    "lines": "32-45",
+    "citation": "src/pages/content/LegalDoc.jsx:32-45",
+    "variantSources": {
+      "notice": {
+        "file": "src/pages/company/CandidateNotice.jsx",
+        "tag": "export default function CandidateNotice",
+        "lines": "6-26",
+        "citation": "src/pages/company/CandidateNotice.jsx:6-26"
+      }
+    }
+  },
+  "semantic": {
+    "id": "content.legal-header",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Legal document opener: H2 title, \"Updated Date\" line and a divider.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "document",
+    "notice"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for content.legal-header at 1440px"
+      },
+      "updated": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 6,
+        "x-maxWordsEvidence": "updated-date line"
+      }
+    },
+    "required": [
+      "title",
+      "updated"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "restack",
+        "detail": "Date left-aligned; divider hidden."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 10,
+    "routes": 10,
+    "heightPx": {
+      "min": 104.6,
+      "max": 157.6
+    },
+    "samples": [
+      {
+        "route": "/careers/candidate_notice",
+        "variant": "notice",
+        "instance": 0,
+        "heightPx": 104.6
+      },
+      {
+        "route": "/legal/msa",
+        "variant": "document",
+        "instance": 0,
+        "heightPx": 107.2
+      },
+      {
+        "route": "/legal/sla",
+        "variant": "document",
+        "instance": 0,
+        "heightPx": 107.2
+      },
+      {
+        "route": "/legal/dpa",
+        "variant": "document",
+        "instance": 0,
+        "heightPx": 107.2
+      },
+      {
+        "route": "/legal/aup",
+        "variant": "document",
+        "instance": 0,
+        "heightPx": 107.2
+      },
+      {
+        "route": "/legal/data-act",
+        "variant": "document",
+        "instance": 0,
+        "heightPx": 107.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/careers/candidate_notice",
+    "/legal/aup",
+    "/legal/bug-bounty-terms",
+    "/legal/data-act",
+    "/legal/dora",
+    "/legal/dpa",
+    "/legal/msa",
+    "/legal/privacy"
+  ]
+}

@@ -1,0 +1,73 @@
+/* Platform page group (ai-gateway, deployment, ai-transformation). Values: CLONE_SPEC_PLATFORM.md. */
+
+/* ---- Hover-expand card pair (PlatformCards) ---- */
+@media (min-width: 1440px) {
+  .pc-card { height: 542px; flex: none; transition: width var(--pc-dur) var(--pc-ease), background-color var(--pc-dur) var(--pc-ease); }
+  .pc-card[data-expanded="true"] { width: 60%; background-color: #000; }
+  .pc-card[data-expanded="false"] { width: calc(40% - 10px); background-color: rgba(17, 17, 17, .05); }
+  .pc-card[data-expanded="false"] .pc-title { color: #171719; }
+  .pc-card[data-anim="on"][data-expanded="true"] .pc-title { animation: pc-title-in var(--pc-dur) var(--pc-ease) both; }
+  .pc-card[data-anim="on"][data-expanded="false"] .pc-title { animation: pc-title-out var(--pc-dur) var(--pc-ease) both; }
+  .pc-card .pc-text { color: rgba(255, 255, 255, .7); }
+}
+@media (max-width: 1439.98px) {
+  .pc-card { background-color: #000; }
+  .pc-card .pc-text { color: rgba(255, 255, 255, .9); }
+}
+.pc-title { color: #fafafa; }
+@keyframes pc-title-in { from { color: rgba(250, 250, 250, 0); } to { color: #fafafa; } }
+@keyframes pc-title-out { from { color: #fafafa; } to { color: #171719; } }
+
+/* ---- Feature columns (FeatureGrid) ---- */
+.fg-card { -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.fg-card--light { background-color: rgba(255, 255, 255, .1); }
+.fg-card::after { content: ""; position: absolute; inset: 0; pointer-events: none; border: 0 solid var(--fg-rule); border-left-width: 1px; }
+.fg-card--light { --fg-rule: rgba(0, 0, 0, .1); }
+.fg-card--dark { --fg-rule: rgba(255, 255, 255, .18); }
+@media (max-width: 879.98px) { .fg-card::after { border-left-width: 0; border-top-width: 1px; } }
+
+/* ---- Deployment phase tabs ---- */
+.ph-tab { background-color: rgba(15, 15, 15, 0); color: rgba(255, 255, 255, .45); transition: background-color var(--tab-dur) var(--tab-ease), color var(--tab-dur) var(--tab-ease); }
+.ph-tab[data-active="true"] { background-color: #0f0f0f; color: #fff; }
+
+/* Inter Display 400 (deployment "40+" counter). */
+@font-face { font-family: "Inter Display"; src: url(/fonts/bHYNJqzTyl2lqvmMiRRS6Y16Es.woff2) format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter Display Placeholder"; src: local("Arial"); }
+
+/* ---- Transformation principles accordion ---- */
+.pr-num { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 26px; line-height: 1.25; letter-spacing: -0.05em; color: rgba(49, 49, 49, .6); font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11", "ss04", "ss05"; }
+.pr-title { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 26px; line-height: 1.15; letter-spacing: -0.05em; color: #393939; font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11"; }
+@media (max-width: 1439.98px) {
+  .pr-num, .pr-title { font-size: 24px; line-height: 1.15; letter-spacing: -0.04em; }
+}
+
+/* ---- Gateway video section (verbatim from the live code component's <style>) ---- */
+.gvs, .gvs * { box-sizing: border-box; }
+.gvs { container-type: inline-size; font-family: "Inter", "Inter Placeholder", system-ui, sans-serif; color: #FAFAFA; -webkit-font-smoothing: antialiased; }
+.gvs-wrap { width: min(1680px, calc(100% - 120px)); margin: 0 auto; }
+.gvs-title { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-feature-settings: "ss04", "ss05"; font-size: 48px; line-height: 1.05; letter-spacing: -0.04em; margin: 0; color: #FAFAFA; }
+.gvs-split { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 0.28em; pointer-events: none; z-index: 4; text-shadow: 0 1px 2px rgba(0,0,0,.35), 0 2px 16px rgba(0,0,0,.28); }
+.gvs-frame { position: relative; overflow: hidden; background: #080808; border-radius: 8px; isolation: isolate; }
+.gvs-clip { position: absolute; inset: 0; overflow: hidden; border-radius: 8px; clip-path: inset(0 round 8px); -webkit-mask-image: -webkit-radial-gradient(white, black); transform: translateZ(0); }
+.gvs-media { position: absolute; top: -1px; left: -1px; width: calc(100% + 2px); height: calc(100% + 2px); max-width: none; object-fit: cover; display: block; }
+.gvs-video { transition: opacity .6s ease; }
+.gvs-play { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; z-index: 2; }
+.gvs-play-btn { width: 72px; height: 72px; border-radius: 999px; background: #fff; display: grid; place-items: center; box-shadow: 0 0 0 1px rgba(0,0,0,.06); opacity: 0; transform: scale(.88); transition: opacity .35s ease, transform .35s cubic-bezier(.22,1,.36,1), background-color .2s ease; }
+.gvs-play.is-on .gvs-play-btn { opacity: 1; transform: scale(1); }
+.gvs-hit { position: absolute; inset: 0; z-index: 3; cursor: pointer; }
+.gvs-hit > div { position: absolute !important; inset: 0; border-radius: 8px; }
+.gvs-frame:has(.gvs-hit:hover) .gvs-play-btn { background: #ececec; transform: scale(1.04); }
+.gvs-frame:has(.gvs-hit [role=button]:focus-visible) { outline: 2px solid #fff; outline-offset: 4px; }
+.gvs-hit [role=button]:focus-visible { outline: none; }
+.gvs-frame:has(.gvs-hit [role=button]:focus-visible) .gvs-play-btn { opacity: 1; transform: scale(1); }
+@container (max-width: 1439px) { .gvs-wrap { width: calc(100% - 80px); } .gvs-title { font-size: 40px; } }
+@container (max-width: 879px) { .gvs-wrap { width: calc(100% - 48px); } .gvs-play-btn { width: 56px; height: 56px; } }
+@media (prefers-reduced-motion: reduce) { .gvs * { transition: none !important; } }
+
+/* ---- Gateway hero background (tablet / mobile radial masks) ---- */
+@media (min-width: 880px) and (max-width: 1439.98px) {
+  .gw-hero-bg { -webkit-mask: radial-gradient(150% 57% at 45.9% 100.9%, #0000 35.4088%, #000 100%); mask: radial-gradient(150% 57% at 45.9% 100.9%, #0000 35.4088%, #000 100%); }
+}
+@media (max-width: 879.98px) {
+  .gw-hero-bg { -webkit-mask: radial-gradient(200% 33% at 50% 89.8%, #0000 35.4088%, #000 100%); mask: radial-gradient(200% 33% at 50% 89.8%, #0000 35.4088%, #000 100%); }
+}

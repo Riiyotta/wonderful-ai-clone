@@ -1,0 +1,56 @@
+/* Footer - CLONE_SPEC §2.8 (+ saved Framer CSS for tablet/mobile variants). */
+.ft-small {
+  margin: 0;
+  font-family: Inter, "Inter Placeholder", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13.2px;
+  letter-spacing: -0.12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.ft-link {
+  font-family: Inter, "Inter Placeholder", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: -0.5px;
+  color: rgba(255, 255, 255, 0.7); /* #ffffffb3 */
+  text-decoration: none;
+  white-space: nowrap;
+}
+.ft-link:hover { color: #fafafa; }
+.ft-linkp { margin: 0; font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 500; font-size: 14px; line-height: 16.8px; letter-spacing: -0.5px; color: rgba(92, 92, 92, 0.5); }
+/* Cookie trigger (wrapper opacity 0). Live: Framer cookie button 103.8x14, Inter 14/14 400, rgba(0,0,0,.8).
+   Legal column = 13.2 title + 6 x 16.8 links + 7 x 12 gaps + 14 = 212. */
+.ft-cookie.ft-link { display: flex; height: 14px; background: none; border: 0; padding: 0; cursor: pointer;
+  font-weight: 400; line-height: 14px; letter-spacing: normal; color: rgba(0, 0, 0, 0.8); }
+
+/* "Grey small" button: height 37, padding 6px 16px, white fill + 1px white ::after border */
+.ft-pill {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #171719;
+  font-family: Inter, "Inter Placeholder", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  font-feature-settings: "ss03";
+  white-space: nowrap;
+  text-decoration: none;
+  overflow: hidden;
+}
+.ft-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #ffffff;
+  border-radius: inherit;
+  pointer-events: none;
+}

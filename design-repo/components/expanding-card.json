@@ -1,0 +1,30 @@
+{
+  "id": "component.expanding-card",
+  "kind": "component",
+  "title": "Expanding card",
+  "purpose": "One of a pair of cards; the hovered card widens to 60% and reveals image and copy.",
+  "props": {
+    "title": {
+      "maxWords": 8
+    },
+    "body": {
+      "maxWords": 30
+    }
+  },
+  "tokens": [
+    "gradient.expanded-card-scrim",
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/pages/platform/PlatformCards.jsx",
+    "tag": "export default function PlatformCards",
+    "lines": "13-63",
+    "citation": "src/pages/platform/PlatformCards.jsx:13-63"
+  },
+  "composes": [
+    "primitive.media-image"
+  ],
+  "motion": [
+    "expand-card-spring"
+  ]
+}

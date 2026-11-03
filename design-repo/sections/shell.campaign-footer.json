@@ -1,0 +1,148 @@
+{
+  "id": "shell.campaign-footer",
+  "title": "Campaign footer",
+  "status": "measured",
+  "source": {
+    "id": "src:FcbFooter#export-default-function-FcbFooter",
+    "file": "src/pages/regional/FcbFooter.jsx",
+    "tag": "export default function FcbFooter",
+    "lines": "4-27",
+    "citation": "src/pages/regional/FcbFooter.jsx:4-27"
+  },
+  "semantic": {
+    "id": "shell.campaign-footer",
+    "category": "SHELL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Minimal footer for campaign landing pages: logo, copyright, a short link row and a faint wordmark.",
+  "themes": [
+    "dark"
+  ],
+  "variants": [
+    "campaign",
+    "campaign-confirmation"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "brandMark": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.source-wordmark",
+          "brand-mark.generated",
+          "brand-mark.user-supplied"
+        ]
+      },
+      "legalLine": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "campaign footer copyright 12px line"
+      },
+      "links": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "$ref": "#/definitions/cta"
+        }
+      },
+      "watermark": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.source-wordmark",
+          "brand-mark.generated",
+          "brand-mark.user-supplied"
+        ]
+      }
+    },
+    "required": [
+      "brandMark"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeLast": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "resize",
+        "detail": "Wordmark 93% wide, clipped box 136 (t) / 80 (m)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".brandMark",
+      "assetRoles": [
+        "logo.source-wordmark",
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ]
+    },
+    {
+      "field": ".watermark",
+      "assetRoles": [
+        "logo.source-wordmark",
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "brand-mark.generated",
+    "brand-mark.user-supplied",
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.brand-mark",
+    "primitive.text-link"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 3,
+    "routes": 3,
+    "heightPx": {
+      "min": 382.1,
+      "max": 500
+    },
+    "samples": [
+      {
+        "route": "/fcb/x/slavia-prague",
+        "variant": "campaign",
+        "instance": 0,
+        "heightPx": 382.1
+      },
+      {
+        "route": "/fcb/x/arsenal",
+        "variant": "campaign",
+        "instance": 0,
+        "heightPx": 382.1
+      },
+      {
+        "route": "/fcb/x/thank-you",
+        "variant": "campaign-confirmation",
+        "instance": 0,
+        "heightPx": 500
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/fcb/x/arsenal",
+    "/fcb/x/slavia-prague",
+    "/fcb/x/thank-you"
+  ]
+}

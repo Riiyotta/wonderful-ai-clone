@@ -1,0 +1,174 @@
+{
+  "id": "content.legal-section",
+  "title": "Legal section",
+  "status": "measured",
+  "source": {
+    "id": "src:LegalDoc#div-className-cl-body-cx-rtc",
+    "file": "src/pages/content/LegalDoc.jsx",
+    "tag": "<div className=\"cl-body cx-rtc\"",
+    "lines": "47-47",
+    "citation": "src/pages/content/LegalDoc.jsx:47-47"
+  },
+  "semantic": {
+    "id": "content.legal-section",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "One heading-bounded part of a legal document (or the preamble before the first heading): heading + clauses, lists and tables.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 30,
+        "x-maxWordsEvidence": "legal headings up to 26 words (measured headingWordsMax=26)"
+      },
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 80,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "paragraph",
+                "list",
+                "table"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 400,
+              "x-maxWordsEvidence": "longest measured clause 344 words"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 30,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 200,
+                "x-maxWordsEvidence": "list items"
+              }
+            },
+            "rows": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 40,
+              "items": {
+                "type": "array",
+                "minItems": 1,
+                "maxItems": 6,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxWords": 120,
+                  "x-maxWordsEvidence": "table cells"
+                }
+              }
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        }
+      }
+    },
+    "required": [
+      "blocks"
+    ]
+  },
+  "constraints": {
+    "repeatable": true,
+    "maxPerPage": 60
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Padding 60/20."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.rich-text"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 115,
+    "routes": 10,
+    "heightPx": {
+      "min": 67.2,
+      "max": 4447.5
+    },
+    "samples": [
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 0,
+        "heightPx": 898.3
+      },
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 1,
+        "heightPx": 405.5
+      },
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 2,
+        "heightPx": 3401.5
+      },
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 3,
+        "heightPx": 427.2
+      },
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 4,
+        "heightPx": 266.6
+      },
+      {
+        "route": "/careers/candidate_notice",
+        "instance": 5,
+        "heightPx": 1066.8
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/careers/candidate_notice",
+    "/legal/aup",
+    "/legal/bug-bounty-terms",
+    "/legal/data-act",
+    "/legal/dora",
+    "/legal/dpa",
+    "/legal/msa",
+    "/legal/privacy"
+  ],
+  "notes": [
+    "Legal pages are decomposed per heading (R6); the first part may be a heading-less preamble."
+  ]
+}

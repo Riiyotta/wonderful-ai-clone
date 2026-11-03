@@ -1,0 +1,807 @@
+{
+  "$description": "Every route the clone serves, mapped to exactly one template. 103 routes come from the live sitemap (_source/routes.txt) plus /fcb/x/thank-you. aliases are percent-encoded duplicate registrations of the same pages, not separate routes.",
+  "version": "1.0.0",
+  "routes": [
+    {
+      "path": "/",
+      "template": "home",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/App.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/deployment",
+      "template": "approach",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/platform.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/ai-transformation",
+      "template": "approach",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/platform.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog",
+      "template": "blog-index",
+      "title": "The Wonderful Blog",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/about-us",
+      "template": "about",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/careers",
+      "template": "careers",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/legal",
+      "template": "legal-index",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site-light-footer"
+    },
+    {
+      "path": "/contact",
+      "template": "contact",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "site-header-only"
+    },
+    {
+      "path": "/greece",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/romania",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/adriatics",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/italy",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/switzerland",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/baltics",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site",
+      "note": "Live layout bug kept on purpose: first paragraph absolutely positioned, overlapping the last paragraph."
+    },
+    {
+      "path": "/netherlands",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/belgium",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/poland",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/uae",
+      "template": "country-landing",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/archive/comeet-style",
+      "template": "embed-shell",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/ashby",
+      "template": "not-found",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "site",
+      "note": "Renders the site 404 page on live."
+    },
+    {
+      "path": "/thank-you",
+      "template": "confirmation",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/careers/candidate_notice",
+      "template": "legal-document",
+      "title": "Candidate Privacy Notice",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/press",
+      "template": "press",
+      "title": "Wonderful in the News",
+      "mountedIn": "src/routes/company.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/ai-os",
+      "template": "product",
+      "title": "Wonderful AI OS | The unified operating layer for the AI-native enterprise",
+      "mountedIn": "src/routes/product.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/agents",
+      "template": "product",
+      "title": "Wonderful Agents | Deploy agents anywhere work happens",
+      "mountedIn": "src/routes/product.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/systems",
+      "template": "product",
+      "title": "Wonderful Systems | Software built for the way you work",
+      "mountedIn": "src/routes/product.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/ai-gateway",
+      "template": "product",
+      "title": "Wonderful AI Gateway | A command center for all enterprise AI",
+      "mountedIn": "src/routes/platform.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/legal/msa",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/sla",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/dpa",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/aup",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/data-act",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/dora",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/privacy",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/bug-bounty-terms",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/legal/websiteterms",
+      "template": "legal-document",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/industries/airlines",
+      "template": "industry",
+      "title": "AI Agents for Airlines | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/retail",
+      "template": "industry",
+      "title": "AI Agents for Retail | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/healthcare",
+      "template": "industry",
+      "title": "AI Agents for Healthcare | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/telecommunication",
+      "template": "industry",
+      "title": "AI Agents for Telecom | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/banking",
+      "template": "industry",
+      "title": "AI Agents for Banking | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/utilities",
+      "template": "industry",
+      "title": "AI Agents for Utilities | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/industries/insurance",
+      "template": "industry",
+      "title": "AI Agents for Insurance | Wonderful",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1400,
+        "mobile": 880
+      }
+    },
+    {
+      "path": "/fcb/x/slavia-prague",
+      "template": "event-registration",
+      "title": "FC Bayern vs. Slavia Prague | Wonderful × FC Bayern Matchday",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "campaign"
+    },
+    {
+      "path": "/fcb/x/arsenal",
+      "template": "event-registration",
+      "title": "FC Bayern vs. Arsenal | Wonderful × FC Bayern Matchday",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "campaign"
+    },
+    {
+      "path": "/case-studies/financial-services",
+      "template": "case-study",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1200,
+        "mobile": 810
+      }
+    },
+    {
+      "path": "/case-studies/telecommunication",
+      "template": "case-study",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1200,
+        "mobile": 810
+      }
+    },
+    {
+      "path": "/case-studies/healthcare",
+      "template": "case-study",
+      "title": "Wonderful | The Enterprise AI OS",
+      "mountedIn": "src/routes/industries.jsx",
+      "chrome": "site",
+      "footerBreakpoints": {
+        "desktop": 1200,
+        "mobile": 810
+      }
+    },
+    {
+      "path": "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership",
+      "template": "blog-article",
+      "title": "Announcing our strategic partnership with KPN Ventures",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/announcing-wonderful-ai-gateway",
+      "template": "blog-article",
+      "title": "Announcing the Wonderful AI Gateway: Every AI dollar, by team and by task",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents",
+      "template": "blog-article",
+      "title": "Wonderful agents can now work with your customers’ agents",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-united-kingdom",
+      "template": "blog-article",
+      "title": "Wonderful launches in the UK",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/let-the-field-build-the-product",
+      "template": "blog-article",
+      "title": "Let the Field Build the Product",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+      "template": "blog-article",
+      "title": "How Mercado Libre built an AI-native operation for buying and selling used cars",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership",
+      "template": "blog-article",
+      "title": "FC Bayern and Wonderful Announce Enterprise AI Partnership",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-raises-550m-series-c",
+      "template": "blog-article",
+      "title": "Wonderful Raises $550 Million Series C to Scale the AI Operating System for the Enterprise",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/building-an-ai-platform-won’t-transform-your-business",
+      "template": "blog-article",
+      "title": "Building an AI Platform Won’t Transform Your Business",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/maccabi",
+      "template": "blog-article",
+      "title": "How a national healthcare provider built a full AI operation from the ground up",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-india",
+      "template": "blog-article",
+      "title": "Wonderful launches in India",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/unlocking-capacity-the-real-roi-of-ai",
+      "template": "blog-article",
+      "title": "Unlocking Capacity: The Real ROI of AI",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/elta",
+      "template": "blog-article",
+      "title": "How ELTA Cut Peak Waiting Times to Zero and Quadrupled Call Capacity in 5 Weeks",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/when-the-ceo-means-it",
+      "template": "blog-article",
+      "title": "When the CEO means it",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/ai-doesnt-care-about-your-org-chart",
+      "template": "blog-article",
+      "title": "AI Doesn't Care About Your Org Chart",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/we-walked-out-with-a-real-deployment-path",
+      "template": "blog-article",
+      "title": "We walked out with a real deployment path",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-agent-needed-a-map",
+      "template": "blog-article",
+      "title": "The agent needed a map",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/computer-use",
+      "template": "blog-article",
+      "title": "Wonderful agents can now operate any legacy system",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/open-by-default-competitive-by-design",
+      "template": "blog-article",
+      "title": "Open by default, competitive by design",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-australia",
+      "template": "blog-article",
+      "title": "Wonderful Australia",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/banco-caja-social",
+      "template": "blog-article",
+      "title": "How Banco Caja Social partnered with Wonderful to take an AI collections agent from zero to production in 19 days",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/petrol-ofisi",
+      "template": "blog-article",
+      "title": "How Petrol Ofisi cut IT call handling time by 75% in 3 weeks",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/ote",
+      "template": "blog-article",
+      "title": "How a leading European telecom tripled AI call deflection in 8 weeks",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve",
+      "template": "blog-article",
+      "title": "The experience problem your AI agent didn't solve",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/ppc-energie",
+      "template": "blog-article",
+      "title": "How PPC Energie cut call handling time by 75% in four weeks",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+      "template": "blog-article",
+      "title": "Why enterprise AI gets stuck in pilot mode",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-singapore",
+      "template": "blog-article",
+      "title": "Wonderful Singapore",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/telefonica",
+      "template": "blog-article",
+      "title": "How Telefónica built a billing agent that resolves 77% of issues at scale",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+      "template": "blog-article",
+      "title": "Announcing Wonderful Apps: Custom interfaces for every agent",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+      "template": "blog-article",
+      "title": "Announcing our Partnership with McKinsey",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/bank-hapoalim",
+      "template": "blog-article",
+      "title": "How a $35B retail bank built its own agent on Wonderful",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+      "template": "blog-article",
+      "title": "The Hard Part of AI Agents Isn’t Building Them",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-3-levels-of-ai-adoption",
+      "template": "blog-article",
+      "title": "The 3 Levels of AI Adoption",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+      "template": "blog-article",
+      "title": "Wonderful Raises $150M Series B at a $2B Valuation",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/going-codeless",
+      "template": "blog-article",
+      "title": "Going Codeless",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-asia-pacific",
+      "template": "blog-article",
+      "title": "Wonderful Asia-Pacific",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/latam",
+      "template": "blog-article",
+      "title": "Wonderful LATAM",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/owning-the-last-mile",
+      "template": "blog-article",
+      "title": "FDE: The Engineers Owning The Last Mile",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-italy",
+      "template": "blog-article",
+      "title": "Wonderful Italy",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-learning-curve-you-can’t-skip",
+      "template": "blog-article",
+      "title": "The Learning Curve You Can’t Skip",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/being-long-ai",
+      "template": "blog-article",
+      "title": "Being Long On AI",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-gradium",
+      "template": "blog-article",
+      "title": "Production-Grade Voice in France",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-france",
+      "template": "blog-article",
+      "title": "Wonderful France",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/the-execution-gap-no-model-can-close",
+      "template": "blog-article",
+      "title": "The Execution Gap No Model Can Close",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-an-enterprise-platform-to-turn-ai-ambition-into-agents-in-production",
+      "template": "blog-article",
+      "title": "Wonderful: An Enterprise Platform to Turn AI Ambition into Agents in Production",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/fast-iteration-as-a-strategy",
+      "template": "blog-article",
+      "title": "Fast Iteration As A Strategy",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-switzerland",
+      "template": "blog-article",
+      "title": "Wonderful Switzerland",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-netherlands",
+      "template": "blog-article",
+      "title": "Wonderful Netherlands",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/how-to-identify-the-right-ai-use-cases",
+      "template": "blog-article",
+      "title": "How to Identify the Right AI Use Cases",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/wonderful-greece",
+      "template": "blog-article",
+      "title": "Wonderful Greece",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/blog-articles/build-vs-buy-isn’t-a-technical-choice",
+      "template": "blog-article",
+      "title": "Build vs Buy Isn’t a Technical Choice",
+      "mountedIn": "src/routes/content.jsx",
+      "chrome": "site"
+    },
+    {
+      "path": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+      "template": "job-detail",
+      "title": "Head of Delivery, Poland - Wonderful | AI Transformation for the Bold Enterprise",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+      "template": "job-detail",
+      "title": "Technical Program Manager, Brazil - Wonderful | AI Transformation for the Bold Enterprise",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "none"
+    },
+    {
+      "path": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+      "template": "job-application",
+      "title": "Head of Delivery, Poland - Wonderful | AI Transformation for the Bold Enterprise",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "none",
+      "note": "Live form is a blocked third-party iframe; content unverified."
+    },
+    {
+      "path": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+      "template": "job-application",
+      "title": "Technical Program Manager, Brazil - Wonderful | AI Transformation for the Bold Enterprise",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "none",
+      "note": "Live form is a blocked third-party iframe; content unverified."
+    },
+    {
+      "path": "/fcb/x/thank-you",
+      "template": "confirmation",
+      "title": "Thank you for registering | Wonderful × FC Bayern",
+      "mountedIn": "src/routes/regional.jsx",
+      "chrome": "campaign",
+      "note": "Not in the live sitemap; the live campaign form redirects here (src/routes/regional.jsx)."
+    }
+  ],
+  "aliases": [
+    {
+      "alias": "/blog-articles/building-an-ai-platform-won%E2%80%99t-transform-your-business",
+      "path": "/blog-articles/building-an-ai-platform-won’t-transform-your-business",
+      "note": "percent-encoded duplicate registration for a typographic-apostrophe slug (src/routes/content.jsx); same page, not a separate route"
+    },
+    {
+      "alias": "/blog-articles/the-hard-part-of-ai-agents-isn%E2%80%99t-building-them",
+      "path": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+      "note": "percent-encoded duplicate registration for a typographic-apostrophe slug (src/routes/content.jsx); same page, not a separate route"
+    },
+    {
+      "alias": "/blog-articles/the-learning-curve-you-can%E2%80%99t-skip",
+      "path": "/blog-articles/the-learning-curve-you-can’t-skip",
+      "note": "percent-encoded duplicate registration for a typographic-apostrophe slug (src/routes/content.jsx); same page, not a separate route"
+    },
+    {
+      "alias": "/blog-articles/build-vs-buy-isn%E2%80%99t-a-technical-choice",
+      "path": "/blog-articles/build-vs-buy-isn’t-a-technical-choice",
+      "note": "percent-encoded duplicate registration for a typographic-apostrophe slug (src/routes/content.jsx); same page, not a separate route"
+    }
+  ],
+  "unmountedButLinked": [
+    {
+      "path": "/safety",
+      "note": "Footer \"AI Safety\" link; not in the live sitemap and not mounted by the clone (falls through to the clone NotFound)."
+    }
+  ]
+}

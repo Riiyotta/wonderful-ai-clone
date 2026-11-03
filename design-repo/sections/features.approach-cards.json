@@ -1,0 +1,127 @@
+{
+  "id": "features.approach-cards",
+  "title": "Approach cards",
+  "status": "measured",
+  "source": {
+    "id": "src:DeployCards#export-function-DeployCardsDesktop",
+    "file": "src/components/darkband/DeployCards.jsx",
+    "tag": "export function DeployCardsDesktop",
+    "lines": "54-62",
+    "citation": "src/components/darkband/DeployCards.jsx:54-62"
+  },
+  "semantic": {
+    "id": "features.approach-cards",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Two tall image cards (deployment teams, strategy) with centred title, copy and a small pill each.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 7,
+              "x-maxWordsEvidence": "measured headingWordsMax=5 for features.approach-cards at 1440px"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 23,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=18 for features.approach-cards at 1440px"
+            },
+            "cta": {
+              "$ref": "#/definitions/cta"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "body",
+            "cta",
+            "image"
+          ]
+        }
+      }
+    },
+    "required": [
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Cards stack 342x500; section moves after footer in DOM but stays visually after the platform intro."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.overlay-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 979,
+      "max": 979
+    },
+    "samples": [
+      {
+        "route": "/",
+        "instance": 0,
+        "heightPx": 979
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

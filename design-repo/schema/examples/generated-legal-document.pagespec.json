@@ -1,0 +1,124 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "legal-document",
+  "route": "/terms/acceptable-use",
+  "meta": {
+    "title": "Halcyon Grid acceptable use terms"
+  },
+  "brand": {
+    "name": "Halcyon Grid",
+    "mark": {
+      "assetRole": "brand-mark.generated",
+      "alt": "Halcyon Grid",
+      "src": "generated://halcyon/mark.svg"
+    }
+  },
+  "nodes": [
+    {
+      "section": "content.legal-header",
+      "variant": "document",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "title": "Halcyon Grid acceptable use terms",
+        "updated": "Updated Date: Jan 5, 2031"
+      }
+    },
+    {
+      "section": "structure.hairline-divider",
+      "variant": "light",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {}
+    },
+    {
+      "section": "content.legal-section",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "These terms describe how the relay service may be used by customers and their staff. They sit alongside the main service agreement."
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.legal-section",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "1. Permitted use",
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "You may use the service to coordinate operational work for your own organisation and its contractors."
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.legal-section",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "2. Prohibited use",
+        "blocks": [
+          {
+            "kind": "list",
+            "items": [
+              "Interfering with safety systems or emergency channels",
+              "Attempting to access data belonging to another customer",
+              "Sending automated messages without a lawful basis"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.legal-section",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "3. Reporting concerns",
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "Report suspected misuse to trust@halcyon-grid.example and we will respond within two working days."
+          },
+          {
+            "kind": "table",
+            "rows": [
+              [
+                "Channel",
+                "Response time"
+              ],
+              [
+                "Email",
+                "Two working days"
+              ],
+              [
+                "Phone",
+                "Same day"
+              ]
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

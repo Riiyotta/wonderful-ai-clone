@@ -1,0 +1,91 @@
+{
+ "slug": "let-the-field-build-the-product",
+ "path": "/blog-articles/let-the-field-build-the-product",
+ "category": "In production",
+ "pageTitle": "Let the Field Build the Product",
+ "author": "Boaz Francis, Head of FDE",
+ "date": "Sep 17, 2026",
+ "datetime": "2026-09-17T00:00:00.000Z",
+ "title": "Let the Field Build the Product",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/ic4FBzjROphJUcujluPKILebdzA.jpg",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">We recently launched an early version of a new product to FDEs across Wonderful and opened a Slack channel for feedback. Within hours, something interesting happened: people weren't just reporting issues. They were opening pull requests.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">One FDE ran into a performance problem while running several agents at once, investigated what was happening, and proposed a fix. Another ran into an issue that made simple file uploads unreliable and rewrote the handler that week rather than waiting for a ticket to clear the queue. Smaller fixes followed the same pattern: awkward navigation, search that could be better, file names that weren't displaying properly, commands that were hard to find.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">At some point, the feedback channel started looking like an engineering channel. That's exactly what we want.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The field should be part of R&amp;D</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Most software companies have some version of the same feedback loop: a customer runs into a problem. They tell someone in the field. It gets passed to product. Product prioritizes it. Engineering builds it. Eventually, the solution makes its way back to the customer. There are a lot of steps between the person who sees the problem and the person who can fix it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">One of the core ideas behind forward deployment is to shorten that distance. Our Forward Deployed Engineers work directly with customers to get AI into production. They see where integrations get difficult, where users get stuck, what breaks in real environments, and what capabilities are missing.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That context is hard to recreate in a product setting. FDEs know which problems come up repeatedly and which small annoyances become big problems when you're deploying across a large company. And they're engineers. We don't want them to just write down what they learn and send it back to someone else. Where it makes sense, we want them to act on it themselves.</p><h2 class=\"framer-text framer-styles-preset-190xti5\"><br class=\"framer-text trailing-break\"></h2><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Coding agents change what's possible</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The principle isn't new. What's changing is how easy it is to put into practice. Giving hundreds of engineers access to a large codebase doesn't automatically make development faster. Understanding unfamiliar code takes time, and even small changes can require help from the core engineering team.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Coding agents change that. If an engineer understands the problem, it's becoming much easier to find the relevant part of the codebase, understand how it works, and make a contribution. There are still owners. There are still reviews and engineering standards. The goal isn't to have everyone changing everything. It's to make the distance between understanding a problem and contributing to its solution much shorter.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">For FDEs, that's particularly powerful because they already have something that's difficult to manufacture: context from production.</p><h2 class=\"framer-text framer-styles-preset-190xti5\"><br class=\"framer-text trailing-break\"></h2><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Production is where you learn what the product needs</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Enterprise AI is difficult to build entirely from a product spec. Every company has different systems, security requirements, processes, and ways of working. Something that looks straightforward when you're designing it can become much more complicated when you're connecting it to real infrastructure and putting it in front of real users.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our FDEs encounter those realities every day. They're connecting systems that weren't designed to work together. They're navigating security and infrastructure constraints. They're watching how people actually use AI once it's part of their work. Every deployment surfaces a gap the spec didn't anticipate.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The performance fix and the upload rewrite above both started that way: not as feature requests, but as something an FDE ran into while the customer was watching.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Deployment makes the product better</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">An FDE encounters a problem at one customer and helps solve it. That solution becomes part of the platform. The next team starts with a better product, encounters a different problem, solves it, and brings that learning back too. Over time, the leverage FDEs get from the product compounds.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That's one of the reasons we've invested so much in putting technical teams close to our customers around the world. Deployment isn't something that happens after the product is built. It's part of how the product gets better.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The people with the deepest understanding of what happens in production shouldn't be standing at the end of the product feedback loop. They should be part of the build.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our FDEs don't just deploy what we build. Helping build what comes next is part of the job.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

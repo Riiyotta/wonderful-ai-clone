@@ -1,0 +1,24 @@
+{
+  "id": "primitive.brand-mark",
+  "kind": "primitive",
+  "title": "Brand mark slot",
+  "purpose": "Wordmark or product lockup slot in nav, footer and hero tag rows. Reference mode: source wordmark; generated mode: placeholder or user-supplied mark only.",
+  "props": {
+    "media": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [],
+  "source": {
+    "file": "src/components/nav/Logos.jsx",
+    "tag": "export function NavLogo",
+    "lines": "25-31",
+    "citation": "src/components/nav/Logos.jsx:25-31"
+  },
+  "assetRoles": [
+    "logo.source-wordmark",
+    "logo.source-product-lockup",
+    "brand-mark.generated",
+    "brand-mark.user-supplied"
+  ]
+}

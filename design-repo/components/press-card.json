@@ -1,0 +1,36 @@
+{
+  "id": "component.press-card",
+  "kind": "component",
+  "title": "Press card",
+  "purpose": "Square image card with badge, outlet, clamped title and outlet logo.",
+  "props": {
+    "title": {
+      "maxWords": 25
+    },
+    "outlet": {
+      "maxWords": 4
+    },
+    "image": {
+      "$ref": "media"
+    },
+    "logo": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/pages/company/Press.jsx",
+    "tag": "function PressCard",
+    "lines": "30-61",
+    "citation": "src/pages/company/Press.jsx:30-61"
+  },
+  "composes": [
+    "primitive.tag-chip",
+    "primitive.media-image"
+  ],
+  "motion": [
+    "press-card-appear"
+  ]
+}

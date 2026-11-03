@@ -1,0 +1,92 @@
+{
+  "id": "conversion.apply-contact",
+  "title": "Apply contact",
+  "status": "measured",
+  "source": {
+    "id": "src:Careers#className-ccr-apply",
+    "file": "src/pages/company/Careers.jsx",
+    "tag": "className=\"ccr-apply\"",
+    "lines": "151-168",
+    "citation": "src/pages/company/Careers.jsx:151-168"
+  },
+  "semantic": {
+    "id": "conversion.apply-contact",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Large \"Apply here\" link and a side column with an email link and a privacy-notice sentence.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "heading \"Apply here\""
+      },
+      "contact": {
+        "$ref": "#/definitions/cta"
+      },
+      "note": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 20,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=16 for conversion.apply-contact at 1440px"
+      }
+    },
+    "required": [
+      "title",
+      "contact"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-rise"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "restack",
+        "detail": "Mobile heading shows live's placeholder \"Accelerating delivery\" (reproduced)."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 241.8,
+      "max": 241.8
+    },
+    "samples": [
+      {
+        "route": "/careers",
+        "instance": 0,
+        "heightPx": 241.8
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/careers"
+  ]
+}

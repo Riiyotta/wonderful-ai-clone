@@ -1,0 +1,99 @@
+{
+ "slug": "ppc-energie",
+ "path": "/blog-articles/ppc-energie",
+ "category": "Customer stories",
+ "pageTitle": "How PPC Energie cut call handling time by 75% in four weeks",
+ "author": "The Wonderful Team",
+ "date": "May 15, 2026",
+ "datetime": "2026-05-15T00:00:00.000Z",
+ "title": "How PPC Energie cut call handling time by 75% in four weeks",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/rvW1QYFlHYMCXuaWKY0GJbXFUc.jpg",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": {
+   "src": "/videos/ppc-energie-16x9-no-ai-leaders.mp4",
+   "poster": "/assets/c9A8by1EDeyiDahftXP5aIPzYMQ.png",
+   "controls": true,
+   "autoplay": true,
+   "loop": true,
+   "muted": true,
+   "preload": "metadata"
+  }
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">PPC Energie is a leading integrated energy provider in Romania, serving residential and business customers across the country. Customer support operations run under constant pressure: billing queries and contract changes generate a steady stream of inbound calls. During seasonal spikes, when billing cycles align with meter reading campaigns, that volume surges well beyond what the team can handle at steady state.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Previous automation hadn't solved the problem. The existing IVR could route calls but couldn't resolve them: customers with billing questions still ended up waiting for a human agent. During peak periods, queues stretched long enough that abandonment rates climbed. Support was also fragmented across systems, which meant customer support representatives were context-switching between platforms on every call, adding time to every interaction before they could even begin to help.<br class=\"framer-text\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">From kickoff to production in four weeks</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Discovery revealed that the high-volume inquiry types were predictable, and a few categories were generating the most strain on the team: billing details, general invoice information, and contracts. But a surface-level bot answering FAQs wouldn't move the numbers, and handling any of them properly required live integration with PPC's billing system, contract management platform, and IVR systems.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The first version of the agent, covering billing information, general information about payment methods, and registering proof of payment, was delivered within 4 weeks.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Building it</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent now resolves core customer journeys end-to-end rather than providing scripted answers. Wonderful worked on the ground with PPC's customer service, engineering, and executive teams to identify the highest-impact use cases and prioritize the right problems to solve first. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent handles billing inquiries, guides the customers through payment methods, registers proof of payment in real time, and provides detailed line-by-line invoice breakdowns across PPC's customer base. It connects directly with PPC's billing, contract management, and IVR systems, running on a secure AWS environment. Wonderful's on-site <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/blog-articles/owning-the-last-mile\" target=\"_blank\" rel>FDE team</a> worked alongside PPC's customer service and engineering teams throughout, running rapid iteration cycles to refine core flows and test edge cases against real usage patterns.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">What changed</strong></h3><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Average Handling Time decreased from 6 minutes to 1:30 minutes</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Containment rate increased to 77%</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">91% positive customer feedback</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">0 wait time</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Available 24/7</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">PPC's deployment shows what changes when an AI agent has real access to production systems. What used to take around 6 minutes now takes 90 seconds, with the agent reaching directly into billing and contract systems, completing the transaction, and closing the call. The 4x Average Handling Time reduction represents a fundamental change in how customer support work can be done.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">\"Wonderful delivered production-ready voice agents in four weeks, integrated with our billing and contract systems from day one. Their ability to move fast and handle complex edge cases reshaped how our leadership views AI in customer operations.\"</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Ioana Krekan-Apostu, Customer Operations Director, PPC Energie</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text\">\"Over half of European businesses have now adopted AI, but our research shows that the real differentiator is moving beyond experimentation into production. Romania has exceptional technical talent and an energy sector ready to innovate. PPC Energie is a great example of that ambition: a company that chose to go live with AI in real customer interactions rather than keep it in a lab. We're proud that AWS provides the secure, scalable environment where customers like PPC and partners like Wonderful can turn that ambition into measurable business impact. Romania's energy sector is showing that the path from adoption to impact can be measured in weeks, not years.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Cristian Popescu, Romania Country Lead, Enterprise Business at Amazon Web Services (AWS)</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

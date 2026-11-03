@@ -1,0 +1,138 @@
+{
+  "id": "features.split-list",
+  "title": "Split list with image",
+  "status": "measured",
+  "source": {
+    "id": "src:Adapts#export-default-function-Adapts",
+    "file": "src/pages/product/systems/Adapts.jsx",
+    "tag": "export default function Adapts",
+    "lines": "25-56",
+    "citation": "src/pages/product/systems/Adapts.jsx:25-56"
+  },
+  "semantic": {
+    "id": "features.split-list",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 and intro over a divided list of benefits on the left, a tall image on the right.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 9,
+        "x-maxWordsEvidence": "measured headingWordsMax=7 for features.split-list at 1440px"
+      },
+      "intro": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=28 for features.split-list at 1440px"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "item titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 35,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=28 for features.split-list at 1440px"
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      },
+      "image": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "items",
+      "image"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Text then image (aspect 1.34 / 1.05)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 957,
+      "max": 957
+    },
+    "samples": [
+      {
+        "route": "/systems",
+        "instance": 0,
+        "heightPx": 957
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/systems"
+  ]
+}

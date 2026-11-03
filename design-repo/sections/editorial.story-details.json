@@ -1,0 +1,151 @@
+{
+  "id": "editorial.story-details",
+  "title": "Story details sidebar",
+  "status": "measured",
+  "source": {
+    "id": "src:Article#function-Sidebar",
+    "file": "src/pages/content/Article.jsx",
+    "tag": "function Sidebar",
+    "lines": "78-104",
+    "citation": "src/pages/content/Article.jsx:78-104"
+  },
+  "semantic": {
+    "id": "editorial.story-details",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Sticky sidebar beside the article body: about-the-company text, detail rows and metrics.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "about": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=9 for editorial.story-details at 1440px"
+      },
+      "details": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "labels"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 12,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=9 for editorial.story-details at 1440px"
+            }
+          },
+          "required": [
+            "label",
+            "value"
+          ]
+        }
+      },
+      "metrics": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "values"
+            },
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "labels"
+            }
+          },
+          "required": [
+            "value",
+            "label"
+          ]
+        }
+      }
+    },
+    "required": [
+      "details"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "sticky": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "move",
+        "detail": "Moves below the body with a top border."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.stat-block"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 3,
+    "routes": 3,
+    "heightPx": {
+      "min": 278.4,
+      "max": 590.6
+    },
+    "samples": [
+      {
+        "route": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+        "instance": 0,
+        "heightPx": 278.4
+      },
+      {
+        "route": "/blog-articles/maccabi",
+        "instance": 0,
+        "heightPx": 278.4
+      },
+      {
+        "route": "/blog-articles/ote",
+        "instance": 0,
+        "heightPx": 590.6
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog-articles/maccabi",
+    "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+    "/blog-articles/ote"
+  ]
+}

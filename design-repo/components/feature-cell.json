@@ -1,0 +1,31 @@
+{
+  "id": "component.feature-cell",
+  "kind": "component",
+  "title": "Feature cell",
+  "purpose": "Icon, title and description with a left rule and backdrop blur.",
+  "props": {
+    "icon": {
+      "$ref": "media"
+    },
+    "title": {
+      "maxWords": 6
+    },
+    "body": {
+      "maxWords": 40
+    }
+  },
+  "tokens": [
+    "component.feature-cell.padding",
+    "blur.feature",
+    "type.heading.h5"
+  ],
+  "source": {
+    "file": "src/pages/product/shared/FeatureCell.jsx",
+    "tag": "export default function FeatureCell",
+    "lines": "7-22",
+    "citation": "src/pages/product/shared/FeatureCell.jsx:7-22"
+  },
+  "composes": [
+    "primitive.icon-phosphor"
+  ]
+}

@@ -1,0 +1,652 @@
+{
+  "$description": "How extraction/measure_sections.mjs attributes rendered DOM boxes to section contracts at 1440x900. Selectors are CSS selectors over the rendered clone DOM (provenance only, never contract vocabulary). Step kinds: sel (first visible match), selAll (each visible match), union (one box spanning several selectors), chunks (heading-bounded parts of a prose container), classmap (children of a container mapped by class), blocks (in-flow top-level blocks in order, descending through single wrappers). flow=fixed|sticky|absolute marks boxes that take no page height in the wrapper gate.",
+  "version": "1.0.0",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "headingSelector": "h1,h2,h3,h4,h5",
+  "paragraphSelector": "p,li,blockquote",
+  "shell": {
+    "site-header": {
+      "section": "shell.site-header",
+      "sel": "header.nv",
+      "flow": "fixed"
+    },
+    "site-footer-dark": {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "sel": "footer[data-framer-name='L']"
+    },
+    "site-footer-light": {
+      "section": "shell.site-footer",
+      "variant": "light-band",
+      "sel": "footer.lf"
+    },
+    "campaign-footer": {
+      "section": "shell.campaign-footer",
+      "variant": "campaign",
+      "sel": "footer.fcb-footer"
+    }
+  },
+  "templates": {
+    "home": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.video-statement",
+          "sel": "main > section:nth-of-type(1)"
+        },
+        {
+          "section": "social-proof.logo-grid",
+          "variant": "grid-12",
+          "sel": "#logos"
+        },
+        {
+          "section": "social-proof.case-study-carousel",
+          "variant": "light",
+          "sel": "#team"
+        },
+        {
+          "section": "content.reveal-statement",
+          "variant": "scroll-color",
+          "sel": "#vision"
+        },
+        {
+          "section": "features.platform-lattice-intro",
+          "sel": "#aios"
+        },
+        {
+          "section": "features.approach-cards",
+          "sel": "#aios + div"
+        },
+        {
+          "section": "features.industry-tabs",
+          "sel": "#Industries"
+        },
+        {
+          "section": "conversion.team-closer",
+          "sel": "#Closer"
+        }
+      ]
+    },
+    "product": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "routeSteps": {
+        "/ai-os": [
+          {
+            "blocks": [
+              {
+                "section": "hero.product",
+                "variant": "lattice"
+              },
+              "features.infrastructure-explorer",
+              {
+                "section": "structure.hairline-divider",
+                "variant": "dark"
+              },
+              "features.product-cross-sell",
+              {
+                "section": "structure.hairline-divider",
+                "variant": "dark"
+              },
+              {
+                "section": "features.icon-feature-grid",
+                "variant": "dark"
+              },
+              {
+                "section": "features.hover-reveal-rows",
+                "variant": "enterprise"
+              },
+              "conversion.closing-cta"
+            ]
+          }
+        ],
+        "/agents": [
+          {
+            "blocks": [
+              {
+                "section": "hero.product",
+                "variant": "image"
+              },
+              "features.use-case-cards",
+              "features.accordion-showcase",
+              {
+                "section": "structure.hairline-divider",
+                "variant": "dark"
+              },
+              {
+                "section": "social-proof.case-study-carousel",
+                "variant": "dark"
+              },
+              {
+                "section": "features.icon-feature-grid",
+                "variant": "light"
+              },
+              "features.product-cross-sell"
+            ]
+          }
+        ],
+        "/systems": [
+          {
+            "blocks": [
+              {
+                "section": "hero.product",
+                "variant": "image"
+              },
+              "features.split-list",
+              {
+                "section": "features.icon-feature-grid",
+                "variant": "dark"
+              },
+              {
+                "section": "structure.hairline-divider",
+                "variant": "dark"
+              },
+              {
+                "section": "features.image-card-grid",
+                "variant": "grid-2x2"
+              },
+              {
+                "section": "features.expanding-card-pair",
+                "variant": "hover-swap"
+              },
+              "features.product-cross-sell"
+            ]
+          }
+        ],
+        "/ai-gateway": [
+          {
+            "blocks": [
+              {
+                "section": "hero.product",
+                "variant": "dashboard"
+              },
+              "media.scroll-video-stage",
+              {
+                "section": "features.image-card-grid",
+                "variant": "grid-2x3"
+              },
+              {
+                "section": "features.icon-feature-grid",
+                "variant": "dark"
+              },
+              {
+                "section": "structure.hairline-divider",
+                "variant": "dark"
+              },
+              "features.product-cross-sell"
+            ]
+          }
+        ]
+      }
+    },
+    "approach": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "routeSteps": {
+        "/deployment": [
+          {
+            "blocks": [
+              "hero.approach",
+              "content.stat-intro",
+              "features.phase-tabs",
+              {
+                "section": "features.icon-feature-grid",
+                "variant": "light"
+              },
+              "conversion.closing-cta"
+            ]
+          }
+        ],
+        "/ai-transformation": [
+          {
+            "blocks": [
+              "hero.approach",
+              {
+                "children": [
+                  "content.essay-split",
+                  {
+                    "section": "structure.hairline-divider",
+                    "variant": "light"
+                  },
+                  "features.principles-accordion",
+                  {
+                    "section": "structure.hairline-divider",
+                    "variant": "light"
+                  },
+                  {
+                    "section": "features.expanding-card-pair",
+                    "variant": "linked"
+                  }
+                ]
+              },
+              "conversion.closing-cta"
+            ]
+          }
+        ]
+      }
+    },
+    "industry": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.industry",
+          "sel": ".inx-hero"
+        },
+        {
+          "section": "social-proof.logo-grid",
+          "variant": "strip",
+          "sel": ".inx-logos"
+        },
+        {
+          "section": "features.icon-feature-grid",
+          "variant": "glow",
+          "sel": ".inx-tf"
+        },
+        {
+          "section": "media.video-metrics",
+          "sel": ".inx-vid",
+          "optional": true
+        },
+        {
+          "section": "features.workflow-list",
+          "sel": ".inx-wf"
+        },
+        {
+          "section": "features.hover-reveal-rows",
+          "variant": "why-choose",
+          "sel": ".inx-why"
+        },
+        {
+          "section": "conversion.closing-cta",
+          "sel": ".inx-cta"
+        }
+      ]
+    },
+    "case-study": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "editorial.case-study-header",
+          "sel": ".cs-header"
+        },
+        {
+          "section": "media.banner-image",
+          "variant": "case-study",
+          "sel": ".cs-banner"
+        },
+        {
+          "chunksOrdered": ".cs-container > .cs-rt, .cs-container > .cs-quote-box",
+          "split": "h1,h2,h3,h4",
+          "section": "editorial.article-chapter",
+          "classSections": {
+            "cs-quote-box": "testimonial.quote-card"
+          }
+        }
+      ]
+    },
+    "about": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.company",
+          "variant": "about",
+          "sel": ".cab-hero"
+        },
+        {
+          "section": "content.mission-rows",
+          "sel": ".cab-sec2"
+        },
+        {
+          "section": "social-proof.investor-logos",
+          "sel": ".cab-backed"
+        },
+        {
+          "section": "structure.hairline-divider",
+          "variant": "light",
+          "sel": ".cab-sec3-in > .cab-rule"
+        },
+        {
+          "section": "editorial.story-cards",
+          "sel": ".cab-stories"
+        },
+        {
+          "section": "conversion.closing-cta",
+          "sel": ".ccta-band"
+        }
+      ]
+    },
+    "careers": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.company",
+          "variant": "careers",
+          "sel": ".ccr-hero"
+        },
+        {
+          "section": "content.reveal-statement",
+          "variant": "sticky-progress",
+          "sel": ".ccr-main"
+        },
+        {
+          "section": "content.global-presence",
+          "sel": ".ccr-about"
+        },
+        {
+          "section": "listing.role-rows",
+          "union": [
+            ".ccr-roles-h",
+            ".ccr-list"
+          ]
+        },
+        {
+          "section": "conversion.apply-contact",
+          "sel": ".ccr-apply"
+        },
+        {
+          "section": "conversion.closing-cta",
+          "sel": ".ccta-band"
+        }
+      ]
+    },
+    "press": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.index-title",
+          "variant": "press",
+          "sel": ".cpr-head"
+        },
+        {
+          "section": "listing.press-mosaic",
+          "union": [
+            ".cpr-layout--d .cpr-item"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "shell": [
+        "site-header"
+      ],
+      "steps": [
+        {
+          "section": "conversion.contact-form-split",
+          "sel": ".cct-group"
+        }
+      ]
+    },
+    "confirmation": {
+      "routeShell": {
+        "/thank-you": [
+          "site-header",
+          "site-footer-dark"
+        ],
+        "/fcb/x/thank-you": []
+      },
+      "routeSteps": {
+        "/thank-you": [
+          {
+            "section": "hero.confirmation",
+            "variant": "site",
+            "sel": ".cty-top"
+          },
+          {
+            "section": "editorial.post-teasers",
+            "sel": ".cty-blog"
+          }
+        ],
+        "/fcb/x/thank-you": [
+          {
+            "section": "hero.confirmation",
+            "variant": "campaign",
+            "sel": "section.fcbty"
+          },
+          {
+            "section": "structure.hairline-divider",
+            "variant": "dark",
+            "sel": ".fcbty-divider"
+          },
+          {
+            "section": "shell.campaign-footer",
+            "variant": "campaign-confirmation",
+            "sel": "footer.fcb-footer"
+          }
+        ]
+      }
+    },
+    "blog-index": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "editorial.featured-post",
+          "sel": ".cb-feat-grid"
+        },
+        {
+          "section": "navigation.category-filter-header",
+          "sel": ".cb-head"
+        },
+        {
+          "section": "editorial.post-grid",
+          "sel": ".cb-grid"
+        }
+      ]
+    },
+    "blog-article": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "editorial.article-header",
+          "sel": ".ca-head"
+        },
+        {
+          "section": "media.banner-image",
+          "variant": "article",
+          "sel": ".ca-banner"
+        },
+        {
+          "chunksOrdered": ".ca-body",
+          "split": "h1,h2,h3,h4,ol:has(> li:only-child)",
+          "section": "editorial.article-chapter",
+          "note": "Some articles number their chapters with single-item ordered lists instead of headings (e.g. why-enterprise-ai-gets-stuck-in-pilot-mode); those count as chapter boundaries."
+        },
+        {
+          "section": "editorial.story-details",
+          "sel": ".ca-side",
+          "optional": true,
+          "flow": "sticky"
+        },
+        {
+          "section": "structure.hairline-divider",
+          "variant": "light",
+          "sel": ".ca-divider"
+        },
+        {
+          "section": "editorial.related-posts",
+          "sel": ".ca-more"
+        }
+      ]
+    },
+    "legal-index": {
+      "shell": [
+        "site-header",
+        "site-footer-light"
+      ],
+      "steps": [
+        {
+          "section": "hero.index-title",
+          "variant": "legal",
+          "sel": ".cli-head"
+        },
+        {
+          "section": "structure.hairline-divider",
+          "variant": "light",
+          "sel": ".cli-divider"
+        },
+        {
+          "section": "navigation.policy-links",
+          "sel": ".cli-row"
+        }
+      ]
+    },
+    "legal-document": {
+      "shell": [],
+      "routeSteps": {
+        "/careers/candidate_notice": [
+          {
+            "section": "content.legal-header",
+            "variant": "notice",
+            "sel": "main > div > div > div:nth-child(1)"
+          },
+          {
+            "section": "structure.hairline-divider",
+            "variant": "light",
+            "sel": "main > div > div > div:nth-child(2)"
+          },
+          {
+            "chunksOrdered": ".co-rt",
+            "split": "h1,h2,h3,h4",
+            "section": "content.legal-section"
+          }
+        ]
+      },
+      "steps": [
+        {
+          "section": "content.legal-header",
+          "variant": "document",
+          "sel": ".cl-head"
+        },
+        {
+          "section": "structure.hairline-divider",
+          "variant": "light",
+          "sel": ".cl-divider"
+        },
+        {
+          "chunksOrdered": ".cl-body",
+          "split": "h1,h2,h3,h4",
+          "section": "content.legal-section"
+        }
+      ]
+    },
+    "country-landing": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.country-banner",
+          "sel": ".rg-country-hero"
+        },
+        {
+          "classmap": ".rg-country-body > .rg-block",
+          "map": {
+            "rg-text": "content.prose-block",
+            "rg-divider": "structure.hairline-divider",
+            "rg-quote": "testimonial.pull-quote",
+            "rg-links": "content.people-links"
+          }
+        }
+      ]
+    },
+    "event-registration": {
+      "shell": [
+        "campaign-footer"
+      ],
+      "steps": [
+        {
+          "section": "hero.campaign-event",
+          "sel": ".fcb-hero"
+        },
+        {
+          "section": "conversion.event-registration",
+          "sel": ".fcb-reg"
+        },
+        {
+          "section": "content.practical-info-cards",
+          "sel": ".fcb-info"
+        }
+      ]
+    },
+    "job-detail": {
+      "shell": [],
+      "steps": [
+        {
+          "section": "content.job-header",
+          "union": [
+            ".rg-job-head",
+            ".rg-job-tagrow"
+          ]
+        },
+        {
+          "section": "content.job-description",
+          "sel": ".rg-rt"
+        }
+      ]
+    },
+    "job-application": {
+      "shell": [],
+      "steps": [
+        {
+          "section": "conversion.job-application-form",
+          "sel": ".rg-apply"
+        }
+      ]
+    },
+    "not-found": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "hero.not-found",
+          "sel": ".rg-404-hero"
+        }
+      ]
+    },
+    "embed-shell": {
+      "shell": [
+        "site-header",
+        "site-footer-dark"
+      ],
+      "steps": [
+        {
+          "section": "utility.third-party-embed-slot",
+          "sel": ".rg-comeet"
+        }
+      ]
+    }
+  }
+}

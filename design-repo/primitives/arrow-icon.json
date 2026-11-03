@@ -1,0 +1,24 @@
+{
+  "id": "primitive.arrow-icon",
+  "kind": "primitive",
+  "title": "Arrow glyph",
+  "purpose": "UI arrow used in carousel buttons, closer cards and read-more links.",
+  "props": {
+    "direction": {
+      "enum": [
+        "left",
+        "right",
+        "up-right"
+      ]
+    }
+  },
+  "tokens": [
+    "color.ink.900"
+  ],
+  "source": {
+    "file": "src/components/nav/Logos.jsx",
+    "tag": "export function ArrowRight",
+    "lines": "43-49",
+    "citation": "src/components/nav/Logos.jsx:43-49"
+  }
+}

@@ -1,0 +1,91 @@
+{
+ "slug": "announcing-wonderful-apps-custom-interfaces-for-every-agent",
+ "path": "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+ "category": "Product",
+ "pageTitle": "Announcing Wonderful Apps: Custom interfaces for every agent",
+ "author": "The Wonderful Team",
+ "date": "Apr 23, 2026",
+ "datetime": "2026-04-23T00:00:00.000Z",
+ "title": "Announcing Wonderful Apps: Custom interfaces for every agent",
+ "titleTag": "h1",
+ "description": "No two agents are the same, and the interfaces for managing them shouldn't be either.",
+ "hero": {
+  "image": {
+   "src": "/assets/PrpqxA2IITHTGPr7622RjcBqW0.png",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Traditional software was built for consistency: one interface, rolled out the same way to every team. But agents break that assumption by design. Each one is shaped by the specific process it runs, the decisions it owns, the different steps it must take, and the way humans need to stay involved. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">An agent monitoring the real-time performance of a hundred support reps is different from an agent working through a loan underwriting queue, or one managing claims at an insurance company. Even two agents handling the same process in two different companies would have some fundamental differences. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Yet, while no two agents are the same, most platforms serve every one of those agents and the teams working with them with the same generic dashboard: a single view designed to work for every agent, and therefore perfectly suited to none of them.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Today, we're giving every agent the interface it deserves.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Every agent comes with its own interface</strong></h3><img alt=\"\" width=\"1125\" height=\"750\" src=\"/assets/ogupZ8vMQPCYXvgg1uRfbkcsMpE.png\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:2250 / 1500\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful Apps is an environment for building tailored interfaces for every agent you run, and it’s a native part of the Wonderful Platform. You can share which agent you’re working with and how your team needs to engage with it, and Wonderful Apps will automatically generate the interface around that, reflecting the unique workflows and steps it already understands from the original prompt. If the prompt calls for a human in the loop at a specific point, that will show up as part of the interface. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">And because each interface is directly connected to the agents it manages, it auto-updates and evolves with them, and teams see an accurate representation of what the agent is actually doing in real time.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">What that looks like in practice depends entirely on the work of the particular agent.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A claims team can get a workspace built around approval logic: monitoring open claims, flagging cases that require special attention, and making decisions without ever leaving the platform.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A loan underwriting team can get a supervisor interface where managers track every application in the pipeline, review the agent's assessment, and approve or decline in real time.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A customer support operations team can get a performance dashboard built around an observer agent that monitors every rep conversation, scores behavior, and surfaces coaching signals  so managers see the whole team's performance and not just what gets escalated.</p><img alt=\"\" width=\"1125\" height=\"750\" src=\"/assets/RqJUw5N4B6MHZzr1bmypRaXQ.png\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:2250 / 1500\"><h3 class=\"framer-text framer-styles-preset-pyuk04\"><br class=\"framer-text trailing-break\"></h3><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">A new collaboration surface for agents and humans </strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful Apps gives every team a dedicated collaboration surface to work alongside their agent. A manager with the right interface can act on what the agent surfaces. A team with controls built around their workflow can direct the work in real time. That's what makes agents something your teams actually want to work with - a collaborator built into how the work already happens.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful Apps is available to all Wonderful customers today.</p><img alt=\"\" width=\"1125\" height=\"750\" src=\"/assets/9iCLjGKMMqyBzTc9pLqkdp1d58.png\" class=\"framer-text framer-image framer-styles-preset-1adqy14\" style=\"aspect-ratio:2250 / 1500\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

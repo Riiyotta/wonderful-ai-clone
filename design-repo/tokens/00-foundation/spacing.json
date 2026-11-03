@@ -1,0 +1,166 @@
+{
+  "$description": "Foundation spacing tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "spacing",
+  "tokens": {
+    "space.4": {
+      "value": "4px",
+      "evidence": "CLONE_SPEC.md:288",
+      "usage": "tab track padding"
+    },
+    "space.8": {
+      "value": "8px",
+      "evidence": "CLONE_SPEC.md:153",
+      "usage": "mega-menu item gap"
+    },
+    "space.10": {
+      "value": "10px",
+      "evidence": "CLONE_SPEC.md:197",
+      "usage": "hero button gap"
+    },
+    "space.12": {
+      "value": "12px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:31",
+      "usage": "card content gap"
+    },
+    "space.16": {
+      "value": "16px",
+      "evidence": "CLONE_SPEC.md:274",
+      "usage": "card row gap"
+    },
+    "space.24": {
+      "value": "24px",
+      "evidence": "CLONE_SPEC.md:200",
+      "usage": "section-x mobile / cell gap"
+    },
+    "space.32": {
+      "value": "32px",
+      "evidence": "CLONE_SPEC.md:317",
+      "usage": "card padding"
+    },
+    "space.40": {
+      "value": "40px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:18",
+      "usage": "section-x tablet"
+    },
+    "space.42": {
+      "value": "42px",
+      "evidence": "CLONE_SPEC.md:208",
+      "usage": "clients gap"
+    },
+    "space.60": {
+      "value": "60px",
+      "evidence": "CLONE_SPEC.md:208",
+      "usage": "section-x desktop / column gap"
+    },
+    "space.64": {
+      "value": "64px",
+      "evidence": "CLONE_SPEC.md:285",
+      "usage": "header-to-grid gap"
+    },
+    "space.80": {
+      "value": "80px",
+      "evidence": "CLONE_SPEC.md:273",
+      "usage": "section stack gap"
+    },
+    "space.84": {
+      "value": "84px",
+      "evidence": "CLONE_SPEC.md:308",
+      "usage": "section-y mobile"
+    },
+    "space.100": {
+      "value": "100px",
+      "evidence": "CLONE_SPEC.md:247",
+      "usage": "reveal padding"
+    },
+    "space.120": {
+      "value": "120px",
+      "evidence": "CLONE_SPEC.md:285",
+      "usage": "section-y desktop"
+    },
+    "space.160": {
+      "value": "160px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:101",
+      "usage": "closing CTA padding"
+    },
+    "space.section-x.desktop": {
+      "value": "60px",
+      "evidence": "CLONE_SPEC.md:285",
+      "alias": "space.60"
+    },
+    "space.section-x.tablet": {
+      "value": "40px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:18",
+      "alias": "space.40"
+    },
+    "space.section-x.mobile": {
+      "value": "24px",
+      "evidence": "CLONE_SPEC.md:200",
+      "alias": "space.24"
+    },
+    "space.section-y.lg": {
+      "value": "120px",
+      "evidence": "CLONE_SPEC.md:285",
+      "alias": "space.120"
+    },
+    "space.section-y.md": {
+      "value": "84px",
+      "evidence": "CLONE_SPEC.md:308",
+      "alias": "space.84"
+    },
+    "space.section-y.sm": {
+      "value": "60px",
+      "evidence": "CLONE_SPEC.md:221",
+      "alias": "space.60"
+    },
+    "space.section-y.xl": {
+      "value": "160px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:101",
+      "alias": "space.160"
+    },
+    "space.gap.sm": {
+      "value": "16px",
+      "evidence": "CLONE_SPEC.md:274",
+      "alias": "space.16"
+    },
+    "space.gap.md": {
+      "value": "24px",
+      "evidence": "CLONE_SPEC_PLATFORM.md:96",
+      "alias": "space.24"
+    },
+    "space.gap.lg": {
+      "value": "60px",
+      "evidence": "CLONE_SPEC_PRODUCT.md:83",
+      "alias": "space.60"
+    },
+    "space.gap.xl": {
+      "value": "80px",
+      "evidence": "CLONE_SPEC.md:273",
+      "alias": "space.80"
+    },
+    "layout.max-width.content": {
+      "value": "1200px",
+      "evidence": "CLONE_SPEC.md:274",
+      "usage": "card rows, footer row, legal column"
+    },
+    "layout.max-width.wide": {
+      "value": "1280px",
+      "evidence": "CLONE_SPEC.md:285",
+      "usage": "industries CMS, closer"
+    },
+    "layout.max-width.shell": {
+      "value": "1680px",
+      "evidence": "CLONE_SPEC.md:112",
+      "usage": "nav/hero inner rows"
+    },
+    "layout.max-width.article": {
+      "value": "800px",
+      "evidence": "CLONE_SPEC_CONTENT.md:34",
+      "usage": "article head, case-study, country body"
+    },
+    "layout.max-width.prose": {
+      "value": "600px",
+      "evidence": "CLONE_SPEC_CONTENT.md:46",
+      "usage": "article body column"
+    }
+  }
+}

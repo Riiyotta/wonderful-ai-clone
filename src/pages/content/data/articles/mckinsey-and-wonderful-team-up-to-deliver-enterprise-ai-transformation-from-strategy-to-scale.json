@@ -1,0 +1,91 @@
+{
+ "slug": "mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+ "path": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+ "category": "News",
+ "pageTitle": "Announcing our Partnership with McKinsey",
+ "author": "The Wonderful Team",
+ "date": "Apr 6, 2026",
+ "datetime": "2026-04-06T00:00:00.000Z",
+ "title": "Announcing our Partnership with McKinsey",
+ "titleTag": "h1",
+ "description": "Together, we turn AI pilots into scaled enterprise reality",
+ "hero": {
+  "image": {
+   "src": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "width": 3600,
+   "height": 1920,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">Editor's note: This announcement was originally published by </em><a class=\"framer-text framer-styles-preset-68ruwb\" href=\"https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/tech-forward/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale\" rel><em class=\"framer-text\">McKinsey</em></a><em class=\"framer-text\">. We're sharing it here as part of our ongoing partnership.</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">April 7, 2026 - </em>McKinsey and Wonderful have announced an alliance to help clients move from AI ambition to agentic AI deployment at scale.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The collaboration combines McKinsey’s transformation expertise and QuantumBlack AI by McKinsey's capabilities with Wonderful’s enterprise agent platform and forward-deployed engineers, creating an integrated offering that can take ambitious organizations from experimentation to production-grade deployment.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai\" rel>recent McKinsey survey</a> found that while 79 percent of organizations are experimenting with gen AI, fewer than 10 percent have scaled AI agents. The gap isn’t ambition; it’s execution. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our alliance aims to help clients change that. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful is one of the fastest-growing applied AI scale-ups, with a singular focus on building and deploying agents in production. Its hyper-local operating model and forward-deployed engineering teams enable rapid implementation directly inside client environments, and pair well with McKinsey’s emphasis on bringing joint teams to work “hands-on-keys” with clients.  </p><p class=\"framer-text framer-styles-preset-1ln1alt\">“Deploying agentic AI across the enterprise is a complex endeavor that requires more than just great technology,” says Bar Winkler, cofounder and CEO of Wonderful. “Enterprises often struggle because deployment is treated as an afterthought. Strategy is separated from execution, and production is separated from delivery. We’ve seen that AI only lands and scales inside an enterprise when technology and implementation are designed together from day one. That’s where we’re deeply aligned with McKinsey.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">McKinsey and QuantumBlack also bring deep experience in rewiring organizations with technology and change management—the connective tissue that turns technical deployment into lasting business impact. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">“The opportunity is to bring cutting-edge agentic AI into organizations in ways that create tangible value at scale—quickly—while reshaping how work gets done,” said Lieven Van der Veken, a McKinsey senior partner and leader of QuantumBlack.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">By pairing McKinsey’s global expertise with Wonderful AI’s forward-deployed engineers and hyperlocal delivery model—treating every market as a priority—clients benefit from truly integrated teams that provide both global scale and local execution.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our work together is already demonstrating impact across industries. For example, in telecommunications, agentic workflows are enabling more personalized customer interactions, improving conversion, and streamlining operations.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">“This alliance enables clients to move from use-case design to live deployment with a single integrated platform,” says Ben Ellencweig, a senior partner at McKinsey. “To win in a domain, our clients leverage an ecosystem of distinctive partners. This alliance is uniquely positioned to sit on top of hyperscalers to help midsize and legacy enterprises with complex tech stacks unlock value at scale.”</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+   "title": "The Hard Part of AI Agents Isn’t Building Them",
+   "date": "Apr 1, 2026",
+   "datetime": "2026-04-01T00:00:00.000Z",
+   "image": "/assets/t8PmjXGzRZvfLhcMJa8mr3VkSJ8.png",
+   "imageW": 3000,
+   "imageH": 2000
+  }
+ ]
+}

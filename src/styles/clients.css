@@ -1,0 +1,17 @@
+/* Clients - CLONE_SPEC §2.2. H2 preset (1ing3ma) type breakpoints from the saved Framer CSS:
+   >=1200: 26 / 125% / -0.05em; <=1199: 24 / 115% / -0.04em. */
+.clients-h2 {
+  margin: 0;
+  font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 125%; /* 32.5px */
+  letter-spacing: -0.05em; /* -1.3px */
+  color: #171719;
+  text-align: center;
+  text-wrap: balance;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11", "ss04", "ss05";
+}
+@media (max-width: 1199px) {
+  .clients-h2 { font-size: 24px; line-height: 115%; letter-spacing: -0.04em; } /* 24 / 27.6 / -0.96 */
+}

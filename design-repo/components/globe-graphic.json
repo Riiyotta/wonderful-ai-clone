@@ -1,0 +1,21 @@
+{
+  "id": "component.globe-graphic",
+  "kind": "component",
+  "title": "Globe graphic",
+  "purpose": "Canvas dot-globe auto-rotating between city labels.",
+  "props": {
+    "cities": {
+      "type": "array"
+    }
+  },
+  "tokens": [],
+  "source": {
+    "file": "src/pages/company/sections/Globe.jsx",
+    "tag": "export default function Globe",
+    "lines": "94-384",
+    "citation": "src/pages/company/sections/Globe.jsx:94-384"
+  },
+  "motion": [
+    "globe-autorotate"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "utility.third-party-embed-slot",
+  "title": "Third-party embed slot",
+  "status": "measured",
+  "source": {
+    "id": "src:ComeetStyle#export-default-function-ComeetStyle",
+    "file": "src/pages/regional/ComeetStyle.jsx",
+    "tag": "export default function ComeetStyle",
+    "lines": "5-9",
+    "citation": "src/pages/regional/ComeetStyle.jsx:5-9"
+  },
+  "semantic": {
+    "id": "utility.third-party-embed-slot",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Empty placeholder for a third-party careers embed that never renders; carries no design or content to retrieve.",
+  "purpose": "Empty 600x400 box reserved for an external careers widget that renders nothing on live.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "fixed",
+        "detail": "600x400 box."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 400,
+      "max": 400
+    },
+    "samples": [
+      {
+        "route": "/archive/comeet-style",
+        "instance": 0,
+        "heightPx": 400
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/archive/comeet-style"
+  ]
+}

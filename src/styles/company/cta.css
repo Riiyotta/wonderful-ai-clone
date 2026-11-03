@@ -1,0 +1,29 @@
+/* "Built for The Enterprise" closing band (about-us, careers). Framer page breakpoints 1440 / 810. */
+.ccta-band { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 60px;
+  width: 100%; height: 640px; padding: 160px 60px; overflow: hidden; background: #080808; }
+.ccta-in { position: absolute; inset: 0; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 60px; width: 100%; height: 100%; padding: 160px 60px; overflow: hidden; }
+.ccta-tt { position: relative; z-index: 8; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 32px; width: 100%; max-width: 1680px; }
+.ccta-head { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; width: 100%; overflow: clip; }
+.ccta-h2wrap { position: relative; z-index: 0; width: 660px; max-width: 50%; }
+.ccta-h2 { margin: 0; color: #fafafa; text-align: center; text-wrap: balance; }
+.ccta-img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; overflow: clip;
+  -webkit-mask: radial-gradient(141% 80% at 50.5% 100%, #0000 35.4088%, #000 100%); mask: radial-gradient(141% 80% at 50.5% 100%, #0000 35.4088%, #000 100%); }
+.ccta-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+@media (min-width: 810px) and (max-width: 1439.98px) {
+  .ccta-band, .ccta-in { padding: 160px 40px; }
+  .ccta-h2wrap { max-width: none; width: 549px; }
+  .ccta-img { -webkit-mask: radial-gradient(141% 82% at 50.5% 100%, #0000 35.4088%, #000 100%); mask: radial-gradient(141% 82% at 50.5% 100%, #0000 35.4088%, #000 100%); }
+}
+@media (max-width: 809.98px) {
+  .ccta-band { padding: 0; }
+  .ccta-in { padding: 0 24px; }
+  .ccta-h2wrap { max-width: none; width: 370px; flex: none; }
+  .ccta-img { -webkit-mask: radial-gradient(141% 90% at 50.5% 100%, #0000 35.4088%, #000 100%); mask: radial-gradient(141% 90% at 50.5% 100%, #0000 35.4088%, #000 100%); }
+}
+
+/* H2 section preset 190xti5 with its own breakpoints (>=1200 48, 800-1199 42, <800 34). */
+.co-h2 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 48px; line-height: 1.05;
+  letter-spacing: -.04em; padding-bottom: 3px; font-feature-settings: "ss04", "ss05"; text-wrap: balance; }
+@media (min-width: 800px) and (max-width: 1199px) { .co-h2 { font-size: 42px; line-height: 1.15; } }
+@media (max-width: 799px) { .co-h2 { font-size: 34px; line-height: 1.15; letter-spacing: -.05em; } }

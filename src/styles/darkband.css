@@ -1,0 +1,33 @@
+/* Dark band typography (CLONE_SPEC §0 roles, §2.5). */
+.db-h2 {
+  font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300;
+  font-size: 48px; line-height: 50.4px; letter-spacing: -1.92px; padding-bottom: 3px;
+  font-feature-settings: "ss04", "ss05"; color: #fafafa; text-align: center; text-wrap: balance;
+}
+.db-h3 {
+  font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300;
+  font-size: 32px; line-height: 36.8px; letter-spacing: -1.28px;
+  font-feature-settings: "ss02", "ss04", "ss05", "ss11"; color: #ffffff; text-align: center; text-wrap: balance;
+}
+.db-body {
+  font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400;
+  font-size: 17px; line-height: 21.76px; letter-spacing: -0.34px;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09"; color: rgba(255, 255, 255, .7); text-align: center; text-wrap: balance;
+}
+.db-btn-l { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; letter-spacing: -0.5px; color: #000; white-space: pre; }
+.db-btn-s { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 14px; line-height: 21px; letter-spacing: -0.28px; font-feature-settings: "ss03"; color: #171719; white-space: pre; }
+
+/* "Explore the OS" shares the hero "Get in touch" variant: hover opacity 1 -> .6 (§3). Transition set inline from springEase. */
+.db-os-btn:hover { opacity: .6; }
+
+/* Live tablet (measured at 1100): H2 42/1.15/-.04em, H3 22/1.15/-.04em. */
+@media (min-width: 880px) and (max-width: 1439.98px) {
+  .db-h2 { font-size: 42px; line-height: 1.15; letter-spacing: -0.04em; }
+  .db-h3 { font-size: 22px; line-height: 1.15; letter-spacing: -0.04em; }
+}
+@media (max-width: 879.98px) {
+  .db-h2 { font-size: 34px; line-height: 39.1px; letter-spacing: -1.7px; }
+  .db-h3 { font-size: 24px; line-height: 27.6px; letter-spacing: -0.96px; }
+  .db-body { font-size: 14px; line-height: 21px; letter-spacing: -0.28px; font-feature-settings: "ss03"; }
+  .db-btn-l { font-size: 14px; line-height: 21px; letter-spacing: -0.28px; font-feature-settings: "ss03"; color: #171719; }
+}

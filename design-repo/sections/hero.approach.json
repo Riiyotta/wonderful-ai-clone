@@ -1,0 +1,128 @@
+{
+  "id": "hero.approach",
+  "title": "Approach hero",
+  "status": "measured",
+  "source": {
+    "id": "src:Deployment#function-Hero",
+    "file": "src/pages/platform/Deployment.jsx",
+    "tag": "function Hero",
+    "lines": "14-48",
+    "citation": "src/pages/platform/Deployment.jsx:14-48",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/platform/Transformation.jsx",
+        "tag": "function Hero",
+        "lines": "12-35",
+        "citation": "src/pages/platform/Transformation.jsx:12-35"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "hero.approach",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Full-bleed image hero (85vh) with a two-line H1 and lead for the deployment/transformation approach pages.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 19,
+        "x-maxWordsEvidence": "measured headingWordsMax=15 for hero.approach at 1440px"
+      },
+      "lead": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=19 for hero.approach at 1440px"
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "background"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "word-reveal-paragraph"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "Lead 17px, max 80%."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "80vh; portrait crop; H1 copy re-broken."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.media-image"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 765,
+      "max": 765
+    },
+    "samples": [
+      {
+        "route": "/deployment",
+        "instance": 0,
+        "heightPx": 765
+      },
+      {
+        "route": "/ai-transformation",
+        "instance": 0,
+        "heightPx": 765
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-transformation",
+    "/deployment"
+  ]
+}

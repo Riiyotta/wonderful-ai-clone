@@ -1,0 +1,275 @@
+{
+  "$description": "Foundation typography tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "typography",
+  "tokens": {
+    "font.family.display": {
+      "value": "\"ABC Favorit Light\", \"ABC Favorit Light Placeholder\", sans-serif",
+      "evidence": "tailwind.config.js:10",
+      "role": "all display headings, H1-H4, reveal statements",
+      "weight": 300
+    },
+    "font.family.sans": {
+      "value": "Inter, \"Inter Placeholder\", sans-serif",
+      "evidence": "tailwind.config.js:11",
+      "role": "body, buttons, nav, labels, H5"
+    },
+    "font.family.mono": {
+      "value": "\"IBM Plex Mono\", ui-monospace, SFMono-Regular, Menlo, monospace",
+      "evidence": "tailwind.config.js:12",
+      "role": "lattice tags only"
+    },
+    "font.family.numeric": {
+      "value": "\"Inter Display\", \"Inter Display Placeholder\", sans-serif",
+      "evidence": "src/styles/industries/fonts.css:4",
+      "role": "animated counters"
+    },
+    "font.family.pattern-mono": {
+      "value": "\"Fragment Mono\", monospace",
+      "evidence": "src/pages/content/footer/AsciiPattern.jsx:6",
+      "role": "ASCII canvas pattern in light footer only",
+      "restricted": true
+    },
+    "font.family.script-fallback": {
+      "value": "\"Google Sans\", sans-serif",
+      "evidence": "src/styles/company/fonts.css:2",
+      "role": "non-latin (Hebrew) press titles only",
+      "restricted": true
+    },
+    "font.weight.light": {
+      "value": 300,
+      "evidence": "src/styles/fonts.css:4",
+      "usage": "Favorit Light, H5, mega-menu"
+    },
+    "font.weight.regular": {
+      "value": 400,
+      "evidence": "src/styles/fonts.css:5",
+      "usage": "body, buttons"
+    },
+    "font.weight.medium": {
+      "value": 500,
+      "evidence": "src/styles/fonts.css:6",
+      "usage": "footer links, labels"
+    },
+    "font.weight.semibold": {
+      "value": 600,
+      "evidence": "src/styles/fonts.css:7",
+      "usage": "contact send button"
+    },
+    "font.weight.bold": {
+      "value": 700,
+      "evidence": "extraction/measured-values.json#/histograms/fontWeight 700 x543",
+      "usage": "strong in rich text"
+    },
+    "font.size.12": {
+      "value": "12px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x820",
+      "usage": "footer small text, nav pill"
+    },
+    "font.size.14": {
+      "value": "14px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x3376",
+      "usage": "small body (x0s9r5), buttons S"
+    },
+    "font.size.16": {
+      "value": "16px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x542",
+      "usage": "nav links, button L"
+    },
+    "font.size.17": {
+      "value": "17px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x2471",
+      "usage": "body 17 (1ln1alt)"
+    },
+    "font.size.20": {
+      "value": "20px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x732",
+      "usage": "hero sub (o1ogpi), H5 (voew0c)"
+    },
+    "font.size.24": {
+      "value": "24px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x34",
+      "usage": "H3/H4 tablet-mobile"
+    },
+    "font.size.26": {
+      "value": "26px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x441",
+      "usage": "H4 (1ing3ma), trusted-by H2"
+    },
+    "font.size.32": {
+      "value": "32px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x400",
+      "usage": "H3 (pyuk04)"
+    },
+    "font.size.42": {
+      "value": "42px",
+      "evidence": "CLONE_SPEC.md:65",
+      "usage": "closer card label, H2 tablet"
+    },
+    "font.size.48": {
+      "value": "48px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x208",
+      "usage": "H2 (190xti5)"
+    },
+    "font.size.62": {
+      "value": "62px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x51",
+      "usage": "reveal statement, about H1"
+    },
+    "font.size.64": {
+      "value": "64px",
+      "evidence": "extraction/measured-values.json#/histograms/fontSize x31",
+      "usage": "product H1 (1idioqq)"
+    },
+    "font.size.72": {
+      "value": "72px",
+      "evidence": "CLONE_SPEC.md:55",
+      "usage": "industry card title, press/legal H1"
+    },
+    "font.size.82": {
+      "value": "82px",
+      "evidence": "CLONE_SPEC.md:49",
+      "usage": "home hero H1"
+    },
+    "font.size.200": {
+      "value": "200px",
+      "evidence": "CLONE_SPEC_INDUSTRIES.md:32",
+      "usage": "industry hero H1 (fit to column)"
+    },
+    "type.display.hero": {
+      "value": {
+        "family": "font.family.display",
+        "size": "82px",
+        "lineHeight": "86.1px",
+        "letterSpacing": "-4.1px",
+        "mobile": "42/44.1/-2.1px"
+      },
+      "evidence": "CLONE_SPEC.md:49"
+    },
+    "type.display.statement": {
+      "value": {
+        "family": "font.family.display",
+        "size": "62px",
+        "lineHeight": "115%",
+        "letterSpacing": "-0.05em",
+        "mobile": "28/32.2/-1.4px"
+      },
+      "evidence": "CLONE_SPEC.md:52"
+    },
+    "type.display.product": {
+      "value": {
+        "family": "font.family.display",
+        "size": "64px",
+        "lineHeight": "105%",
+        "letterSpacing": "-0.06em",
+        "tablet": "48px",
+        "mobile": "38px"
+      },
+      "evidence": "CLONE_SPEC_PRODUCT.md:10"
+    },
+    "type.heading.h2": {
+      "value": {
+        "family": "font.family.display",
+        "size": "48px",
+        "lineHeight": "105%",
+        "letterSpacing": "-0.04em",
+        "tablet": "42px/115%",
+        "mobile": "34px/115%/-0.05em"
+      },
+      "evidence": "CLONE_SPEC_PRODUCT.md:11"
+    },
+    "type.heading.h3": {
+      "value": {
+        "family": "font.family.display",
+        "size": "32px",
+        "lineHeight": "115%",
+        "letterSpacing": "-0.04em",
+        "tablet": "22px",
+        "mobile": "24px"
+      },
+      "evidence": "CLONE_SPEC_PRODUCT.md:12"
+    },
+    "type.heading.h4": {
+      "value": {
+        "family": "font.family.display",
+        "size": "26px",
+        "lineHeight": "125%",
+        "letterSpacing": "-0.05em",
+        "tablet": "24px/115%/-0.04em"
+      },
+      "evidence": "CLONE_SPEC_PRODUCT.md:13"
+    },
+    "type.heading.h5": {
+      "value": {
+        "family": "font.family.sans",
+        "weight": 300,
+        "size": "20px",
+        "lineHeight": "115%",
+        "letterSpacing": "-0.05em"
+      },
+      "evidence": "CLONE_SPEC_PRODUCT.md:14"
+    },
+    "type.body.lead": {
+      "value": {
+        "family": "font.family.sans",
+        "size": "20px",
+        "lineHeight": "125%",
+        "letterSpacing": "-0.4px"
+      },
+      "evidence": "CLONE_SPEC_PLATFORM.md:23"
+    },
+    "type.body.md": {
+      "value": {
+        "family": "font.family.sans",
+        "size": "17px",
+        "lineHeight": "128%",
+        "letterSpacing": "-0.02em"
+      },
+      "evidence": "CLONE_SPEC_PLATFORM.md:22"
+    },
+    "type.body.sm": {
+      "value": {
+        "family": "font.family.sans",
+        "size": "14px",
+        "lineHeight": "150%",
+        "letterSpacing": "-0.02em"
+      },
+      "evidence": "CLONE_SPEC_PLATFORM.md:24"
+    },
+    "type.label.nav": {
+      "value": {
+        "family": "font.family.sans",
+        "size": "16px",
+        "lineHeight": "19.2px",
+        "letterSpacing": "-0.5px"
+      },
+      "evidence": "CLONE_SPEC.md:60"
+    },
+    "type.label.xs": {
+      "value": {
+        "family": "font.family.sans",
+        "size": "12px",
+        "lineHeight": "13.2px",
+        "letterSpacing": "-0.12px"
+      },
+      "evidence": "CLONE_SPEC.md:68"
+    },
+    "type.mono.tag": {
+      "value": {
+        "family": "font.family.mono",
+        "size": "16.942px",
+        "letterSpacing": "-0.04em",
+        "mobile": "13.5px"
+      },
+      "evidence": "CLONE_SPEC.md:69"
+    },
+    "type.numeric.counter": {
+      "value": {
+        "family": "font.family.numeric",
+        "size": "60px",
+        "lineHeight": "60px",
+        "letterSpacing": "-1.8px"
+      },
+      "evidence": "CLONE_SPEC_PLATFORM.md:143"
+    }
+  }
+}

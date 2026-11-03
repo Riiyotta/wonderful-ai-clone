@@ -1,0 +1,24 @@
+{
+  "id": "primitive.select-field",
+  "kind": "primitive",
+  "title": "Custom select",
+  "purpose": "Button + listbox select backed by a hidden native select.",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 4
+    },
+    "options": {
+      "type": "array"
+    }
+  },
+  "tokens": [
+    "shadow.listbox"
+  ],
+  "source": {
+    "file": "src/pages/company/Contact.jsx",
+    "tag": "function Select",
+    "lines": "22-52",
+    "citation": "src/pages/company/Contact.jsx:22-52"
+  }
+}

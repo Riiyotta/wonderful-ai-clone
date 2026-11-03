@@ -1,0 +1,147 @@
+{
+  "id": "listing.press-mosaic",
+  "title": "Press mosaic",
+  "status": "measured",
+  "source": {
+    "id": "src:Press#function-Layout",
+    "file": "src/pages/company/Press.jsx",
+    "tag": "function Layout",
+    "lines": "63-75",
+    "citation": "src/pages/company/Press.jsx:63-75"
+  },
+  "semantic": {
+    "id": "listing.press-mosaic",
+    "category": "LISTING"
+  },
+  "retrievalEligible": true,
+  "purpose": "Masonry of press coverage cards in mixed sizes (featured, standard, small, centred-logo variants).",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "items": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 40,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 25,
+              "x-maxWordsEvidence": "press titles up to 20 words (measured headingWordsMax=20)"
+            },
+            "outlet": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 5,
+              "x-maxWordsEvidence": "outlet names"
+            },
+            "size": {
+              "enum": [
+                "featured",
+                "standard",
+                "small"
+              ]
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            },
+            "logo": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "logo.press-outlet",
+                "logo.fictional-company"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "size",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "items"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "press-card-appear"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "relayout",
+        "detail": "Different article order and card variants per breakpoint (stored layout)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".items[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    },
+    {
+      "field": ".items[].logo",
+      "assetRoles": [
+        "logo.press-outlet",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-company",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.press-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 5636,
+      "max": 5636
+    },
+    "samples": [
+      {
+        "route": "/press",
+        "instance": 0,
+        "heightPx": 5636
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/press"
+  ]
+}

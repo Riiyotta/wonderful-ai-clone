@@ -1,0 +1,86 @@
+{
+  "$description": "light theme: every semantic token resolved to a foundation token and its literal value.",
+  "theme": "light",
+  "resolved": {
+    "color.surface.page": {
+      "token": "color.white",
+      "value": "#ffffff"
+    },
+    "color.surface.band": {
+      "token": "color.band",
+      "value": "#080808"
+    },
+    "color.surface.black": {
+      "token": "color.black",
+      "value": "#000000"
+    },
+    "color.surface.subtle": {
+      "token": "color.offwhite",
+      "value": "#fafafa"
+    },
+    "color.surface.chip": {
+      "token": "color.chip",
+      "value": "#f5f5f5"
+    },
+    "color.surface.card-dark": {
+      "token": "color.ink.900",
+      "value": "#141414"
+    },
+    "color.surface.legal-band": {
+      "token": "color.legal-band",
+      "value": "#f7faff"
+    },
+    "color.text.primary": {
+      "token": "color.ink.default",
+      "value": "#171719"
+    },
+    "color.text.secondary": {
+      "token": "color.ink.700",
+      "value": "#393939"
+    },
+    "color.text.muted": {
+      "token": "color.ink.300",
+      "value": "#777777"
+    },
+    "color.text.on-dark": {
+      "token": "color.offwhite",
+      "value": "#fafafa"
+    },
+    "color.text.on-dark-muted": {
+      "token": "color.alpha.white-70",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    "color.text.inverse": {
+      "token": "color.black",
+      "value": "#000000"
+    },
+    "color.border.default": {
+      "token": "color.alpha.black-10",
+      "value": "rgba(0,0,0,0.1)"
+    },
+    "color.border.article": {
+      "token": "color.grey.e6",
+      "value": "#e6e6e6"
+    },
+    "color.accent.data": {
+      "token": "color.accent.orange",
+      "value": "#fc762f"
+    },
+    "color.accent.progress": {
+      "token": "color.accent.blue",
+      "value": "#1c7fff"
+    },
+    "color.link.inline": {
+      "token": "color.blue.link",
+      "value": "#3286f5"
+    },
+    "color.action.primary-bg": {
+      "token": "color.band",
+      "value": "#080808"
+    },
+    "color.action.primary-fg": {
+      "token": "color.offwhite",
+      "value": "#fafafa"
+    }
+  }
+}

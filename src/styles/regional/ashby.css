@@ -1,0 +1,142 @@
+/* Ashby job pages (/ashby/<id>, /ashby/<id>/submit), the /ashby 404 page and /archive/comeet-style.
+   Values from the Framer CSS of the matching _source pages — see CLONE_SPEC_REGIONAL.md §4–§6. */
+
+/* ---------- shared text presets ---------- */
+.rg-1ln1alt { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 17px; line-height: 1.28; letter-spacing: -0.02em; font-feature-settings: "blwf", "cv09", "cv03", "cv04"; }
+.rg-1gjbdzu { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 500; font-size: 14px; line-height: 1.2; letter-spacing: -0.5px; }
+.rg-2mfvz6 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 16px; line-height: 26px; letter-spacing: -0.5px; }
+.rg-x0s9r5 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 14px; line-height: 1.5; letter-spacing: -0.02em; font-feature-settings: "ss03"; }
+.rg-voew0c { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 300; font-size: 20px; line-height: 1.15; letter-spacing: -0.05em; font-feature-settings: "ss04"; }
+.rg-h1 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 64px; line-height: 1.05; letter-spacing: -0.06em; font-feature-settings: "ss04", "ss05"; }
+@media (min-width: 810px) and (max-width: 1199.98px) { .rg-h1 { font-size: 48px; letter-spacing: -0.05em; } }
+@media (max-width: 809.98px) { .rg-h1 { font-size: 38px; letter-spacing: -0.05em; } }
+.rg-wrap { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; }
+.rg-ashby p, .rg-ashby h1, .rg-ashby h5, .rg-ashby ul { margin: 0; }
+
+/* Framer "Outline/Black" button (JDuFS), hover = Framer variant (~0.2s) */
+.rg-btn { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 10px; min-width: 140px; height: 50px; padding: 6px 18px; border-radius: 50px; text-decoration: none; overflow: hidden; position: relative; cursor: pointer;
+  transition: background-color 0.2s cubic-bezier(0.44, 0, 0.56, 1); }
+.rg-btn p { white-space: pre; text-align: center; }
+.rg-btn-black { background: #000; }
+.rg-btn-black:hover { background: rgba(0, 0, 0, 0.84); }
+.rg-btn-black p { color: #fff; }
+.rg-btn-outline { height: 100%; gap: 50px; background: rgba(0, 0, 0, 0); border-radius: 90px; }
+.rg-btn-outline::after { content: ""; position: absolute; inset: 0; border: 1px solid #222; border-radius: inherit; pointer-events: none; }
+.rg-btn-outline:hover { background: rgba(0, 0, 0, 0.043); }
+.rg-btn-outline p { color: #131313; }
+
+/* ---------- job post (/ashby/<id>) — Framer page rhlou: one variant, fixed 1080px tall, clips its overflow ---------- */
+.rg-job { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; width: 100%; height: 1080px; min-height: 100vh; background: #000; overflow: clip; position: relative; }
+.rg-job-col { position: relative; display: flex; flex-direction: column; align-items: center; gap: 107px; width: 700px; max-width: 100%; flex: none; }
+.rg-job-head { display: flex; flex-direction: column; align-items: center; gap: 15px; width: 600px; max-width: 100%; flex: none; }
+.rg-job-head > p, .rg-job-head > h1 { width: 100%; max-width: 600px; text-align: center; flex: none; }
+.rg-job-meta { color: #999; }
+.rg-job-title { color: #fafafa; }
+.rg-job-back { display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 600px; max-width: 600px; flex: none; background: #fff; text-decoration: none; }
+.rg-job-back svg { display: block; flex: none; width: 24px; height: auto; }
+.rg-job-about { position: absolute; z-index: 1; top: 353px; left: 50px; white-space: pre; color: #fafafa; }
+.rg-job-tagrow { position: absolute; z-index: 1; top: 290px; left: 49%; transform: translate(-50%); display: flex; flex-direction: row; align-items: center; justify-content: space-between; width: 585px; overflow: clip; }
+.rg-job-tags { display: flex; flex-direction: row; align-items: center; gap: 10px; flex: 1 0 0; width: 1px; overflow: clip; }
+.rg-job-tags p { align-self: stretch; color: #999; white-space: pre-wrap; text-align: left; flex: none; }
+.rg-job-tags i { display: block; flex: none; width: 1px; height: 16px; background: #e6e6e6; }
+.rg-job-apply { flex: none; height: 39px; }
+.rg-job-apply-bottom { position: absolute; z-index: 1; bottom: 48px; left: 50px; height: 39px; }
+.rg-job-spacer { width: 100%; max-width: 600px; height: 0; flex: none; }
+
+/* Framer rich text (job description): p spacing 30px (preset 1ln1alt), lists 32px (container), bullets "•" in a 2ch gutter */
+.rg-rt { width: 100%; max-width: 600px; flex: none; white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; color: #393939; }
+.rg-rt p, .rg-rt li { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 17px; line-height: 1.28; letter-spacing: -0.02em; font-feature-settings: "blwf", "cv09", "cv03", "cv04"; color: #393939; }
+.rg-rt p:not(:first-child) { margin-top: 30px; }
+.rg-rt ul { padding: 0; margin: 0; position: relative; list-style: none; }
+.rg-rt ul:not(:first-child) { margin-top: 32px; }
+.rg-rt li { position: relative; list-style: ""; padding-inline-start: 2ch; }
+.rg-rt li::before { content: "•"; position: absolute; inset-inline-start: 0; }
+.rg-rt strong { font-weight: 700; }
+.rg-rt em { font-style: italic; }
+.rg-rt-link { color: #1f1f1f; text-decoration: none; transition: color 0.4s cubic-bezier(0.12, 0.23, 0.5, 1); }
+.rg-rt-link:hover { color: #000; }
+
+/* ---------- application (/ashby/<id>/submit) — Framer page XvAlE ---------- */
+.rg-apply { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 160px; width: 100%; min-height: 100vh; padding: 140px 20px; background: #000; overflow: clip; }
+.rg-apply-frame { position: relative; z-index: 1; flex: none; width: 779px; height: 1059px; }
+.rg-apply-back { position: absolute; z-index: 1; top: 70px; left: calc(47.9167% - 342.5px); display: flex; flex-direction: column; align-items: flex-start; width: 685px; height: 26px; overflow: clip; }
+.rg-apply-back > div { display: flex; flex-direction: row; align-items: center; justify-content: center; width: min-content; max-width: 600px; background: #fff; position: relative; z-index: 1; }
+.rg-apply-back p { opacity: 0.6; white-space: pre; color: rgba(0, 0, 0, 0.3); }
+.rg-apply-back a { color: #1f1f1f; text-decoration: none; transition: color 0.4s cubic-bezier(0.12, 0.23, 0.5, 1); }
+.rg-apply-back a:hover { color: #000; }
+
+/* ---------- /ashby (Framer 404 page) ---------- */
+.rg-404 { display: flex; flex-direction: column; align-items: center; width: 100%; background: #fff; }
+.rg-404-hero { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: flex-start; gap: 120px; width: 100%; max-width: 1480px; padding: 0 80px 160px; background: #fff; overflow: hidden; }
+.rg-404-spacer { flex: none; width: 100%; height: 80px; }
+.rg-404-container { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; padding: 0 120px; }
+.rg-404-content { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 38px; width: 100%; max-width: 980px; }
+.rg-404-text { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 26px; width: 100%; overflow: hidden; }
+.rg-404-title { position: relative; z-index: 1; width: 100%; text-align: center; color: #000; }
+.rg-404-title-m { font-size: 56px; line-height: 65px; letter-spacing: -3.4px; font-feature-settings: normal; }
+.rg-404-body { display: flex; flex-direction: row; align-items: center; width: 100%; max-width: 500px; overflow: hidden; }
+.rg-404-body p { flex: 1 0 0; width: 1px; text-align: center; color: #393939; }
+.rg-404-body .wr-word { display: inline-block; }
+.rg-404-btnrow { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 12px; width: 100%; max-width: 600px; }
+.rg-404-only-m { display: none; }
+.rg-404-blob { position: absolute; z-index: 0; width: 1100px; top: -811px; bottom: 214px; left: calc(50% - 550px); pointer-events: none; }
+.rg-404-blob > div { position: relative; width: 100%; height: 100%; overflow: visible; }
+.rg-blob { position: absolute; top: 50%; left: 50%; border-radius: 500px; overflow: visible; will-change: transform; aspect-ratio: 1; animation: rg-blob-spin 6s linear infinite; }
+.rg-blob-1 { width: 1066px; filter: blur(100px); }
+.rg-blob-2 { width: 800px; filter: blur(80px); --rot0: 105deg; }
+.rg-blob-3 { width: 800px; filter: blur(100px); mix-blend-mode: overlay; }
+.rg-conic { position: absolute; inset: 0; overflow: hidden; border-radius: 50%; will-change: transform; animation: rg-blob-breathe 6s linear infinite; }
+.rg-conic-1 { opacity: 0.8; background: conic-gradient(from 0deg at 50% 50%, rgb(221, 237, 240) 0deg, rgb(242, 159, 116) 54.8916deg, rgb(160, 143, 251) 106.6992deg, rgb(172, 159, 245) 162deg, rgb(229, 174, 197) 252deg, rgb(255, 128, 0) 306deg, rgb(211, 160, 190) 360deg); }
+.rg-conic-1 > i { position: absolute; display: block; width: 300px; height: 300px; top: -637px; left: -175px; border-radius: 50%; overflow: hidden;
+  background: conic-gradient(from 0deg at 50% 50%, rgb(135, 166, 248) 0deg, rgb(198, 208, 226) 180deg, rgb(164, 107, 255) 360deg); }
+.rg-conic-3 { background: conic-gradient(from 0deg at 50% 50%, rgb(227, 197, 231) 0deg, rgb(255, 153, 102) 180deg, rgb(255, 203, 137) 360deg); }
+/* Live (sampled 1s apart): every blob rotates ~60°/s (6s/turn, blob 2 offset by 105°); the conic fills breathe 1 → .8 → 1 over the same 6s. */
+@keyframes rg-blob-spin { from { transform: translate(-50%, -50%) rotate(var(--rot0, 0deg)); } to { transform: translate(-50%, -50%) rotate(calc(var(--rot0, 0deg) + 360deg)); } }
+@keyframes rg-blob-breathe { 0% { transform: scale(1); } 50% { transform: scale(0.8); } 100% { transform: scale(1); } }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .rg-404-hero { gap: 100px; padding: 0 80px 120px; }
+  .rg-404-container { padding: 0 50px; }
+  .rg-404-blob { top: -638px; bottom: 316px; left: calc(48.5185% - 550px); }
+}
+@media (max-width: 809.98px) {
+  .rg-404-hero { gap: 80px; padding: 0 30px 120px; }
+  .rg-404-container { padding: 0; }
+  .rg-404-content { max-width: 460px; }
+  .rg-404-only-d { display: none; }
+  .rg-404-only-m { display: block; }
+  .rg-404-blob { width: 847px; top: -506px; bottom: 596px; left: calc(46.9231% - 423.5px); }
+}
+
+/* ---------- /archive/comeet-style: a 600x400 Comeet careers embed that renders nothing ---------- */
+.rg-comeet { display: flex; flex-direction: column; align-items: center; width: 100%; background: #fff; }
+.rg-comeet > div { flex: none; width: 600px; height: 400px; max-width: none; }
+
+/* ---------- Ashby application stand-in (inside the 779x1059 "iframe" box). NOT measured — see §5. ---------- */
+.ab-frame { width: 100%; height: 100%; overflow: auto; background: #fff; color: #1d1d1f; font-family: Inter, "Inter Placeholder", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 16px; line-height: 1.5; letter-spacing: normal; }
+.ab-page { max-width: 699px; margin: 0 auto; padding: 40px 40px 32px; }
+.ab-head { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.ab-logo { height: 28px; width: auto; margin-bottom: 24px; }
+.ab-title { margin: 0; font-size: 32px; line-height: 1.25; font-weight: 600; letter-spacing: -0.01em; }
+.ab-sub { margin: 0; font-size: 15px; color: #5f6368; }
+.ab-tabs { display: flex; gap: 24px; width: 100%; margin-top: 24px; border-bottom: 1px solid #e6e6e6; }
+.ab-tabs a, .ab-tabs span { padding: 0 0 12px; font-size: 15px; font-weight: 500; color: #5f6368; text-decoration: none; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.ab-tabs .is-active { color: #1d1d1f; border-bottom-color: #1d1d1f; }
+.ab-form { display: flex; flex-direction: column; gap: 24px; margin-top: 32px; }
+.ab-field { display: flex; flex-direction: column; gap: 8px; }
+.ab-label { font-size: 15px; font-weight: 500; }
+.ab-req { color: #d92d20; margin-left: 2px; }
+.ab-input { height: 44px; padding: 0 12px; border: 1px solid #d0d5dd; border-radius: 8px; font: inherit; font-size: 15px; color: inherit; background: #fff; outline: none; transition: border-color .15s, box-shadow .15s; }
+.ab-input::placeholder { color: #98a2b3; }
+.ab-input:focus { border-color: #1d1d1f; box-shadow: 0 0 0 3px rgba(29, 29, 31, .08); }
+.ab-upload { position: relative; display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 24px; border: 1px dashed #d0d5dd; border-radius: 8px; cursor: pointer; }
+.ab-upload-btn { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 14px; border: 1px solid #d0d5dd; border-radius: 8px; background: #fff; font: inherit; font-size: 14px; font-weight: 500; color: inherit; cursor: pointer; }
+.ab-upload-btn svg { width: 16px; height: 16px; }
+.ab-upload-hint { font-size: 13px; color: #667085; }
+.ab-file { position: absolute; width: 1px; height: 1px; opacity: 0; bottom: 0; left: 50%; }
+.ab-submit { height: 48px; margin-top: 8px; border: none; border-radius: 8px; background: #1d1d1f; color: #fff; font: inherit; font-size: 15px; font-weight: 600; cursor: pointer; transition: background-color .15s; }
+.ab-submit:hover { background: #000; }
+.ab-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 40px; padding-top: 20px; border-top: 1px solid #eee; font-size: 12px; color: #667085; }
+.ab-foot strong { color: #1d1d1f; }
+.ab-foot-links { display: flex; gap: 12px; margin-left: auto; }
+.ab-foot-links a { color: inherit; text-decoration: none; }

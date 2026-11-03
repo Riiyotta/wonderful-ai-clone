@@ -1,0 +1,398 @@
+[
+ {
+  "url": "https://cdn.wonderful.ai/videos/HP%20-%20Video_Final_16x9.mp4",
+  "section": "hero",
+  "kind": "video",
+  "viewport": "desktop (>=880)",
+  "rendered": "1440x900 (100vh) object-fit:cover",
+  "notes": "autoplay muted loop playsInline preload=auto, duration 44.36s, no poster"
+ },
+ {
+  "url": "https://cdn.wonderful.ai/videos/HP%20-%20Video_Final%209x16.mp4",
+  "section": "hero",
+  "kind": "video",
+  "viewport": "mobile (<880)",
+  "rendered": "390x760 (90vh) object-fit:cover",
+  "notes": "autoplay muted loop playsInline, duration 44.36s"
+ },
+ {
+  "url": "https://framerusercontent.com/images/6cKN5QhpxMqywH8AgpxaZDLfasw.svg?width=40&height=40",
+  "section": "nav/announcement-bar",
+  "kind": "svg",
+  "rendered": "21x21 object-fit:cover; wrapper filter:invert(1)",
+  "alt": "FC Bayern"
+ },
+ {
+  "url": "https://framerusercontent.com/images/TFjZnXFloDtxC1p08weXNXVqFY.png?width=250&height=70",
+  "section": "clients",
+  "kind": "image",
+  "order": 1,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/fxHL7asSKuJh27ATTpnxFOKfw.svg?width=250&height=70",
+  "section": "clients",
+  "kind": "svg",
+  "order": 2,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/EWpQ141QyQFR2RsfZsg6caa0.svg?width=250&height=70",
+  "section": "clients",
+  "kind": "svg",
+  "order": 3,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/WnKjt6r3cQaMTIfvEt5Z1K3F1uA.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 4,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/zXjobWcE6Vd4mCUanzbNiDh5Hms.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 5,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/Tsd5x3ht3N31Src77paQLPv6WNE.svg?width=250&height=70",
+  "section": "clients",
+  "kind": "svg",
+  "order": 6,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/0Ya2hZThhuFRqJwsRcnw7jJV9k4.svg?width=250&height=70",
+  "section": "clients",
+  "kind": "svg",
+  "order": 7,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/Im5OtStOiVceudsq4fD6AUvuDM.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 8,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/IG5kvCgZvUw4X5HwUCu4elE.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 9,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/Wjw29w355ypIJNyUetXJ6NoreVQ.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 10,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/xi8ls77EHbDCy3SicCENW6AXk.png?width=500&height=140",
+  "section": "clients",
+  "kind": "image",
+  "order": 11,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/LxO1hRMb7JfTIE1PgnuEHkKB0a8.svg?width=250&height=70",
+  "section": "clients",
+  "kind": "svg",
+  "order": 12,
+  "rendered": "desktop 170x79 / mobile 111x52, object-fit:contain, wrapper opacity 0.47"
+ },
+ {
+  "url": "https://framerusercontent.com/images/a1MmzRNQSPFf4uvoiutIdVnwoA.png?scale-down-to=1024&width=1034&height=960",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 1,
+  "title": "Agentifying a national telecom operator",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/HtdGpsL3gaqKSEyF91kTC1E5yA.png?width=77&height=47",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 1,
+  "role": "customer logo bottom-right",
+  "rendered": "object-fit:contain, max-width 194px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/pLpnYFl4P79sf1sqCEkoF2tZXJ4.png?scale-down-to=1024&width=1034&height=960",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 2,
+  "title": "Collections across 2.5 million clients",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/zCbhv92CWw3fy9CUuRR6LAcuLEU.png?width=186&height=43",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 2,
+  "role": "customer logo bottom-right",
+  "rendered": "object-fit:contain, max-width 194px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/VPCDpsUTDRi5FglpROFPRh7Q.png?width=517&height=480",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 3,
+  "title": "The execution gap no model can close",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/OuYOIvuD0QSMclAG7aRDVAmS4Ew.png?scale-down-to=1024&width=1034&height=960",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 4,
+  "title": "Internal IT automated across thousands of stations",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/QnIcjBcgnIer46l3sEKY15WAuY.png?width=181&height=34",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 4,
+  "role": "customer logo bottom-right",
+  "rendered": "object-fit:contain, max-width 194px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/NSDOoFlacIhG39rfnu8hBZnceAY.png?width=1034&height=960",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 5,
+  "title": "91.5% containment rate across millions of customers",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/XNVB4d1x4hAhWTtl66slqgMRqw.png?width=171&height=41",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 5,
+  "role": "customer logo bottom-right",
+  "rendered": "object-fit:contain, max-width 194px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/JnUt2A5HsH8OTqMmne68u92Xo.png?width=517&height=480",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 6,
+  "title": "Open by default, competitive by design",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/tF5KaZUKvJRdgpZqpCG0he015gk.jpg?width=2038&height=1142",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 7,
+  "title": "Billing resolved end-to-end for energy customers",
+  "rendered": "desktop 583x583 / mobile 330x391, object-fit:cover, radius 10.37px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/6ABuVojg9k3QJp0yIDvlSqtw6w.png?width=83&height=35",
+  "section": "team-carousel",
+  "kind": "image",
+  "card": 7,
+  "role": "customer logo bottom-right",
+  "rendered": "object-fit:contain, max-width 194px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/KPfLioy5w5ahgt9CtWgxoijuvwc.svg?width=193&height=31",
+  "section": "aios",
+  "kind": "svg",
+  "rendered": "desktop 193x31 / mobile 149x24, object-fit:contain",
+  "alt": "wonderful AI OS wordmark"
+ },
+ {
+  "url": "https://framerusercontent.com/images/PbxeRt98ocw3ESBEOGvSkFl16OM.jpg?scale-down-to=2048&width=2912&height=1632",
+  "section": "aios+deployment-strategy (dark band background)",
+  "kind": "image",
+  "rendered": "desktop 1440x1559 / mobile 390x717, object-fit:cover, mask linear-gradient(#000 65%, transparent 100%)"
+ },
+ {
+  "url": "https://framerusercontent.com/images/GE2ff9hpxjunCs3VZvJODYW4IoQ.jpg?scale-down-to=2048&width=2202&height=1229",
+  "section": "deployment-strategy cards",
+  "kind": "image",
+  "card": "Deployment teams",
+  "rendered": "desktop 592x699 / mobile 342x500, cover, radius 8px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/aa4tkKpVkqnWNLuv9cZYR9CEP5o.png?scale-down-to=1024&width=1054&height=1451",
+  "section": "deployment-strategy cards",
+  "kind": "image",
+  "card": "Strategy (desktop)",
+  "rendered": "592x699 cover radius 8px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/we6aamQFKOLkq1wkIsxi4cTaDw.png?width=1156&height=578",
+  "section": "deployment-strategy cards",
+  "kind": "image",
+  "card": "Strategy (mobile only)",
+  "rendered": "342x500 cover radius 8px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/Z6ITE2va5GBIFUhQaiHnfePJmaY.jpg?width=1926&height=1075",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "banking",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/FFdLCmKHmSQ4OZaBx3pFj3de65A.jpg?width=1651&height=921",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "telecommunication",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/cvajetGWTDvJ06wQgNqFbZ79w60.jpg?width=1926&height=1075",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "healthcare",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/ciChxsmc9Ulla7nbNs1CRdWq7ew.jpg?width=1651&height=921",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "retail",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/gauGNjiMjJQ5nem2UNlcqeILxVc.jpg?width=3853&height=2151",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "utilities",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/NQUtNQPJbCeeC92AlGEiZSe1hk.jpg?width=4096&height=2286",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "insurance",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/aqVMSZQBodIwmH6xYMyI9Tk27zk.jpg?width=3200&height=1786",
+  "section": "industries-tabs",
+  "kind": "image",
+  "tab": "airlines",
+  "rendered": "desktop 1200x600 / mobile 342x460, cover, radius 12px (desktop) / 8px (mobile)",
+  "notes": "only banking loaded until its tab is selected"
+ },
+ {
+  "url": "https://framerusercontent.com/images/z2gffofvCT8lr3s0y08hDCe9MZ4.jpg?width=1280&height=528",
+  "section": "closer",
+  "kind": "image",
+  "rendered": "desktop 1440x716 / mobile 390x684, object-fit:cover"
+ },
+ {
+  "url": "https://framerusercontent.com/images/EfwFwuoTD4PdYVDGaAhoN1b4ns.png?width=1680&height=402",
+  "section": "footer",
+  "kind": "image",
+  "rendered": "desktop 1352x323 (clipped to 173px tall container) / mobile 325x91 (contain), opacity 0.1",
+  "alt": "giant wonderful wordmark"
+ },
+ {
+  "url": "https://framerusercontent.com/images/u77i0fAKjknSsnWQV24Oy2E9M.jpg?scale-down-to=512&width=3000&height=1688",
+  "section": "nav mega-menu Platform",
+  "kind": "image",
+  "rendered": "368x207 radius 4px"
+ },
+ {
+  "url": "https://framerusercontent.com/images/PpzgblDc33XnDkhQ3NUEGTjNkQw.jpg?scale-down-to=512&width=3000&height=2000",
+  "section": "nav mega-menu Industries",
+  "kind": "image",
+  "rendered": "368x207"
+ },
+ {
+  "url": "https://framerusercontent.com/images/fVSTX0gTVpHWenAo04hOvPZsbrw.jpeg?scale-down-to=512&width=3600&height=1920",
+  "section": "nav mega-menu Company",
+  "kind": "image",
+  "rendered": "368x207"
+ },
+ {
+  "url": "https://framerusercontent.com/images/OFOmy4ujpMAAI9sHrryVCrXxHI.png?scale-down-to=512&width=3840&height=2160",
+  "section": "nav mega-menu Company",
+  "kind": "image",
+  "rendered": "368x207"
+ },
+ {
+  "url": "https://framerusercontent.com/assets/2O2V4KBfbMelLnYAtnns4e43LI.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "ABC Favorit Light 300 normal (all display headings)"
+ },
+ {
+  "url": "https://framerusercontent.com/assets/aqiiD4LUKkKzXdjGL5UzHq8bo5w.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "Inter 300 normal latin (mega-menu items)"
+ },
+ {
+  "url": "https://framerusercontent.com/assets/GrgcKwrN6d3Uz8EwcLHZxwEfC4.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "Inter 400 normal latin (body)"
+ },
+ {
+  "url": "https://framerusercontent.com/assets/UjlFhCnUjxhNfep4oYBPqnEssyo.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "Inter 500 normal latin (footer links)"
+ },
+ {
+  "url": "https://framerusercontent.com/assets/yDtI2UI8XcEg1W2je9XPN3Noo.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "Inter 600 normal latin (loaded; no visible homepage role found)"
+ },
+ {
+  "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+  "section": "global",
+  "kind": "font",
+  "notes": "IBM Plex Mono 400 latin (AI OS lattice tags; imported via Google Fonts css2)"
+ },
+ {
+  "url": "inline:#svg-652223171_4193",
+  "section": "nav (white variant) + mobile nav",
+  "kind": "inline-svg",
+  "notes": "white wonderful logo, 101x25 desktop / 93x23 mobile; symbol is in saved HTML #svg-templates"
+ },
+ {
+  "url": "inline:data-uri logo viewBox 0 0 101.22 25 fill rgb(20,20,20)",
+  "section": "nav (light \"Desktop\" variant)",
+  "kind": "inline-svg",
+  "notes": "dark logo used as background-image data URI"
+ },
+ {
+  "url": "inline:#svg1117215530_4267",
+  "section": "footer",
+  "kind": "inline-svg",
+  "notes": "footer logo 122x30"
+ },
+ {
+  "url": "inline:#3166100823",
+  "section": "team-carousel arrows",
+  "kind": "inline-svg",
+  "notes": "18x18 arrow, stroke rgb(20,20,20) width 2, opacity .6"
+ },
+ {
+  "url": "inline:phosphor-style 256x256 arrow",
+  "section": "closer About/Careers buttons",
+  "kind": "inline-svg",
+  "notes": "24x24 desktop / 16x16 mobile, color #f5f5f5 on #393939 or #050505 on #fff"
+ }
+]

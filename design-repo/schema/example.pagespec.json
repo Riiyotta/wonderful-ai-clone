@@ -1,0 +1,707 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "reference",
+  "template": "home",
+  "route": "/",
+  "meta": {
+    "title": "Wonderful | The Enterprise AI OS",
+    "description": "Reference reconstruction of the source homepage (real copy and assets as evidence)."
+  },
+  "nodes": [
+    {
+      "section": "shell.site-header",
+      "variant": "standard",
+      "theme": "dark",
+      "motion": {
+        "pattern": "nav-theme-swap",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "Wonderful home"
+        },
+        "menus": [
+          "Platform",
+          "Industries",
+          "Company"
+        ],
+        "links": [
+          {
+            "label": "Blog",
+            "href": "/blog"
+          }
+        ],
+        "cta": {
+          "label": "Get in touch",
+          "href": "/contact"
+        }
+      }
+    },
+    {
+      "section": "hero.video-statement",
+      "theme": "dark",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Accelerate AI transformation across the enterprise",
+        "lead": "Wonderful helps enterprises drive AI adoption to unlock their full potential.",
+        "ctas": [
+          {
+            "label": "Get in touch",
+            "href": "/contact"
+          },
+          {
+            "label": "Explore the platform",
+            "href": "/ai-os"
+          }
+        ],
+        "video": {
+          "assetRole": "video.source-loop",
+          "alt": "",
+          "src": "/videos/hp-16x9.mp4"
+        }
+      }
+    },
+    {
+      "section": "social-proof.logo-grid",
+      "variant": "grid-12",
+      "tokens": {
+        "surface": "color.surface.page",
+        "paddingY": "space.section-y.sm"
+      },
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Trusted by leading enterprises across industries",
+        "logos": [
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/TFjZnXFloDtxC1p08weXNXVqFY.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/fxHL7asSKuJh27ATTpnxFOKfw.svg"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/EWpQ141QyQFR2RsfZsg6caa0.svg"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/WnKjt6r3cQaMTIfvEt5Z1K3F1uA.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/zXjobWcE6Vd4mCUanzbNiDh5Hms.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/Tsd5x3ht3N31Src77paQLPv6WNE.svg"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/0Ya2hZThhuFRqJwsRcnw7jJV9k4.svg"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/Im5OtStOiVceudsq4fD6AUvuDM.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/IG5kvCgZvUw4X5HwUCu4elE.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/Wjw29w355ypIJNyUetXJ6NoreVQ.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/xi8ls77EHbDCy3SicCENW6AXk.png"
+          },
+          {
+            "assetRole": "logo.customer",
+            "alt": "",
+            "src": "/assets/LxO1hRMb7JfTIE1PgnuEHkKB0a8.svg"
+          }
+        ]
+      }
+    },
+    {
+      "section": "social-proof.case-study-carousel",
+      "variant": "light",
+      "theme": "light",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Solving the problems that move the business.",
+        "cards": [
+          {
+            "title": "Agentifying a national telecom operator",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/a1MmzRNQSPFf4uvoiutIdVnwoA.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/ote"
+            },
+            "logo": {
+              "assetRole": "logo.customer",
+              "alt": "",
+              "src": "/assets/HtdGpsL3gaqKSEyF91kTC1E5yA.png"
+            }
+          },
+          {
+            "title": "Collections across 2.5 million clients",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/pLpnYFl4P79sf1sqCEkoF2tZXJ4.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/banco-caja-social"
+            },
+            "logo": {
+              "assetRole": "logo.customer",
+              "alt": "",
+              "src": "/assets/zCbhv92CWw3fy9CUuRR6LAcuLEU.png"
+            }
+          },
+          {
+            "title": "The execution gap no model can close",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/VPCDpsUTDRi5FglpROFPRh7Q.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/the-execution-gap-no-model-can-close"
+            }
+          },
+          {
+            "title": "Internal IT automated across thousands of stations",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/OuYOIvuD0QSMclAG7aRDVAmS4Ew.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/petrol-ofisi"
+            },
+            "logo": {
+              "assetRole": "logo.customer",
+              "alt": "",
+              "src": "/assets/QnIcjBcgnIer46l3sEKY15WAuY.png"
+            }
+          },
+          {
+            "title": "91.5% containment rate across millions of customers",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/NSDOoFlacIhG39rfnu8hBZnceAY.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/telefonica"
+            },
+            "logo": {
+              "assetRole": "logo.customer",
+              "alt": "",
+              "src": "/assets/XNVB4d1x4hAhWTtl66slqgMRqw.png"
+            }
+          },
+          {
+            "title": "Open by default, competitive by design",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/JnUt2A5HsH8OTqMmne68u92Xo.png"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/open-by-default-competitive-by-design"
+            }
+          },
+          {
+            "title": "Billing resolved end-to-end for energy customers",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/tF5KaZUKvJRdgpZqpCG0he015gk.jpg"
+            },
+            "link": {
+              "label": "Read the story",
+              "href": "/blog-articles/ppc-energie"
+            },
+            "logo": {
+              "assetRole": "logo.customer",
+              "alt": "",
+              "src": "/assets/6ABuVojg9k3QJp0yIDvlSqtw6w.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "content.reveal-statement",
+      "variant": "scroll-color",
+      "motion": {
+        "pattern": "scroll-color-reveal",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "statement": "We bring together the AI platform, deployment teams, and strategic partnership to transform how enterprises work.",
+        "emphasis": [
+          "AI",
+          "platform,",
+          "deployment",
+          "strategic"
+        ]
+      }
+    },
+    {
+      "section": "features.platform-lattice-intro",
+      "theme": "dark",
+      "tokens": {
+        "surface": "color.surface.band",
+        "text": "color.text.on-dark"
+      },
+      "motion": {
+        "pattern": "lattice-loop",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "lockup": {
+          "assetRole": "logo.source-product-lockup",
+          "alt": "wonderful AI OS",
+          "src": "/assets/KPfLioy5w5ahgt9CtWgxoijuvwc.svg"
+        },
+        "title": "The unified operating layer for the AI-native enterprise",
+        "cta": {
+          "label": "Explore the OS",
+          "href": "/ai-os"
+        },
+        "latticeTags": [
+          "Data",
+          "Alerts",
+          "Permissions",
+          "Skills",
+          "Orchestrator",
+          "CLI",
+          "Evals",
+          "Guardrails",
+          "Workspaces",
+          "Knowledge"
+        ]
+      }
+    },
+    {
+      "section": "features.approach-cards",
+      "theme": "dark",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "cards": [
+          {
+            "title": "Deployment teams in every market.",
+            "body": "Local teams who build it with you, then hand it over and move to the next use case.",
+            "cta": {
+              "label": "See the model",
+              "href": "/deployment"
+            },
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/GE2ff9hpxjunCs3VZvJODYW4IoQ.jpg"
+            }
+          },
+          {
+            "title": "Strategy that drives AI transformation.",
+            "body": "Shaping the shift: which problems, what order, how the organization changes.",
+            "cta": {
+              "label": "Explore the approach",
+              "href": "/ai-transformation"
+            },
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/aa4tkKpVkqnWNLuv9cZYR9CEP5o.png"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "features.industry-tabs",
+      "motion": {
+        "pattern": "tab-crossfade",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Deep in regulated, mission-critical industries",
+        "tabs": [
+          {
+            "label": "Banking",
+            "cardTitle": "Banking",
+            "cardBody": "Accuracy, Compliance, and Trust",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/Z6ITE2va5GBIFUhQaiHnfePJmaY.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/banking"
+            }
+          },
+          {
+            "label": "Telecommunications",
+            "cardTitle": "Telecommunications",
+            "cardBody": "Reliability, Scale, and Speed",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/FFdLCmKHmSQ4OZaBx3pFj3de65A.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/telecommunication"
+            }
+          },
+          {
+            "label": "Healthcare",
+            "cardTitle": "Healthcare",
+            "cardBody": "Safety, Privacy, and Care",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/cvajetGWTDvJ06wQgNqFbZ79w60.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/healthcare"
+            }
+          },
+          {
+            "label": "Retail",
+            "cardTitle": "Retail",
+            "cardBody": "Personalization, Reach, and Trust",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/ciChxsmc9Ulla7nbNs1CRdWq7ew.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/retail"
+            }
+          },
+          {
+            "label": "Utilities",
+            "cardTitle": "Utilities",
+            "cardBody": "Reliability, Scale, and Service",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/gauGNjiMjJQ5nem2UNlcqeILxVc.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/utilities"
+            }
+          },
+          {
+            "label": "Insurance",
+            "cardTitle": "Insurance",
+            "cardBody": "Precision, Compliance, and Trust",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/NQUtNQPJbCeeC92AlGEiZSe1hk.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/insurance"
+            }
+          },
+          {
+            "label": "Airlines",
+            "cardTitle": "Airlines",
+            "cardBody": "Disruption, Revenue, and Service",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/aqVMSZQBodIwmH6xYMyI9Tk27zk.jpg"
+            },
+            "link": {
+              "label": "Explore more",
+              "href": "/industries/airlines"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "conversion.team-closer",
+      "theme": "dark",
+      "motion": {
+        "pattern": "expand-card-spring",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "The team building the future of applied AI.",
+        "body": "A single unified system that compounds the intelligence and execution of the entire workforce, processes, and products. We're early, and we're hiring the people who'll define it.",
+        "cards": [
+          {
+            "label": "About us",
+            "link": {
+              "label": "About us",
+              "href": "/about-us"
+            }
+          },
+          {
+            "label": "Careers",
+            "link": {
+              "label": "Careers",
+              "href": "/careers"
+            }
+          }
+        ],
+        "background": {
+          "assetRole": "photo.source-scene",
+          "alt": "",
+          "src": "/assets/z2gffofvCT8lr3s0y08hDCe9MZ4.jpg"
+        }
+      }
+    },
+    {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "theme": "dark",
+      "motion": {
+        "pattern": "appear-fade-tween",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "Wonderful home"
+        },
+        "tagline": "Transform your operating model with Wonderful.",
+        "cta": {
+          "label": "Get in touch",
+          "href": "/contact"
+        },
+        "legalLine": "© 2026 Wonderful AI B.V.",
+        "columns": [
+          {
+            "title": "Platform",
+            "links": [
+              {
+                "label": "AI OS Overview",
+                "href": "/ai-os"
+              },
+              {
+                "label": "Wonderful Agents",
+                "href": "/agents"
+              },
+              {
+                "label": "Wonderful Systems",
+                "href": "/systems"
+              },
+              {
+                "label": "Wonderful AI Gateway",
+                "href": "/ai-gateway"
+              },
+              {
+                "label": "Deployment",
+                "href": "/deployment"
+              },
+              {
+                "label": "Strategy",
+                "href": "/ai-transformation"
+              }
+            ]
+          },
+          {
+            "title": "Industries",
+            "links": [
+              {
+                "label": "Banking",
+                "href": "/industries/banking"
+              },
+              {
+                "label": "Telecommunications",
+                "href": "/industries/telecommunication"
+              },
+              {
+                "label": "Healthcare",
+                "href": "/industries/healthcare"
+              },
+              {
+                "label": "Utilities",
+                "href": "/industries/utilities"
+              },
+              {
+                "label": "Insurance",
+                "href": "/industries/insurance"
+              },
+              {
+                "label": "Retail",
+                "href": "/industries/retail"
+              },
+              {
+                "label": "Airlines",
+                "href": "/industries/airlines"
+              }
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              {
+                "label": "About us",
+                "href": "/about-us"
+              },
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Press",
+                "href": "/press"
+              },
+              {
+                "label": "Careers",
+                "href": "/careers"
+              },
+              {
+                "label": "Trust Center",
+                "href": "https://trust.wonderful.ai/"
+              },
+              {
+                "label": "Contact",
+                "href": "/contact"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "href": "https://www.linkedin.com/company/wonderfulcx/posts/?feedView=all"
+              },
+              {
+                "label": "X (Twitter)",
+                "href": "https://x.com/wonderful_ai"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Legal Policies",
+                "href": "/legal"
+              },
+              {
+                "label": "Privacy Policy",
+                "href": "/legal/privacy"
+              },
+              {
+                "label": "Website Terms of Use",
+                "href": "/legal/websiteterms"
+              },
+              {
+                "label": "Candidate Privacy Notice",
+                "href": "/careers/candidate_notice"
+              },
+              {
+                "label": "Bug Bounty",
+                "href": "/legal/bug-bounty-terms"
+              },
+              {
+                "label": "AI Safety",
+                "href": "/safety"
+              }
+            ]
+          }
+        ],
+        "watermark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "",
+          "src": "/assets/EfwFwuoTD4PdYVDGaAhoN1b4ns.png"
+        }
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "section": "utility.announcement-ticker",
+      "retrievalEligible": false,
+      "motion": {
+        "pattern": "ticker-crossfade",
+        "reducedMotionFallback": "paused-first-frame"
+      },
+      "content": {
+        "slides": [
+          {
+            "text": "Official Enterprise AI Partner",
+            "link": {
+              "label": "Read more",
+              "href": "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership"
+            },
+            "mark": {
+              "assetRole": "logo.partner-crest",
+              "alt": "FC Bayern"
+            }
+          },
+          {
+            "text": "Wonderful Raises $550M Series C",
+            "link": {
+              "label": "Read more",
+              "href": "/blog-articles/wonderful-raises-550m-series-c"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "utility.language-chip",
+      "retrievalEligible": false,
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "label": "EN"
+      }
+    }
+  ]
+}

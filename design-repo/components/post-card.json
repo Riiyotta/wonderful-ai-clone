@@ -1,0 +1,34 @@
+{
+  "id": "component.post-card",
+  "kind": "component",
+  "title": "Post card",
+  "purpose": "Image (16:9, radius 8), title and date linking to an article.",
+  "props": {
+    "title": {
+      "maxWords": 20
+    },
+    "date": {
+      "maxWords": 4
+    },
+    "image": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "radius.sm",
+    "type.heading.h4"
+  ],
+  "source": {
+    "file": "src/pages/content/Card.jsx",
+    "tag": "export function Card(",
+    "lines": "41-57",
+    "citation": "src/pages/content/Card.jsx:41-57"
+  },
+  "composes": [
+    "primitive.media-image"
+  ],
+  "motion": [
+    "card-image-appear",
+    "card-hover-dim"
+  ]
+}

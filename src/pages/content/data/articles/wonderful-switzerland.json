@@ -1,0 +1,91 @@
+{
+ "slug": "wonderful-switzerland",
+ "path": "/blog-articles/wonderful-switzerland",
+ "category": "News",
+ "pageTitle": "Wonderful Switzerland",
+ "author": "Bar Winkler",
+ "date": "Oct 22, 2025",
+ "datetime": "2025-10-22T00:00:00.000Z",
+ "title": "Wonderful Switzerland",
+ "titleTag": "h1",
+ "description": "Opening our Switzerland office",
+ "hero": {
+  "image": {
+   "src": "/assets/2onHUiUR3Ct30nzDlr5YauaJIY.png",
+   "width": 2250,
+   "height": 1500,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful is opening its first office in Switzerland, bringing the next generation of AI agents to a country where financial leadership and multilingual heritage make it a global hub for innovation and collaboration.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Swiss enterprises face unique challenges: a diverse, multilingual environment, largely underserved by mainstream AI models, and a business culture where efficiency and precision are critical. These realities make scaling enterprise operations both costly and complex. At the same time, Switzerland is a hub for a tech-savvy population, a mature digital economy, and a business community eager for transformation, creating strong demand for advanced AI solutions tailored to local needs.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Launching in Switzerland marks a huge step in bringing enterprise-ready AI to a market that demands technological precision and linguistic versatility. It reflects our commitment to building technology that adapts to local languages, regulations, and business realities, ensuring that Swiss enterprises can deliver world-class service at scale.</p><blockquote class=\"framer-text framer-styles-preset-1dxr6ef\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">“Switzerland is the ideal market for Wonderful: a diverse, multilingual nation where customer support is both costly and complex. Wonderful overcomes these challenges. By providing state-of-the-art AI tools already used by some of the brightest brands across Europe, we empower Swiss enterprises to achieve new levels of quality, efficiency, and global competitiveness.”</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">Gregor Kaelin<br class=\"framer-text\">General Manager, Wonderful Switzerland</p></blockquote><p class=\"framer-text framer-styles-preset-1ln1alt\">We are already partnering with some of Switzerland’s largest retailers, insurance companies, and telco companies. By creating AI that understands and speaks Swiss German, French, and Italian with precision and cultural fluency, we aim to become the trusted partner for enterprises across the country.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">We’ve built a very strong team on the ground in Switzerland and continue to expand. Explore our <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/\">Careers page</a> to see open roles and join us in shaping the future of enterprise AI.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

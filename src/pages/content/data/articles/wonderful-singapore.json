@@ -1,0 +1,91 @@
+{
+ "slug": "wonderful-singapore",
+ "path": "/blog-articles/wonderful-singapore",
+ "category": "News",
+ "pageTitle": "Wonderful Singapore",
+ "author": "The Wonderful Team",
+ "date": "May 4, 2026",
+ "datetime": "2026-05-04T00:00:00.000Z",
+ "title": "Wonderful Singapore",
+ "titleTag": "h1",
+ "description": "Opening our office in Singapore",
+ "hero": {
+  "image": {
+   "src": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "width": 2250,
+   "height": 1500,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful is launching in Singapore, bringing production-ready AI agents to one of the world's most advanced enterprise markets.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Singapore's complexity is unlike anywhere else. The country operates across four official languages (English, Mandarin Chinese, Malay, and Tamil), with Singlish woven through everyday communication in ways that expose every AI platform built on monolingual assumptions. That linguistic depth is matched by institutional ambitions: Singapore’s National AI Strategy 2.0 and its network of over 60 AI centres of excellence signify a government striving to make the country a global hub for enterprise AI.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Singapore is also where enterprise standards are set and procurement cycles that shape Asia often begin. Enterprise AI adoption has reached 66% (among the highest rates globally) with large enterprises accelerating deployment at a pace that signals a market no longer asking whether to adopt AI, but demanding to know who can make it work at scale. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our launch in Singapore is a major step in Wonderful's APAC story. It reflects our commitment to delivering AI that is genuinely adapted to local languages, regulatory environments, and business realities, not retrofitted from a global playbook. That means grounding every deployment in local knowledge and delivering it with global execution standard, across high-impact workflows including customer care, collections, back-office operations, and sales.</p><blockquote class=\"framer-text framer-styles-preset-1dxr6ef\"><p class=\"framer-text framer-styles-preset-1ln1alt\">“Singapore is one of the most advanced enterprise markets in the world: sophisticated, multilingual, multicultural, and at the forefront of AI innovation and adoption. Wonderful's hyperlocal approach is uniquely suited to this complexity, and our Singapore team is deeply committed to helping enterprises realise their AI ambitions.\"</p></blockquote><blockquote class=\"framer-text framer-styles-preset-1dxr6ef\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\"><strong class=\"framer-text\">Alexander Kleinberg, General Manager, Singapore</strong></em></p></blockquote><p class=\"framer-text framer-styles-preset-1ln1alt\">We have built a strong team on the ground, bringing together a world-class international platform with on-the-ground expertise across engineering, implementation, and AI operations. If you are interested in shaping the future of enterprise AI in one of the world's most dynamic markets, explore our <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/careers\">Careers page</a> and reach out. We’re continuing to hire Deployment Strategists, Forward Deployed Engineers, and Go To Market teams in Singapore, and would love to hear from you.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+   "title": "The Hard Part of AI Agents Isn’t Building Them",
+   "date": "Apr 1, 2026",
+   "datetime": "2026-04-01T00:00:00.000Z",
+   "image": "/assets/t8PmjXGzRZvfLhcMJa8mr3VkSJ8.png",
+   "imageW": 3000,
+   "imageH": 2000
+  }
+ ]
+}

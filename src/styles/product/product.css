@@ -1,0 +1,66 @@
+/* Product group (/ai-os, /agents, /systems). Framer text presets, copied from the live CSS (CLONE_SPEC_PRODUCT.md §0).
+   Preset breakpoints are Framer's own (810/800/1199/1439), independent of the 880/1440 layout breakpoints. */
+.pr-fav { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-style: normal; margin: 0; }
+.pr-inter { font-family: Inter, "Inter Placeholder", sans-serif; font-style: normal; margin: 0; }
+
+/* 1idioqq: H1 */
+.pr-h1 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; margin: 0;
+  font-size: 64px; line-height: 1.05; letter-spacing: -.06em; font-feature-settings: "ss04", "ss05"; color: #fafafa; text-align: center; }
+@media (min-width: 810px) and (max-width: 1199.98px) { .pr-h1 { font-size: 48px; letter-spacing: -.05em; } }
+@media (max-width: 809.98px) { .pr-h1 { font-size: 38px; letter-spacing: -.05em; } }
+
+/* 190xti5: section H2 (pad-bottom 3px) */
+.pr-h2 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; margin: 0; padding-bottom: 3px;
+  font-size: 48px; line-height: 1.05; letter-spacing: -.04em; font-feature-settings: "ss04", "ss05"; text-wrap: balance; }
+@media (min-width: 800px) and (max-width: 1199.98px) { .pr-h2 { font-size: 42px; line-height: 1.15; } }
+@media (max-width: 799.98px) { .pr-h2 { font-size: 34px; line-height: 1.15; letter-spacing: -.05em; } }
+
+/* pyuk04: H3 32 */
+.pr-h3 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; margin: 0;
+  font-size: 32px; line-height: 1.15; letter-spacing: -.04em; font-feature-settings: "ss02", "ss04", "ss05", "ss11"; }
+@media (min-width: 810px) and (max-width: 1439.98px) { .pr-h3 { font-size: 22px; } }
+@media (max-width: 809.98px) { .pr-h3 { font-size: 24px; } }
+
+/* 1ing3ma: H4 26 */
+.pr-h4 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; margin: 0;
+  font-size: 26px; line-height: 1.25; letter-spacing: -.05em; font-feature-settings: "blwf", "cv03", "cv04", "cv09", "cv11", "ss04", "ss05"; }
+@media (max-width: 1199.98px) { .pr-h4 { font-size: 24px; line-height: 1.15; letter-spacing: -.04em; } }
+
+/* voew0c: H5 Inter 300 20 */
+.pr-h5 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 300; margin: 0;
+  font-size: 20px; line-height: 1.15; letter-spacing: -.05em; font-feature-settings: "ss04"; }
+
+/* 1ln1alt: body 17 */
+.pr-p17 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; margin: 0;
+  font-size: 17px; line-height: 1.28; letter-spacing: -.02em; font-feature-settings: "blwf", "cv03", "cv04", "cv09"; }
+/* x0s9r5: body 14 */
+.pr-p14 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; margin: 0;
+  font-size: 14px; line-height: 1.5; letter-spacing: -.02em; font-feature-settings: "ss03"; }
+/* o1ogpi: hero sub 20 */
+.pr-p20 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; margin: 0;
+  font-size: 20px; line-height: 1.25; letter-spacing: -.4px; }
+
+/* "Grey small" white pill: 37px, 6px 16px, 14/21 #171719. No hover state on live. */
+.pr-pill-s { display: flex; align-items: center; justify-content: center; gap: 10px; height: 37px; padding: 6px 16px;
+  background: #fff; border-radius: 50px; overflow: hidden; text-decoration: none; white-space: pre; color: #171719; position: relative; }
+/* "Grey" white pill: 50px, min-w 140, 16/26 #000; hover opacity .6 (spring 200/60, set inline). */
+.pr-pill { display: flex; align-items: center; justify-content: center; gap: 10px; height: 50px; min-width: 140px; padding: 6px 18px;
+  background: #fff; border-radius: 50px; overflow: hidden; text-decoration: none; white-space: pre; color: #000; position: relative;
+  font-family: Inter, "Inter Placeholder", sans-serif; font-size: 16px; line-height: 26px; letter-spacing: -.5px; }
+.pr-pill:hover { opacity: .6; }
+
+/* Divider: 1px line inset 24px (rgba(255,255,255,.18) on #080808) */
+.pr-divider { width: 100%; background: #080808; padding: 0 24px; display: flex; flex-direction: column; align-items: center; overflow: clip; }
+.pr-divider > div { width: 100%; height: 1px; background: rgba(255, 255, 255, .18); }
+
+/* Feature cell (icon / H5 / p). Border is Framer's data-border ::after (inset, no layout impact). */
+.pr-cell { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 0; width: 100%; padding: 32px;
+  -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); }
+.pr-cell::after { content: ""; position: absolute; inset: 0; pointer-events: none; border-style: solid; border-width: 0 0 0 1px; border-color: #ffffff2e; }
+.pr-cell.is-light { background: rgba(255, 255, 255, .1); }
+.pr-cell.is-light::after { border-color: rgba(0, 0, 0, .1); }
+/* M (<880): dark cells swap the left border for a top border and drop the side padding (ai-os, systems). */
+@media (max-width: 879.98px) {
+  .pr-cell.is-dark { padding: 30px 0; }
+  .pr-cell.is-dark::after { border-width: 1px 0 0 0; }
+}

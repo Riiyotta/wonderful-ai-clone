@@ -1,0 +1,91 @@
+{
+ "slug": "wonderful-australia",
+ "path": "/blog-articles/wonderful-australia",
+ "category": "News",
+ "pageTitle": "Wonderful Australia",
+ "author": "The Wonderful Team",
+ "date": "Jun 8, 2026",
+ "datetime": "2026-06-08T00:00:00.000Z",
+ "title": "Wonderful Australia",
+ "titleTag": "h1",
+ "description": "Opening our office in Australia",
+ "hero": {
+  "image": {
+   "src": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "width": 2250,
+   "height": 1500,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful is launching in Australia, bringing production-ready AI agents to one of Asia-Pacific’s most demanding enterprise markets.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Australian enterprises are digitally mature, ambitious about AI, and uncompromising about how it gets deployed. Data sovereignty, regulatory compliance, and local accountability are foundational operating requirements particularly in sectors like banking, telecommunications, healthcare, and government.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That rigour coexists with a real momentum. Australian enterprises have moved through years of AI pilots and experimentation, and over half expect to reach enterprise-wide AI production within 6 months*. The enterprises that move now will set the operating standards for their sectors.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Australian enterprises are not looking for a vendor promising transformation from a distance, they want a partner with real local presence, embedded in their compliance environment, and accountable to their operating standards. Wonderful combines a multi-model AI platform, local <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/blog-articles/owning-the-last-mile\">deployment teams</a>, and expert advisors to help enterprises accelerate AI adoption across customer, employee, and back-office operations.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">\"Australia is a market where ambition and accountability go hand in hand. Enterprises here are excited about AI, but they also want to know it will work safely and reliably, with their customers, their systems, and their obligations. That is exactly where Wonderful delivers. We are here to work side by side with Australian enterprises and help them turn AI ambition into live capability.\"</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Dalibor Siroky, General Manager, ANZ, Wonderful</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\">We have built a strong team on the ground and are continuing to grow. If you are interested in helping shape enterprise AI in one of the region's most important markets, explore our <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/careers\">Careers page</a> and reach out. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">*source: <em class=\"framer-text\">State of AI in the Enterprise 2026, Australia (Deloitte)</em></p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+   "title": "The Hard Part of AI Agents Isn’t Building Them",
+   "date": "Apr 1, 2026",
+   "datetime": "2026-04-01T00:00:00.000Z",
+   "image": "/assets/t8PmjXGzRZvfLhcMJa8mr3VkSJ8.png",
+   "imageW": 3000,
+   "imageH": 2000
+  }
+ ]
+}

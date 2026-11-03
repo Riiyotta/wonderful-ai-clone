@@ -1,0 +1,142 @@
+{
+  "id": "features.industry-tabs",
+  "title": "Industry tabs",
+  "status": "measured",
+  "source": {
+    "id": "src:Industries#export-default-function-Industries",
+    "file": "src/components/Industries.jsx",
+    "tag": "export default function Industries",
+    "lines": "26-109",
+    "citation": "src/components/Industries.jsx:26-109"
+  },
+  "semantic": {
+    "id": "features.industry-tabs",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Industries showcase: H2, a tab track of seven industries, and one large image card that swaps per tab.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "measured headingWordsMax=5 for features.industry-tabs at 1440px"
+      },
+      "tabs": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "tab labels are 1 word"
+            },
+            "cardTitle": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "card titles are 1 word"
+            },
+            "cardBody": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "card subtitles are 4 words (CLONE_SPEC.md 2.6 table)"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "label",
+            "cardTitle",
+            "image",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "tabs"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "tab-crossfade",
+      "card-text-appear"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Tab track scrolls horizontally (max 330); card 342x460, H3 38px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".tabs[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.filter-tabs",
+    "component.overlay-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 1082.6,
+      "max": 1082.6
+    },
+    "samples": [
+      {
+        "route": "/",
+        "instance": 0,
+        "heightPx": 1082.6
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

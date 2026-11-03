@@ -1,0 +1,157 @@
+{
+  "id": "features.image-card-grid",
+  "title": "Image card grid",
+  "status": "measured",
+  "source": {
+    "id": "src:Replace#export-default-function-Replace",
+    "file": "src/pages/product/systems/Replace.jsx",
+    "tag": "export default function Replace",
+    "lines": "42-58",
+    "citation": "src/pages/product/systems/Replace.jsx:42-58",
+    "variantSources": {
+      "grid-2x3": {
+        "file": "src/pages/platform/Gateway.jsx",
+        "tag": "function Capabilities",
+        "lines": "79-128",
+        "citation": "src/pages/platform/Gateway.jsx:79-128"
+      }
+    }
+  },
+  "semantic": {
+    "id": "features.image-card-grid",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 (+ side copy) over a 2x2 or 2x3 grid of image cards with a title and optional sentence.",
+  "themes": [
+    "dark"
+  ],
+  "variants": [
+    "grid-2x2",
+    "grid-2x3"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 18,
+        "x-maxWordsEvidence": "measured headingWordsMax=14 for features.image-card-grid at 1440px"
+      },
+      "aside": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=19 for features.image-card-grid at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 4,
+        "maxItems": 6,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "x-maxWordsEvidence": "card titles up to 8 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 24,
+              "x-maxWordsEvidence": "card copy up to 19 words (measured paragraphWordsMax=19)"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene",
+                "product.source-visual",
+                "product.generated-visual"
+              ]
+            }
+          },
+          "required": [
+            "title",
+            "image"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "restack",
+        "detail": "Cards become image-on-top with text below on #141414/#1e1e1e."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 1305.2,
+      "max": 1873.5
+    },
+    "samples": [
+      {
+        "route": "/systems",
+        "variant": "grid-2x2",
+        "instance": 0,
+        "heightPx": 1305.2
+      },
+      {
+        "route": "/ai-gateway",
+        "variant": "grid-2x3",
+        "instance": 0,
+        "heightPx": 1873.5
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-gateway",
+    "/systems"
+  ]
+}

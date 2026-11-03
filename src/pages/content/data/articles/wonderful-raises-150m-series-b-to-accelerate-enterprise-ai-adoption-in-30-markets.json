@@ -1,0 +1,91 @@
+{
+ "slug": "wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+ "path": "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets",
+ "category": "News",
+ "pageTitle": "Wonderful Raises $150M Series B at a $2B Valuation",
+ "author": "The Wonderful Team",
+ "date": "Mar 12, 2026",
+ "datetime": "2026-03-12T00:00:00.000Z",
+ "title": "Wonderful Raises $150M Series B at a $2B Valuation",
+ "titleTag": "h1",
+ "description": "To accelerate enterprise AI adoption in 30+ markets",
+ "hero": {
+  "image": {
+   "src": "/assets/tXW99Yfj7nthTNuUVyDPXiDFHBQ.jpg",
+   "width": 2400,
+   "height": 1256,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Today, Wonderful announced it has raised $150 million in a Series B funding round led by global software investor Insight Partners, with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures. The new capital will enable Wonderful to continue investing in its agentic platform and accelerate global expansion, scaling headcount from 350 to approximately 900 by year-end to serve more enterprises with locally embedded deployment teams.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In the eight months since emerging from stealth, Wonderful has rapidly expanded, scaling to more than 30 countries across Europe, the Middle East, Asia-Pacific, and Latin America and deploying production-grade agents for enterprises in telecom, financial services, manufacturing, and healthcare. This expansion is driven by the success of Wonderful’s thesis: enterprise AI will not scale through technology alone. It requires a state-of-the-art agentic platform paired with locally embedded teams that can deploy agents inside complex organizations.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This pairing is intentional and has been demonstrating its value in-market. By building full-stack teams that are co-located and forward-deployed into customer environments, Wonderful can enable direct collaboration with enterprise stakeholders, accelerate system integration, and sustain post-deployment optimization long after go-live. As a result, agents can move from pilot to full production in days and weeks rather than months, even in highly regulated, operationally complex environments.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">“In 2026, enterprises will be deciding who to partner with to operationalize AI across their organizations, and those decisions will hinge on who can deliver deep integrations across complex infrastructures and tailor solutions to each organization’s unique environment,” said Bar Winkler, CEO and Co-founder of Wonderful. “We built our platform and operating model around that reality, and the demand we’re seeing globally reflects it. This capital allows us to expand our ability to support enterprises to do what they want with AI.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful’s platform-based approach underpins the operating model. The company is building a horizontal enterprise foundation that can be activated across multiple use cases and workflows, rather than delivering isolated point solutions. The architecture is model-agnostic by design, continuously benchmarking and selecting the best-performing models for each use case while remaining flexible as the model landscape evolves. It incorporates state-of-the-art engineering practices, including harness-based evaluation and self-healing system design, to ensure agents remain reliable in production. As enterprises activate additional use cases on the same underlying architecture, the value compounds over time. Organizations can partner with Wonderful to deploy at speed while retaining the ability to extend, build upon, and ultimately own their AI capabilities over the long term.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">“Over 70% of enterprises that begin with a single use case expand into additional workflows within the first three months,” continued Winkler. “That expansion is possible because we built a shared foundation across core systems from day one. Once that architecture is in place, activating new use cases becomes faster, more predictable, and increasingly owned by the enterprise itself.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful’s operating model is repeatable across industries. From telcos to financial services, healthcare, and manufacturing, enterprises are agentifying both customer-facing and internal workflows. Across deployments, agents have delivered measurable impact, reducing handling times by up to 60%, achieving containment rates above 80%, and enabling organizations to replace legacy automation vendors while unlocking multi-million-dollar annual efficiency gains.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">“Wonderful is establishing trust and deep partnerships inside complex enterprises at a critical moment for the market,” said Jeff Horing, Managing Director at Insight Partners. “We believe that the team’s combination of platform strength and execution position Wonderful as a strong enterprise partner in today’s ecosystem.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">\"At Wonderful, our goal is to push the frontier of enterprise AI,\" said Roey Lalazar, CTO and Co-founder. \"We're deploying agents across every business function, while pioneering the next generation of application layers that will transform how organizations operate.\"</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

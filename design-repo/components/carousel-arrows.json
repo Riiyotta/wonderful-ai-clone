@@ -1,0 +1,23 @@
+{
+  "id": "component.carousel-arrows",
+  "kind": "component",
+  "title": "Carousel arrows",
+  "purpose": "Pair of 36px round arrow buttons that scroll a track by 400px.",
+  "props": {},
+  "tokens": [
+    "radius.round",
+    "color.surface.chip"
+  ],
+  "source": {
+    "file": "src/components/CaseStudies.jsx",
+    "tag": "function ChevronIcon",
+    "lines": "24-31",
+    "citation": "src/components/CaseStudies.jsx:24-31"
+  },
+  "composes": [
+    "primitive.arrow-icon"
+  ],
+  "motion": [
+    "carousel-scroll"
+  ]
+}

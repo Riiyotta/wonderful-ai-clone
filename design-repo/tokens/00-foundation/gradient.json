@@ -1,0 +1,34 @@
+{
+  "$description": "Foundation gradient tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "gradient",
+  "tokens": {
+    "gradient.hero-overlay": {
+      "value": "linear-gradient(180deg, rgba(0,0,0,.2) 0%, rgba(0,0,0,.1) 13.1179%, rgba(0,0,0,0) 60%, rgba(0,0,0,.3) 100%)",
+      "evidence": "CLONE_SPEC.md:80"
+    },
+    "gradient.card-scrim": {
+      "value": "linear-gradient(rgba(20,20,20,0) 0%, rgba(20,20,20,.1) 40%, #141414 70%)",
+      "evidence": "src/components/darkband/DeployCards.jsx:11"
+    },
+    "gradient.industry-card": {
+      "value": "linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,.12) 73%, rgba(0,0,0,.35) 100%)",
+      "evidence": "CLONE_SPEC.md:83"
+    },
+    "gradient.announcement": {
+      "value": "linear-gradient(268deg, #ffffff 0%, #fafafa 100%)",
+      "evidence": "src/styles/navbar.css:61"
+    },
+    "gradient.band-mask": {
+      "value": "linear-gradient(#000 65%, rgba(0,0,0,0) 100%)",
+      "evidence": "CLONE_SPEC.md:85"
+    },
+    "gradient.cta-glow-mask": {
+      "value": "radial-gradient(141% 80% at 50.5% 100%, #0000 35.4%, #000 100%)",
+      "evidence": "CLONE_SPEC_COMPANY.md:33"
+    },
+    "gradient.expanded-card-scrim": {
+      "value": "linear-gradient(180deg, transparent 35%, rgba(0,0,0,.82) 100%)",
+      "evidence": "CLONE_SPEC_PRODUCT.md:227"
+    }
+  }
+}

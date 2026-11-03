@@ -1,0 +1,171 @@
+{
+  "id": "features.workflow-list",
+  "title": "Workflow list",
+  "status": "measured",
+  "source": {
+    "id": "src:Workflows#export-default-function-Workflows",
+    "file": "src/pages/industries/sections/Workflows.jsx",
+    "tag": "export default function Workflows",
+    "lines": "16-45",
+    "citation": "src/pages/industries/sections/Workflows.jsx:16-45"
+  },
+  "semantic": {
+    "id": "features.workflow-list",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 and four workflow items (title + description) beside a tall media panel.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 7,
+        "x-maxWordsEvidence": "measured headingWordsMax=5 for features.workflow-list at 1440px"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "item titles"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 28,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=22 for features.workflow-list at 1440px"
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      },
+      "media": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene",
+          "product.source-visual",
+          "product.generated-visual"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "items",
+      "media"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.industry",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "restack",
+        "detail": "Media first; text column 200% wide (live bug, reproduced)."
+      },
+      {
+        "at": "mobile",
+        "change": "restack",
+        "detail": "Descriptions clipped at the viewport edge as on live."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".media",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 7,
+    "routes": 7,
+    "heightPx": {
+      "min": 880,
+      "max": 880
+    },
+    "samples": [
+      {
+        "route": "/industries/airlines",
+        "instance": 0,
+        "heightPx": 880
+      },
+      {
+        "route": "/industries/retail",
+        "instance": 0,
+        "heightPx": 880
+      },
+      {
+        "route": "/industries/healthcare",
+        "instance": 0,
+        "heightPx": 880
+      },
+      {
+        "route": "/industries/telecommunication",
+        "instance": 0,
+        "heightPx": 880
+      },
+      {
+        "route": "/industries/banking",
+        "instance": 0,
+        "heightPx": 880
+      },
+      {
+        "route": "/industries/utilities",
+        "instance": 0,
+        "heightPx": 880
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare",
+    "/industries/insurance",
+    "/industries/retail",
+    "/industries/telecommunication",
+    "/industries/utilities"
+  ],
+  "notes": [
+    "Tablet/mobile text column is 200% wide on live (a bug); the clone reproduces it."
+  ]
+}

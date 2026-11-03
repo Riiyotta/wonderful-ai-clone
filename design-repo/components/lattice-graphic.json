@@ -1,0 +1,25 @@
+{
+  "id": "component.lattice-graphic",
+  "kind": "component",
+  "title": "Lattice graphic",
+  "purpose": "Decorative dot-grid + typed tag animation (pure DOM/CSS keyframes).",
+  "props": {
+    "tags": {
+      "type": "array"
+    }
+  },
+  "tokens": [
+    "color.alpha.white-54",
+    "color.accent.data",
+    "type.mono.tag"
+  ],
+  "source": {
+    "file": "src/components/darkband/Lattice.jsx",
+    "tag": "export default function Lattice",
+    "lines": "96-127",
+    "citation": "src/components/darkband/Lattice.jsx:96-127"
+  },
+  "motion": [
+    "lattice-loop"
+  ]
+}

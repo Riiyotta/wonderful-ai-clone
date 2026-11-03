@@ -1,0 +1,24 @@
+{
+  "id": "primitive.text-link",
+  "kind": "primitive",
+  "title": "Inline text link",
+  "purpose": "Underlined or coloured inline link inside prose.",
+  "props": {
+    "label": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    }
+  },
+  "tokens": [
+    "color.link.inline",
+    "color.blue.legal-index"
+  ],
+  "source": {
+    "file": "src/pages/regional/CountryPage.jsx",
+    "tag": "function Runs",
+    "lines": "16-19",
+    "citation": "src/pages/regional/CountryPage.jsx:16-19"
+  }
+}

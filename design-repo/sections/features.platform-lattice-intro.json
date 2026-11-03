@@ -1,0 +1,122 @@
+{
+  "id": "features.platform-lattice-intro",
+  "title": "Platform lattice intro",
+  "status": "measured",
+  "source": {
+    "id": "src:DarkBand#id-aios",
+    "file": "src/components/DarkBand.jsx",
+    "tag": "id=\"aios\"",
+    "lines": "25-45",
+    "citation": "src/components/DarkBand.jsx:25-45"
+  },
+  "semantic": {
+    "id": "features.platform-lattice-intro",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "Dark band introducing the platform: product lockup, two-line H2 and one CTA over an animated dot-and-tag lattice.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "lockup": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.source-product-lockup",
+          "brand-mark.generated",
+          "brand-mark.user-supplied"
+        ]
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "measured headingWordsMax=8 for features.platform-lattice-intro at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "latticeTags": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 10,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 1,
+          "x-maxWordsEvidence": "lattice tags are single words (CLONE_SPEC.md 4.6)"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "appear-fade-tween",
+      "lattice-loop"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "bg #000, padding 0 24, H2 34px, small pill."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".lockup",
+      "assetRoles": [
+        "logo.source-product-lockup",
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "brand-mark.generated",
+    "brand-mark.user-supplied",
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.lattice-graphic",
+    "primitive.pill-button",
+    "primitive.brand-mark"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 855,
+      "max": 855
+    },
+    "samples": [
+      {
+        "route": "/",
+        "instance": 0,
+        "heightPx": 855
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/"
+  ]
+}

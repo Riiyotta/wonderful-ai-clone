@@ -1,0 +1,83 @@
+/* Case-study template (/case-studies/<slug>) — ported from the Framer CSS in _source/pages/case-studies__*.html.
+   Breakpoints: desktop >= 1200, tablet 810–1199.98, mobile <= 809.98. */
+.cs-page { position: relative; display: flex; flex-flow: column; align-items: center; width: 100%; background: #fff; }
+.cs-page *, .cs-page *::before, .cs-page *::after { box-sizing: border-box; }
+.cs-page p, .cs-page h1, .cs-page h2, .cs-page h3, .cs-page ul { margin: 0; padding: 0; }
+
+.cs-container { position: relative; display: flex; flex-flow: column; justify-content: flex-start; align-items: flex-start; gap: 60px; width: 100%; max-width: 800px; padding: 150px 0 80px; flex: none; }
+.cs-header { position: relative; display: flex; flex-flow: column; align-items: flex-start; gap: 25px; width: 100%; max-width: 100%; }
+.cs-hcontent { position: relative; display: flex; flex-flow: column; align-items: flex-start; gap: 24px; width: 100%; overflow: hidden; }
+.cs-tagrow { position: relative; display: flex; flex-flow: row; justify-content: flex-start; align-items: center; gap: 10px; width: 100%; overflow: clip; }
+.cs-tag { position: relative; display: flex; flex-flow: row; justify-content: center; align-items: center; gap: 10px; width: min-content; padding: 4px 8px; overflow: clip; background: #f7f7f7; border-radius: 8px; }
+/* x0s9r5: Inter 14 / 1.5 / -.02em, ss03. */
+.cs-x0s { white-space: pre; font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 14px; line-height: 1.5; letter-spacing: -.02em; font-feature-settings: "ss03"; color: rgba(0,0,0,.6); text-align: left; }
+.cs-title { position: relative; width: 90%; max-width: 800px; white-space: pre-wrap; word-break: break-word; }
+/* 190xti5: >=1200 48/1.05/-.04em; 800–1199 42/1.15; <800 34/1.15/-.05em. Mobile variant colour #171719. */
+.cs-h1 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 48px; line-height: 1.05; letter-spacing: -.04em;
+  font-feature-settings: "ss04", "ss05"; padding-bottom: 3px !important; color: #000; text-align: start; text-wrap: balance; will-change: transform; }
+.cs-sub { position: relative; z-index: 0; width: 100%; white-space: pre-wrap; word-break: break-word; }
+/* o1ogpi: Inter 20 / 1.25 / -.4px. */
+.cs-sub-p { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 20px; line-height: 1.25; letter-spacing: -.4px; color: rgba(0,0,0,.8); text-align: left; }
+.cs-divider { width: 100%; height: 1px; background: #e6e6e6; overflow: clip; flex: none; }
+.cs-stats { position: relative; display: flex; flex-flow: row; justify-content: flex-start; align-items: center; gap: 50px; width: 100%; height: 84px; overflow: clip; }
+.cs-stat { position: relative; display: flex; flex-flow: column; align-content: flex-start; justify-content: center; align-items: flex-start; gap: 10px; width: min-content; overflow: clip; flex: none; }
+.cs-stat-l, .cs-stat-v { position: relative; z-index: 1; white-space: pre; width: auto; }
+.cs-stat-l--w { width: 121px; white-space: pre-wrap; word-break: break-word; }
+.cs-stat-h2 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 32px; line-height: 1.1; letter-spacing: -2px; color: #000; text-align: center; }
+.cs-banner { position: relative; width: 100%; height: 400px; border-radius: 24px; flex: none; }
+.cs-banner img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: inherit; }
+
+/* Rich text (Framer framer-text rules): blocks after the first get margin-top = their paragraph spacing. */
+.cs-rt { --ps: 32px; position: relative; width: 100%; max-width: 800px; white-space: pre-wrap; word-break: break-word; flex: none; }
+.cs-rt > :not(:first-child) { margin-top: var(--ps); }
+.cs-rt > .rt-p:not(:first-child) { margin-top: 30px; }
+.cs-rt > .rt-h2:not(:first-child) { margin-top: 40px; }
+.cs-rt > .rt-h3:not(:first-child) { margin-top: 0; }
+.cs-rt .rt-p, .cs-rt li { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-size: 17px; line-height: 128%; letter-spacing: -.02em;
+  font-feature-settings: "blwf", "cv09", "cv03", "cv04"; color: #393939; }
+.cs-rt strong { font-weight: 700; }
+.cs-rt .rt-h2 { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 700; font-size: 30px; line-height: 1.4em; letter-spacing: -.04em;
+  font-feature-settings: "blwf", "cv09", "cv03", "cv04", "cv11"; color: #000; }
+.cs-rt .rt-h2 strong { font-weight: 300; }
+.cs-rt .rt-h3 { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; font-size: 32px; line-height: 1.15; letter-spacing: -.04em;
+  font-feature-settings: "ss02", "ss04", "ss05", "ss11"; color: #171719; text-align: left; }
+.cs-rt ul { position: relative; padding: 0; padding-inline-start: 0; list-style: none; font-size: 16px; line-height: 1.2; }
+.cs-rt li { position: relative; list-style: none; padding-inline-start: 2ch; }
+.cs-rt li > p { margin: 0; }
+.cs-rt ul > li::before { content: "•"; position: absolute; inset-inline-start: 0; }
+
+/* Quote card ("No Case Study" variant). */
+.cs-quote-box { position: relative; width: 100%; height: 283px; flex: none; }
+.cs-quote { position: relative; display: flex; flex-flow: row; justify-content: flex-start; align-items: flex-start; gap: 24px; width: 100%; height: 100%; padding: 20px;
+  background: #fafafa; border-radius: 20px; cursor: pointer; }
+.cs-quote-bar { order: 2; width: 5px; height: 100%; overflow: hidden; border-radius: 20px; flex: none;
+  background: linear-gradient(180deg, rgb(207,196,253) 0%, rgb(245,199,202) 39.0748170045045%, rgb(255,167,106) 73.1102195945946%, rgb(255,222,151) 100%); }
+.cs-quote-main { order: 3; display: flex; flex-flow: row; flex: 1 0 0; align-items: center; justify-content: flex-start; gap: 20px; width: 1px; height: 100%; }
+.cs-quote-col { display: flex; flex-flow: column; flex: 1 0 0; justify-content: space-between; align-items: flex-start; width: 1px; height: 100%; }
+.cs-quote-top { position: relative; display: flex; flex-flow: column; justify-content: center; align-items: flex-start; gap: 20px; width: 100%; overflow: clip; }
+.cs-quote-logo { position: relative; width: 177px; height: 37px; overflow: hidden; flex: none; }
+.cs-quote-logo img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.cs-quote-text { position: relative; width: 100%; text-wrap: balance; white-space: pre-wrap; word-break: break-word; }
+.cs-quote-text p { font-family: Inter, "Inter Placeholder", sans-serif; font-style: italic; font-weight: 300; font-size: 20px; line-height: 1.4em; letter-spacing: -.01em;
+  font-feature-settings: "cv01", "cv09", "cv11", "cv05", "ss03"; color: #000; text-align: left; }
+.cs-quote-foot { position: relative; display: flex; flex-flow: row; justify-content: center; align-items: flex-end; gap: 10px; width: 100%; overflow: clip; }
+.cs-quote-who { display: flex; flex-flow: row; flex-wrap: wrap; flex: 1 0 0; justify-content: flex-start; align-items: center; gap: 20px; width: 1px; }
+.cs-quote-whoin { display: flex; flex-flow: column; flex: 1 0 0; justify-content: center; align-items: flex-start; gap: 10px; width: 1px; min-width: 300px; height: 58px; }
+.cs-quote-whoin > div { position: relative; width: 100%; white-space: pre-wrap; word-break: break-word; }
+.cs-quote-name, .cs-quote-role { font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 500; font-size: 16px; line-height: 1.2; letter-spacing: -.01em;
+  font-feature-settings: "cv01", "cv09", "cv11", "cv05"; color: #000; text-align: left; }
+.cs-quote-role { font-size: 12px; color: #999; }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .cs-container { padding: 150px 40px 80px; }
+}
+@media (min-width: 800px) and (max-width: 1199.98px) { .cs-h1 { font-size: 42px; line-height: 1.15; } }
+@media (max-width: 799.98px) { .cs-h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.05em; } }
+@media (min-width: 810px) and (max-width: 1439.98px) { .cs-rt .rt-h3 { font-size: 22px; } }
+@media (max-width: 809.98px) {
+  .cs-container { padding: 120px 20px 80px; }
+  .cs-h1 { color: #171719; }
+  .cs-stats { flex-wrap: wrap; align-content: flex-start; align-items: flex-start; height: auto; }
+  .cs-quote-box { height: 380px; }
+  .cs-rt .rt-h3 { font-size: 24px; }
+}

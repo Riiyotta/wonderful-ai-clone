@@ -1,0 +1,114 @@
+{
+  "id": "content.reveal-statement",
+  "title": "Reveal statement",
+  "status": "measured",
+  "source": {
+    "id": "src:RevealStatement#export-default-function-RevealStatement",
+    "file": "src/components/RevealStatement.jsx",
+    "tag": "export default function RevealStatement",
+    "lines": "62-129",
+    "citation": "src/components/RevealStatement.jsx:62-129",
+    "variantSources": {
+      "sticky-progress": {
+        "file": "src/pages/company/sections/StickyReveal.jsx",
+        "tag": "export default function StickyReveal",
+        "lines": "16-23",
+        "citation": "src/pages/company/sections/StickyReveal.jsx:16-23"
+      }
+    }
+  },
+  "semantic": {
+    "id": "content.reveal-statement",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "One large centred mission sentence whose words colour in as the reader scrolls.",
+  "themes": [
+    "light"
+  ],
+  "variants": [
+    "scroll-color",
+    "sticky-progress"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "statement": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "home statement is 17 words, careers statement similar (CLONE_SPEC.md 2.4)"
+      },
+      "emphasis": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 6,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 2,
+          "x-maxWordsEvidence": "emphasised words"
+        }
+      }
+    },
+    "required": [
+      "statement"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "scroll-color-reveal",
+      "sticky-progress-reveal"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Statement 28/32.2; home section grows to 1266px."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 800,
+      "max": 1050
+    },
+    "samples": [
+      {
+        "route": "/",
+        "variant": "scroll-color",
+        "instance": 0,
+        "heightPx": 800
+      },
+      {
+        "route": "/careers",
+        "variant": "sticky-progress",
+        "instance": 0,
+        "heightPx": 1050
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/careers"
+  ]
+}

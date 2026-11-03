@@ -1,0 +1,91 @@
+{
+ "slug": "the-hard-part-of-ai-agents-isn’t-building-them",
+ "path": "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them",
+ "category": "Perspectives",
+ "pageTitle": "The Hard Part of AI Agents Isn’t Building Them",
+ "author": "Ben Avitouv, Field CTO",
+ "date": "Apr 1, 2026",
+ "datetime": "2026-04-01T00:00:00.000Z",
+ "title": "The Hard Part of AI Agents Isn’t Building Them",
+ "titleTag": "h1",
+ "description": "What it actually takes to run AI agents in production",
+ "hero": {
+  "image": {
+   "src": "/assets/t8PmjXGzRZvfLhcMJa8mr3VkSJ8.png",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Over the past year, building AI agents has become dramatically easier.<br class=\"framer-text\"><br class=\"framer-text\">Modern frameworks, orchestration tools, and LLM APIs make it possible to create agents that reason, call APIs, and automate workflows in surprisingly little time. A capable developer can now assemble a functional agent in hours.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That doesn’t mean the early stages are trivial. Getting from zero to one (mapping organizational systems, integrating APIs, understanding workflows, and making everything work together reliably) still requires significant effort. That initial setup is often the hardest engineering phase.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That being said, what has changed is what happens next. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Once the system is up and running, extending or creating agent capabilities becomes relatively straightforward. Running one safely in production is where the real complexity begins.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">When agents interact with real customers, sensitive data, and critical business systems, the stakes change completely. Reliability, compliance, and operational visibility suddenly matter as much as the agent’s reasoning abilities.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is where many organizations hit a wall.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Today's tooling is largely optimized for building agents, not for operating them responsibly at scale.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Getting to production</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">In the early stages of experimentation, an agent that works can feel impressive, but production environments demand something very different.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Real systems require answers to questions that rarely come up during prototyping: </p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">How do we verify that an agent behaves correctly before deployment?</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">How do we detect failures across thousands of conversations?</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">How do we enforce compliance policies in real time?</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">How do we monitor operational health across agents and tools?</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">How do we continuously improve quality without breaking existing behavior?</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">Traditional software engineering solved these problems decades ago through testing frameworks, monitoring infrastructure, and operational tooling. AI agents require the same rigor, but adapted for <strong class=\"framer-text\">probabilistic systems that generate unpredictable outputs</strong>. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">That means treating them like <strong class=\"framer-text\">mission-critical production systems</strong>, not experimental workflows. Our platform was designed around this assumption from day one. Instead of focusing only on agent creation, Wonderful provides the operational infrastructure required to <strong class=\"framer-text\">run agents safely in the real world</strong>.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Three main capabilities make this possible.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><ol class=\"framer-text\" style=\"--max-list-digits:1\"><li data-preset-tag=\"h3\" class=\"framer-text framer-styles-preset-pyuk04\"><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Continuous evaluations</strong></h3></li></ol><p class=\"framer-text framer-styles-preset-1ln1alt\">The challenge with evaluating AI agents is that they are non-deterministic and constantly evolve. Prompts change, models update, tools evolve, and knowledge bases expand.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Every change introduces the risk of a potential regression, and manual testing is slow, unreliable, and impossible to scale.<br class=\"framer-text\"><br class=\"framer-text\">The right approach is to set up <strong class=\"framer-text\">generative evaluation frameworks</strong> that simulate real interactions and assess responses <strong class=\"framer-text\">semantically</strong>: not whether the agent said exactly the right words, but whether it satisfied the intent behind the question. <br class=\"framer-text\"><br class=\"framer-text\">This lets teams catch regressions early, validate new capabilities safely, test difficult edge cases, and build a living specification of what the agent is actually supposed to do. It turns agent development from something that depends on gut feeling into a repeatable engineering process, and provides the safety net needed to continuously evolve agents without sacrificing reliability.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><ol start=\"2\" class=\"framer-text\" style=\"--max-list-digits:1\"><li data-preset-tag=\"h3\" class=\"framer-text framer-styles-preset-pyuk04\"><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Real-time governance: Guardrails for autonomous systems</strong></h3></li></ol><p class=\"framer-text framer-styles-preset-1ln1alt\">Testing ensures that agents behave correctly in known situations. But conversations in production are unpredictable.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Customer requests can be unclear, conversations can escalate emotionally, and unexpected requests can trigger behaviors that were never anticipated. None of that is exceptional, it's just what happens at scale. That's why production systems require real-time guardrails.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The practical implementation is a policy layer that monitors every conversation continuously, detecting behaviors such as: </p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Attempts to access or expose sensitive data</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Abusive or unsafe language</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Social engineering attempts</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Agents sharing information they should not disclose</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">When a violation occurs, teams need it tied to the exact moment in the conversation where it happened, not surfaced in an aggregate report hours later. They also need to configure automated responses such as transferring the interaction to a human agent or ending the conversation entirely.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This allows organizations to deploy agents confidently while knowing that <strong class=\"framer-text\">every interaction is continuously monitored for safety and compliance</strong>. In large-scale deployments, this kind of automated oversight is not optional.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><ol start=\"3\" class=\"framer-text\" style=\"--max-list-digits:1\"><li data-preset-tag=\"h3\" class=\"framer-text framer-styles-preset-pyuk04\"><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Continuous operational visibility: alerts and observability </strong></h3></li></ol><p class=\"framer-text framer-styles-preset-1ln1alt\">Even with testing and governance in place, production still surfaces failures nobody anticipated. <br class=\"framer-text\"><br class=\"framer-text\">Agents sit at the center of a chain: APIs, tools, knowledge bases, and backend systems. Any single break can affect the user experience. The only way to catch those breaks before customers do is through <strong class=\"framer-text\">continuous operational visibility</strong>: monitoring tool failures, abnormal conversation volumes, unexpected behavior, and anything else that signals something is off. That’s standard practice for critical software infrastructure, and AI agents should be held to the same standard.<br class=\"framer-text\"><br class=\"framer-text\">But detection is only the first half. Models update and edge cases accumulate, so it's rare for agents to stay right as conditions change. The teams that operate agents well are the ones who can trace a problem to the exact moment in a conversation where it happened, tag it, and turn it into an improvement. <strong class=\"framer-text\">Analytics and interaction tagging</strong> make that loop concrete: instead of guessing what's going wrong, teams work from real production data. </p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The operational shift</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The industry’s first wave of agent platforms focused on enabling developers to create AI-powered workflows, and that was the right first step. But as organizations move beyond experimentation, <strong class=\"framer-text\">what determines whether an agent succeeds or fails in production isn’t how it was built, it’s how it’s operating.</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agents being deployed today interact with customers, financial systems, healthcare data, internal operations, and more. In those environments, governance and observability are not optional features, they’re the foundation. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">The next generation of AI platforms has to be built around that reality and focus on a harder challenge: <strong class=\"framer-text\">making AI agents safe, controllable, and trustworthy in production.</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s just one of the problems we set out to solve at Wonderful.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

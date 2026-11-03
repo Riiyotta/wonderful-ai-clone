@@ -1,0 +1,91 @@
+{
+ "slug": "the-learning-curve-you-can’t-skip",
+ "path": "/blog-articles/the-learning-curve-you-can’t-skip",
+ "category": "Product",
+ "pageTitle": "The Learning Curve You Can’t Skip",
+ "author": "Roey Lalazar",
+ "date": "Feb 2, 2026",
+ "datetime": "2026-02-02T00:00:00.000Z",
+ "title": "The Learning Curve You Can’t Skip",
+ "titleTag": "h1",
+ "description": "Why We Built an Agent that Builds Agents",
+ "hero": {
+  "image": {
+   "src": "/assets/8aNuKzJOeFwvCmolGa3uVwJhV0.png",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Last week we launched the Wonderful Agent Builder, an AI agent whose job is to build, test, and improve other agents in production. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">We didn’t start here. We originally built Agent Studio, an agent building interface that significantly streamlined the creation process, but still required technical ability. But after working with dozens of enterprises, taking 100+ agents to production, and accumulating thousands of commits, evaluations, regressions, and fixes, a few things became clear: </p><p class=\"framer-text framer-styles-preset-1ln1alt\">First, building agents well is as much about learned production experience as it is about technical ability. It’s a mix of knowing how to write prompts and code, together with understanding how models behave in practice, where agents break under real usage, and which guardrails actually matter. You don’t learn that from theory. You learn it by building agents, taking them to production, watching them fail, and fixing them. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Second, that learning takes a lot of time and requires actually being in production at scale - two constraints which many enterprises today cannot afford, and many AI startups lack. It also doesn’t transfer easily, living mostly in people’s heads, not documentation. That’s manageable when you’re building one or two agents, but it breaks down when you’re shipping dozens or hundreds, and when each one needs to adapt as workflows, requirements and models evolve. Hiring experienced people helps, but only up to a point. Experienced agent builders are rare, training new ones takes time you don’t have, and the work that matters most happens after go-live, not before.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">And third, agent building was a perfect candidate for the kind of automation we build for enterprises every day. Our entire business is built on helping enterprises automate complex, expert-driven processes. If we were serious about agentic automation, we needed to apply it to ourselves. We already had the foundation in Agent Studio, and crucially, we had the scaled production experience to make an automated agent building tool work the way it should - not as a demo, but as something we'd actually rely on ourselves.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">/</p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">How Agent Builder Works</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Agent Builder is designed to work the way you would train a human to do a complex job. When you onboard a person, you don’t start with a flowchart or rigid instructions. You give them context. You share documents, policies, examples of good and bad behavior, and recordings of real interactions. You explain goals and constraints. Then you watch how they perform, give feedback, and refine their behavior over time. Agent Builder follows the same pattern.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The process starts with intent and organizational context, not pre-specified workflows. Users provide documents, specifications, recorded calls, instructions - and describe what they want the agent to do. Agent Builder ingests this information and enters a planning phase, where it reasons over the materials, identifies gaps or contradictions, and proposes a concrete plan for how the agent should behave. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Once the plan is approved, Agent Builder builds the first version by writing prompts and code, connecting tools, building skills, and assembling behavior based on that plan. From there, it moves into testing, generating evaluations that mirror real production scenarios. The Agent Builder runs the evals, and inspects where the agent fails, just like reviewing a trainee’s performance against real cases rather than hypothetical ones.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">And because it’s an agent, it can run in an endless loop till the required level of performance is achieved. When the agent behaves incorrectly, the system turns failures into new evaluations, adjusts behavior, and reruns the tests. Any refinements or new requirements all feed back into the same loop, and as constraints change or models improve, the agent is re-evaluated and refined rather than rebuilt from scratch.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Humans stay involved where judgment matters. Instead of wiring prompts or debugging logic, they review plans, clarify intent, and give feedback, the same way a manager would guide a human employee.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">What This Enables </strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">For technical teams, Agent Builder increases leverage. Engineers describe what they want to build, review plans, and focus on higher-value decisions instead of trying to pre-specify every path, action and exception in advance.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Over time, as core skills and integrations are in place, the same interface also allows non-technical teams to participate more directly - improving existing agents, refining behavior, and eventually building new ones through guided interaction instead of code.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agent Builder doesn’t remove the learning curve. It front-loads it. It takes experience that would normally take months to accumulate, and encodes it into the system to make it available immediately to both technical and non-technical users. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">The result is a different kind of scalability. Not just more agents, but better ones. Not just faster deployment, but more robust behavior in production. And not just technical efficiency, but organizational leverage - where the people closest to the work can shape how AI operates, without becoming engineers first.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This matters because - <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"/blog-articles/the-execution-gap-no-model-can-close\" target=\"_blank\"><em class=\"framer-text\">as we’ve argued elsewhere</em></a> - the constraint on AI adoption isn't technology anymore - it's implementation expertise. Most enterprises know what problems they want to solve. They just don't have the specialized teams or the runway to learn by trial and error in production. <a class=\"framer-text framer-styles-preset-68ruwb\" href=\"https://www.linkedin.com/feed/update/urn:li:activity:7420495653480513536\" target=\"_blank\" rel><em class=\"framer-text\">Agent Builder</em></a> changes that equation, making sophisticated agent development accessible without requiring rare expertise or extended timelines.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

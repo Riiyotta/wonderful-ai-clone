@@ -1,0 +1,23 @@
+{
+  "id": "primitive.counter-number",
+  "kind": "primitive",
+  "title": "Animated counter",
+  "purpose": "Large numeric value that counts up on view.",
+  "props": {
+    "value": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    }
+  },
+  "tokens": [
+    "type.numeric.counter"
+  ],
+  "source": {
+    "file": "src/pages/industries/sections/Counter.jsx",
+    "tag": "export default function Counter",
+    "lines": "18-43",
+    "citation": "src/pages/industries/sections/Counter.jsx:18-43"
+  }
+}

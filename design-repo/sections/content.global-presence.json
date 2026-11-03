@@ -1,0 +1,114 @@
+{
+  "id": "content.global-presence",
+  "title": "Global presence",
+  "status": "measured",
+  "source": {
+    "id": "src:Careers#section-className-ccr-about",
+    "file": "src/pages/company/Careers.jsx",
+    "tag": "<section className=\"ccr-about\"",
+    "lines": "118-139",
+    "citation": "src/pages/company/Careers.jsx:118-139"
+  },
+  "semantic": {
+    "id": "content.global-presence",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Dark section: H2, short paragraph and outline CTA beside an auto-rotating dot globe of office cities.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured headingWordsMax=6 for content.global-presence at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 20,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=16 for content.global-presence at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "cities": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 40,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 3,
+          "x-maxWordsEvidence": "city labels"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "body"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-rise",
+      "globe-autorotate"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "Globe 710px; section 916px."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Globe 350px; height auto."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.globe-graphic"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 1350,
+      "max": 1350
+    },
+    "samples": [
+      {
+        "route": "/careers",
+        "instance": 0,
+        "heightPx": 1350
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/careers"
+  ],
+  "notes": [
+    "The clone picks the globe start city from the browser time zone; live uses an ipapi.co geolocation lookup (no external request in the clone)."
+  ]
+}

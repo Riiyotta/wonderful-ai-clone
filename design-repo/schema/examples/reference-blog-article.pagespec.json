@@ -1,0 +1,405 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "reference",
+  "template": "blog-article",
+  "route": "/blog-articles/ote",
+  "meta": {
+    "title": "How a leading European telecom tripled AI call deflection in 8 weeks"
+  },
+  "nodes": [
+    {
+      "section": "shell.site-header",
+      "variant": "standard",
+      "theme": "dark",
+      "motion": {
+        "pattern": "nav-theme-swap",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "Wonderful home"
+        },
+        "menus": [
+          "Platform",
+          "Industries",
+          "Company"
+        ],
+        "links": [
+          {
+            "label": "Blog",
+            "href": "/blog"
+          }
+        ],
+        "cta": {
+          "label": "Get in touch",
+          "href": "/contact"
+        }
+      }
+    },
+    {
+      "section": "editorial.article-header",
+      "motion": {
+        "pattern": "content-rise",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "author": {
+          "name": "The Wonderful Team",
+          "identityRole": "person.real-identity"
+        },
+        "date": "May 21, 2026",
+        "title": "How a leading European telecom tripled AI call deflection in 8 weeks"
+      }
+    },
+    {
+      "section": "media.banner-image",
+      "variant": "article",
+      "motion": {
+        "pattern": "card-image-appear",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "image": {
+          "assetRole": "photo.source-scene",
+          "alt": "",
+          "src": "/assets/wYmdoUt2ZXAQviBNZWb8hBk10N8.jpg"
+        }
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "OTE Group is the largest telecommunications provider in Greece and a subsidiary of Germany-based Deutsche Telekom. Its pay-TV service, Cosmote TV, delivers premium sports, movies, and series to hundreds of thousands of subscribers via satellite and streaming, and runs one of the highest-volume customer support operations in the country. Managing that volume means fielding a constant stream of inbound calls: troubleshooting set-top boxes, handling authentication, explaining packages, and resolving billing issues."
+          },
+          {
+            "kind": "paragraph",
+            "text": "OTE needed to reduce both volume and call repeatability without touching NPS or brand perception. Hitting all KPIs while integrating many different APIs and handling real inbound call volume was exactly the kind of deployment Wonderful is built for. What moved things forward was how quickly Wonderful could scope, build, and respond in real time."
+          }
+        ]
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "Building it",
+        "blocks": [
+          {
+            "kind": "paragraph",
+            "text": "Cosmote TV's backend spans legacy and modern systems that don't naturally talk to each other, so getting the agent live meant building live integrations across all of it.The agent’s scope was just as wide and included 10 skill areas, including subscriber authentication, troubleshooting and satellite reset, package and pricing information, profile management, service barring, TV programme lookup, and post-call surveys. The architecture paired a custom ETL pipeline with direct integrations into Genesys for telephony and backend APIs."
+          }
+        ]
+      }
+    },
+    {
+      "section": "editorial.article-chapter",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "heading": "What changed",
+        "blocks": [
+          {
+            "kind": "list",
+            "items": [
+              "Deflection rate reached 50% (nearly triple the baseline) and is still climbing as new flows and knowledge are added."
+            ]
+          },
+          {
+            "kind": "list",
+            "items": [
+              "Average handling time was reduced by 30% with the AI agent."
+            ]
+          },
+          {
+            "kind": "paragraph",
+            "text": "The metrics reflect a working agent against hard targets, in a live enterprise environment. What they don't capture is the confidence that comes from watching a system perform under real conditions, handling real calls, resolving real issues, and iterating fast when new ones appear. That confidence is harder to build than the agent itself."
+          },
+          {
+            "kind": "paragraph",
+            "text": "\"At OTE, we set a high bar for any technology we bring into our customer operations, especially with AI. Wonderful met our requirements. Within weeks, we had a production-grade voice agent handling tens of thousands of calls, and the deflection rates we're seeing now are beyond our expectations. The team's responsiveness and technical depth gave us confidence to expand the deployment.\""
+          },
+          {
+            "kind": "paragraph",
+            "text": "Athanasios (Tom) Stratos - Chief Customer Operations Officer, OTE Group\"Integrating a fully generative AI agent into OTE's environment is not a trivial task: it requires deep investment in mapping and bespoke integrations, many different APIs, legacy systems, and strict operational requirements. Wonderful handled that complexity successfully, creating in under two months a live, production-grade agent handling tens of thousands of calls. That speed, combined with the quality of iteration throughout the pilot, gave us full confidence that we had found the right partner for our AI ambitions.\""
+          },
+          {
+            "kind": "paragraph",
+            "text": "Yannis Vitzilaios - CIO, OTE Group"
+          }
+        ]
+      }
+    },
+    {
+      "section": "editorial.story-details",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "about": "About the company",
+        "details": [
+          {
+            "label": "Industry",
+            "value": "telecommunication"
+          },
+          {
+            "label": "Cloud platform",
+            "value": "AWS"
+          },
+          {
+            "label": "Use case",
+            "value": "Billing inquiries, Proof of payment, Information about payment methods"
+          },
+          {
+            "label": "Channels",
+            "value": "Voice"
+          }
+        ],
+        "metrics": [
+          {
+            "value": "77%",
+            "label": "Containment rate"
+          },
+          {
+            "value": "1 m 30 s",
+            "label": "Average Handling Time"
+          }
+        ]
+      }
+    },
+    {
+      "section": "structure.hairline-divider",
+      "variant": "light",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {}
+    },
+    {
+      "section": "editorial.related-posts",
+      "motion": {
+        "pattern": "card-image-appear",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "More Posts",
+        "posts": [
+          {
+            "title": "Wonderful Australia",
+            "date": "Jun 8, 2026",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/blog-articles/wonderful-australia"
+            }
+          },
+          {
+            "title": "Wonderful Singapore",
+            "date": "May 4, 2026",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/blog-articles/wonderful-singapore"
+            }
+          },
+          {
+            "title": "Announcing our Partnership with McKinsey",
+            "date": "Apr 6, 2026",
+            "image": {
+              "assetRole": "photo.source-scene",
+              "alt": "",
+              "src": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png"
+            },
+            "link": {
+              "label": "Read",
+              "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "theme": "dark",
+      "motion": {
+        "pattern": "appear-fade-tween",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "Wonderful home"
+        },
+        "tagline": "Transform your operating model with Wonderful.",
+        "cta": {
+          "label": "Get in touch",
+          "href": "/contact"
+        },
+        "legalLine": "© 2026 Wonderful AI B.V.",
+        "columns": [
+          {
+            "title": "Platform",
+            "links": [
+              {
+                "label": "AI OS Overview",
+                "href": "/ai-os"
+              },
+              {
+                "label": "Wonderful Agents",
+                "href": "/agents"
+              },
+              {
+                "label": "Wonderful Systems",
+                "href": "/systems"
+              },
+              {
+                "label": "Wonderful AI Gateway",
+                "href": "/ai-gateway"
+              },
+              {
+                "label": "Deployment",
+                "href": "/deployment"
+              },
+              {
+                "label": "Strategy",
+                "href": "/ai-transformation"
+              }
+            ]
+          },
+          {
+            "title": "Industries",
+            "links": [
+              {
+                "label": "Banking",
+                "href": "/industries/banking"
+              },
+              {
+                "label": "Telecommunications",
+                "href": "/industries/telecommunication"
+              },
+              {
+                "label": "Healthcare",
+                "href": "/industries/healthcare"
+              },
+              {
+                "label": "Utilities",
+                "href": "/industries/utilities"
+              },
+              {
+                "label": "Insurance",
+                "href": "/industries/insurance"
+              },
+              {
+                "label": "Retail",
+                "href": "/industries/retail"
+              },
+              {
+                "label": "Airlines",
+                "href": "/industries/airlines"
+              }
+            ]
+          },
+          {
+            "title": "Company",
+            "links": [
+              {
+                "label": "About us",
+                "href": "/about-us"
+              },
+              {
+                "label": "Blog",
+                "href": "/blog"
+              },
+              {
+                "label": "Press",
+                "href": "/press"
+              },
+              {
+                "label": "Careers",
+                "href": "/careers"
+              },
+              {
+                "label": "Trust Center",
+                "href": "https://trust.wonderful.ai/"
+              },
+              {
+                "label": "Contact",
+                "href": "/contact"
+              }
+            ]
+          },
+          {
+            "title": "Social",
+            "links": [
+              {
+                "label": "LinkedIn",
+                "href": "https://www.linkedin.com/company/wonderfulcx/posts/?feedView=all"
+              },
+              {
+                "label": "X (Twitter)",
+                "href": "https://x.com/wonderful_ai"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Legal Policies",
+                "href": "/legal"
+              },
+              {
+                "label": "Privacy Policy",
+                "href": "/legal/privacy"
+              },
+              {
+                "label": "Website Terms of Use",
+                "href": "/legal/websiteterms"
+              },
+              {
+                "label": "Candidate Privacy Notice",
+                "href": "/careers/candidate_notice"
+              },
+              {
+                "label": "Bug Bounty",
+                "href": "/legal/bug-bounty-terms"
+              },
+              {
+                "label": "AI Safety",
+                "href": "/safety"
+              }
+            ]
+          }
+        ],
+        "watermark": {
+          "assetRole": "logo.source-wordmark",
+          "alt": "",
+          "src": "/assets/EfwFwuoTD4PdYVDGaAhoN1b4ns.png"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "id": "shell.site-header",
+  "title": "Site header",
+  "status": "measured",
+  "source": {
+    "id": "src:Navbar#export-default-function-Navbar",
+    "file": "src/components/Navbar.jsx",
+    "tag": "export default function Navbar",
+    "lines": "21-108",
+    "citation": "src/components/Navbar.jsx:21-108"
+  },
+  "semantic": {
+    "id": "shell.site-header",
+    "category": "SHELL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Fixed top navigation: logo, three mega-menu triggers, Blog link, language chip and a \"Get in touch\" pill; switches between a transparent dark variant and a frosted light variant by the section underneath.",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "variants": [
+    "standard",
+    "no-cta-pill"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "brandMark": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.source-wordmark",
+          "brand-mark.generated",
+          "brand-mark.user-supplied"
+        ]
+      },
+      "menus": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 4,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 2,
+          "x-maxWordsEvidence": "nav trigger labels are 1 word (CLONE_SPEC.md section 1)"
+        }
+      },
+      "links": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 2,
+        "items": {
+          "$ref": "#/definitions/cta"
+        }
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "brandMark",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true,
+    "fixed": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "nav-theme-swap",
+      "nav-banner-collapse",
+      "static"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "collapse",
+        "detail": "Bar becomes logo + language chip + two-bar menu icon (390x49); triggers move into the drawer."
+      },
+      {
+        "at": "desktop",
+        "change": "theme",
+        "detail": "Dark variant over data-nav-theme=dark sections, frosted light variant (blur 10px) elsewhere."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".brandMark",
+      "assetRoles": [
+        "logo.source-wordmark",
+        "brand-mark.generated",
+        "brand-mark.user-supplied"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "brand-mark.generated",
+    "brand-mark.user-supplied",
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.brand-mark",
+    "primitive.nav-trigger",
+    "primitive.pill-button",
+    "primitive.language-chip"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 87,
+    "routes": 87,
+    "heightPx": {
+      "min": 109,
+      "max": 109
+    },
+    "samples": [
+      {
+        "route": "/",
+        "instance": 0,
+        "heightPx": 109
+      },
+      {
+        "route": "/deployment",
+        "instance": 0,
+        "heightPx": 109
+      },
+      {
+        "route": "/ai-transformation",
+        "instance": 0,
+        "heightPx": 109
+      },
+      {
+        "route": "/blog",
+        "instance": 0,
+        "heightPx": 109
+      },
+      {
+        "route": "/about-us",
+        "instance": 0,
+        "heightPx": 109
+      },
+      {
+        "route": "/careers",
+        "instance": 0,
+        "heightPx": 109
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/",
+    "/about-us",
+    "/adriatics",
+    "/agents",
+    "/ai-gateway",
+    "/ai-os",
+    "/ai-transformation",
+    "/archive/comeet-style"
+  ],
+  "notes": [
+    "The contact page renders this header without the \"Get in touch\" pill (variant no-cta-pill)."
+  ]
+}

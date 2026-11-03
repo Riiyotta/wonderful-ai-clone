@@ -1,0 +1,6877 @@
+{
+ "summary": {
+  "measuredAt": "2026-11-03",
+  "live": "https://www.wonderful.ai",
+  "clone": "http://localhost:5288",
+  "viewport": "1440x900",
+  "threshold": 24,
+  "gate": 0.8,
+  "routesCompared": 104,
+  "routesFailedCapture": 0,
+  "sectionsCompared": 751,
+  "sectionsPassing": 743,
+  "meanSectionScore": 0.993,
+  "meanPageAverage": 0.985,
+  "routesAllSectionsPass": 96
+ },
+ "routes": {
+  "/": {
+   "liveHeight": 7078,
+   "cloneHeight": 7078,
+   "average": 0.972,
+   "minSection": 0.76,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.video-statement",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.995
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 400.5,
+     "score": 0.997
+    },
+    {
+     "section": "social-proof.case-study-carousel",
+     "instance": 0,
+     "topPx": 1300.5,
+     "heightPx": 840.4,
+     "score": 0.999
+    },
+    {
+     "section": "content.reveal-statement",
+     "instance": 0,
+     "topPx": 2140.9,
+     "heightPx": 800,
+     "score": 1
+    },
+    {
+     "section": "features.platform-lattice-intro",
+     "instance": 0,
+     "topPx": 2940.9,
+     "heightPx": 855,
+     "score": 0.989
+    },
+    {
+     "section": "features.approach-cards",
+     "instance": 0,
+     "topPx": 3795.9,
+     "heightPx": 979,
+     "score": 0.998
+    },
+    {
+     "section": "features.industry-tabs",
+     "instance": 0,
+     "topPx": 4774.9,
+     "heightPx": 1082.6,
+     "score": 0.994
+    },
+    {
+     "section": "conversion.team-closer",
+     "instance": 0,
+     "topPx": 5857.5,
+     "heightPx": 715.8,
+     "score": 0.76
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6573.3,
+     "heightPx": 504.8,
+     "score": 0.996
+    }
+   ]
+  },
+  "/deployment": {
+   "liveHeight": 4417,
+   "cloneHeight": 4417,
+   "average": 0.896,
+   "minSection": 0.568,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.approach",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 765,
+     "score": 0.992
+    },
+    {
+     "section": "content.stat-intro",
+     "instance": 0,
+     "topPx": 765,
+     "heightPx": 1027,
+     "score": 0.568
+    },
+    {
+     "section": "features.phase-tabs",
+     "instance": 0,
+     "topPx": 1792,
+     "heightPx": 772.3,
+     "score": 0.991
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 2564.3,
+     "heightPx": 707.9,
+     "score": 0.999
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 3272.2,
+     "heightPx": 640,
+     "score": 0.997
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3912.2,
+     "heightPx": 504.8,
+     "score": 0.996
+    }
+   ]
+  },
+  "/ai-transformation": {
+   "liveHeight": 4350,
+   "cloneHeight": 4350,
+   "average": 0.921,
+   "minSection": 0.594,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.approach",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 765,
+     "score": 0.993
+    },
+    {
+     "section": "content.essay-split",
+     "instance": 0,
+     "topPx": 885,
+     "heightPx": 568.5,
+     "score": 0.998
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1533.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.principles-accordion",
+     "instance": 0,
+     "topPx": 1614.5,
+     "heightPx": 603.3,
+     "score": 0.998
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 2297.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.expanding-card-pair",
+     "instance": 0,
+     "topPx": 2378.8,
+     "heightPx": 705.8,
+     "score": 0.594
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 3204.5,
+     "heightPx": 640,
+     "score": 0.999
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3844.5,
+     "heightPx": 505,
+     "score": 0.993
+    }
+   ]
+  },
+  "/blog": {
+   "liveHeight": 8258,
+   "cloneHeight": 8258,
+   "average": 0.998,
+   "minSection": 0.998,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.featured-post",
+     "instance": 0,
+     "topPx": 144,
+     "heightPx": 462.9,
+     "score": 0.998
+    },
+    {
+     "section": "navigation.category-filter-header",
+     "instance": 0,
+     "topPx": 666.9,
+     "heightPx": 144.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.post-grid",
+     "instance": 0,
+     "topPx": 871.5,
+     "heightPx": 6822,
+     "score": 0.998
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 7753.5,
+     "heightPx": 504.5,
+     "score": 1
+    }
+   ]
+  },
+  "/about-us": {
+   "liveHeight": 4709,
+   "cloneHeight": 4709,
+   "average": 0.989,
+   "minSection": 0.902,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.company",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1254.6,
+     "score": 0.999
+    },
+    {
+     "section": "content.mission-rows",
+     "instance": 0,
+     "topPx": 1254.6,
+     "heightPx": 1253,
+     "score": 0.999
+    },
+    {
+     "section": "social-proof.investor-logos",
+     "instance": 0,
+     "topPx": 2627.6,
+     "heightPx": 164,
+     "score": 0.985
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2911.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.story-cards",
+     "instance": 0,
+     "topPx": 3032.6,
+     "heightPx": 411.4,
+     "score": 0.902
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 3564,
+     "heightPx": 640,
+     "score": 0.997
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4204,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/careers": {
+   "liveHeight": 6479,
+   "cloneHeight": 6479,
+   "average": 0.988,
+   "minSection": 0.953,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.company",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1092,
+     "score": 1
+    },
+    {
+     "section": "content.reveal-statement",
+     "instance": 0,
+     "topPx": 1092,
+     "heightPx": 1050,
+     "score": 1
+    },
+    {
+     "section": "content.global-presence",
+     "instance": 0,
+     "topPx": 2142,
+     "heightPx": 1350,
+     "score": 0.953
+    },
+    {
+     "section": "listing.role-rows",
+     "instance": 0,
+     "topPx": 3612,
+     "heightPx": 1360.3,
+     "score": 0.996
+    },
+    {
+     "section": "conversion.apply-contact",
+     "instance": 0,
+     "topPx": 4996.3,
+     "heightPx": 241.8,
+     "score": 0.993
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 5334.1,
+     "heightPx": 640,
+     "score": 0.997
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5974.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/legal": {
+   "liveHeight": 1877,
+   "cloneHeight": 1877,
+   "average": 0.986,
+   "minSection": 0.977,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.index-title",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 75.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 259.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "navigation.policy-links",
+     "instance": 0,
+     "topPx": 324.6,
+     "heightPx": 507.4,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 892,
+     "heightPx": 985,
+     "score": 0.977
+    }
+   ]
+  },
+  "/contact": {
+   "liveHeight": 900,
+   "cloneHeight": 900,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "conversion.contact-form-split",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 1
+    }
+   ]
+  },
+  "/greece": {
+   "liveHeight": 2770,
+   "cloneHeight": 2770,
+   "average": 0.999,
+   "minSection": 0.998,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.999
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 168,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1071.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1112.2,
+     "heightPx": 218,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1370.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1431.2,
+     "heightPx": 168,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 2,
+     "topPx": 1659.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 1,
+     "topPx": 1700.2,
+     "heightPx": 251.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 3,
+     "topPx": 1991.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 2,
+     "topPx": 2052.8,
+     "heightPx": 48,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 2160.8,
+     "heightPx": 24,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2264.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/romania": {
+   "liveHeight": 2359,
+   "cloneHeight": 2359,
+   "average": 0.99,
+   "minSection": 0.978,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.978
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 312,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1215.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1256.2,
+     "heightPx": 285.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1581.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1642.4,
+     "heightPx": 48,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1750.4,
+     "heightPx": 24,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1854.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/adriatics": {
+   "liveHeight": 2873,
+   "cloneHeight": 2873,
+   "average": 0.997,
+   "minSection": 0.992,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.992
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 528,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1431.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1472.2,
+     "heightPx": 486.7,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1998.9,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 2059.9,
+     "heightPx": 144,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 2263.9,
+     "heightPx": 24,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2367.9,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/italy": {
+   "liveHeight": 2242,
+   "cloneHeight": 2242,
+   "average": 0.999,
+   "minSection": 0.998,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.999
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 216,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1099.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1140.2,
+     "heightPx": 285.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1465.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1506.4,
+     "heightPx": 96,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1642.4,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1737.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/switzerland": {
+   "liveHeight": 2362,
+   "cloneHeight": 2362,
+   "average": 0.986,
+   "minSection": 0.966,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.966
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 312,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1195.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1236.2,
+     "heightPx": 285.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1561.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1602.4,
+     "heightPx": 120,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1762.4,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1857.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/baltics": {
+   "liveHeight": 1977,
+   "cloneHeight": 1977,
+   "average": 0.999,
+   "minSection": 0.998,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.999
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 884.2,
+     "heightPx": 251.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1175.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1216.8,
+     "heightPx": 120,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 1283.2,
+     "heightPx": 264,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1376.8,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1471.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/netherlands": {
+   "liveHeight": 2367,
+   "cloneHeight": 2367,
+   "average": 0.982,
+   "minSection": 0.956,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.956
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 216,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1099.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1140.2,
+     "heightPx": 218,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1398.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1439.2,
+     "heightPx": 288,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1767.2,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1862.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/belgium": {
+   "liveHeight": 2295,
+   "cloneHeight": 2295,
+   "average": 0.995,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.987
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 288,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1171.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1212.2,
+     "heightPx": 218,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1470.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1511.2,
+     "heightPx": 144,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1695.2,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1790.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/poland": {
+   "liveHeight": 2391,
+   "cloneHeight": 2391,
+   "average": 0.998,
+   "minSection": 0.995,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.995
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 360,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1243.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1284.2,
+     "heightPx": 218,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1542.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1583.2,
+     "heightPx": 168,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 1791.2,
+     "heightPx": 15,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1886.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/uae": {
+   "liveHeight": 2815,
+   "cloneHeight": 2815,
+   "average": 0.998,
+   "minSection": 0.994,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.country-banner",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 843.2,
+     "score": 0.994
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 0,
+     "topPx": 843.2,
+     "heightPx": 240,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1143.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 0,
+     "topPx": 1176.2,
+     "heightPx": 184.4,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 1392.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 1,
+     "topPx": 1453.6,
+     "heightPx": 72,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 2,
+     "topPx": 1585.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.pull-quote",
+     "instance": 1,
+     "topPx": 1618.6,
+     "heightPx": 386,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 3,
+     "topPx": 2036.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.prose-block",
+     "instance": 2,
+     "topPx": 2097.5,
+     "heightPx": 48,
+     "score": 1
+    },
+    {
+     "section": "content.people-links",
+     "instance": 0,
+     "topPx": 2205.5,
+     "heightPx": 24,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2309.5,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/archive/comeet-style": {
+   "liveHeight": 905,
+   "cloneHeight": 905,
+   "average": 0.999,
+   "minSection": 0.998,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "utility.third-party-embed-slot",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 400,
+     "score": 0.998
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 400,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/ashby": {
+   "liveHeight": 1088,
+   "cloneHeight": 1088,
+   "average": 0.889,
+   "minSection": 0.792,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.not-found",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 583.2,
+     "score": 0.792
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 583.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/thank-you": {
+   "liveHeight": 1803,
+   "cloneHeight": 1804,
+   "average": 0.982,
+   "minSection": 0.966,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.confirmation",
+     "instance": 0,
+     "topPx": 160,
+     "heightPx": 502.4,
+     "score": 0.995
+    },
+    {
+     "section": "editorial.post-teasers",
+     "instance": 0,
+     "topPx": 782.4,
+     "heightPx": 436.3,
+     "score": 0.966
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 1298.7,
+     "heightPx": 505,
+     "score": 0.982
+    }
+   ]
+  },
+  "/careers/candidate_notice": {
+   "liveHeight": 9476,
+   "cloneHeight": 9475,
+   "average": 0.997,
+   "minSection": 0.992,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 104.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 288.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 353.6,
+     "heightPx": 898.3,
+     "score": 0.993
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 1251.8,
+     "heightPx": 405.5,
+     "score": 0.993
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 1657.3,
+     "heightPx": 3401.5,
+     "score": 0.998
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 5058.8,
+     "heightPx": 427.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 5486,
+     "heightPx": 266.6,
+     "score": 0.994
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 5752.6,
+     "heightPx": 1066.8,
+     "score": 0.997
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 6819.4,
+     "heightPx": 318.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 7137.8,
+     "heightPx": 718.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 7856.2,
+     "heightPx": 340.2,
+     "score": 0.992
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 8196.3,
+     "heightPx": 914.3,
+     "score": 0.994
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 9110.6,
+     "heightPx": 244.9,
+     "score": 1
+    }
+   ]
+  },
+  "/press": {
+   "liveHeight": 6628,
+   "cloneHeight": 6628,
+   "average": 0.948,
+   "minSection": 0.942,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.index-title",
+     "instance": 0,
+     "topPx": 190,
+     "heightPx": 184.6,
+     "score": 1
+    },
+    {
+     "section": "listing.press-mosaic",
+     "instance": 0,
+     "topPx": 386.6,
+     "heightPx": 5636,
+     "score": 0.942
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6122.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/ai-os": {
+   "liveHeight": 6600,
+   "cloneHeight": 6600,
+   "average": 0.997,
+   "minSection": 0.991,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.product",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 855,
+     "score": 0.991
+    },
+    {
+     "section": "features.infrastructure-explorer",
+     "instance": 0,
+     "topPx": 855,
+     "heightPx": 842.7,
+     "score": 0.997
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1697.7,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.product-cross-sell",
+     "instance": 0,
+     "topPx": 1698.7,
+     "heightPx": 1043.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 1,
+     "topPx": 2742.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 2743.2,
+     "heightPx": 1040.6,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 3783.8,
+     "heightPx": 1671.3,
+     "score": 0.997
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 5455,
+     "heightPx": 640,
+     "score": 0.998
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6095,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/agents": {
+   "liveHeight": 6121,
+   "cloneHeight": 6121,
+   "average": 0.998,
+   "minSection": 0.995,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.product",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 855,
+     "score": 0.995
+    },
+    {
+     "section": "features.use-case-cards",
+     "instance": 0,
+     "topPx": 855,
+     "heightPx": 901.8,
+     "score": 0.997
+    },
+    {
+     "section": "features.accordion-showcase",
+     "instance": 0,
+     "topPx": 1756.8,
+     "heightPx": 862.7,
+     "score": 0.999
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2619.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "social-proof.case-study-carousel",
+     "instance": 0,
+     "topPx": 2620.5,
+     "heightPx": 996.4,
+     "score": 0.999
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 3616.9,
+     "heightPx": 955.9,
+     "score": 1
+    },
+    {
+     "section": "features.product-cross-sell",
+     "instance": 0,
+     "topPx": 4572.8,
+     "heightPx": 1043.5,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5616.2,
+     "heightPx": 504.8,
+     "score": 0.996
+    }
+   ]
+  },
+  "/systems": {
+   "liveHeight": 6278,
+   "cloneHeight": 6278,
+   "average": 0.937,
+   "minSection": 0.594,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.product",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 855,
+     "score": 0.998
+    },
+    {
+     "section": "features.split-list",
+     "instance": 0,
+     "topPx": 855,
+     "heightPx": 957,
+     "score": 0.995
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1812,
+     "heightPx": 665.1,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2477.1,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.image-card-grid",
+     "instance": 0,
+     "topPx": 2478.1,
+     "heightPx": 1305.2,
+     "score": 0.998
+    },
+    {
+     "section": "features.expanding-card-pair",
+     "instance": 0,
+     "topPx": 3783.3,
+     "heightPx": 945.8,
+     "score": 0.594
+    },
+    {
+     "section": "features.product-cross-sell",
+     "instance": 0,
+     "topPx": 4729.1,
+     "heightPx": 1043.5,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5772.6,
+     "heightPx": 505,
+     "score": 0.997
+    }
+   ]
+  },
+  "/ai-gateway": {
+   "liveHeight": 7455,
+   "cloneHeight": 7455,
+   "average": 0.998,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.product",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1252.4,
+     "score": 0.999
+    },
+    {
+     "section": "media.scroll-video-stage",
+     "instance": 0,
+     "topPx": 1252.4,
+     "heightPx": 2160,
+     "score": 0.996
+    },
+    {
+     "section": "features.image-card-grid",
+     "instance": 0,
+     "topPx": 3412.4,
+     "heightPx": 1873.5,
+     "score": 0.999
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 5285.9,
+     "heightPx": 619.4,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 5905.3,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "features.product-cross-sell",
+     "instance": 0,
+     "topPx": 5906.3,
+     "heightPx": 1043.5,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6949.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/legal/msa": {
+   "liveHeight": 11741,
+   "cloneHeight": 11741,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 528.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 884.4,
+     "heightPx": 1291.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 2176,
+     "heightPx": 627.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 2803.4,
+     "heightPx": 760.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 3564.3,
+     "heightPx": 600.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 4164.7,
+     "heightPx": 864.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 5029.1,
+     "heightPx": 714.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 5743.6,
+     "heightPx": 578.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 6322.2,
+     "heightPx": 439.8,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 6761.9,
+     "heightPx": 766.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 7528.2,
+     "heightPx": 132.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 11,
+     "topPx": 7660.3,
+     "heightPx": 1498.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 12,
+     "topPx": 9158.9,
+     "heightPx": 2228.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 13,
+     "topPx": 11387.3,
+     "heightPx": 234.2,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/sla": {
+   "liveHeight": 3476,
+   "cloneHeight": 3476,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 152.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 508.5,
+     "heightPx": 567.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 1075.9,
+     "heightPx": 394.8,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 1470.7,
+     "heightPx": 712.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 2183.1,
+     "heightPx": 438.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 2621.4,
+     "heightPx": 734.2,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/dpa": {
+   "liveHeight": 9158,
+   "cloneHeight": 9158,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 337.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 693.8,
+     "heightPx": 2067.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 2761.3,
+     "heightPx": 513.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 3274.6,
+     "heightPx": 673.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 3948.4,
+     "heightPx": 270.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 4219.4,
+     "heightPx": 540.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 4759.7,
+     "heightPx": 314.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 5074.2,
+     "heightPx": 292.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 5366.8,
+     "heightPx": 826.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 6193.1,
+     "heightPx": 978.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 7171.7,
+     "heightPx": 483.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 11,
+     "topPx": 7655,
+     "heightPx": 67.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 12,
+     "topPx": 7722.2,
+     "heightPx": 900.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 13,
+     "topPx": 8622.6,
+     "heightPx": 67.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 14,
+     "topPx": 8689.8,
+     "heightPx": 192.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 15,
+     "topPx": 8881.9,
+     "heightPx": 67.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 16,
+     "topPx": 8949.1,
+     "heightPx": 88.6,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/aup": {
+   "liveHeight": 3238,
+   "cloneHeight": 3238,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 715.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 1072.1,
+     "heightPx": 1073.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 2146,
+     "heightPx": 393.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 2539.3,
+     "heightPx": 219.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 2758.4,
+     "heightPx": 175.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 2934,
+     "heightPx": 183.9,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/data-act": {
+   "liveHeight": 6017,
+   "cloneHeight": 6017,
+   "average": 1,
+   "minSection": 0.997,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 481.8,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 838,
+     "heightPx": 673.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 1511.8,
+     "heightPx": 658.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 2170.7,
+     "heightPx": 190.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 2361.4,
+     "heightPx": 846.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 3208,
+     "heightPx": 292.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 3500.6,
+     "heightPx": 585.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 4086,
+     "heightPx": 286,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 4372,
+     "heightPx": 790.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 5162.9,
+     "heightPx": 454.3,
+     "score": 0.997
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 5617.2,
+     "heightPx": 280.2,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/dora": {
+   "liveHeight": 7079,
+   "cloneHeight": 7079,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 157.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 341.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 406.6,
+     "heightPx": 1334.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 1740.8,
+     "heightPx": 703.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 2444.7,
+     "heightPx": 665.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 3110.3,
+     "heightPx": 396.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 3506.5,
+     "heightPx": 1466.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 4972.8,
+     "heightPx": 725.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 5698.4,
+     "heightPx": 652.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 6350.5,
+     "heightPx": 608.6,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/privacy": {
+   "liveHeight": 14609,
+   "cloneHeight": 14609,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 1045.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 1401.5,
+     "heightPx": 214.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 1616.4,
+     "heightPx": 517.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 2133.6,
+     "heightPx": 331.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 2465.5,
+     "heightPx": 4447.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 6913,
+     "heightPx": 223.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 7136.1,
+     "heightPx": 310.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 7446.3,
+     "heightPx": 1054.8,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 8501.1,
+     "heightPx": 288.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 8789.5,
+     "heightPx": 457.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 9246.7,
+     "heightPx": 427.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 11,
+     "topPx": 9673.9,
+     "heightPx": 821.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 12,
+     "topPx": 10495.9,
+     "heightPx": 171.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 13,
+     "topPx": 10667.2,
+     "heightPx": 3822,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/bug-bounty-terms": {
+   "liveHeight": 6126,
+   "cloneHeight": 6126,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 157.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 341.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 406.6,
+     "heightPx": 182.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 588.9,
+     "heightPx": 171.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 760.3,
+     "heightPx": 193.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 953.4,
+     "heightPx": 613.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 1567.2,
+     "heightPx": 453.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 2020.5,
+     "heightPx": 475,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 2495.6,
+     "heightPx": 322.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 2818.3,
+     "heightPx": 292.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 3110.9,
+     "heightPx": 600.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 3711.3,
+     "heightPx": 270.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 3982.2,
+     "heightPx": 175.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 11,
+     "topPx": 4157.8,
+     "heightPx": 461.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 12,
+     "topPx": 4619.4,
+     "heightPx": 197.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 13,
+     "topPx": 4816.8,
+     "heightPx": 262.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 14,
+     "topPx": 5079.5,
+     "heightPx": 634.2,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 15,
+     "topPx": 5713.7,
+     "heightPx": 292.7,
+     "score": 1
+    }
+   ]
+  },
+  "/legal/websiteterms": {
+   "liveHeight": 3842,
+   "cloneHeight": 3842,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.legal-header",
+     "instance": 0,
+     "topPx": 120,
+     "heightPx": 107.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 291.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 0,
+     "topPx": 356.2,
+     "heightPx": 433,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 1,
+     "topPx": 789.1,
+     "heightPx": 582.5,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 2,
+     "topPx": 1371.6,
+     "heightPx": 383.7,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 3,
+     "topPx": 1755.3,
+     "heightPx": 244.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 4,
+     "topPx": 2000.2,
+     "heightPx": 201.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 5,
+     "topPx": 2201.5,
+     "heightPx": 201.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 6,
+     "topPx": 2402.8,
+     "heightPx": 331.9,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 7,
+     "topPx": 2734.8,
+     "heightPx": 258.4,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 8,
+     "topPx": 2993.2,
+     "heightPx": 193.1,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 9,
+     "topPx": 3186.3,
+     "heightPx": 171.3,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 10,
+     "topPx": 3357.6,
+     "heightPx": 236.6,
+     "score": 1
+    },
+    {
+     "section": "content.legal-section",
+     "instance": 11,
+     "topPx": 3594.2,
+     "heightPx": 127.8,
+     "score": 1
+    }
+   ]
+  },
+  "/industries/airlines": {
+   "liveHeight": 5860,
+   "cloneHeight": 5860,
+   "average": 0.97,
+   "minSection": 0.9,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.997
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 500.5,
+     "score": 0.998
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1400.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2092.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2972.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4654.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5354.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/retail": {
+   "liveHeight": 5860,
+   "cloneHeight": 5860,
+   "average": 0.97,
+   "minSection": 0.899,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.998
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 500.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1400.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2092.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2972.5,
+     "heightPx": 1682.3,
+     "score": 0.899
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4654.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5354.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/healthcare": {
+   "liveHeight": 5836,
+   "cloneHeight": 5836,
+   "average": 0.967,
+   "minSection": 0.9,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.978
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 416.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1316.5,
+     "heightPx": 752,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2068.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2948.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4630.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5330.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/telecommunication": {
+   "liveHeight": 5860,
+   "cloneHeight": 5860,
+   "average": 0.971,
+   "minSection": 0.9,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.999
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 500.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1400.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2092.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2972.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4654.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5354.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/banking": {
+   "liveHeight": 5860,
+   "cloneHeight": 5860,
+   "average": 0.971,
+   "minSection": 0.9,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.998
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 500.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1400.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2092.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2972.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4654.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5354.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/utilities": {
+   "liveHeight": 6676,
+   "cloneHeight": 6676,
+   "average": 0.974,
+   "minSection": 0.9,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.998
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 416.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1316.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "media.video-metrics",
+     "instance": 0,
+     "topPx": 2008.5,
+     "heightPx": 900,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2908.5,
+     "heightPx": 880,
+     "score": 1
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 3788.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 5470.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6170.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/industries/insurance": {
+   "liveHeight": 5860,
+   "cloneHeight": 5860,
+   "average": 0.929,
+   "minSection": 0.725,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "hero.industry",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 900,
+     "score": 0.998
+    },
+    {
+     "section": "social-proof.logo-grid",
+     "instance": 0,
+     "topPx": 900,
+     "heightPx": 500.5,
+     "score": 0.997
+    },
+    {
+     "section": "features.icon-feature-grid",
+     "instance": 0,
+     "topPx": 1400.5,
+     "heightPx": 692,
+     "score": 1
+    },
+    {
+     "section": "features.workflow-list",
+     "instance": 0,
+     "topPx": 2092.5,
+     "heightPx": 880,
+     "score": 0.725
+    },
+    {
+     "section": "features.hover-reveal-rows",
+     "instance": 0,
+     "topPx": 2972.5,
+     "heightPx": 1682.3,
+     "score": 0.9
+    },
+    {
+     "section": "conversion.closing-cta",
+     "instance": 0,
+     "topPx": 4654.8,
+     "heightPx": 700,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5354.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/fcb/x/slavia-prague": {
+   "liveHeight": 3095,
+   "cloneHeight": 3095,
+   "average": 0.987,
+   "minSection": 0.956,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.campaign-event",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 960,
+     "score": 1
+    },
+    {
+     "section": "conversion.event-registration",
+     "instance": 0,
+     "topPx": 960,
+     "heightPx": 828.3,
+     "score": 1
+    },
+    {
+     "section": "content.practical-info-cards",
+     "instance": 0,
+     "topPx": 1788.3,
+     "heightPx": 925,
+     "score": 0.956
+    },
+    {
+     "section": "shell.campaign-footer",
+     "instance": 0,
+     "topPx": 2713.3,
+     "heightPx": 381.8,
+     "score": 1
+    }
+   ]
+  },
+  "/fcb/x/arsenal": {
+   "liveHeight": 3095,
+   "cloneHeight": 3095,
+   "average": 0.987,
+   "minSection": 0.956,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.campaign-event",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 960,
+     "score": 1
+    },
+    {
+     "section": "conversion.event-registration",
+     "instance": 0,
+     "topPx": 960,
+     "heightPx": 828.3,
+     "score": 1
+    },
+    {
+     "section": "content.practical-info-cards",
+     "instance": 0,
+     "topPx": 1788.3,
+     "heightPx": 925,
+     "score": 0.956
+    },
+    {
+     "section": "shell.campaign-footer",
+     "instance": 0,
+     "topPx": 2713.3,
+     "heightPx": 381.8,
+     "score": 1
+    }
+   ]
+  },
+  "/case-studies/financial-services": {
+   "liveHeight": 2752,
+   "cloneHeight": 2752,
+   "average": 0.99,
+   "minSection": 0.948,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.case-study-header",
+     "instance": 0,
+     "topPx": 150,
+     "heightPx": 439.2,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 649.2,
+     "heightPx": 400,
+     "score": 0.948
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1109.2,
+     "heightPx": 245.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1354.8,
+     "heightPx": 161.1,
+     "score": 1
+    },
+    {
+     "section": "testimonial.quote-card",
+     "instance": 0,
+     "topPx": 1575.9,
+     "heightPx": 283,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1918.9,
+     "heightPx": 248.1,
+     "score": 0.989
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2247,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/case-studies/telecommunication": {
+   "liveHeight": 2843,
+   "cloneHeight": 2843,
+   "average": 0.999,
+   "minSection": 0.99,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.case-study-header",
+     "instance": 0,
+     "topPx": 150,
+     "heightPx": 439.2,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 649.2,
+     "heightPx": 400,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1109.2,
+     "heightPx": 242.6,
+     "score": 0.99
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1351.8,
+     "heightPx": 276.6,
+     "score": 1
+    },
+    {
+     "section": "testimonial.quote-card",
+     "instance": 0,
+     "topPx": 1688.4,
+     "heightPx": 283,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2031.4,
+     "heightPx": 226.4,
+     "score": 1
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2337.7,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/case-studies/healthcare": {
+   "liveHeight": 2984,
+   "cloneHeight": 2984,
+   "average": 0.998,
+   "minSection": 0.993,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.case-study-header",
+     "instance": 0,
+     "topPx": 150,
+     "heightPx": 439.2,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 649.2,
+     "heightPx": 400,
+     "score": 0.993
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1109.2,
+     "heightPx": 294.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1403.5,
+     "heightPx": 256.4,
+     "score": 1
+    },
+    {
+     "section": "testimonial.quote-card",
+     "instance": 0,
+     "topPx": 1719.9,
+     "heightPx": 283,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2062.9,
+     "heightPx": 336.1,
+     "score": 0.993
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2479,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/kpn-ventures-and-wonderful-announce-strategic-partnership": {
+   "liveHeight": 3324,
+   "cloneHeight": 3324,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 438.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1502.3,
+     "heightPx": 336.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1838.5,
+     "heightPx": 329.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2228,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2289,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2819,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/announcing-wonderful-ai-gateway": {
+   "liveHeight": 5354,
+   "cloneHeight": 5354,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 182.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1268.2,
+     "heightPx": 270.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1539.1,
+     "heightPx": 662.2,
+     "score": 0.998
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2201.3,
+     "heightPx": 684,
+     "score": 0.998
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 2885.3,
+     "heightPx": 822.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3708,
+     "heightPx": 314.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 4022.5,
+     "heightPx": 175.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4258.1,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4319.1,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4849.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-agents-can-now-work-with-your-customers-agents": {
+   "liveHeight": 4369,
+   "cloneHeight": 4369,
+   "average": 1,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 2127.3,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3273.1,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3334.1,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3864,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-united-kingdom": {
+   "liveHeight": 3046,
+   "cloneHeight": 3046,
+   "average": 0.999,
+   "minSection": 0.991,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 0.991
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 854.7,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1950.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2011.2,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2541.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/let-the-field-build-the-product": {
+   "liveHeight": 4429,
+   "cloneHeight": 4429,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 115.2,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 355.2,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1013.7,
+     "heightPx": 373,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1386.6,
+     "heightPx": 453.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1839.9,
+     "heightPx": 53.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 1893.3,
+     "heightPx": 409.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 2303,
+     "heightPx": 53.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 2356.5,
+     "heightPx": 498.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 2854.8,
+     "heightPx": 418,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3332.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3393.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3923.7,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation": {
+   "liveHeight": 4861,
+   "cloneHeight": 4861,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 216,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 456,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1114.5,
+     "heightPx": 138.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.story-details",
+     "instance": 0,
+     "topPx": 1114.5,
+     "heightPx": 278.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1253.3,
+     "heightPx": 374.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1627.8,
+     "heightPx": 545.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2173,
+     "heightPx": 411.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 2584.3,
+     "heightPx": 443.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3027.5,
+     "heightPx": 354.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 3382.2,
+     "heightPx": 322.7,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3764.9,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3825.9,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4355.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/fcbayern-and-wonderful-announce-enterprise-ai-partnership": {
+   "liveHeight": 2906,
+   "cloneHeight": 2906,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 685.9,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1810,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 1871,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2400.9,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-raises-550m-series-c": {
+   "liveHeight": 4618,
+   "cloneHeight": 4618,
+   "average": 1,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 281.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 521.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1179.8,
+     "heightPx": 1515.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 2695.7,
+     "heightPx": 328,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 3023.7,
+     "heightPx": 349.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3373.5,
+     "heightPx": 88.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3522,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3583,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4113,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/building-an-ai-platform-won’t-transform-your-business": {
+   "liveHeight": 4971,
+   "cloneHeight": 4971,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 1023.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 2087.6,
+     "heightPx": 409.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2497.4,
+     "heightPx": 292.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2790.1,
+     "heightPx": 548.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3338.6,
+     "heightPx": 476.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3875.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3936.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4466.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/maccabi": {
+   "liveHeight": 4320,
+   "cloneHeight": 4320,
+   "average": 0.997,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 416.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.story-details",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 278.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1480.5,
+     "heightPx": 592.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2072.7,
+     "heightPx": 409.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2482.4,
+     "heightPx": 681.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3223.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3284.6,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3814.5,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-india": {
+   "liveHeight": 3585,
+   "cloneHeight": 3585,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 1393.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2489,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2550,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3079.9,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/unlocking-capacity-the-real-roi-of-ai": {
+   "liveHeight": 4075,
+   "cloneHeight": 4075,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.996
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 1883.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2979,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3040,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3570,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/elta": {
+   "liveHeight": 4062,
+   "cloneHeight": 4062,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 216,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 456,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1114.5,
+     "heightPx": 460,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1574.5,
+     "heightPx": 219.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1793.6,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 1830.4,
+     "heightPx": 423.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 2253.7,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 2290.5,
+     "heightPx": 615.9,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2966.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3027.4,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3557.3,
+     "heightPx": 504.7,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/when-the-ceo-means-it": {
+   "liveHeight": 3498,
+   "cloneHeight": 3498,
+   "average": 0.998,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 115.2,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 355.2,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1013.7,
+     "heightPx": 1328.3,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2401.9,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2462.9,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2992.9,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/ai-doesnt-care-about-your-org-chart": {
+   "liveHeight": 4260,
+   "cloneHeight": 4260,
+   "average": 0.998,
+   "minSection": 0.986,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 0.986
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 2068.9,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3164.3,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3225.3,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3755.3,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/we-walked-out-with-a-real-deployment-path": {
+   "liveHeight": 3665,
+   "cloneHeight": 3665,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 1423.6,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2569.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2630.4,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3160.3,
+     "heightPx": 504.7,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/the-agent-needed-a-map": {
+   "liveHeight": 5111,
+   "cloneHeight": 5111,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 158.7,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 398.7,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1057.2,
+     "heightPx": 468.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1525.4,
+     "heightPx": 541.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2067.3,
+     "heightPx": 379.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2447,
+     "heightPx": 665.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3112.7,
+     "heightPx": 454.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3567.5,
+     "heightPx": 388,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4015.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4076.4,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4606.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/computer-use": {
+   "liveHeight": 4431,
+   "cloneHeight": 4431,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 255.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1341.7,
+     "heightPx": 859.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2201.3,
+     "heightPx": 824.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3025.6,
+     "heightPx": 249.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3334.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3395.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3925.8,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/open-by-default-competitive-by-design": {
+   "liveHeight": 3506,
+   "cloneHeight": 3506,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 1314.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2410.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2471.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3001.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-australia": {
+   "liveHeight": 3011,
+   "cloneHeight": 3011,
+   "average": 0.993,
+   "minSection": 0.979,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.979
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 819.4,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1914.9,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 1975.9,
+     "heightPx": 409.9,
+     "score": 0.989
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2505.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/banco-caja-social": {
+   "liveHeight": 4215,
+   "cloneHeight": 4215,
+   "average": 0.996,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 216,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 456,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1114.5,
+     "heightPx": 460,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1574.5,
+     "heightPx": 613.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2188.4,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2225.2,
+     "heightPx": 833.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3118.7,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3179.7,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3709.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/petrol-ofisi": {
+   "liveHeight": 3533,
+   "cloneHeight": 3533,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 255.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1320,
+     "heightPx": 300.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1620.9,
+     "heightPx": 249.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 1870,
+     "heightPx": 507,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2437.1,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2498.1,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3028,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/ote": {
+   "liveHeight": 3642,
+   "cloneHeight": 3642,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 364.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.story-details",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 590.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1428.8,
+     "heightPx": 314.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1743.2,
+     "heightPx": 743.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2546.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2607.4,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3137.3,
+     "heightPx": 504.7,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/the-experience-problem-your-ai-agent-didnt-solve": {
+   "liveHeight": 4628,
+   "cloneHeight": 4628,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 0.998
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 225.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1290,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1326.8,
+     "heightPx": 388,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 1714.7,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 1751.5,
+     "heightPx": 998.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 2749.9,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 2786.7,
+     "heightPx": 685,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3531.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3592.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4122.7,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/ppc-energie": {
+   "liveHeight": 4262,
+   "cloneHeight": 4262,
+   "average": 0.997,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 334.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1398.8,
+     "heightPx": 344.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1743.3,
+     "heightPx": 409.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2153,
+     "heightPx": 953.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3166.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3227.5,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3757.5,
+     "heightPx": 504.5,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode": {
+   "liveHeight": 5686,
+   "cloneHeight": 5686,
+   "average": 0.998,
+   "minSection": 0.983,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 206.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1292,
+     "heightPx": 835.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2127.5,
+     "heightPx": 585.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2713.4,
+     "heightPx": 316.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3029.8,
+     "heightPx": 719.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3749.2,
+     "heightPx": 781.3,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4590.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4651.5,
+     "heightPx": 409.9,
+     "score": 0.983
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5181.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/wonderful-singapore": {
+   "liveHeight": 3164,
+   "cloneHeight": 3164,
+   "average": 0.986,
+   "minSection": 0.948,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.948
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 972.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2067.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2128.6,
+     "heightPx": 409.9,
+     "score": 0.986
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2658.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/telefonica": {
+   "liveHeight": 3691,
+   "cloneHeight": 3691,
+   "average": 0.998,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 356.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1420.5,
+     "heightPx": 336.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1756.8,
+     "heightPx": 388,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2144.8,
+     "heightPx": 390,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2594.7,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2655.7,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3185.7,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent": {
+   "liveHeight": 5076,
+   "cloneHeight": 5076,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 209.1,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 449.1,
+     "heightPx": 598.5,
+     "score": 0.996
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1107.6,
+     "heightPx": 446.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1554.1,
+     "heightPx": 1559.6,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 3113.7,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3150.5,
+     "heightPx": 769.7,
+     "score": 0.999
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3980.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4041.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4571.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale": {
+   "liveHeight": 3595,
+   "cloneHeight": 3595,
+   "average": 0.998,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 1353,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2498.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2559.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3089.8,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/bank-hapoalim": {
+   "liveHeight": 3781,
+   "cloneHeight": 3781,
+   "average": 0.998,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 321.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1385.3,
+     "heightPx": 366.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1751.5,
+     "heightPx": 505,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2256.5,
+     "heightPx": 368.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2684.7,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2745.7,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3275.7,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/the-hard-part-of-ai-agents-isn’t-building-them": {
+   "liveHeight": 5915,
+   "cloneHeight": 5915,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 667.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1752.9,
+     "heightPx": 716.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2469,
+     "heightPx": 550.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3019.6,
+     "heightPx": 752.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3772.5,
+     "heightPx": 547.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 4319.6,
+     "heightPx": 439.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4819.4,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4880.4,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5410.3,
+     "heightPx": 504.7,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/the-3-levels-of-ai-adoption": {
+   "liveHeight": 6252,
+   "cloneHeight": 6252,
+   "average": 0.998,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 922,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1957.4,
+     "heightPx": 36.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1994.2,
+     "heightPx": 807.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2801.6,
+     "heightPx": 1260.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 4062.3,
+     "heightPx": 1033.3,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 5155.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 5216.6,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5746.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets": {
+   "liveHeight": 3853,
+   "cloneHeight": 3853,
+   "average": 0.999,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 187.3,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 427.3,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1085.8,
+     "heightPx": 1611.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2757.1,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2818.1,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 3348,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/going-codeless": {
+   "liveHeight": 5435,
+   "cloneHeight": 5435,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 403,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1438.4,
+     "heightPx": 578.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2017,
+     "heightPx": 550.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2567,
+     "heightPx": 448,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3015,
+     "heightPx": 493.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3508.5,
+     "heightPx": 448,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 3956.5,
+     "heightPx": 322.7,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4339.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4400.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4930.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-asia-pacific": {
+   "liveHeight": 3301,
+   "cloneHeight": 3301,
+   "average": 0.998,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.998
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 1109.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2205.3,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2266.3,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2796.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/latam": {
+   "liveHeight": 6344,
+   "cloneHeight": 6344,
+   "average": 0.997,
+   "minSection": 0.977,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.977
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 1316.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 2351.7,
+     "heightPx": 1491.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 3843,
+     "heightPx": 1344.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 5247.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 5308.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5838.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/owning-the-last-mile": {
+   "liveHeight": 5363,
+   "cloneHeight": 5363,
+   "average": 0.999,
+   "minSection": 0.995,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 165.6,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 405.6,
+     "heightPx": 598.5,
+     "score": 0.995
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1064.1,
+     "heightPx": 460,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1524.1,
+     "heightPx": 679.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2203.3,
+     "heightPx": 583.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2787.1,
+     "heightPx": 548.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3335.7,
+     "heightPx": 483.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3819,
+     "heightPx": 388,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4267,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4328,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4857.9,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-italy": {
+   "liveHeight": 3061,
+   "cloneHeight": 3061,
+   "average": 0.994,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.997
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 869.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1964.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2025.6,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2555.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/the-learning-curve-you-can’t-skip": {
+   "liveHeight": 4530,
+   "cloneHeight": 4530,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 803,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1838.4,
+     "heightPx": 848,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2686.4,
+     "heightPx": 687.4,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3433.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3494.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4024.7,
+     "heightPx": 505,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/being-long-ai": {
+   "liveHeight": 6009,
+   "cloneHeight": 6009,
+   "average": 0.999,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 329.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1364.8,
+     "heightPx": 454.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1819.6,
+     "heightPx": 687.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2507,
+     "heightPx": 652.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3159.1,
+     "heightPx": 491.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3650.7,
+     "heightPx": 513.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 4163.9,
+     "heightPx": 344.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 7,
+     "topPx": 4508.4,
+     "heightPx": 344.5,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4912.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4973.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5503.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/wonderful-gradium": {
+   "liveHeight": 8549,
+   "cloneHeight": 8549,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 212.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1247.8,
+     "heightPx": 476.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 1724.3,
+     "heightPx": 513.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2237.6,
+     "heightPx": 717.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 2955,
+     "heightPx": 439.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 3394.8,
+     "heightPx": 270.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 6,
+     "topPx": 3665.7,
+     "heightPx": 352.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 7,
+     "topPx": 4018.4,
+     "heightPx": 344.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 8,
+     "topPx": 4362.8,
+     "heightPx": 520.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 9,
+     "topPx": 4882.9,
+     "heightPx": 637.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 10,
+     "topPx": 5520,
+     "heightPx": 818,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 11,
+     "topPx": 6338,
+     "heightPx": 461.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 12,
+     "topPx": 6799.6,
+     "heightPx": 344.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 13,
+     "topPx": 7144,
+     "heightPx": 249.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 7453.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 7514.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 8044.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-france": {
+   "liveHeight": 4776,
+   "cloneHeight": 4776,
+   "average": 0.998,
+   "minSection": 0.988,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 2584.4,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3679.8,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3740.8,
+     "heightPx": 409.9,
+     "score": 0.988
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4270.8,
+     "heightPx": 505,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/the-execution-gap-no-model-can-close": {
+   "liveHeight": 5024,
+   "cloneHeight": 5024,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 833,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1868.4,
+     "heightPx": 1423.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 3291.7,
+     "heightPx": 576.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 3928.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 3989.5,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4519.4,
+     "heightPx": 504.6,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/wonderful-an-enterprise-platform-to-turn-ai-ambition-into-agents-in-production": {
+   "liveHeight": 5920,
+   "cloneHeight": 5920,
+   "average": 0.998,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 237.8,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 477.8,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1136.2,
+     "heightPx": 799.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1935.9,
+     "heightPx": 617.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2553.7,
+     "heightPx": 1208.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3762.1,
+     "heightPx": 617.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 4380,
+     "heightPx": 383.7,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4823.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4884.6,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5414.6,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/fast-iteration-as-a-strategy": {
+   "liveHeight": 6592,
+   "cloneHeight": 6592,
+   "average": 1,
+   "minSection": 0.996,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 939.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1974.9,
+     "heightPx": 835.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2810,
+     "heightPx": 539,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 3349,
+     "heightPx": 644.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3993.5,
+     "heightPx": 838.4,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 4831.9,
+     "heightPx": 604.3,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 5496.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 5557.2,
+     "heightPx": 409.9,
+     "score": 0.996
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 6087.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/wonderful-switzerland": {
+   "liveHeight": 3054,
+   "cloneHeight": 3054,
+   "average": 0.994,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.997
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 862.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1957.6,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2018.6,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2548.5,
+     "heightPx": 505,
+     "score": 0.999
+    }
+   ]
+  },
+  "/blog-articles/wonderful-netherlands": {
+   "liveHeight": 3177,
+   "cloneHeight": 3177,
+   "average": 0.997,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.994
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 985.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2081.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2142.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2672.1,
+     "heightPx": 504.9,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/how-to-identify-the-right-ai-use-cases": {
+   "liveHeight": 6265,
+   "cloneHeight": 6265,
+   "average": 0.998,
+   "minSection": 0.97,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 724.1,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1759.6,
+     "heightPx": 427.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2186.8,
+     "heightPx": 650.3,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2837.1,
+     "heightPx": 596,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3433.1,
+     "heightPx": 887.2,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 5,
+     "topPx": 4320.4,
+     "heightPx": 789.1,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 5169.5,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 5230.5,
+     "heightPx": 409.9,
+     "score": 0.97
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 5760.5,
+     "heightPx": 504.5,
+     "score": 0.998
+    }
+   ]
+  },
+  "/blog-articles/wonderful-greece": {
+   "liveHeight": 3149,
+   "cloneHeight": 3149,
+   "average": 0.996,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.99
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 957.9,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 2053.3,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 2114.3,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 2644.3,
+     "heightPx": 504.7,
+     "score": 1
+    }
+   ]
+  },
+  "/blog-articles/build-vs-buy-isn’t-a-technical-choice": {
+   "liveHeight": 5136,
+   "cloneHeight": 5136,
+   "average": 0.999,
+   "minSection": 0.987,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "editorial.article-header",
+     "instance": 0,
+     "topPx": 180,
+     "heightPx": 136.9,
+     "score": 1
+    },
+    {
+     "section": "media.banner-image",
+     "instance": 0,
+     "topPx": 376.9,
+     "heightPx": 598.5,
+     "score": 0.999
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 0,
+     "topPx": 1035.4,
+     "heightPx": 364.7,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 1,
+     "topPx": 1400.1,
+     "heightPx": 734.9,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 2,
+     "topPx": 2135,
+     "heightPx": 756.6,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 3,
+     "topPx": 2891.7,
+     "heightPx": 530.8,
+     "score": 1
+    },
+    {
+     "section": "editorial.article-chapter",
+     "instance": 4,
+     "topPx": 3422.4,
+     "heightPx": 557.8,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 4040.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "editorial.related-posts",
+     "instance": 0,
+     "topPx": 4101.2,
+     "heightPx": 409.9,
+     "score": 0.987
+    },
+    {
+     "section": "shell.site-footer",
+     "instance": 0,
+     "topPx": 4631.2,
+     "heightPx": 504.8,
+     "score": 1
+    }
+   ]
+  },
+  "/ashby/55005121-d37f-463d-98b0-29d400eb52c0": {
+   "liveHeight": 1080,
+   "cloneHeight": 1080,
+   "average": 0.994,
+   "minSection": 0.991,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.job-header",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 329,
+     "score": 1
+    },
+    {
+     "section": "content.job-description",
+     "instance": 0,
+     "topPx": 390.6,
+     "heightPx": 689.4,
+     "score": 0.991
+    }
+   ]
+  },
+  "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba": {
+   "liveHeight": 1080,
+   "cloneHeight": 1080,
+   "average": 0.996,
+   "minSection": 0.994,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "content.job-header",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 329,
+     "score": 1
+    },
+    {
+     "section": "content.job-description",
+     "instance": 0,
+     "topPx": 390.6,
+     "heightPx": 689.4,
+     "score": 0.994
+    }
+   ]
+  },
+  "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit": {
+   "liveHeight": 1339,
+   "cloneHeight": 1339,
+   "average": 0.704,
+   "minSection": 0.704,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "conversion.job-application-form",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1339,
+     "score": 0.704
+    }
+   ]
+  },
+  "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit": {
+   "liveHeight": 1339,
+   "cloneHeight": 1339,
+   "average": 0.703,
+   "minSection": 0.703,
+   "allSectionsPass": false,
+   "sections": [
+    {
+     "section": "conversion.job-application-form",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1339,
+     "score": 0.703
+    }
+   ]
+  },
+  "/fcb/x/thank-you": {
+   "liveHeight": 1646,
+   "cloneHeight": 1646,
+   "average": 1,
+   "minSection": 1,
+   "allSectionsPass": true,
+   "sections": [
+    {
+     "section": "hero.confirmation",
+     "instance": 0,
+     "topPx": 0,
+     "heightPx": 1145.2,
+     "score": 1
+    },
+    {
+     "section": "structure.hairline-divider",
+     "instance": 0,
+     "topPx": 1145.2,
+     "heightPx": 1,
+     "score": 1
+    },
+    {
+     "section": "shell.campaign-footer",
+     "instance": 0,
+     "topPx": 1146.2,
+     "heightPx": 499.8,
+     "score": 1
+    }
+   ]
+  }
+ }
+}

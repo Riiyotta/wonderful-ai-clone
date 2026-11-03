@@ -1,0 +1,111 @@
+{
+ "slug": "mercado-libre-and-wonderful-built-an-ai-native-operation",
+ "path": "/blog-articles/mercado-libre-and-wonderful-built-an-ai-native-operation",
+ "category": "Customer stories",
+ "pageTitle": "How Mercado Libre built an AI-native operation for buying and selling used cars",
+ "author": "The Wonderful Team",
+ "date": "Sep 15, 2026",
+ "datetime": "2026-09-15T00:00:00.000Z",
+ "title": "How Mercado Libre built an AI-native operation for buying and selling used cars ",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/Yv5SeM0oitGoJA89akpbmWWVBpg.png",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": {
+  "heading": "About the company",
+  "details": [
+   {
+    "name": "Industry",
+    "label": "Industry",
+    "value": "Automotive"
+   },
+   {
+    "name": "Use case",
+    "label": "Use case",
+    "value": "Used-car buying and selling"
+   },
+   {
+    "name": "Channels",
+    "label": "Channels",
+    "value": "WhatsApp "
+   }
+  ],
+  "metrics": []
+ },
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">In just ten weeks, Mercado Libre and Wonderful went to three AI agents in production across Mercado Libre Vehículos in Mexico. In its first runs, the deployment handled roughly 99% of conversations without human intervention and issued close to 2,200 quotes.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The challenge</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Mercado Libre is Latin America's largest marketplace. Within Mercado Libre Vehículos, selling a used car is a high-consideration transaction, with multiple steps between a seller's initial interest and an in-person vehicle inspection.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Every point where a seller has to wait or repeat information creates an opportunity for the transaction to drop off.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful and Mercado Libre set out to create an AI agent that could accompany sellers through this process in a single conversation, from sharing their vehicle details and receiving a valuation through to scheduling an inspection.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Building it</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful and Mercado Libre co-created an AI agent that runs on WhatsApp, the country's most widely used messaging channel.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent guides used-car sellers from the moment they share their vehicle details through to scheduling an in-person inspection, without human intervention in the flow.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The agent operates on a five-skill architecture:</p><ol class=\"framer-text\" style=\"--max-list-digits:1\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Vehicle registration</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Trim identification</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Pricing</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Appointment scheduling</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Answers to frequently asked questions</p></li></ol><p class=\"framer-text framer-styles-preset-1ln1alt\">Throughout the process, the agent draws on used-car domain expertise and transaction-specific know-how to guide sellers and reduce drop-off during the transaction.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Building into the buying and selling experience</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Wonderful worked hand in hand with Mercado Libre's team to build the foundation across Mercado Libre's core systems from the start.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">As Mariano Nunes, General Manager of Vehículos Mercado Libre México, described it, the solution was built directly into the buying and selling experience rather than working separately. This allows the agents to behave as part of the user journey rather than something bolted onto it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The deployment is complemented by operational applications that allow a human to step in when needed and give Mercado Libre visibility into agent performance for its day-to-day operation.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">From kickoff to three agents in production in ten weeks</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The entire program, from the first immersion session to the go-live of three agents, took just ten weeks.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The deployment comprises three agents in production:</p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Seller agent</strong>, which guides used-car sellers through the process from vehicle details to inspection scheduling</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Buyer-seller agent</strong>, which connects buyers with sellers</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Auctions agent</strong>, which works with Mercado Libre's network of authorized dealerships</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">All three agents are now active in the market.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The impact</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">The deployment quickly demonstrated what an AI-native operation can look like in production:</p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">~99% of conversations handled without human intervention</strong></p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Close to 2,200 quotes issued in its first weeks</strong></p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">49% week-over-week growth</strong></p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">Rather than automating a single step, the seller agent manages the journey from the first message through to an in-person inspection, providing a valuation and guiding the seller through the process in a single conversation.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Expanding within Mercado Libre Vehículos</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">With three agents already in production, Mercado Libre and Wonderful plan to open the agent flow to a larger share of traffic within Mercado Libre Vehículos and add further use cases in the same vertical.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">\"This solution lets us meet the seller at their first message with a valuation and guide them through a single conversation all the way to the inspection. Together with Wonderful's team, we built the solution directly into the buying and selling experience rather than working separately. This is why the agents behave as part of the user journey rather than something bolted onto it.\"</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Mariano Nunes, General Manager of Vehículos Mercado Libre México</strong></p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "hero.confirmation",
+  "title": "Confirmation hero",
+  "status": "measured",
+  "source": {
+    "id": "src:ThankYou#div-className-cty-top",
+    "file": "src/pages/company/ThankYou.jsx",
+    "tag": "<div className=\"cty-top\"",
+    "lines": "38-53",
+    "citation": "src/pages/company/ThankYou.jsx:38-53",
+    "variantSources": {
+      "campaign": {
+        "file": "src/pages/regional/FcbThankYou.jsx",
+        "tag": "export default function FcbThankYou",
+        "lines": "5-26",
+        "citation": "src/pages/regional/FcbThankYou.jsx:5-26"
+      }
+    }
+  },
+  "semantic": {
+    "id": "hero.confirmation",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Post-submit confirmation opener: thank-you H1, subtitle and one \"back\" CTA (site) or a video-backed campaign variant.",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "variants": [
+    "site",
+    "campaign"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 9,
+        "x-maxWordsEvidence": "measured headingWordsMax=7 for hero.confirmation at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=19 for hero.confirmation at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      },
+      "video": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "video.source-loop",
+          "video.generated-loop"
+        ]
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "subtitle"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-paragraph",
+      "appear-fade-tween",
+      "video-loop"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "H1 38px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".video",
+      "assetRoles": [
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    },
+    {
+      "field": ".background",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 502.4,
+      "max": 1145.2
+    },
+    "samples": [
+      {
+        "route": "/thank-you",
+        "variant": "site",
+        "instance": 0,
+        "heightPx": 502.4
+      },
+      {
+        "route": "/fcb/x/thank-you",
+        "variant": "campaign",
+        "instance": 0,
+        "heightPx": 1145.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/fcb/x/thank-you",
+    "/thank-you"
+  ]
+}

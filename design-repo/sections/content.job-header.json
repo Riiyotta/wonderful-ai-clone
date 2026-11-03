@@ -1,0 +1,113 @@
+{
+  "id": "content.job-header",
+  "title": "Job header",
+  "status": "measured",
+  "source": {
+    "id": "src:AshbyJob#export-default-function-AshbyJob",
+    "file": "src/pages/regional/AshbyJob.jsx",
+    "tag": "export default function AshbyJob",
+    "lines": "26-51",
+    "citation": "src/pages/regional/AshbyJob.jsx:26-51"
+  },
+  "semantic": {
+    "id": "content.job-header",
+    "category": "CONTENT"
+  },
+  "retrievalEligible": true,
+  "purpose": "Job post opener on a black canvas: id/department line, back bar, H1, tags and an \"Apply now\" pill.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "meta": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 6,
+        "x-maxWordsEvidence": "id + department"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for content.job-header at 1440px"
+      },
+      "tags": {
+        "type": "array",
+        "minItems": 0,
+        "maxItems": 6,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 4,
+          "x-maxWordsEvidence": "tags"
+        }
+      },
+      "apply": {
+        "$ref": "#/definitions/cta"
+      },
+      "back": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "title",
+      "apply"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustBeFirst": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "overflow",
+        "detail": "The 600px back bar overflows symmetrically, as on live."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 329,
+      "max": 329
+    },
+    "samples": [
+      {
+        "route": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+        "instance": 0,
+        "heightPx": 329
+      },
+      {
+        "route": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba",
+        "instance": 0,
+        "heightPx": 329
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ashby/55005121-d37f-463d-98b0-29d400eb52c0",
+    "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "id": "features.phase-tabs",
+  "title": "Phase tabs",
+  "status": "measured",
+  "source": {
+    "id": "src:Deployment#function-Phases",
+    "file": "src/pages/platform/Deployment.jsx",
+    "tag": "function Phases",
+    "lines": "151-200",
+    "citation": "src/pages/platform/Deployment.jsx:151-200"
+  },
+  "semantic": {
+    "id": "features.phase-tabs",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 over a tab track of phases; each phase shows a title, a progress bar with percentage, a sentence and capability chips.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "measured headingWordsMax=8 for features.phase-tabs at 1440px"
+      },
+      "phases": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "tab": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 3,
+              "x-maxWordsEvidence": "tab labels"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 10,
+              "x-maxWordsEvidence": "phase titles up to 8 words"
+            },
+            "percent": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 27,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=21 for features.phase-tabs at 1440px"
+            },
+            "chips": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 5,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 4,
+                "x-maxWordsEvidence": "chips up to 3 words"
+              }
+            }
+          },
+          "required": [
+            "tab",
+            "title",
+            "percent"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "phases"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "tab-crossfade",
+      "progress-fill"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Padding 84/20."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.filter-tabs",
+    "primitive.progress-bar"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 772.3,
+      "max": 772.3
+    },
+    "samples": [
+      {
+        "route": "/deployment",
+        "instance": 0,
+        "heightPx": 772.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/deployment"
+  ]
+}

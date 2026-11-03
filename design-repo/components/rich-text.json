@@ -1,0 +1,25 @@
+{
+  "id": "component.rich-text",
+  "kind": "component",
+  "title": "Rich text block",
+  "purpose": "Paragraphs, H2-H4, lists, quotes, tables and inline images in source text presets.",
+  "props": {
+    "blocks": {
+      "type": "array"
+    }
+  },
+  "tokens": [
+    "type.body.md",
+    "type.heading.h3",
+    "type.heading.h4"
+  ],
+  "source": {
+    "file": "src/pages/content/LegalDoc.jsx",
+    "tag": "export default function LegalDoc",
+    "lines": "12-52",
+    "citation": "src/pages/content/LegalDoc.jsx:12-52"
+  },
+  "composes": [
+    "primitive.text-link"
+  ]
+}

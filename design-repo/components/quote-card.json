@@ -1,0 +1,26 @@
+{
+  "id": "component.quote-card",
+  "kind": "component",
+  "title": "Quote card",
+  "purpose": "Quote with a gradient side bar, company logo, name and role.",
+  "props": {
+    "quote": {
+      "maxWords": 60
+    },
+    "person": {
+      "$ref": "person"
+    }
+  },
+  "tokens": [
+    "radius.lg"
+  ],
+  "source": {
+    "file": "src/pages/industries/CaseStudyPage.jsx",
+    "tag": "function QuoteCard",
+    "lines": "14-40",
+    "citation": "src/pages/industries/CaseStudyPage.jsx:14-40"
+  },
+  "composes": [
+    "primitive.media-image"
+  ]
+}

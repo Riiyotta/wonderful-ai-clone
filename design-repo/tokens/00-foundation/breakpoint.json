@@ -1,0 +1,63 @@
+{
+  "$description": "Foundation breakpoint tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "breakpoint",
+  "tokens": {
+    "breakpoint.mobile": {
+      "value": {
+        "max": "879.98px"
+      },
+      "evidence": "tailwind.config.js:8",
+      "note": "site default (Framer uu1d5z)"
+    },
+    "breakpoint.tablet": {
+      "value": {
+        "min": "880px",
+        "max": "1439.98px"
+      },
+      "evidence": "tailwind.config.js:8",
+      "note": "Framer bgr1vb"
+    },
+    "breakpoint.desktop": {
+      "value": {
+        "min": "1440px",
+        "max": "1799.98px"
+      },
+      "evidence": "CLONE_SPEC.md:6",
+      "note": "Framer 13yvw11; primary measurement viewport"
+    },
+    "breakpoint.wide": {
+      "value": {
+        "min": "1800px"
+      },
+      "evidence": "CLONE_SPEC.md:8",
+      "note": "Framer 1nndbqt (not measured)"
+    },
+    "breakpoint.family.content": {
+      "value": {
+        "mobile": "<810px",
+        "tablet": "810-1199.98px",
+        "desktop": ">=1200px"
+      },
+      "evidence": "CLONE_SPEC_CONTENT.md:16",
+      "note": "blog, article, legal, case-study, press, thank-you, country pages"
+    },
+    "breakpoint.family.industry": {
+      "value": {
+        "mobile": "<=879.98px",
+        "tablet": "880-1399.98px",
+        "desktop": ">=1400px"
+      },
+      "evidence": "CLONE_SPEC_INDUSTRIES.md:16",
+      "note": "industry pages"
+    },
+    "breakpoint.family.company": {
+      "value": {
+        "mobile": "<810px",
+        "tablet": "810-1439px",
+        "desktop": ">=1440px"
+      },
+      "evidence": "CLONE_SPEC_COMPANY.md:9",
+      "note": "about-us, contact"
+    }
+  }
+}

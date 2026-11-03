@@ -1,0 +1,139 @@
+{
+  "id": "editorial.case-study-header",
+  "title": "Case-study header",
+  "status": "measured",
+  "source": {
+    "id": "src:CaseStudyPage#div-className-cs-header",
+    "file": "src/pages/industries/CaseStudyPage.jsx",
+    "tag": "<div className=\"cs-header\">",
+    "lines": "55-78",
+    "citation": "src/pages/industries/CaseStudyPage.jsx:55-78"
+  },
+  "semantic": {
+    "id": "editorial.case-study-header",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Customer-story opener: tag chip, H1, subtitle, divider and a row of outcome stats.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "tag": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "tag chip"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "measured headingWordsMax=13 for editorial.case-study-header at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 38,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=30 for editorial.case-study-header at 1440px"
+      },
+      "stats": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "stat labels"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "stat values"
+            }
+          },
+          "required": [
+            "label",
+            "value"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "subtitle",
+      "stats"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "char-reveal"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "wrap",
+        "detail": "Stats wrap; H1 #171719."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.tag-chip",
+    "component.stat-block"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 3,
+    "routes": 3,
+    "heightPx": {
+      "min": 439.2,
+      "max": 439.2
+    },
+    "samples": [
+      {
+        "route": "/case-studies/financial-services",
+        "instance": 0,
+        "heightPx": 439.2
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "instance": 0,
+        "heightPx": 439.2
+      },
+      {
+        "route": "/case-studies/healthcare",
+        "instance": 0,
+        "heightPx": 439.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/case-studies/financial-services",
+    "/case-studies/healthcare",
+    "/case-studies/telecommunication"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "component.mega-menu-panel",
+  "kind": "component",
+  "title": "Mega-menu panel",
+  "purpose": "White dropdown with a two-column link grid and a feature video card.",
+  "props": {
+    "items": {
+      "type": "array"
+    },
+    "feature": {
+      "type": "object"
+    }
+  },
+  "tokens": [],
+  "source": {
+    "file": "src/components/nav/MegaMenu.jsx",
+    "tag": "function Panel",
+    "lines": "59-98",
+    "citation": "src/components/nav/MegaMenu.jsx:59-98"
+  },
+  "composes": [
+    "primitive.text-link",
+    "primitive.media-image"
+  ],
+  "motion": [
+    "mega-menu-open"
+  ]
+}

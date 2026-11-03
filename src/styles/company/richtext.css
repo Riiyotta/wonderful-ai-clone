@@ -1,0 +1,53 @@
+/* Framer rich-text base + presets, scoped to .co-rt (used by /careers/candidate_notice).
+   Values copied from _source/pages/careers__candidate_notice.html:
+   ffcr9e = body paragraph, 1ing3ma = h4, 8y431r = link, 1ruyxkb = table. */
+.co-rt { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; }
+.co-rt p, .co-rt div, .co-rt figure, .co-rt h4, .co-rt ul, .co-rt ol { margin: 0; padding: 0; }
+.co-rt p, .co-rt h4, .co-rt li, .co-rt ul {
+  font-family: Inter, "Inter Placeholder", sans-serif; font-weight: 400; font-style: normal;
+  font-size: 16px; line-height: 1.2; letter-spacing: 0; color: #000;
+}
+.co-rt :is(p, div, h4, ul, ol, table, figure):not(:first-child) { margin-top: var(--rt-ps, 0px); }
+.co-rt li > :is(ul, ol):nth-child(2) { margin-top: 0; }
+
+/* p preset ffcr9e */
+.co-rt .framer-styles-preset-ffcr9e {
+  --rt-ps: 30px;
+  font-size: 17px; line-height: 128%; letter-spacing: -.03em; text-align: justify; color: #393939;
+  font-feature-settings: "blwf" on, "cv03" on, "cv04" on, "cv09" on, "cv11" on;
+}
+.co-rt strong { font-weight: 700; }
+.co-rt em { font-style: italic; }
+.co-rt em > strong { font-weight: 700; font-style: italic; }
+
+/* h4 preset 1ing3ma */
+.co-rt h4.framer-styles-preset-1ing3ma {
+  --rt-ps: 0px;
+  font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300;
+  font-size: 26px; line-height: 125%; letter-spacing: -.05em; color: #171719; text-align: start;
+  font-feature-settings: "blwf" on, "cv09" on, "cv03" on, "cv04" on, "cv11" on, "ss05" on, "ss04" on;
+}
+@media (max-width: 1199px) {
+  .co-rt h4.framer-styles-preset-1ing3ma { font-size: 24px; line-height: 115%; letter-spacing: -.04em; }
+}
+
+/* link preset 8y431r (inherits the paragraph font) */
+.co-rt a {
+  color: #3286f5; text-decoration: underline; font: inherit; letter-spacing: inherit;
+  transition: color .4s cubic-bezier(.12,.23,.5,1), text-decoration-color .4s cubic-bezier(.12,.23,.5,1);
+}
+.co-rt a:hover { color: #1c64c8; }
+
+/* lists */
+.co-rt ul { padding-inline-start: 0; position: relative; list-style: none; }
+.co-rt li { counter-increment: list-item; padding-inline-start: 2ch; list-style: ""; position: relative; }
+.co-rt ul > li::before { content: "•"; position: absolute; inset-inline-start: 0; }
+
+/* tables (preset 1ruyxkb) */
+.co-rt .framer-table-wrapper { overflow-x: auto; }
+.co-rt table { border-collapse: separate; border-spacing: 0; table-layout: auto; word-break: normal; width: 100%;
+  border: 1px solid #99999940; border-radius: 8px; overflow: hidden; }
+.co-rt th, .co-rt td { font-family: sans-serif; font-size: 12px; overflow-wrap: anywhere; vertical-align: top; min-width: 16ch; padding: 10px; text-align: start; font-weight: inherit; }
+.co-rt th { background-color: #9999991a; }
+.co-rt tr + tr td, .co-rt tr + tr th { border-top: 1px solid #99999940; }
+.co-rt td + td, .co-rt th + th, .co-rt td + th, .co-rt th + td { border-left: 1px solid #99999940; }

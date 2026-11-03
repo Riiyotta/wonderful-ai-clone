@@ -1,0 +1,17 @@
+{
+  "id": "primitive.language-chip",
+  "kind": "primitive",
+  "title": "Language chip",
+  "purpose": "Static \"EN\" chip standing in for a third-party website-translator widget.",
+  "props": {},
+  "tokens": [
+    "type.label.xs"
+  ],
+  "source": {
+    "file": "src/components/Navbar.jsx",
+    "tag": "className=\"nv-chip\"",
+    "lines": "95-96",
+    "citation": "src/components/Navbar.jsx:95-96"
+  },
+  "thirdParty": true
+}

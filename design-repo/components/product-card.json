@@ -1,0 +1,27 @@
+{
+  "id": "component.product-card",
+  "kind": "component",
+  "title": "Product cross-sell card",
+  "purpose": "Tall image card with a product lockup, one-liner and Explore pill.",
+  "props": {
+    "lockup": {
+      "$ref": "media"
+    },
+    "oneLiner": {
+      "maxWords": 12
+    }
+  },
+  "tokens": [
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/pages/product/shared/ProductCards.jsx",
+    "tag": "function Card",
+    "lines": "19-44",
+    "citation": "src/pages/product/shared/ProductCards.jsx:19-44"
+  },
+  "composes": [
+    "primitive.brand-mark",
+    "primitive.pill-button"
+  ]
+}

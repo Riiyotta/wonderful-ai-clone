@@ -1,0 +1,26 @@
+{
+  "id": "component.stat-block",
+  "kind": "component",
+  "title": "Stat block",
+  "purpose": "Large value plus label (case-study stats, video metrics, sidebar metrics).",
+  "props": {
+    "value": {
+      "maxWords": 3
+    },
+    "label": {
+      "maxWords": 6
+    }
+  },
+  "tokens": [
+    "type.numeric.counter"
+  ],
+  "source": {
+    "file": "src/pages/industries/sections/Counter.jsx",
+    "tag": "export default function Counter",
+    "lines": "18-43",
+    "citation": "src/pages/industries/sections/Counter.jsx:18-43"
+  },
+  "composes": [
+    "primitive.counter-number"
+  ]
+}

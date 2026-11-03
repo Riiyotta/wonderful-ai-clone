@@ -1,0 +1,141 @@
+{
+  "id": "conversion.event-registration",
+  "title": "Event registration",
+  "status": "measured",
+  "source": {
+    "id": "src:FcbMatchday#section-className-fcb-reg-id-register",
+    "file": "src/pages/regional/FcbMatchday.jsx",
+    "tag": "<section className=\"fcb-reg\" id=\"register\">",
+    "lines": "84-120",
+    "citation": "src/pages/regional/FcbMatchday.jsx:84-120"
+  },
+  "semantic": {
+    "id": "conversion.event-registration",
+    "category": "CONVERSION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Seat-request section: intro copy beside a dark form card with labelled inputs and a submit button.",
+  "themes": [
+    "dark"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "measured headingWordsMax=3 for conversion.event-registration at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 35,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=28 for conversion.event-registration at 1440px"
+      },
+      "fields": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "labels"
+            },
+            "kind": {
+              "enum": [
+                "text",
+                "email",
+                "tel"
+              ]
+            },
+            "required": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "label",
+            "kind"
+          ]
+        }
+      },
+      "submitLabel": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "button label"
+      },
+      "action": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "title",
+      "fields",
+      "submitLabel"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "stack",
+        "detail": "Column; form full width."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.form-field"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 2,
+    "routes": 2,
+    "heightPx": {
+      "min": 828.3,
+      "max": 828.3
+    },
+    "samples": [
+      {
+        "route": "/fcb/x/slavia-prague",
+        "instance": 0,
+        "heightPx": 828.3
+      },
+      {
+        "route": "/fcb/x/arsenal",
+        "instance": 0,
+        "heightPx": 828.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/fcb/x/arsenal",
+    "/fcb/x/slavia-prague"
+  ],
+  "notes": [
+    "Live posts to Framer Forms then redirects to /fcb/x/thank-you; the clone prevents the POST and navigates."
+  ]
+}

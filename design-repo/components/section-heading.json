@@ -1,0 +1,29 @@
+{
+  "id": "component.section-heading",
+  "kind": "component",
+  "title": "Section heading",
+  "purpose": "H2 (and optional sub-paragraph) with the word-reveal motion.",
+  "props": {
+    "title": {
+      "maxWords": 12
+    },
+    "subtitle": {
+      "maxWords": 40
+    }
+  },
+  "tokens": [
+    "type.heading.h2",
+    "type.body.md"
+  ],
+  "source": {
+    "file": "src/components/WordReveal.jsx",
+    "tag": "export default function WordReveal",
+    "lines": "13-49",
+    "citation": "src/components/WordReveal.jsx:13-49"
+  },
+  "composes": [],
+  "motion": [
+    "word-reveal-heading",
+    "word-reveal-paragraph"
+  ]
+}

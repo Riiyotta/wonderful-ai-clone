@@ -1,0 +1,137 @@
+{
+  "id": "hero.country-banner",
+  "title": "Country banner hero",
+  "status": "measured",
+  "source": {
+    "id": "src:CountryPage#section-className-rg-country-hero",
+    "file": "src/pages/regional/CountryPage.jsx",
+    "tag": "<section className=\"rg-country-hero\">",
+    "lines": "68-73",
+    "citation": "src/pages/regional/CountryPage.jsx:68-73"
+  },
+  "semantic": {
+    "id": "hero.country-banner",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "Centred \"<brand> <Country>\" title over a wide rounded banner photo.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for hero.country-banner at 1440px"
+      },
+      "banner": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "photo.source-scene",
+          "photo.generated-scene"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "banner"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-paragraph"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "Title 48px."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Title 40/55; banner 330px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".banner",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 10,
+    "routes": 10,
+    "heightPx": {
+      "min": 843.2,
+      "max": 843.2
+    },
+    "samples": [
+      {
+        "route": "/greece",
+        "instance": 0,
+        "heightPx": 843.2
+      },
+      {
+        "route": "/romania",
+        "instance": 0,
+        "heightPx": 843.2
+      },
+      {
+        "route": "/adriatics",
+        "instance": 0,
+        "heightPx": 843.2
+      },
+      {
+        "route": "/italy",
+        "instance": 0,
+        "heightPx": 843.2
+      },
+      {
+        "route": "/switzerland",
+        "instance": 0,
+        "heightPx": 843.2
+      },
+      {
+        "route": "/baltics",
+        "instance": 0,
+        "heightPx": 843.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/adriatics",
+    "/baltics",
+    "/belgium",
+    "/greece",
+    "/italy",
+    "/netherlands",
+    "/poland",
+    "/romania"
+  ]
+}

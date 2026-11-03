@@ -1,0 +1,130 @@
+{
+  "id": "editorial.story-cards",
+  "title": "Story cards",
+  "status": "measured",
+  "source": {
+    "id": "src:AboutUs#div-className-cab-stories",
+    "file": "src/pages/company/AboutUs.jsx",
+    "tag": "<div className=\"cab-stories\">",
+    "lines": "113-122",
+    "citation": "src/pages/company/AboutUs.jsx:113-122"
+  },
+  "semantic": {
+    "id": "editorial.story-cards",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Row of four editorial/press story cards (image + title) under an H2.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 17,
+        "x-maxWordsEvidence": "measured headingWordsMax=13 for editorial.story-cards at 1440px"
+      },
+      "cards": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 16,
+              "x-maxWordsEvidence": "story titles up to 13 words"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "cards"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "2 columns."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "1 column."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".cards[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.post-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 411.4,
+      "max": 411.4
+    },
+    "samples": [
+      {
+        "route": "/about-us",
+        "instance": 0,
+        "heightPx": 411.4
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/about-us"
+  ]
+}

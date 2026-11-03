@@ -1,0 +1,56 @@
+{
+  "$description": "Foundation radius tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "radius",
+  "tokens": {
+    "radius.xs": {
+      "value": "4px",
+      "evidence": "CLONE_SPEC.md:96",
+      "usage": "logo cards, workflow media"
+    },
+    "radius.sm": {
+      "value": "8px",
+      "evidence": "CLONE_SPEC.md:94",
+      "usage": "cards, banners, images"
+    },
+    "radius.carousel": {
+      "value": "10.37px",
+      "evidence": "tailwind.config.js:23",
+      "usage": "case-study carousel cards"
+    },
+    "radius.input": {
+      "value": "10px",
+      "evidence": "CLONE_SPEC_COMPANY.md:116",
+      "usage": "form inputs"
+    },
+    "radius.md": {
+      "value": "12px",
+      "evidence": "CLONE_SPEC.md:95",
+      "usage": "industry card, closer cards, lightbox"
+    },
+    "radius.lg": {
+      "value": "24px",
+      "evidence": "CLONE_SPEC_INDUSTRIES.md:169",
+      "usage": "case-study / country banners"
+    },
+    "radius.pill": {
+      "value": "50px",
+      "evidence": "tailwind.config.js:23",
+      "usage": "pill buttons"
+    },
+    "radius.tab": {
+      "value": "999px",
+      "evidence": "CLONE_SPEC.md:91",
+      "usage": "tabs track and chips"
+    },
+    "radius.round": {
+      "value": "1000px",
+      "evidence": "CLONE_SPEC.md:92",
+      "usage": "round arrow buttons"
+    },
+    "radius.circle": {
+      "value": "50%",
+      "evidence": "CLONE_SPEC.md:318",
+      "usage": "circular buttons"
+    }
+  }
+}

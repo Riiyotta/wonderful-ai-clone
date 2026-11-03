@@ -1,0 +1,22 @@
+{
+  "id": "primitive.tag-chip",
+  "kind": "primitive",
+  "title": "Tag chip",
+  "purpose": "Small grey label chip (case-study tag, press badge).",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 3
+    }
+  },
+  "tokens": [
+    "type.body.sm",
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/pages/industries/CaseStudyPage.jsx",
+    "tag": "export default function CaseStudyPage",
+    "lines": "42-88",
+    "citation": "src/pages/industries/CaseStudyPage.jsx:42-88"
+  }
+}

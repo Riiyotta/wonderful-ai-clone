@@ -1,0 +1,91 @@
+{
+ "slug": "unlocking-capacity-the-real-roi-of-ai",
+ "path": "/blog-articles/unlocking-capacity-the-real-roi-of-ai",
+ "category": "Perspectives",
+ "pageTitle": "Unlocking Capacity: The Real ROI of AI",
+ "author": "Bar Winkler",
+ "date": "Jul 21, 2026",
+ "datetime": "2026-07-21T00:00:00.000Z",
+ "title": "Unlocking Capacity: The Real ROI of AI",
+ "titleTag": "h1",
+ "description": "Input vs. Output vs. Throughput",
+ "hero": {
+  "image": {
+   "src": "/assets/ROguyj3wBkpTvjuJjgklkLtJ4k.jpg",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">A year ago, some of the world's largest companies were celebrating the employees who consumed the most AI tokens. Today, many of those same companies impose weekly AI spending caps. Those look like opposite strategies, but they represent the same mistake.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Both focus on the input. Neither measures what the input actually produced. There are three ways of thinking about AI economics: input (what did we spend), output (what did each dollar actually produce), and throughput (what is the organization now capable of doing that it could not do before).</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Input tends to be where every AI conversation begins because it's where every invoice begins. Tokens consumed, seats licensed, API calls, infrastructure costs. These are important, since without them there is no financial discipline. And the numbers are getting harder to ignore: agentic workflows consume far more compute than the chat-style use cases most organizations originally budgeted for, and those costs often appear in black box invoices that make it difficult to understand what tokens were spent on. But none of this is a proxy for value.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Whether you're rewarding consumption or penalizing it, you learn nothing about which agentic workflows create value and which don't. A spending cap set without a value measure is a random tax: it hits your best deployments and your worst ones at exactly the same rate.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Output moves the question from what AI costs to what business outcomes cost. What does it cost to process an insurance claim? Ship a software feature? Review a contract? This is unit economics: AI spending becomes meaningful once it is paired with measurable output. The question stops being whether AI is expensive and becomes whether each dollar produces more than it did before. A routine insurance claim that costs six dollars to process manually might cost one to process well through an agent. The number that matters is the cost of the resolved inquiry, not the tokens consumed getting there.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">But even output has a ceiling. Done well, it still describes a world where the work stays the same and only the cost of doing it changes. AI is a more productive participant in an existing system, while the existing system, designed with human capacity in mind, stays intact.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">As AI adoption shifts from isolated functional silos to end-to-end workflows, the economics begin to change. Think of a bank launching a new financial product. An output-oriented view asks what legal review costs, what compliance costs, and whether AI reduces the cost of each step. A throughput-oriented view asks something different: how many products can the bank now launch each year?</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Making each step cheaper or faster turns a four-month launch cycle into a three-and-a-half-month one. Redesigning the process so it runs end to end at machine speed can make it happen in a week, changing the productive capacity of the organization itself.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">When that happens, organizations begin functioning under different constraints. Product launches measured in months become measured in days. Market opportunities that once disappeared during planning cycles can still be captured. Customer requests that previously seemed too small to justify dedicated resources become economically viable.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Unit economics can't show these gains, because the effect is not that tasks become cheaper. It's that the organization completes more cycles of execution in the same period of time, and is able to convert more ideas into outcomes.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is capacity economics in the age of AI: measuring AI not by what individual tasks or outcomes cost, but by what the organization becomes capable of doing because entire systems move faster.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Throughput also changes organizational operating models. Committees, stage gates, review cycles, and sign-off chains all evolved for a world in which execution was expensive: they existed to reduce the likelihood of costly mistakes. AI changes that equation. As the cost of execution falls, so too does the cost of experimentation. Launching something increasingly resembles running an experiment rather than making a major capital allocation. Organizations that continue applying that same governance to workflows capable of operating at machine speed will discover that many of the delays they attribute to technology are, in fact, products of their own operating model.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Capacity economics doesn't replace cost accounting or unit economics; organizations still need both. But neither captures AI's most consequential effect: not making existing work cheaper, but expanding what the business is capable of doing. The real prize was never a lower AI bill. It's an organization operating closer to its full potential.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

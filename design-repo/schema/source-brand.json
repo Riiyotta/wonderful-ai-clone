@@ -1,0 +1,228 @@
+{
+  "$description": "Single registry of source identity, mined from the real source (grep of src/ and _source/pages, CLONE_SPEC*.md). schema/semantic_validate.py rejects every pattern below in mode=generated, each under its own GENERATED_MODE_* rule. Reference mode is allowed (and expected) to contain them.",
+  "version": "1.0.0",
+  "sourceBrand": {
+    "name": "Wonderful",
+    "legalEntity": "Wonderful AI B.V.",
+    "domain": "wonderful.ai",
+    "patterns": [
+      {
+        "id": "brand-name",
+        "regex": "\\bWonderful\\b",
+        "flags": "",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "grep of src/ and _source/pages: \"Wonderful\" x1344 (capitalised brand spelling)",
+        "note": "Case-sensitive: the lower-case English adjective is not the brand spelling."
+      },
+      {
+        "id": "brand-legal-entity",
+        "regex": "wonderful\\s*ai\\s*b\\.?\\s*v\\.?",
+        "flags": "i",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "src/components/Footer.jsx:147"
+      },
+      {
+        "id": "brand-domain",
+        "regex": "wonderful\\.ai",
+        "flags": "i",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "grep: www.wonderful.ai x364, trust.wonderful.ai x323, cdn.wonderful.ai x19"
+      },
+      {
+        "id": "brand-products",
+        "regex": "wonderful\\s+(ai\\s+os|agents?|systems|ai\\s+gateway|apps|code|team|ai)\\b",
+        "flags": "i",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "grep: Wonderful AI Gateway x288, Wonderful Systems x266, Wonderful Agents x266, Wonderful AI OS x11, Wonderful Apps x11, Wonderful Code x8, Wonderful Team x96"
+      },
+      {
+        "id": "brand-handles",
+        "regex": "wonderfulcx|wonderful_ai",
+        "flags": "i",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "grep: wonderfulcx x260, wonderful_ai x260 (social profiles)"
+      },
+      {
+        "id": "brand-lowercase-wordmark",
+        "regex": "wonderful\\s+ai\\s+os",
+        "flags": "i",
+        "rule": "GENERATED_MODE_BRAND",
+        "evidence": "CLONE_SPEC.md:266"
+      }
+    ],
+    "ctaPatterns": [
+      {
+        "id": "cta-brand-verb",
+        "regex": "\\b(get|try|meet|explore|discover|book|request|join|download)\\s+(the\\s+)?wonderful\\b",
+        "flags": "i",
+        "evidence": "BASELINE R2 brand-CTA shape applied to the source brand"
+      },
+      {
+        "id": "cta-source-labels",
+        "exact": [
+          "Explore the OS",
+          "Explore the platform",
+          "See the model",
+          "Explore the approach",
+          "Request my seat",
+          "Submit your role",
+          "See open positions",
+          "Watch now"
+        ],
+        "evidence": [
+          "CLONE_SPEC.md:269",
+          "CLONE_SPEC.md:277",
+          "CLONE_SPEC_REGIONAL.md:108",
+          "CLONE_SPEC_COMPANY.md:74"
+        ],
+        "note": "Source-distinctive labels only; generic labels such as \"Get in touch\", \"Read more\", \"Explore\", \"Apply now\" are not source identity."
+      }
+    ],
+    "urlPatterns": [
+      {
+        "id": "url-source-domain",
+        "regex": "(^|[/.@])wonderful\\.ai\\b",
+        "flags": "i",
+        "rule": "GENERATED_MODE_URL"
+      },
+      {
+        "id": "url-source-cdn",
+        "regex": "framerusercontent\\.com|cdn\\.wonderful",
+        "flags": "i",
+        "rule": "GENERATED_MODE_URL"
+      },
+      {
+        "id": "url-source-social",
+        "regex": "linkedin\\.com/company/wonderfulcx|x\\.com/wonderful_ai|twitter\\.com/wonderful_ai",
+        "flags": "i",
+        "rule": "GENERATED_MODE_URL",
+        "evidence": "CLONE_SPEC.md:335"
+      },
+      {
+        "id": "url-source-endpoints",
+        "regex": "jobs\\.ashbyhq\\.com|ashbyhq\\.com|api\\.framer\\.com|framer\\.com/forms|ipapi\\.co",
+        "flags": "i",
+        "rule": "GENERATED_MODE_URL",
+        "evidence": "CLONE_SPEC_REGIONAL.md:184"
+      },
+      {
+        "id": "url-source-asset-path",
+        "regex": "^/(assets|videos|fonts)/",
+        "flags": "",
+        "rule": "GENERATED_MODE_ASSET",
+        "note": "Source asset folder of the clone; generated media must use placeholder schemes."
+      }
+    ],
+    "storePatterns": [
+      {
+        "id": "store-links",
+        "regex": "apps\\.apple\\.com|itunes\\.apple\\.com|play\\.google\\.com|testflight\\.apple\\.com|microsoft\\.com/store|chromewebstore\\.google\\.com",
+        "flags": "i",
+        "rule": "GENERATED_MODE_STORE",
+        "note": "The source renders no store badges or store links; any real store link in a generated page is fabricated identity."
+      },
+      {
+        "id": "store-marks",
+        "regex": "\\b(download on the app store|get it on google play|available on testflight)\\b",
+        "flags": "i",
+        "rule": "GENERATED_MODE_STORE"
+      }
+    ],
+    "ratingPatterns": [
+      {
+        "id": "rating-score",
+        "regex": "\\b[0-5](\\.\\d)?\\s?/\\s?5\\b|★|☆",
+        "flags": "i",
+        "rule": "GENERATED_MODE_RATING"
+      },
+      {
+        "id": "rating-platforms",
+        "regex": "\\b(G2|Capterra|Trustpilot|Gartner Peer Insights|TrustRadius)\\b",
+        "flags": "",
+        "rule": "GENERATED_MODE_RATING"
+      }
+    ],
+    "statPatterns": [
+      {
+        "id": "source-funding-and-outcomes",
+        "exact": [
+          "$550M",
+          "$550 Million",
+          "$150M",
+          "$150 million",
+          "$5B",
+          "$2B",
+          "$100M",
+          "91.5%",
+          "2.5 million"
+        ],
+        "rule": "GENERATED_MODE_STAT",
+        "evidence": [
+          "CLONE_SPEC.md:115",
+          "CLONE_SPEC.md:238",
+          "CLONE_SPEC.md:235"
+        ]
+      }
+    ],
+    "people": [
+      "Anat Lichtig-Achiaz",
+      "Antonis Avgeropoulos",
+      "Athanasios (Tom) Stratos",
+      "Bar Vinkler",
+      "Bar Winkler",
+      "Ben Avitouv",
+      "Boaz Francis",
+      "Claudius Boller",
+      "Daniel Endzweig",
+      "Daniel Sikorskiy",
+      "Ehud Babnik",
+      "Gadi Ganon",
+      "Georgios Kontogiannis",
+      "Ilia Tzortzopoulou",
+      "Lucia Stoicescu",
+      "Marcin Motel",
+      "Meni Baruch",
+      "Noam Makavy",
+      "Ofir Rozenboim",
+      "Ofir Steinherz",
+      "Piotr Antropov",
+      "Roey Lalazar",
+      "Seb Johnson",
+      "Tomer Eichler",
+      "Vedran Bajer",
+      "Yannis Vitzilaios",
+      "Yoav Ben Azar"
+    ],
+    "peopleEvidence": [
+      "src/pages/regional/countries.data.js (quote authors, contact names)",
+      "src/pages/industries/data/caseStudies.js (quote names)",
+      "src/pages/content/data/articles/*.json (author bylines)",
+      "press card titles on /press"
+    ],
+    "customerAndPartnerNames": [
+      "OTE",
+      "Cosmote",
+      "Banco Caja Social",
+      "Telefonica",
+      "Telefónica",
+      "PPC",
+      "Petrol Ofisi",
+      "FC Bayern",
+      "Bank Hapoalim",
+      "Maccabi",
+      "Mercado Libre",
+      "ELTA",
+      "McKinsey",
+      "KPN Ventures",
+      "Anthropic",
+      "Arsenal",
+      "Slavia Prague"
+    ],
+    "customerEvidence": [
+      "CLONE_SPEC.md:234",
+      "CLONE_SPEC.md:235",
+      "src/pages/content/data/articles/ (slugs: bank-hapoalim, maccabi, mercado-libre..., elta, mckinsey..., kpn-ventures...)",
+      "src/routes/regional.jsx:18"
+    ]
+  }
+}

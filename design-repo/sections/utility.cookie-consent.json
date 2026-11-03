@@ -1,0 +1,94 @@
+{
+  "id": "utility.cookie-consent",
+  "title": "Cookie consent panel",
+  "status": "documented-not-cloned",
+  "source": {
+    "id": "src:CLONE_SPEC#Framer-cookie-consent-panel",
+    "file": "CLONE_SPEC.md",
+    "tag": "- **Framer cookie consent panel:**",
+    "lines": "350-352",
+    "citation": "CLONE_SPEC.md:350-352"
+  },
+  "semantic": {
+    "id": "utility.cookie-consent",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Third-party platform consent banner: legally required runtime UI, present on live only, never a design section.",
+  "purpose": "Platform cookie-consent panel shown on the live site (top-right, Reject/Accept). Omitted in the clone.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "panel title \"Cookie Settings\""
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 24,
+        "x-maxWordsEvidence": "panel text is 19 words (CLONE_SPEC.md 2.9)"
+      },
+      "actions": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "$ref": "#/definitions/cta"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "body",
+      "actions"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "position",
+        "detail": "Fixed top-right 360x179."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": [],
+  "notes": [
+    "Present on the live site, intentionally not rendered by the clone (CLONE_SPEC.md 2.9 marks it optional platform UI)."
+  ]
+}

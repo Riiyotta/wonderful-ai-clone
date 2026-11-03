@@ -1,0 +1,116 @@
+{
+  "$description": "What a PageSpec may reference and what is enforced. PageSpec nodes may carry an optional tokens{} object; every value must be a catalog token id of the category its field allows. Raw values are never allowed. Rule ids are implemented in schema/semantic_validate.py; the category keys below are real keys of tokens/llm/token-catalog.json#/categories (checked by extraction/verify_all.py).",
+  "version": "1.0.0",
+  "catalogVersion": "1.0.0",
+  "nodeTokenFields": {
+    "surface": {
+      "categories": [
+        "semanticColor"
+      ],
+      "prefix": "color.surface."
+    },
+    "text": {
+      "categories": [
+        "semanticColor"
+      ],
+      "prefix": "color.text."
+    },
+    "accent": {
+      "categories": [
+        "semanticColor"
+      ],
+      "prefix": "color.accent."
+    },
+    "border": {
+      "categories": [
+        "semanticColor"
+      ],
+      "prefix": "color.border."
+    },
+    "paddingY": {
+      "categories": [
+        "spacingRole"
+      ],
+      "prefix": "space.section-y."
+    },
+    "gap": {
+      "categories": [
+        "spacingRole"
+      ],
+      "prefix": "space.gap."
+    },
+    "radius": {
+      "categories": [
+        "radius"
+      ],
+      "prefix": "radius."
+    },
+    "fontFamily": {
+      "categories": [
+        "fontFamily"
+      ],
+      "allowed": [
+        "font.family.display",
+        "font.family.sans",
+        "font.family.mono",
+        "font.family.numeric"
+      ]
+    }
+  },
+  "themeCombinations": {
+    "light": {
+      "surface": [
+        "color.surface.page",
+        "color.surface.subtle",
+        "color.surface.chip",
+        "color.surface.legal-band"
+      ],
+      "text": [
+        "color.text.primary",
+        "color.text.secondary",
+        "color.text.muted",
+        "color.text.inverse"
+      ]
+    },
+    "dark": {
+      "surface": [
+        "color.surface.page",
+        "color.surface.band",
+        "color.surface.black",
+        "color.surface.card-dark"
+      ],
+      "text": [
+        "color.text.primary",
+        "color.text.secondary",
+        "color.text.muted",
+        "color.text.on-dark",
+        "color.text.on-dark-muted"
+      ]
+    },
+    "evidence": "tokens/10-semantic/semantic.json light/dark resolution + data-nav-theme section themes in the clone"
+  },
+  "restrictedTokens": {
+    "font.family.pattern-mono": "only the ASCII canvas in the light footer",
+    "font.family.script-fallback": "only non-latin press titles"
+  },
+  "rawValueRestrictions": {
+    "color": "No raw hex / rgb() / hsl() / named colours anywhere in node tokens or content style fields (TOKEN_RAW_COLOR).",
+    "semanticColor": "Use semantic ids, never the foundation colour they resolve to.",
+    "spacing": "No raw px/rem/em spacing values (TOKEN_RAW_SPACING); spacing roles only.",
+    "spacingRole": "paddingY uses space.section-y.*, gap uses space.gap.*.",
+    "fontFamily": "Only the four approved families (TOKEN_FONT_UNSUPPORTED).",
+    "radius": "radius.* ids only."
+  },
+  "enforcedRules": [
+    "TOKEN_UNKNOWN",
+    "TOKEN_RAW_COLOR",
+    "TOKEN_RAW_SPACING",
+    "TOKEN_FONT_UNSUPPORTED",
+    "TOKEN_FIELD_CATEGORY",
+    "TOKEN_THEME_MISMATCH"
+  ],
+  "conventions": [
+    "Section contracts own layout and typography; nodes only nudge surface/text/spacing within these rules.",
+    "Breakpoint and motion tokens are referenced by contracts and motion-patterns.json, not by PageSpec nodes."
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "id": "overlay.mobile-menu-drawer",
+  "title": "Mobile menu drawer",
+  "status": "measured",
+  "source": {
+    "id": "src:MobileMenu#export-default-function-MobileMenu",
+    "file": "src/components/nav/MobileMenu.jsx",
+    "tag": "export default function MobileMenu",
+    "lines": "17-50",
+    "citation": "src/components/nav/MobileMenu.jsx:17-50"
+  },
+  "semantic": {
+    "id": "overlay.mobile-menu-drawer",
+    "category": "OVERLAY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Tap-triggered navigation drawer overlay; runtime UI, not a retrievable page section.",
+  "purpose": "Full-height white drawer with accordion menu groups and a \"Get Started\" button.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "groups": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 5,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "label": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 2,
+              "x-maxWordsEvidence": "group labels"
+            },
+            "links": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 8,
+              "items": {
+                "$ref": "#/definitions/cta"
+              }
+            }
+          },
+          "required": [
+            "label",
+            "links"
+          ]
+        }
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "groups"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "accordion-spring"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "desktop",
+        "change": "hide",
+        "detail": "Only exists below 880px."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

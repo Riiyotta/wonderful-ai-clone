@@ -1,0 +1,102 @@
+{
+  "id": "navigation.category-filter-header",
+  "title": "Category filter header",
+  "status": "measured",
+  "source": {
+    "id": "src:Blog#div-className-cb-head-data-cx-head",
+    "file": "src/pages/content/Blog.jsx",
+    "tag": "<div className=\"cb-head\" data-cx=\"head\">",
+    "lines": "106-120",
+    "citation": "src/pages/content/Blog.jsx:106-120"
+  },
+  "semantic": {
+    "id": "navigation.category-filter-header",
+    "category": "NAVIGATION"
+  },
+  "retrievalEligible": true,
+  "purpose": "Index header (\"All Posts\" + subtitle) with category filter tabs that rewrite ?blog-category.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 3,
+        "x-maxWordsEvidence": "measured headingWordsMax=2 for navigation.category-filter-header at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=5 for navigation.category-filter-header at 1440px"
+      },
+      "categories": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 8,
+        "items": {
+          "type": "string",
+          "minLength": 1,
+          "maxWords": 3,
+          "x-maxWordsEvidence": "category labels up to 2 words"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "categories"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Subtitle 14px."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.filter-tabs"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 144.6,
+      "max": 144.6
+    },
+    "samples": [
+      {
+        "route": "/blog",
+        "instance": 0,
+        "heightPx": 144.6
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog"
+  ]
+}

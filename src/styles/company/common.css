@@ -1,0 +1,28 @@
+/* Shared company-page text presets (Framer presets; values from _source/pages/*.html). Page breakpoints are
+   Framer's 1200/810 or 1440/810 per page, so each page CSS sets its own media queries. */
+.co-favorit { font-family: "ABC Favorit Light", "ABC Favorit Light Placeholder", sans-serif; font-weight: 300; }
+.co-inter { font-family: Inter, "Inter Placeholder", sans-serif; }
+
+/* p 17 (1ln1alt) */
+.co-p17 { font-family: Inter, "Inter Placeholder", sans-serif; font-size: 17px; line-height: 21.76px; letter-spacing: -0.34px;
+  font-feature-settings: "blwf", "cv03", "cv04", "cv09"; }
+/* button L (2mfvz6) and S (x0s9r5) */
+.co-btn-l { font-family: Inter, "Inter Placeholder", sans-serif; font-size: 16px; line-height: 26px; letter-spacing: -0.5px; white-space: pre; }
+.co-btn-s { font-family: Inter, "Inter Placeholder", sans-serif; font-size: 14px; line-height: 21px; letter-spacing: -0.28px; font-feature-settings: "ss03"; white-space: pre; }
+
+/* Pills */
+.co-pill { position: relative; display: flex; align-items: center; justify-content: center; gap: 10px; overflow: hidden; border-radius: 50px; text-decoration: none; }
+.co-pill--l { height: 50px; padding: 6px 18px; }
+.co-pill--s { height: 37px; padding: 6px 16px; }
+.co-pill--white { background: #fff; color: #000; }
+.co-pill--white.co-pill--s { color: #171719; }
+.co-pill--black { background: #000; color: #fff; box-shadow: 0 0 0 0 rgba(79, 26, 214, .3); }
+
+/* Hover states (measured live): white pill opacity -> .6, black pill bg -> rgba(0,0,0,.8),
+   outline pill bg -> rgba(0,0,0,.05); all on Framer's stiffness 200 / damping 60 spring (--co-spring-soft). */
+.co-pill { transition: opacity var(--co-spring-soft, .9s ease-out), background-color var(--co-spring-soft, .9s ease-out); }
+.co-pill--white:hover { opacity: .6; }
+.co-pill--black:hover { background-color: rgba(0,0,0,.8); }
+.co-pill--outline { background-color: rgba(0,0,0,0); border-radius: 90px; color: #131313; }
+.co-pill--outline::after { content: ""; position: absolute; inset: 0; border: 1px solid #222; border-radius: inherit; pointer-events: none; }
+.co-pill--outline:hover { background-color: rgba(0,0,0,.05); }

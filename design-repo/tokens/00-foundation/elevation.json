@@ -1,0 +1,41 @@
+{
+  "$description": "Foundation elevation tokens. Every value cites the clone source, a measured spec, or the computed-style histogram in extraction/measured-values.json.",
+  "category": "elevation",
+  "tokens": {
+    "blur.nav": {
+      "value": "blur(10px)",
+      "evidence": "CLONE_SPEC.md:102",
+      "usage": "light nav variant"
+    },
+    "blur.card": {
+      "value": "blur(10px)",
+      "evidence": "CLONE_SPEC.md:102",
+      "usage": "closer cards"
+    },
+    "blur.feature": {
+      "value": "blur(20px)",
+      "evidence": "src/styles/product/product.css:58",
+      "usage": "feature cells"
+    },
+    "shadow.listbox": {
+      "value": "rgba(0,0,0,.1) 0 4px 12px",
+      "evidence": "src/styles/company/contact.css:60",
+      "usage": "select listbox"
+    },
+    "shadow.lightbox": {
+      "value": "rgba(0,0,0,.25) 0 30px 60px 0",
+      "evidence": "src/pages/industries/sections/VideoLightbox.jsx:63",
+      "usage": "video lightbox dialog"
+    },
+    "shadow.dashboard": {
+      "value": "0 24px 60px -12px #00000059",
+      "evidence": "CLONE_SPEC_PLATFORM.md:52",
+      "usage": "gateway dashboard still (mobile)"
+    },
+    "shadow.consent": {
+      "value": "inset 0 0 0 1px rgba(0,0,0,.05)",
+      "evidence": "CLONE_SPEC.md:101",
+      "usage": "cookie consent panel (runtime UI)"
+    }
+  }
+}

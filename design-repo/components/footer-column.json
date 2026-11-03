@@ -1,0 +1,27 @@
+{
+  "id": "component.footer-column",
+  "kind": "component",
+  "title": "Footer link column",
+  "purpose": "Muted column title and a stack of links.",
+  "props": {
+    "title": {
+      "maxWords": 2
+    },
+    "links": {
+      "type": "array"
+    }
+  },
+  "tokens": [
+    "type.label.xs",
+    "color.text.on-dark-muted"
+  ],
+  "source": {
+    "file": "src/components/Footer.jsx",
+    "tag": "function Column",
+    "lines": "79-106",
+    "citation": "src/components/Footer.jsx:79-106"
+  },
+  "composes": [
+    "primitive.text-link"
+  ]
+}

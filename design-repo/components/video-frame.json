@@ -1,0 +1,23 @@
+{
+  "id": "component.video-frame",
+  "kind": "component",
+  "title": "Video frame",
+  "purpose": "Poster + muted loop with a play button that opens the lightbox.",
+  "props": {
+    "media": {
+      "$ref": "media"
+    }
+  },
+  "tokens": [
+    "radius.md"
+  ],
+  "source": {
+    "file": "src/pages/platform/gateway/VideoSection.jsx",
+    "tag": "function Media",
+    "lines": "32-64",
+    "citation": "src/pages/platform/gateway/VideoSection.jsx:32-64"
+  },
+  "composes": [
+    "primitive.media-video"
+  ]
+}

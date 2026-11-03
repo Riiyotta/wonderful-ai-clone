@@ -1,0 +1,21 @@
+{
+  "id": "primitive.icon-phosphor",
+  "kind": "primitive",
+  "title": "Phosphor icon",
+  "purpose": "32px open-source Phosphor regular glyph used in feature cells.",
+  "props": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "tokens": [
+    "component.feature-cell.icon-size"
+  ],
+  "source": {
+    "file": "src/pages/product/shared/icons.jsx",
+    "tag": "export function PhIcon",
+    "lines": "19-26",
+    "citation": "src/pages/product/shared/icons.jsx:19-26"
+  },
+  "license": "Phosphor Icons, MIT licence (open source)"
+}

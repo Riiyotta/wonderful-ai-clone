@@ -1,0 +1,91 @@
+{
+  "id": "navigation.policy-links",
+  "title": "Policy links",
+  "status": "measured",
+  "source": {
+    "id": "src:LegalIndex#div-className-cli-row-data-cx-row",
+    "file": "src/pages/content/LegalIndex.jsx",
+    "tag": "<div className=\"cli-row\" data-cx=\"row\">",
+    "lines": "45-65",
+    "citation": "src/pages/content/LegalIndex.jsx:45-65"
+  },
+  "semantic": {
+    "id": "navigation.policy-links",
+    "category": "NAVIGATION"
+  },
+  "retrievalEligible": true,
+  "purpose": "\"Legal policies\" H2 above a column of policy links.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 4,
+        "x-maxWordsEvidence": "measured headingWordsMax=2 for navigation.policy-links at 1440px"
+      },
+      "links": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 20,
+        "items": {
+          "$ref": "#/definitions/cta"
+        }
+      }
+    },
+    "required": [
+      "title",
+      "links"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Items full width."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 507.4,
+      "max": 507.4
+    },
+    "samples": [
+      {
+        "route": "/legal",
+        "instance": 0,
+        "heightPx": 507.4
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/legal"
+  ]
+}

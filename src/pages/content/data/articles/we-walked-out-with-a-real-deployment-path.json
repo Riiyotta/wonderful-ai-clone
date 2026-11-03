@@ -1,0 +1,91 @@
+{
+ "slug": "we-walked-out-with-a-real-deployment-path",
+ "path": "/blog-articles/we-walked-out-with-a-real-deployment-path",
+ "category": "In production",
+ "pageTitle": "We walked out with a real deployment path",
+ "author": "Daniel Endzweig, Deployment Strategist, Wonderful",
+ "date": "Jun 25, 2026",
+ "datetime": "2026-06-25T00:00:00.000Z",
+ "title": "We walked out with a real deployment path",
+ "titleTag": "h1",
+ "description": "What changes when the right people are in the room from the start",
+ "hero": {
+  "image": {
+   "src": "/assets/fesAB8voqT2g9iTu226dJL6DeM.jpg",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">Editor's Note: In Production is a series of dispatches from Wonderful's forward-deployed engineers and deployment strategists - the people living inside customer environments, doing the work. Most AI stories are told from the outside. In Production is a captain's log told from inside the room.</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">The company had already spent months trying to figure out its first AI use case. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">They'd spoken to vendors, built small demos internally, and had the internal debates. Different teams had different ideas about where to start. Customer service was the obvious starting point and everyone knew it, but still, nothing had moved.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Business and tech teams were operating on different timelines. Nobody wanted to commit to infrastructure decisions before the use case was proven, and nobody wanted to commit to the use case before the infrastructure existed. Everyone was waiting for everyone else. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Before the workshop, I asked the CEO and CTO one thing: to be in the room at the beginning, from 9:00 to 10:00, and again at the end, between 14:00 and 15:00. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">We started. First 30 minutes: reset the room. Why we were here, what problem we’re solving, what success looks like. That first hour surfaced goals, constraints, and some uncomfortable questions: Whether the organization was actually aligned on priorities, whether people were optimizing for experimentation or deployment, and whether some of the blockers were technical at all. More came out in that hour than in weeks of separate status meetings. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Then we split into working sessions by team (customer service, infrastructure, telephony) and spent four hours doing the thing nobody had done yet: picking one workflow and tracing what it would actually take to put an agent in production. Telephony integration, infrastructure readiness, agent behavior design, business logic, escalation flows, ownership. Our team facilitated throughout, interrupting when things got vague and pushing people to be specific. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Somewhere in the afternoon, something changed. People stopped describing workstreams and started putting names next to them.<br class=\"framer-text\"><br class=\"framer-text\">Who owns telephony.<br class=\"framer-text\">Who owns security review.<br class=\"framer-text\">Who owns the knowledge base.<br class=\"framer-text\">Who signs off on business logic.<br class=\"framer-text\">Who unblocks procurement.<br class=\"framer-text\">Who makes the final operational decision.<br class=\"framer-text\"><br class=\"framer-text\">Every workstream had two sides: theirs and ours. We documented everything live: timelines, dependencies, owners, and open questions. And everyone knew the executives were coming back at two, so there was a deadline on the ambiguity.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The executives came back. We showed them what the timeline had looked like in the morning, and what it looked like adapted to their company, after three hours of working sessions. Processes quoted at two months had owners willing to commit to two weeks. Questions that had been circulating internally for months got resolved because the right people were finally in the same room. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">By the end of the day, the company had a real deployment path. And by the following Monday, every workstream was already moving.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

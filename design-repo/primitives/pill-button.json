@@ -1,0 +1,42 @@
+{
+  "id": "primitive.pill-button",
+  "kind": "primitive",
+  "title": "Pill button",
+  "purpose": "Rounded call-to-action link in white, black, outline and small sizes.",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 4
+    },
+    "href": {
+      "type": "string"
+    },
+    "tone": {
+      "enum": [
+        "white",
+        "black",
+        "outline-light",
+        "outline-dark"
+      ]
+    },
+    "size": {
+      "enum": [
+        "lg",
+        "sm"
+      ]
+    }
+  },
+  "tokens": [
+    "radius.pill",
+    "component.button.pill.height-lg",
+    "component.button.pill.height-sm",
+    "type.body.sm"
+  ],
+  "source": {
+    "file": "src/pages/platform/shared.jsx",
+    "tag": "export function PillButton",
+    "lines": "57-63",
+    "citation": "src/pages/platform/shared.jsx:57-63"
+  },
+  "a11y": "Rendered as a link; label is the accessible name."
+}

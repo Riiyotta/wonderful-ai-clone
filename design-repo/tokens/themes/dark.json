@@ -1,0 +1,86 @@
+{
+  "$description": "dark theme: every semantic token resolved to a foundation token and its literal value.",
+  "theme": "dark",
+  "resolved": {
+    "color.surface.page": {
+      "token": "color.band",
+      "value": "#080808"
+    },
+    "color.surface.band": {
+      "token": "color.band",
+      "value": "#080808"
+    },
+    "color.surface.black": {
+      "token": "color.black",
+      "value": "#000000"
+    },
+    "color.surface.subtle": {
+      "token": "color.band",
+      "value": "#080808"
+    },
+    "color.surface.chip": {
+      "token": "color.ink.900",
+      "value": "#141414"
+    },
+    "color.surface.card-dark": {
+      "token": "color.ink.900",
+      "value": "#141414"
+    },
+    "color.surface.legal-band": {
+      "token": "color.legal-band",
+      "value": "#f7faff"
+    },
+    "color.text.primary": {
+      "token": "color.offwhite",
+      "value": "#fafafa"
+    },
+    "color.text.secondary": {
+      "token": "color.alpha.white-70",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    "color.text.muted": {
+      "token": "color.grey.9e",
+      "value": "#9e9e9e"
+    },
+    "color.text.on-dark": {
+      "token": "color.offwhite",
+      "value": "#fafafa"
+    },
+    "color.text.on-dark-muted": {
+      "token": "color.alpha.white-70",
+      "value": "rgba(255,255,255,0.7)"
+    },
+    "color.text.inverse": {
+      "token": "color.black",
+      "value": "#000000"
+    },
+    "color.border.default": {
+      "token": "color.alpha.white-18",
+      "value": "rgba(255,255,255,0.18)"
+    },
+    "color.border.article": {
+      "token": "color.alpha.white-18",
+      "value": "rgba(255,255,255,0.18)"
+    },
+    "color.accent.data": {
+      "token": "color.accent.orange",
+      "value": "#fc762f"
+    },
+    "color.accent.progress": {
+      "token": "color.accent.blue",
+      "value": "#1c7fff"
+    },
+    "color.link.inline": {
+      "token": "color.blue.link",
+      "value": "#3286f5"
+    },
+    "color.action.primary-bg": {
+      "token": "color.white",
+      "value": "#ffffff"
+    },
+    "color.action.primary-fg": {
+      "token": "color.black",
+      "value": "#000000"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+ "slug": "maccabi",
+ "path": "/blog-articles/maccabi",
+ "category": "Customer stories",
+ "pageTitle": "How a national healthcare provider built a full AI operation from the ground up",
+ "author": "The Wonderful Team",
+ "date": "Aug 18, 2026",
+ "datetime": "2026-08-18T00:00:00.000Z",
+ "title": "How a national healthcare provider built a full AI operation from the ground up",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/j5injhseImeSr6n1OvLizIYETzg.jpg",
+   "width": 2250,
+   "height": 1500,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": {
+  "heading": "About the company",
+  "details": [
+   {
+    "name": "Industry",
+    "label": "Industry",
+    "value": "Healthcare"
+   },
+   {
+    "name": "Use case",
+    "label": "Use case",
+    "value": "IVR Replacement"
+   },
+   {
+    "name": "Channels",
+    "label": "Channels",
+    "value": "Voice"
+   }
+  ],
+  "metrics": []
+ },
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">Maccabi Healthcare, one of Israel’s largest and most advanced healthcare organizations, has long been a leader in digital innovation and AIadoption. With a broad portfolio of AI-powered solutions and intelligent agents already operating in production across the organization. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">Maccabi continuously invests in technologies that improve both member experience and operational efficiency. As part of this vision, Maccabi sought to expand its use of AI by introducing voice-based service agents capable of supporting its many service centers and delivering personalized, multilingual service in Hebrew, English, Arabic, Russian and French across a wide range of member interactions.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">To achieve this, Maccabi partnered with Wonderful to develop and deploy advanced voice AI agents that could seamlessly integrate into its healthcare ecosystem while delivering a more efficient, scalable, and patient-friendly service experience.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">A partnership built in layers</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Before any agent could go live, Wonderful and Maccabi had to lay the groundwork. Maccabi's internal database held everything an agent needed to be useful: doctor profiles, clinic locations, opening hours, and appointment availability, but queries took up to a minute to return results, which is a non-starter for AI agents expected to respond in real time. So Wonderful's engineering team built a dedicated data pipeline replicating Maccabi's full service data in Wonderful’s infrastructure, with a near-zero latency, powering every agent from day one.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">From that foundation, multiple agents went live across voice and digital channels: a service locator that answered questions about clinics, doctors, and services; a seasonal voice agent booking flu vaccine appointments; a medication-ordering agent; and several others spanning Maccabi’s app . Each deployment deepened the integration between the Wonderful platform and Maccabi’s systems, as well as the team’s confidence in what was possible in a regulated healthcare environment. </p><p class=\"framer-text framer-styles-preset-1ln1alt\">With the infrastructure proven and the integration solid, the next step took shape: replacing the IVR entirely on Maccabi's highest-volume line with a single agent capable of handling booking, service information, and call routing in one conversation - without sending patients to the wrong place.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">Meet Aia, Maccabi’s IVR Replacement</strong></h3><p class=\"framer-text framer-styles-preset-1ln1alt\">Aia sits at the entry point of Maccabi's primary appointment and service information line. When a patient calls, there’s no longer a menu to navigate: patients say what they need and the agent takes it from there.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">For appointment booking, Aia runs through user verification, checks availability against Maccabi's scheduling policies, confirms the appointment, and searches for alternatives when the preferred slot is unavailable. <br class=\"framer-text\"><br class=\"framer-text\">For service information, the agent pulls real-time details on clinics and doctors: opening hours, phone numbers, and addresses. A smart routing layer handles everything else, distinguishing between complex appointment types. like ultrasounds, and standard ones - directing non-appointment calls to the right dedicated queue.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h3 class=\"framer-text framer-styles-preset-pyuk04\"><strong class=\"framer-text\">The impact</strong></h3><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">45,000 calls are handled by Aia per day on the appointments and service info line</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">1,400 primary care appointments are booked per day with zero hold time, down from ~11 minutes waiting to reach a human</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Callers reach the right team faster thanks to Aia’s intelligent routing. When an appointment isn’t available, Aia promotes digital service alternatives, reducing patient wait times and driving adoption of Maccabi's app services</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Aia's intelligent routing and self-service handling freed roughly 250 human hours per day in primary care alone, with no drop in response rate plus 40% lower AHT. Teams now spend that time on the complex cases that need them.</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">Maccabi's deployment shows how sequencing works in production. The first agents Maccabi deployed were evidence that the integration was strong, that healthcare constraints were solvable, and that Maccabi’s infrastructure could integrate AI at scale. That track record made the next deployments possible faster than it would have been otherwise. </p><p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">\"Maccabi is a leading healthcare organization that leverages a wide range of advanced platforms and technologies to drive innovation at scale. Healthcare is one of the most complex, sensitive and high-stakes environments you can deploy AI in. What gave us confidence in working with Wonderful was the deep partnership we felt from the start. Their team was embedded with ours, building together to prove value fast and then expand to new use cases.” </em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">Kobi Katz, EVP, CIO, Head of Technology Division Maccabi Health Services</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

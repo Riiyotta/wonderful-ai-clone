@@ -1,0 +1,34 @@
+{
+  "id": "primitive.text-input",
+  "kind": "primitive",
+  "title": "Text input",
+  "purpose": "40px input with 10px radius and focus ring.",
+  "props": {
+    "label": {
+      "type": "string",
+      "maxWords": 4
+    },
+    "required": {
+      "type": "boolean"
+    },
+    "inputType": {
+      "enum": [
+        "text",
+        "email",
+        "tel",
+        "url"
+      ]
+    }
+  },
+  "tokens": [
+    "component.input.height",
+    "component.input.radius",
+    "color.focus"
+  ],
+  "source": {
+    "file": "src/pages/company/Contact.jsx",
+    "tag": "function Input",
+    "lines": "63-69",
+    "citation": "src/pages/company/Contact.jsx:63-69"
+  }
+}

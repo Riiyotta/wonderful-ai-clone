@@ -1,0 +1,75 @@
+{
+  "id": "utility.cookie-settings-trigger",
+  "title": "Cookie settings trigger",
+  "status": "measured",
+  "source": {
+    "id": "src:Footer#className-ft-cookie-ft-link",
+    "file": "src/components/Footer.jsx",
+    "tag": "className=\"ft-cookie ft-link\"",
+    "lines": "100-101",
+    "citation": "src/components/Footer.jsx:100-101"
+  },
+  "semantic": {
+    "id": "utility.cookie-settings-trigger",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Consent-management trigger button (opacity 0) inside the footer; runtime utility control.",
+  "purpose": "Invisible \"Cookie Settings\" button in the footer Legal column that reopens the consent panel.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "label": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 2,
+        "x-maxWordsEvidence": "button text \"Cookie Settings\""
+      }
+    },
+    "required": [
+      "label"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "all",
+        "change": "hidden",
+        "detail": "Wrapper opacity 0 but present."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

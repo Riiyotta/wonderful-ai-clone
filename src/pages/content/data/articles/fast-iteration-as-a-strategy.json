@@ -1,0 +1,91 @@
+{
+ "slug": "fast-iteration-as-a-strategy",
+ "path": "/blog-articles/fast-iteration-as-a-strategy",
+ "category": "Perspectives",
+ "pageTitle": "Fast Iteration As A Strategy",
+ "author": "Yoav Ben Azar",
+ "date": "Nov 10, 2025",
+ "datetime": "2025-11-10T00:00:00.000Z",
+ "title": "Fast Iteration As A Strategy ",
+ "titleTag": "h1",
+ "description": "How we built the Wonderful platform for speed",
+ "hero": {
+  "image": {
+   "src": "/assets/MUgpVA2VHWNY2IdAbdryk88Kf1k.png",
+   "width": 1500,
+   "height": 1000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\">I have a stubborn product belief: builders should feel an immediate connection between a change they make and the effect it creates. Not later. Not after a handoff. Not after a long investigation. <strong class=\"framer-text\">Right now.</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\">When you’re building AI agents, that immediacy isn’t just “nice UX.” It’s how you reach quality in the first place - and how you keep it when everything around you keeps moving.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Because the truth is simple: agents don’t live in a stable world.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">They live inside real operations.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Sometimes that’s customer conversations. Just as often, it’s the operational backbone of a company: finance ops, HR, IT, procurement, RevOps, compliance, engineering support, internal knowledge workflows. In those environments, “the world” changes quietly but constantly - policies get updated, systems evolve, ownership shifts, data fields get renamed, new approval steps appear, and yesterday’s “source of truth” becomes outdated without anyone announcing it.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">So the real question isn’t “How do we perfect the agent?”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">It’s: <strong class=\"framer-text\">How do we learn faster than the world changes?</strong></p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s what fast iteration is. It’s not speed for speed’s sake. It’s shortening the distance between <strong class=\"framer-text\">hypothesis → change → evidence</strong>, so you can keep improving without increasing risk. It’s also one of the core values behind how we are building in Wonderful.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">And it’s a mindset plenty of iconic builders have emphasized - including Mark Zuckerberg, who put it bluntly: “Moving fast enables us to build more things and learn faster.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That sentence is the heart of agent-building.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">If your environment changes weekly (or daily), then the only sustainable advantage is a tight learning loop.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Why rapid iteration is the best way to build agents</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">In traditional software, you can often plan your way to correctness. You ship a set of requirements and the behavior you get is mostly the behavior you designed.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Agents are different.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">An agent’s performance depends on a living ecosystem: user behavior, business context, tools reliability, data quality, and the way all of those collide in real time. Small shifts in any part can produce major effects.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Picture a few examples:</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A <strong class=\"framer-text\">finance backoffice agent</strong> triages vendor invoices and proposes GL codes. It works great until a new onboarding flow introduces a new field structure in the ERP payload. Suddenly the agent confidently misclassifies a chunk of invoices. The model didn’t “get worse” - the environment moved.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A <strong class=\"framer-text\">RevOps agent</strong> drafts quotes and validates discount rules. Pricing changes mid-quarter and a stale rule interpretation can create real revenue leakage.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Both of these are the same story: agent quality isn’t a destination, it’s a moving target.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s why rapid iteration wins:</p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">The environment changes constantly, so adaptation has to be continuous.</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">The design space is interconnected, so progress comes from tight feedback loops, not big bets.</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">Long validation cycles create the worst outcomes: bundled changes, unclear causality, and fear of shipping.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p></li></ul><h4 class=\"framer-text framer-styles-preset-1ing3ma\">What “fast iteration” looks like when it’s real</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Fast iteration is not chaotic shipping. It’s disciplined learning at high frequency.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The teams that improve reliably have a rhythm that feels almost boring:</p><p class=\"framer-text framer-styles-preset-1ln1alt\">They make small, intentional changes.<br class=\"framer-text\">They test against realistic scenarios, not your assumptions.<br class=\"framer-text\">They observe outcomes clearly - quality, latency, failure modes, cost.<br class=\"framer-text\">They turn what they learned into the next change.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">If that loop is expensive - in terms of time, money, or resources - something worse than “slow progress” happens: you get uncertainty. People stop trusting edits. They stop trusting metrics. They stop trusting releases. Iteration becomes a stressful event instead of a routine.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Our platform exists to make that loop feel fast and natural - because iteration speed is not a personal virtue or even just a product capability. It’s a categorical imperative in the world of agentic AI.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">Speed is only good when it’s safe</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Jeff Bezos talks about decisions as “one-way doors” and “two-way doors,” and he argues that most decisions are two-way doors - reversible - and should be made faster because you can walk them back.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That framing is extremely useful for agent builders.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">A lot of improvements you want to make are two-way door changes:</p><ul class=\"framer-text\"><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">a prompt refinement</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">a routing threshold adjustment</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">a tool-call parameter tweak</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">a new fallback behavior</p></li><li data-preset-tag=\"p\" class=\"framer-text framer-styles-preset-1ln1alt\"><p class=\"framer-text framer-styles-preset-1ln1alt\">a guardrail refinement</p></li></ul><p class=\"framer-text framer-styles-preset-1ln1alt\">These should be easy to ship, measure, and undo.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">The problems happen when teams treat every change like a one-way door. They bundle changes, they wait for perfect certainty, and they lose the learning advantage they need to keep pace with reality.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Fast iteration becomes sustainable when you design your system so that <strong class=\"framer-text\">most changes are two-way doors</strong> - reversible by default.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">How Wonderful enables rapid iteration by default</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">We build Wonderful around a simple promise: when you change something, you should be able to see the impact quickly, validate it confidently, and ship it safely. Furthermore, if you find the change isn’t working, it must be easy to revert quickly.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That shows up in a few product principles.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Bring evidence into the building flow.</strong><br class=\"framer-text\">When evaluation is “something you do later” or “takes too much time” it becomes optional. When it’s part of the building experience and takes a few clicks, it becomes habitual. The best teams don’t just iterate quickly - they validate quickly.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Make it safe to explore.</strong><br class=\"framer-text\">Teams move faster when they can experiment without fear. This requires a clear separation between versions, ideally incorporating A/B testing capabilities to compare new behaviors against existing ones. Controlled release patterns ensure that successful improvements, proven through testing, can earn their way to broader adoption.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is where the “two-way door” concept becomes practical: A/B test against the current version, roll out gradually, promote or roll back cleanly if the experiment is unsuccessful.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><strong class=\"framer-text\">Make tradeoffs visible.</strong><br class=\"framer-text\">Agent work is full of tradeoffs: autonomy vs. control, flexibility vs. compliance, cost vs. capability. Iteration gets faster when those tradeoffs are surfaced clearly, not discovered after deployment.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">This is what “moving fast” should look like in 2026: not reckless speed, but <strong class=\"framer-text\">fast learning with guardrails</strong>.</p><p class=\"framer-text framer-styles-preset-1ln1alt\"><br class=\"framer-text trailing-break\"></p><h4 class=\"framer-text framer-styles-preset-1ing3ma\">The value underneath the value</h4><p class=\"framer-text framer-styles-preset-1ln1alt\">Fast iteration isn’t a productivity mantra. It’s a reliable strategy for a world that won’t sit still.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Fast iteration is about simplicity, ensuring fewer steps between change and truth. It’s also about accuracy, grounding decisions in repeatable evidence, and building trust by shipping safely, without drama. Ultimately, it’s about momentum, fostering improvements that compound instead of resetting.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">At the end, it comes back to that immediate connection: when builders can feel the impact of their changes right away, they stay close to the work. They iterate with clarity. They learn faster. They build better agents - whether those agents talk to customers, support employees, or run the operational backbone of a company.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In a world that changes every day, the best agent isn’t the one you “finished.”</p><p class=\"framer-text framer-styles-preset-1ln1alt\">It’s the one you can improve the fastest - with most changes treated as two-way doors.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">That’s the platform we’re building at Wonderful - a platform that <strong class=\"framer-text\">makes fast iteration the default</strong>: you can change something, see the impact immediately, validate it with real scenarios, and ship gradually and safely with reversible releases.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

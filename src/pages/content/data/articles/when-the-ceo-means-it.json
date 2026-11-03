@@ -1,0 +1,91 @@
+{
+ "slug": "when-the-ceo-means-it",
+ "path": "/blog-articles/when-the-ceo-means-it",
+ "category": "In production",
+ "pageTitle": "When the CEO means it",
+ "author": "Ehud Babnik, Deployment Strategist, Wonderful",
+ "date": "Jul 2, 2026",
+ "datetime": "2026-07-02T00:00:00.000Z",
+ "title": "When the CEO means it",
+ "titleTag": "h1",
+ "description": "",
+ "hero": {
+  "image": {
+   "src": "/assets/AX8rTpcFn1oHOPE7NrOJH9RI.jpg",
+   "width": 3000,
+   "height": 2000,
+   "alt": ""
+  },
+  "video": null
+ },
+ "sidebar": null,
+ "bodyStyle": "transform:none",
+ "bodyHtml": "<p class=\"framer-text framer-styles-preset-1ln1alt\"><em class=\"framer-text\">Editor's Note: In Production is a series of dispatches from Wonderful's forward-deployed engineers and deployment strategists - the people living inside customer environments, doing the work. Most AI stories are told from the outside. In Production is a captain's log told from inside the room.</em></p><p class=\"framer-text framer-styles-preset-1ln1alt\">Good work and slow progress can coexist in an organization for a long time. The airline we were working with had a real problem to solve, a capable team, and the right instincts about where AI could help. The will was there and things were progressing, but the mandate hadn't reached every layer of the organization yet.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Then, a new CEO stepped into the role, one who deeply understood both the challenge and the opportunity of AI adoption at a national air carrier. The CEO put it plainly: AI is a strategic priority, and every department is expected to move as fast as possible. That direction was felt across every floor of the building by the next day.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">What followed is the kind of thing you can't manufacture. Blockers that had been sitting for two weeks were cleared before we even raised them. We went from working sessions with business owners and operational teams to daily sessions with different members of the C-suite, dedicated resources from the airline to remove bottlenecks on their side, and a new joint team combining the service center and IT to enable faster iterations. Every two weeks, we'd sit with the CEO directly, and every two weeks, new capabilities shipped.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">In just a few weeks, we shipped a voice agent handling inbound calls in two languages, followed by a real-time analysis layer running across the entire call center. Now we're building something genuinely novel: an agent that performs transactions directly inside the airline's flight management system (FMS) system, end-to-end, without a human in the loop.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Amadeus is the system service representatives use to manage bookings, changes, and cancellations during customer calls. What we are building sits on top of it: a conversational agent that handles the full interaction, then hands off to a back-office agent that executes the actions directly inside Amadeus. Most integrations work by building services on top of legacy systems. Our agent interacts with Amadeus the same way an experienced service rep would, navigating the system, executing changes, and handling the full range of actions. Human reps doing this need to be trained on the system itself, not just the conversation, a skill that takes months to learn.  </p><p class=\"framer-text framer-styles-preset-1ln1alt\">We haven't seen this done anywhere else in the industry. That kind of work doesn't happen in a vacuum. It's a product of how the engagement ran as much as what we built.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">What surprised us the most was the nature of the relationship. The airline brought real ownership: they asked harder questions as the scope grew, and moved fast enough that the pace was set by them as much as by us. It's exactly the kind of engagement that produces work you wouldn't have gotten to otherwise.</p><p class=\"framer-text framer-styles-preset-1ln1alt\">Most enterprises have the use cases, the budgets and the technology interest. But when a company is clear on where it wants to go and serious about getting there, everything changes. The problems get sharper, the feedback gets better, and the scope of what's possible keeps expanding. We can move at the speed of their ambition instead of the speed of their approval process.</p>",
+ "related": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  }
+ ],
+ "relatedTM": [
+  {
+   "href": "/blog-articles/wonderful-australia",
+   "title": "Wonderful Australia",
+   "date": "Jun 8, 2026",
+   "datetime": "2026-06-08T00:00:00.000Z",
+   "image": "/assets/kQh8hfxecGXS1OsWtfuYtIRA6g8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/wonderful-singapore",
+   "title": "Wonderful Singapore",
+   "date": "May 4, 2026",
+   "datetime": "2026-05-04T00:00:00.000Z",
+   "image": "/assets/4tAEEBQDDSyChrW3rYxwlJn8.png",
+   "imageW": 2250,
+   "imageH": 1500
+  },
+  {
+   "href": "/blog-articles/mckinsey-and-wonderful-team-up-to-deliver-enterprise-ai-transformation-from-strategy-to-scale",
+   "title": "Announcing our Partnership with McKinsey",
+   "date": "Apr 6, 2026",
+   "datetime": "2026-04-06T00:00:00.000Z",
+   "image": "/assets/YNyGW3Gka5yQSpibbUltJecpdc4.png",
+   "imageW": 3600,
+   "imageH": 1920
+  },
+  {
+   "href": "/blog-articles/why-enterprise-ai-gets-stuck-in-pilot-mode",
+   "title": "Why enterprise AI gets stuck in pilot mode",
+   "date": "May 7, 2026",
+   "datetime": "2026-05-07T00:00:00.000Z",
+   "image": "/assets/G50hXhXGeNUNlwwrfU1aaoFlE.png",
+   "imageW": 2250,
+   "imageH": 1500
+  }
+ ]
+}

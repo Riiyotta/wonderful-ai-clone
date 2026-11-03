@@ -1,0 +1,129 @@
+{
+  "id": "testimonial.pull-quote",
+  "title": "Pull quote",
+  "status": "measured",
+  "source": {
+    "id": "src:CountryPage#function-Quote",
+    "file": "src/pages/regional/CountryPage.jsx",
+    "tag": "function Quote",
+    "lines": "32-43",
+    "citation": "src/pages/regional/CountryPage.jsx:32-43"
+  },
+  "semantic": {
+    "id": "testimonial.pull-quote",
+    "category": "TESTIMONIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Large italic quote with the speaker's name and role.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "quote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 165,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=132 for testimonial.pull-quote at 1440px"
+      },
+      "person": {
+        "$ref": "#/definitions/person"
+      }
+    },
+    "required": [
+      "quote",
+      "person"
+    ]
+  },
+  "constraints": {
+    "repeatable": true,
+    "maxPerPage": 3
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "restack",
+        "detail": "Name wraps and left-aligns."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".person.photo",
+      "assetRoles": [
+        "photo.real-person",
+        "avatar.fictional"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "avatar.fictional",
+    "copy.original",
+    "person.fictional",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "routes": 10,
+    "heightPx": {
+      "min": 184.4,
+      "max": 486.7
+    },
+    "samples": [
+      {
+        "route": "/greece",
+        "instance": 0,
+        "heightPx": 218
+      },
+      {
+        "route": "/greece",
+        "instance": 1,
+        "heightPx": 251.6
+      },
+      {
+        "route": "/romania",
+        "instance": 0,
+        "heightPx": 285.2
+      },
+      {
+        "route": "/adriatics",
+        "instance": 0,
+        "heightPx": 486.7
+      },
+      {
+        "route": "/italy",
+        "instance": 0,
+        "heightPx": 285.2
+      },
+      {
+        "route": "/switzerland",
+        "instance": 0,
+        "heightPx": 285.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/adriatics",
+    "/baltics",
+    "/belgium",
+    "/greece",
+    "/italy",
+    "/netherlands",
+    "/poland",
+    "/romania"
+  ]
+}

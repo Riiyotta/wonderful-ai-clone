@@ -1,0 +1,109 @@
+{
+  "id": "utility.announcement-ticker",
+  "title": "Announcement ticker",
+  "status": "measured",
+  "source": {
+    "id": "src:Announcement#export-default-function-Announcement",
+    "file": "src/components/nav/Announcement.jsx",
+    "tag": "export default function Announcement",
+    "lines": "44-71",
+    "citation": "src/components/nav/Announcement.jsx:44-71"
+  },
+  "semantic": {
+    "id": "utility.announcement-ticker",
+    "category": "UTILITY"
+  },
+  "retrievalEligible": false,
+  "retrievalIneligibleReason": "Runtime nav utility: a timed, self-collapsing announcement rotator inside the fixed header, not a page section.",
+  "purpose": "Two announcement slides inside the nav that crossfade every 7s and collapse on first scroll.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "slides": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 3,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 8,
+              "x-maxWordsEvidence": "slide texts are 4-5 words (CLONE_SPEC.md 1)"
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            },
+            "mark": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "logo.partner-crest",
+                "logo.fictional-company"
+              ]
+            }
+          },
+          "required": [
+            "text"
+          ]
+        }
+      }
+    },
+    "required": [
+      "slides"
+    ]
+  },
+  "constraints": {
+    "overlayOnly": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "ticker-crossfade",
+      "nav-banner-collapse"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.mobile",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Bar 40px tall, padding 12px 8px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".slides[].mark",
+      "assetRoles": [
+        "logo.partner-crest",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-company",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 0,
+    "routes": 0,
+    "heightPx": {
+      "min": null,
+      "max": null
+    },
+    "samples": [],
+    "evidence": "not in page flow (runtime UI); see notes"
+  },
+  "referenceRoutes": []
+}

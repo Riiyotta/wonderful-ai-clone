@@ -1,0 +1,98 @@
+{
+  "id": "hero.not-found",
+  "title": "Not-found hero",
+  "status": "measured",
+  "source": {
+    "id": "src:Ashby404#export-default-function-Ashby404",
+    "file": "src/pages/regional/Ashby404.jsx",
+    "tag": "export default function Ashby404",
+    "lines": "14-47",
+    "citation": "src/pages/regional/Ashby404.jsx:14-47"
+  },
+  "semantic": {
+    "id": "hero.not-found",
+    "category": "HERO"
+  },
+  "retrievalEligible": true,
+  "purpose": "404 opener: large title, short body, \"Back To Homepage\" pill over spinning blurred gradient blobs.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "measured headingWordsMax=8 for hero.not-found at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 25,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=20 for hero.not-found at 1440px"
+      },
+      "cta": {
+        "$ref": "#/definitions/cta"
+      }
+    },
+    "required": [
+      "title",
+      "cta"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true,
+    "mustFollowNav": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "appear-fade-spring",
+      "word-reveal-paragraph",
+      "gradient-blob-spin"
+    ],
+    "reducedMotionFallback": "paused-first-frame",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Title 56/65."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 583.2,
+      "max": 583.2
+    },
+    "samples": [
+      {
+        "route": "/ashby",
+        "instance": 0,
+        "heightPx": 583.2
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ashby"
+  ],
+  "notes": [
+    "/ashby renders the site's Framer 404 page on live; reproduced as a real route."
+  ]
+}

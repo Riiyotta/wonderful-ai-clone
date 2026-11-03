@@ -1,0 +1,29 @@
+{
+  "id": "component.accordion-item",
+  "kind": "component",
+  "title": "Accordion item",
+  "purpose": "Numbered header that toggles a paragraph.",
+  "props": {
+    "number": {
+      "maxWords": 1
+    },
+    "title": {
+      "maxWords": 8
+    },
+    "body": {
+      "maxWords": 45
+    }
+  },
+  "tokens": [
+    "type.heading.h4"
+  ],
+  "source": {
+    "file": "src/pages/platform/Transformation.jsx",
+    "tag": "function Principle",
+    "lines": "69-113",
+    "citation": "src/pages/platform/Transformation.jsx:69-113"
+  },
+  "motion": [
+    "accordion-spring"
+  ]
+}

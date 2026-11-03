@@ -1,0 +1,119 @@
+{
+  "id": "features.principles-accordion",
+  "title": "Principles accordion",
+  "status": "measured",
+  "source": {
+    "id": "src:Transformation#function-Principle",
+    "file": "src/pages/platform/Transformation.jsx",
+    "tag": "function Principle",
+    "lines": "69-113",
+    "citation": "src/pages/platform/Transformation.jsx:69-113"
+  },
+  "semantic": {
+    "id": "features.principles-accordion",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 beside numbered principles that each toggle an explanatory paragraph.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 10,
+        "x-maxWordsEvidence": "measured headingWordsMax=8 for features.principles-accordion at 1440px"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "number": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 1,
+              "x-maxWordsEvidence": "two-digit number"
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 8,
+              "x-maxWordsEvidence": "principle titles up to 6 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 58,
+              "x-maxWordsEvidence": "measured paragraphWordsMax=46 for features.principles-accordion at 1440px"
+            }
+          },
+          "required": [
+            "number",
+            "title",
+            "body"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "items"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "accordion-spring"
+    ],
+    "reducedMotionFallback": "instant-swap",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Accordion full width, padding 32/0."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.accordion-item"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 603.3,
+      "max": 603.3
+    },
+    "samples": [
+      {
+        "route": "/ai-transformation",
+        "instance": 0,
+        "heightPx": 603.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/ai-transformation"
+  ]
+}

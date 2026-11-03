@@ -1,0 +1,20 @@
+{
+  "id": "primitive.progress-bar",
+  "kind": "primitive",
+  "title": "Progress bar",
+  "purpose": "8px track with an accent fill and a large percentage label.",
+  "props": {
+    "percent": {
+      "type": "number"
+    }
+  },
+  "tokens": [
+    "color.accent.progress"
+  ],
+  "source": {
+    "file": "src/pages/platform/Deployment.jsx",
+    "tag": "function Phases",
+    "lines": "151-200",
+    "citation": "src/pages/platform/Deployment.jsx:151-200"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "editorial.post-teasers",
+  "title": "Post teasers",
+  "status": "measured",
+  "source": {
+    "id": "src:ThankYou#div-className-cty-blog",
+    "file": "src/pages/company/ThankYou.jsx",
+    "tag": "<div className=\"cty-blog\">",
+    "lines": "54-66",
+    "citation": "src/pages/company/ThankYou.jsx:54-66"
+  },
+  "semantic": {
+    "id": "editorial.post-teasers",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "\"From our blog\" heading with three post cards.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 12,
+        "x-maxWordsEvidence": "measured headingWordsMax=9 for editorial.post-teasers at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 8,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=5 for editorial.post-teasers at 1440px"
+      },
+      "posts": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 4,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 14,
+              "x-maxWordsEvidence": "post titles up to 11 words"
+            },
+            "date": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 4,
+              "x-maxWordsEvidence": "dates"
+            },
+            "image": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene",
+                "product.source-visual",
+                "product.generated-visual"
+              ]
+            },
+            "link": {
+              "$ref": "#/definitions/cta"
+            }
+          },
+          "required": [
+            "title",
+            "link"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "posts"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "card-image-appear"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "2 columns + a 4th card."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "1 column."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".posts[].image",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.post-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 436.3,
+      "max": 436.3
+    },
+    "samples": [
+      {
+        "route": "/thank-you",
+        "instance": 0,
+        "heightPx": 436.3
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/thank-you"
+  ]
+}

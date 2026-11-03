@@ -1,0 +1,199 @@
+{
+  "id": "editorial.article-chapter",
+  "title": "Article chapter",
+  "status": "measured",
+  "source": {
+    "id": "src:Article#className-ca-body-cx-rtc",
+    "file": "src/pages/content/Article.jsx",
+    "tag": "className=\"ca-body cx-rtc\"",
+    "lines": "156-156",
+    "citation": "src/pages/content/Article.jsx:156-156",
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/industries/CaseStudyPage.jsx",
+        "tag": "export default function CaseStudyPage",
+        "lines": "42-88",
+        "citation": "src/pages/industries/CaseStudyPage.jsx:42-88"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "editorial.article-chapter",
+    "category": "EDITORIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "One heading-bounded chapter of long-form prose: optional heading followed by paragraphs, lists, quotes or inline media. Articles and case studies are composed of several.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "heading": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 16,
+        "x-maxWordsEvidence": "chapter headings up to 13 words (measured headingWordsMax=13)"
+      },
+      "blocks": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 30,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "enum": [
+                "paragraph",
+                "list",
+                "quote",
+                "image",
+                "video"
+              ]
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 200,
+              "x-maxWordsEvidence": "longest measured paragraph 174 words"
+            },
+            "items": {
+              "type": "array",
+              "minItems": 1,
+              "maxItems": 12,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "maxWords": 80,
+                "x-maxWordsEvidence": "list items"
+              }
+            },
+            "media": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "photo.source-scene",
+                "photo.generated-scene",
+                "product.source-visual",
+                "product.generated-visual",
+                "video.source-loop",
+                "video.generated-loop"
+              ]
+            }
+          },
+          "required": [
+            "kind"
+          ]
+        }
+      }
+    },
+    "required": [
+      "blocks"
+    ]
+  },
+  "constraints": {
+    "repeatable": true,
+    "maxPerPage": 20
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "resize",
+        "detail": "H3 22px."
+      },
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "H3 24px."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".blocks[].media",
+      "assetRoles": [
+        "photo.source-scene",
+        "photo.generated-scene",
+        "product.source-visual",
+        "product.generated-visual",
+        "video.source-loop",
+        "video.generated-loop"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "photo.generated-scene",
+    "product.generated-visual",
+    "url.placeholder",
+    "video.generated-loop"
+  ],
+  "composes": [
+    "component.rich-text"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 198,
+    "routes": 54,
+    "heightPx": {
+      "min": 36.8,
+      "max": 2584.4
+    },
+    "samples": [
+      {
+        "route": "/case-studies/financial-services",
+        "instance": 0,
+        "heightPx": 245.6
+      },
+      {
+        "route": "/case-studies/financial-services",
+        "instance": 1,
+        "heightPx": 161.1
+      },
+      {
+        "route": "/case-studies/financial-services",
+        "instance": 2,
+        "heightPx": 248.1
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "instance": 0,
+        "heightPx": 242.6
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "instance": 1,
+        "heightPx": 276.6
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "instance": 2,
+        "heightPx": 226.4
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/blog-articles/ai-doesnt-care-about-your-org-chart",
+    "/blog-articles/announcing-wonderful-ai-gateway",
+    "/blog-articles/announcing-wonderful-apps-custom-interfaces-for-every-agent",
+    "/blog-articles/banco-caja-social",
+    "/blog-articles/bank-hapoalim",
+    "/blog-articles/being-long-ai",
+    "/blog-articles/build-vs-buy-isn’t-a-technical-choice",
+    "/blog-articles/building-an-ai-platform-won’t-transform-your-business"
+  ],
+  "notes": [
+    "Boundaries are real content boundaries: h1-h4, or single-item numbered lists used as chapter numbers in some articles (extraction/section-map.json)."
+  ]
+}

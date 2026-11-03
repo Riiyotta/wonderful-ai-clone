@@ -1,0 +1,335 @@
+{
+  "pageSpecVersion": "1.0.0",
+  "mode": "generated",
+  "template": "industry",
+  "route": "/sectors/water",
+  "meta": {
+    "title": "Water utilities | Halcyon Grid"
+  },
+  "brand": {
+    "name": "Halcyon Grid",
+    "mark": {
+      "assetRole": "brand-mark.generated",
+      "alt": "Halcyon Grid",
+      "src": "generated://halcyon/mark.svg"
+    }
+  },
+  "nodes": [
+    {
+      "section": "shell.site-header",
+      "variant": "standard",
+      "theme": "dark",
+      "motion": {
+        "pattern": "nav-theme-swap",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "menus": [
+          "Products",
+          "Sectors",
+          "About"
+        ],
+        "links": [
+          {
+            "label": "Journal",
+            "href": "/journal"
+          }
+        ],
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        }
+      }
+    },
+    {
+      "section": "hero.industry",
+      "theme": "dark",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Water",
+        "intro": "Keep crews, meters and customers in step during every outage and every quiet week.",
+        "background": {
+          "assetRole": "photo.generated-scene",
+          "alt": "Reservoir at dusk",
+          "src": "generated://halcyon/reservoir.jpg"
+        }
+      }
+    },
+    {
+      "section": "social-proof.logo-grid",
+      "variant": "strip",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Trusted by regional water boards",
+        "logos": [
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 1",
+            "src": "generated://halcyon/water-board-1.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 2",
+            "src": "generated://halcyon/water-board-2.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 3",
+            "src": "generated://halcyon/water-board-3.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 4",
+            "src": "generated://halcyon/water-board-4.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 5",
+            "src": "generated://halcyon/water-board-5.svg"
+          },
+          {
+            "assetRole": "logo.fictional-company",
+            "alt": "Fictional water board 6",
+            "src": "generated://halcyon/water-board-6.svg"
+          }
+        ]
+      }
+    },
+    {
+      "section": "features.icon-feature-grid",
+      "variant": "glow",
+      "theme": "dark",
+      "motion": {
+        "pattern": "word-reveal-heading",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Change how your water network runs",
+        "items": [
+          {
+            "icon": {
+              "assetRole": "icon.phosphor",
+              "alt": "",
+              "src": "placeholder://icon/drop"
+            },
+            "title": "Faster leak response",
+            "body": "Route leak reports to the nearest crew with the right parts already listed."
+          },
+          {
+            "icon": {
+              "assetRole": "icon.phosphor",
+              "alt": "",
+              "src": "placeholder://icon/gauge"
+            },
+            "title": "Cleaner meter data",
+            "body": "Flag readings that drift before they reach a customer bill."
+          },
+          {
+            "icon": {
+              "assetRole": "icon.phosphor",
+              "alt": "",
+              "src": "placeholder://icon/chat"
+            },
+            "title": "Clear outage updates",
+            "body": "Send the same accurate update by text, voice and web within minutes."
+          }
+        ],
+        "background": {
+          "assetRole": "illustration.generated-abstract",
+          "alt": "",
+          "src": "generated://halcyon/glow.jpg"
+        }
+      }
+    },
+    {
+      "section": "features.workflow-list",
+      "theme": "dark",
+      "motion": {
+        "pattern": "static",
+        "reducedMotionFallback": "none"
+      },
+      "content": {
+        "title": "Workflows that run every day",
+        "items": [
+          {
+            "title": "Outage triage",
+            "body": "Group incoming calls by street and send one crew per cluster."
+          },
+          {
+            "title": "Meter disputes",
+            "body": "Pull the last six readings and photos into one view for the agent."
+          },
+          {
+            "title": "Crew handover",
+            "body": "Write the shift summary automatically from the day log."
+          }
+        ],
+        "media": {
+          "assetRole": "product.generated-visual",
+          "alt": "",
+          "src": "generated://halcyon/workflow-ui.png"
+        }
+      }
+    },
+    {
+      "section": "features.hover-reveal-rows",
+      "variant": "why-choose",
+      "motion": {
+        "pattern": "hover-reveal-row",
+        "reducedMotionFallback": "instant-swap"
+      },
+      "content": {
+        "title": "Why water boards pick Halcyon Grid",
+        "rows": [
+          {
+            "title": "Runs on your network",
+            "body": "Deploys inside your own cloud account or on premises.",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/rack.jpg"
+            }
+          },
+          {
+            "title": "Plain audit trail",
+            "body": "Every automated step is logged in language a regulator can read.",
+            "image": {
+              "assetRole": "product.generated-visual",
+              "alt": "",
+              "src": "generated://halcyon/audit.png"
+            }
+          },
+          {
+            "title": "Crews stay in charge",
+            "body": "Field staff can pause or override any automation from the van.",
+            "image": {
+              "assetRole": "photo.generated-scene",
+              "alt": "",
+              "src": "generated://halcyon/van.jpg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "section": "conversion.closing-cta",
+      "theme": "dark",
+      "tokens": {
+        "surface": "color.surface.band",
+        "paddingY": "space.section-y.xl"
+      },
+      "motion": {
+        "pattern": "appear-fade-spring",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "title": "Bring calm to your next outage.",
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        },
+        "background": {
+          "assetRole": "illustration.generated-abstract",
+          "alt": "",
+          "src": "generated://halcyon/cta-glow.jpg"
+        }
+      }
+    },
+    {
+      "section": "shell.site-footer",
+      "variant": "dark-columns",
+      "theme": "dark",
+      "motion": {
+        "pattern": "appear-fade-tween",
+        "reducedMotionFallback": "static-final-state"
+      },
+      "content": {
+        "brandMark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "Halcyon Grid home",
+          "src": "generated://halcyon/mark.svg"
+        },
+        "tagline": "Calm infrastructure for busy operations teams.",
+        "cta": {
+          "label": "Talk to us",
+          "href": "/talk"
+        },
+        "legalLine": "© 2031 Halcyon Grid Ltd.",
+        "columns": [
+          {
+            "title": "Products",
+            "links": [
+              {
+                "label": "Relay core",
+                "href": "/relay"
+              },
+              {
+                "label": "Field kit",
+                "href": "/field-kit"
+              }
+            ]
+          },
+          {
+            "title": "Sectors",
+            "links": [
+              {
+                "label": "Shipping",
+                "href": "/sectors/shipping"
+              },
+              {
+                "label": "Water",
+                "href": "/sectors/water"
+              }
+            ]
+          },
+          {
+            "title": "About",
+            "links": [
+              {
+                "label": "Our story",
+                "href": "/story"
+              },
+              {
+                "label": "Journal",
+                "href": "/journal"
+              },
+              {
+                "label": "Status page",
+                "href": "https://status.halcyon-grid.example/"
+              }
+            ]
+          },
+          {
+            "title": "Legal",
+            "links": [
+              {
+                "label": "Terms",
+                "href": "/terms"
+              },
+              {
+                "label": "Privacy",
+                "href": "/privacy"
+              }
+            ]
+          }
+        ],
+        "watermark": {
+          "assetRole": "brand-mark.generated",
+          "alt": "",
+          "src": "generated://halcyon/wordmark-wide.png"
+        }
+      }
+    }
+  ]
+}

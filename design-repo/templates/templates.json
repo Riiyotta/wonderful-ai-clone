@@ -1,0 +1,1047 @@
+{
+  "$description": "One template per page family (semantic purpose, not DOM shape). nodes are ordered; a node is either a fixed section {section, required, repeatable, variants?} or a slot {slot, allowed, min, max} that accepts any allowed sections in any order. overlays lists runtime UI (retrievalEligible=false) a page of this family may declare.",
+  "version": "1.0.0",
+  "templates": {
+    "home": {
+      "id": "home",
+      "title": "Home",
+      "purpose": "Enterprise homepage: video statement hero, customer proof, outcome carousel, mission statement, platform and approach introductions, industries showcase and a team closer.",
+      "evidence": "src/pages/Home.jsx:9-21",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.video-statement",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.logo-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "grid-12"
+          ]
+        },
+        {
+          "section": "social-proof.case-study-carousel",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "light"
+          ]
+        },
+        {
+          "section": "content.reveal-statement",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "scroll-color"
+          ]
+        },
+        {
+          "section": "features.platform-lattice-intro",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.approach-cards",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "features.industry-tabs",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.team-closer",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "product": {
+      "id": "product",
+      "title": "Product page",
+      "purpose": "One platform product (OS, agents, systems, gateway): product hero, a body of capability sections in any order including exactly one product cross-sell, optional closing CTA.",
+      "evidence": "src/routes/product.jsx:7-12",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.product",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "features.infrastructure-explorer",
+            "structure.hairline-divider",
+            "features.product-cross-sell",
+            "features.icon-feature-grid",
+            "features.hover-reveal-rows",
+            "features.use-case-cards",
+            "features.accordion-showcase",
+            "social-proof.case-study-carousel",
+            "features.split-list",
+            "features.image-card-grid",
+            "features.expanding-card-pair",
+            "media.scroll-video-stage"
+          ],
+          "min": 3,
+          "max": 8
+        },
+        {
+          "section": "conversion.closing-cta",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger",
+        "overlay.video-lightbox"
+      ],
+      "notes": [
+        "/ai-gateway is mounted from src/routes/platform.jsx but is a product page by purpose (it carries the product hero, capabilities and the shared product cross-sell)."
+      ]
+    },
+    "approach": {
+      "id": "approach",
+      "title": "Approach page",
+      "purpose": "How the company works with customers (deployment model, transformation strategy): image hero, explanatory body, closing CTA.",
+      "evidence": "src/routes/platform.jsx:6-11",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.approach",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "content.stat-intro",
+            "features.phase-tabs",
+            "features.icon-feature-grid",
+            "content.essay-split",
+            "structure.hairline-divider",
+            "features.principles-accordion",
+            "features.expanding-card-pair"
+          ],
+          "min": 2,
+          "max": 6
+        },
+        {
+          "section": "conversion.closing-cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "industry": {
+      "id": "industry",
+      "title": "Industry page",
+      "purpose": "One industry vertical: giant-title hero, customer logos, transformation pillars, optional customer video, workflows, why-choose rows and closing CTA.",
+      "evidence": "src/pages/industries/IndustryPage.jsx:12-24",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.industry",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.logo-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "strip"
+          ]
+        },
+        {
+          "section": "features.icon-feature-grid",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "glow"
+          ]
+        },
+        {
+          "section": "media.video-metrics",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "features.workflow-list",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "features.hover-reveal-rows",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "why-choose"
+          ]
+        },
+        {
+          "section": "conversion.closing-cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger",
+        "overlay.video-lightbox"
+      ]
+    },
+    "case-study": {
+      "id": "case-study",
+      "title": "Case study",
+      "purpose": "Customer story: editorial header with stats, banner, heading-bounded chapters and customer quote cards.",
+      "evidence": "src/pages/industries/CaseStudyPage.jsx:42-88",
+      "chrome": "site",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "editorial.case-study-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.banner-image",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "case-study"
+          ]
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "editorial.article-chapter",
+            "testimonial.quote-card"
+          ],
+          "min": 2,
+          "max": 12
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "about": {
+      "id": "about",
+      "title": "About page",
+      "purpose": "Company story: hero with photo, mission rows, investors, stories and closing CTA.",
+      "evidence": "src/pages/company/AboutUs.jsx:37-130",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.company",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "about"
+          ]
+        },
+        {
+          "section": "content.mission-rows",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "social-proof.investor-logos",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "structure.hairline-divider",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "light"
+          ]
+        },
+        {
+          "section": "editorial.story-cards",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.closing-cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "careers": {
+      "id": "careers",
+      "title": "Careers page",
+      "purpose": "Recruiting page: hero with photo, scroll-reveal statement, global presence globe, roles, apply contact and closing CTA.",
+      "evidence": "src/pages/company/Careers.jsx:79-174",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.company",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "careers"
+          ]
+        },
+        {
+          "section": "content.reveal-statement",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "sticky-progress"
+          ]
+        },
+        {
+          "section": "content.global-presence",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "listing.role-rows",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.apply-contact",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.closing-cta",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "press": {
+      "id": "press",
+      "title": "Press page",
+      "purpose": "Press coverage index: title opener and a mosaic of press cards.",
+      "evidence": "src/pages/company/Press.jsx:77-98",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.index-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "press"
+          ]
+        },
+        {
+          "section": "listing.press-mosaic",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "contact": {
+      "id": "contact",
+      "title": "Contact page",
+      "purpose": "Meeting-request page: split image panel + form; header without the CTA pill, no footer.",
+      "evidence": "src/pages/company/Contact.jsx:82-177",
+      "chrome": "site-header-only",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "no-cta-pill"
+          ]
+        },
+        {
+          "section": "conversion.contact-form-split",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "confirmation": {
+      "id": "confirmation",
+      "title": "Confirmation page",
+      "purpose": "Post-submit thank-you page (site form or campaign form): confirmation hero, optional post teasers, site or campaign chrome.",
+      "evidence": "src/pages/company/ThankYou.jsx:35-69",
+      "chrome": "site-or-campaign",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.confirmation",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.post-teasers",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "structure.hairline-divider",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "dark"
+          ]
+        },
+        {
+          "slot": "footer",
+          "allowed": [
+            "shell.site-footer",
+            "shell.campaign-footer"
+          ],
+          "min": 1,
+          "max": 1
+        }
+      ],
+      "overlays": [
+        "utility.cookie-consent"
+      ],
+      "notes": [
+        "Two implementations of one purpose (R6): /thank-you (site chrome) and /fcb/x/thank-you (campaign chrome, video hero)."
+      ]
+    },
+    "blog-index": {
+      "id": "blog-index",
+      "title": "Blog index",
+      "purpose": "Blog listing: featured post, header with category filter, post grid.",
+      "evidence": "src/pages/content/Blog.jsx:84-128",
+      "chrome": "site",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "editorial.featured-post",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "navigation.category-filter-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "editorial.post-grid",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ],
+      "notes": [
+        "Category filtering is the ?blog-category query parameter on the same route, not separate routes."
+      ]
+    },
+    "blog-article": {
+      "id": "blog-article",
+      "title": "Blog article",
+      "purpose": "Long-form article decomposed into header, banner, heading-bounded chapters, optional story-details sidebar, divider and related posts.",
+      "evidence": "src/pages/content/Article.jsx:135-174",
+      "chrome": "site",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "editorial.article-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "media.banner-image",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "article"
+          ]
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "editorial.article-chapter"
+          ],
+          "min": 1,
+          "max": 20
+        },
+        {
+          "section": "editorial.story-details",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "structure.hairline-divider",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "light"
+          ]
+        },
+        {
+          "section": "editorial.related-posts",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "legal-index": {
+      "id": "legal-index",
+      "title": "Legal index",
+      "purpose": "List of legal policies under a title opener, with the light-band footer.",
+      "evidence": "src/pages/content/LegalIndex.jsx:33-71",
+      "chrome": "site-light-footer",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.index-title",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "legal"
+          ]
+        },
+        {
+          "section": "structure.hairline-divider",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "light"
+          ]
+        },
+        {
+          "section": "navigation.policy-links",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "light-band"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "legal-document": {
+      "id": "legal-document",
+      "title": "Legal document",
+      "purpose": "One legal/privacy document without site chrome: header then one section per heading-bounded part.",
+      "evidence": "src/pages/content/LegalDoc.jsx:12-52",
+      "chrome": "none",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "content.legal-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "structure.hairline-divider",
+          "required": false,
+          "repeatable": false,
+          "variants": [
+            "light"
+          ]
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "content.legal-section"
+          ],
+          "min": 1,
+          "max": 60
+        }
+      ],
+      "overlays": [],
+      "notes": [
+        "/careers/candidate_notice is a privacy notice by purpose (no chrome, same layout) and maps here, not to careers."
+      ]
+    },
+    "country-landing": {
+      "id": "country-landing",
+      "title": "Country landing",
+      "purpose": "Market-launch page: country banner hero and a column of prose, quotes, dividers and named contacts.",
+      "evidence": "src/pages/regional/CountryPage.jsx:63-84",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.country-banner",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "slot": "body",
+          "allowed": [
+            "content.prose-block",
+            "testimonial.pull-quote",
+            "structure.hairline-divider"
+          ],
+          "min": 2,
+          "max": 14
+        },
+        {
+          "section": "content.people-links",
+          "required": false,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ]
+    },
+    "event-registration": {
+      "id": "event-registration",
+      "title": "Event registration",
+      "purpose": "Campaign landing page with its own lockup: event hero, registration form, practical info and campaign footer.",
+      "evidence": "src/pages/regional/FcbMatchday.jsx:48-153",
+      "chrome": "campaign",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "hero.campaign-event",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "conversion.event-registration",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.practical-info-cards",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.campaign-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "campaign"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.cookie-consent"
+      ]
+    },
+    "job-detail": {
+      "id": "job-detail",
+      "title": "Job detail",
+      "purpose": "Single job post on a clipped 1080px black canvas: job header and description.",
+      "evidence": "src/pages/regional/AshbyJob.jsx:26-51",
+      "chrome": "none",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "content.job-header",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "content.job-description",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "overlays": []
+    },
+    "job-application": {
+      "id": "job-application",
+      "title": "Job application",
+      "purpose": "Application page for one job: back chip and application form box.",
+      "evidence": "src/pages/regional/AshbySubmit.jsx:7-18",
+      "chrome": "none",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "conversion.job-application-form",
+          "required": true,
+          "repeatable": false
+        }
+      ],
+      "overlays": [],
+      "notes": [
+        "Form content unverified (live iframe blocked); see conversion.job-application-form."
+      ]
+    },
+    "not-found": {
+      "id": "not-found",
+      "title": "Not found",
+      "purpose": "Error page: 404 hero between site header and footer.",
+      "evidence": "src/pages/regional/Ashby404.jsx:14-47",
+      "chrome": "site",
+      "hasHero": true,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "hero.not-found",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ],
+      "notes": [
+        "/ashby is a real route on live that renders this 404 page."
+      ]
+    },
+    "embed-shell": {
+      "id": "embed-shell",
+      "title": "Embed shell",
+      "purpose": "Archived page whose only content is an empty third-party careers-embed box.",
+      "evidence": "src/pages/regional/ComeetStyle.jsx:5-9",
+      "chrome": "site",
+      "hasHero": false,
+      "nodes": [
+        {
+          "section": "shell.site-header",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "standard"
+          ]
+        },
+        {
+          "section": "utility.third-party-embed-slot",
+          "required": true,
+          "repeatable": false
+        },
+        {
+          "section": "shell.site-footer",
+          "required": true,
+          "repeatable": false,
+          "variants": [
+            "dark-columns"
+          ]
+        }
+      ],
+      "overlays": [
+        "utility.announcement-ticker",
+        "overlay.mega-menu",
+        "overlay.mobile-menu-drawer",
+        "utility.language-chip",
+        "utility.cookie-consent",
+        "utility.cookie-settings-trigger"
+      ],
+      "notes": [
+        "Not retrieval-eligible content; kept so every served route maps exactly once (R11)."
+      ]
+    }
+  }
+}

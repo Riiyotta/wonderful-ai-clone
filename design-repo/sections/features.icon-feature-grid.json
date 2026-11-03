@@ -1,0 +1,229 @@
+{
+  "id": "features.icon-feature-grid",
+  "title": "Icon feature grid",
+  "status": "measured",
+  "source": {
+    "id": "src:FeatureGrid#export-default-function-FeatureGrid",
+    "file": "src/pages/platform/FeatureGrid.jsx",
+    "tag": "export default function FeatureGrid",
+    "lines": "14-53",
+    "citation": "src/pages/platform/FeatureGrid.jsx:14-53",
+    "variantSources": {
+      "glow": {
+        "file": "src/pages/industries/sections/Transform.jsx",
+        "tag": "export default function Transform",
+        "lines": "3-31",
+        "citation": "src/pages/industries/sections/Transform.jsx:3-31"
+      }
+    },
+    "alsoImplementedBy": [
+      {
+        "file": "src/pages/product/aios/Advantage.jsx",
+        "tag": "export default function Advantage",
+        "lines": "13-29",
+        "citation": "src/pages/product/aios/Advantage.jsx:13-29"
+      },
+      {
+        "file": "src/pages/product/agents/Teams.jsx",
+        "tag": "export default function Teams",
+        "lines": "22-42",
+        "citation": "src/pages/product/agents/Teams.jsx:22-42"
+      },
+      {
+        "file": "src/pages/product/systems/Helps.jsx",
+        "tag": "export default function Helps",
+        "lines": "15-41",
+        "citation": "src/pages/product/systems/Helps.jsx:15-41"
+      }
+    ]
+  },
+  "semantic": {
+    "id": "features.icon-feature-grid",
+    "category": "FEATURES"
+  },
+  "retrievalEligible": true,
+  "purpose": "H2 (+ optional subtitle) over 3-8 icon cells, each an icon, short title and description.",
+  "themes": [
+    "dark",
+    "light"
+  ],
+  "variants": [
+    "dark",
+    "light",
+    "glow"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 9,
+        "x-maxWordsEvidence": "measured headingWordsMax=7 for features.icon-feature-grid at 1440px"
+      },
+      "subtitle": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 38,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=30 for features.icon-feature-grid at 1440px"
+      },
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 8,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "icon": {
+              "$ref": "#/definitions/media",
+              "x-assetRoles": [
+                "icon.phosphor",
+                "icon.ui-glyph"
+              ]
+            },
+            "title": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 6,
+              "x-maxWordsEvidence": "cell titles up to 5 words"
+            },
+            "body": {
+              "type": "string",
+              "minLength": 1,
+              "maxWords": 38,
+              "x-maxWordsEvidence": "cell descriptions up to 30 words (measured paragraphWordsMax=30)"
+            }
+          },
+          "required": [
+            "title",
+            "body"
+          ]
+        }
+      },
+      "background": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "illustration.source-texture",
+          "illustration.generated-abstract"
+        ]
+      }
+    },
+    "required": [
+      "title",
+      "items"
+    ]
+  },
+  "constraints": {},
+  "motion": {
+    "allowedPatterns": [
+      "word-reveal-heading",
+      "static"
+    ],
+    "reducedMotionFallback": "static-final-state",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "tablet",
+        "change": "regrid",
+        "detail": "2x2 grid, gap 40/24."
+      },
+      {
+        "at": "mobile",
+        "change": "stack",
+        "detail": "Cells stack with a top rule, padding 30/0 (industries reorder 2,3,1)."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".items[].icon",
+      "assetRoles": [
+        "icon.phosphor",
+        "icon.ui-glyph"
+      ]
+    },
+    {
+      "field": ".background",
+      "assetRoles": [
+        "illustration.source-texture",
+        "illustration.generated-abstract"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "icon.phosphor",
+    "icon.ui-glyph",
+    "illustration.generated-abstract",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.feature-cell"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 12,
+    "routes": 12,
+    "heightPx": {
+      "min": 619.4,
+      "max": 1040.6
+    },
+    "samples": [
+      {
+        "route": "/deployment",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 707.9
+      },
+      {
+        "route": "/ai-os",
+        "variant": "dark",
+        "instance": 0,
+        "heightPx": 1040.6
+      },
+      {
+        "route": "/agents",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 955.9
+      },
+      {
+        "route": "/systems",
+        "variant": "dark",
+        "instance": 0,
+        "heightPx": 665.1
+      },
+      {
+        "route": "/ai-gateway",
+        "variant": "dark",
+        "instance": 0,
+        "heightPx": 619.4
+      },
+      {
+        "route": "/industries/airlines",
+        "variant": "glow",
+        "instance": 0,
+        "heightPx": 692
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/agents",
+    "/ai-gateway",
+    "/ai-os",
+    "/deployment",
+    "/industries/airlines",
+    "/industries/banking",
+    "/industries/healthcare",
+    "/industries/insurance"
+  ],
+  "notes": [
+    "Same purpose across five implementations (Advantage, Teams, Helps, FeatureGrid, industry Transform): normalised to one family (R6)."
+  ]
+}

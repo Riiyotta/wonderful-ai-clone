@@ -1,0 +1,31 @@
+{
+  "id": "component.overlay-card",
+  "kind": "component",
+  "title": "Image overlay card",
+  "purpose": "Full-bleed image card with gradient scrim, centred title, copy and pill.",
+  "props": {
+    "title": {
+      "maxWords": 8
+    },
+    "body": {
+      "maxWords": 25
+    },
+    "cta": {
+      "$ref": "cta"
+    }
+  },
+  "tokens": [
+    "gradient.card-scrim",
+    "radius.sm"
+  ],
+  "source": {
+    "file": "src/components/darkband/DeployCards.jsx",
+    "tag": "function Card",
+    "lines": "26-51",
+    "citation": "src/components/darkband/DeployCards.jsx:26-51"
+  },
+  "composes": [
+    "primitive.media-image",
+    "primitive.pill-button"
+  ]
+}

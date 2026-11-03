@@ -1,0 +1,112 @@
+{
+  "id": "social-proof.investor-logos",
+  "title": "Investor logos",
+  "status": "measured",
+  "source": {
+    "id": "src:AboutUs#div-className-cab-backed",
+    "file": "src/pages/company/AboutUs.jsx",
+    "tag": "<div className=\"cab-backed\"",
+    "lines": "90-111",
+    "citation": "src/pages/company/AboutUs.jsx:90-111"
+  },
+  "semantic": {
+    "id": "social-proof.investor-logos",
+    "category": "SOCIAL_PROOF"
+  },
+  "retrievalEligible": true,
+  "purpose": "\"Backed by\" H2 and paragraph beside a 3x2 grid of investor logo cards.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 5,
+        "x-maxWordsEvidence": "measured headingWordsMax=4 for social-proof.investor-logos at 1440px"
+      },
+      "body": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 22,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=17 for social-proof.investor-logos at 1440px"
+      },
+      "logos": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 9,
+        "items": {
+          "$ref": "#/definitions/media",
+          "x-assetRoles": [
+            "logo.investor",
+            "logo.fictional-company"
+          ]
+        }
+      }
+    },
+    "required": [
+      "title",
+      "logos"
+    ]
+  },
+  "constraints": {
+    "onePerPage": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.company",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Cards 110px tall."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".logos[]",
+      "assetRoles": [
+        "logo.investor",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "copy.original",
+    "logo.fictional-company",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.logo-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 1,
+    "routes": 1,
+    "heightPx": {
+      "min": 164,
+      "max": 164
+    },
+    "samples": [
+      {
+        "route": "/about-us",
+        "instance": 0,
+        "heightPx": 164
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/about-us"
+  ]
+}

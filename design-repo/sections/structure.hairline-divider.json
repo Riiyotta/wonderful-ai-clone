@@ -1,0 +1,116 @@
+{
+  "id": "structure.hairline-divider",
+  "title": "Hairline divider",
+  "status": "measured",
+  "source": {
+    "id": "src:Divider#export-default-function-Divider",
+    "file": "src/pages/product/shared/Divider.jsx",
+    "tag": "export default function Divider",
+    "lines": "4-10",
+    "citation": "src/pages/product/shared/Divider.jsx:4-10"
+  },
+  "semantic": {
+    "id": "structure.hairline-divider",
+    "category": "STRUCTURE"
+  },
+  "retrievalEligible": true,
+  "purpose": "A 1px rule between adjacent sections or blocks of the same surface.",
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "variants": [
+    "dark",
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {},
+    "required": []
+  },
+  "constraints": {
+    "noConsecutive": true
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.desktop",
+    "changes": [
+      {
+        "at": "below-desktop",
+        "change": "inset",
+        "detail": "Inset 40 (tablet) / 24 (mobile)."
+      }
+    ]
+  },
+  "assetSlots": [],
+  "generatedAssetRoles": [
+    "copy.original",
+    "url.placeholder"
+  ],
+  "composes": [
+    "primitive.hairline"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 95,
+    "routes": 79,
+    "heightPx": {
+      "min": 1,
+      "max": 1
+    },
+    "samples": [
+      {
+        "route": "/ai-transformation",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 1
+      },
+      {
+        "route": "/ai-transformation",
+        "variant": "light",
+        "instance": 1,
+        "heightPx": 1
+      },
+      {
+        "route": "/about-us",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 1
+      },
+      {
+        "route": "/legal",
+        "variant": "light",
+        "instance": 0,
+        "heightPx": 1
+      },
+      {
+        "route": "/greece",
+        "instance": 0,
+        "heightPx": 1
+      },
+      {
+        "route": "/greece",
+        "instance": 1,
+        "heightPx": 1
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/about-us",
+    "/adriatics",
+    "/agents",
+    "/ai-gateway",
+    "/ai-os",
+    "/ai-transformation",
+    "/baltics",
+    "/belgium"
+  ]
+}

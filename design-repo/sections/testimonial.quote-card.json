@@ -1,0 +1,125 @@
+{
+  "id": "testimonial.quote-card",
+  "title": "Quote card",
+  "status": "measured",
+  "source": {
+    "id": "src:CaseStudyPage#function-QuoteCard",
+    "file": "src/pages/industries/CaseStudyPage.jsx",
+    "tag": "function QuoteCard",
+    "lines": "14-40",
+    "citation": "src/pages/industries/CaseStudyPage.jsx:14-40"
+  },
+  "semantic": {
+    "id": "testimonial.quote-card",
+    "category": "TESTIMONIAL"
+  },
+  "retrievalEligible": true,
+  "purpose": "Customer quote card with gradient side bar, company logo, quote, name and role.",
+  "themes": [
+    "light"
+  ],
+  "content": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "quote": {
+        "type": "string",
+        "minLength": 1,
+        "maxWords": 32,
+        "x-maxWordsEvidence": "measured paragraphWordsMax=25 for testimonial.quote-card at 1440px"
+      },
+      "person": {
+        "$ref": "#/definitions/person"
+      },
+      "logo": {
+        "$ref": "#/definitions/media",
+        "x-assetRoles": [
+          "logo.customer",
+          "logo.fictional-company"
+        ]
+      }
+    },
+    "required": [
+      "quote",
+      "person"
+    ]
+  },
+  "constraints": {
+    "maxPerPage": 2
+  },
+  "motion": {
+    "allowedPatterns": [
+      "static"
+    ],
+    "reducedMotionFallback": "none",
+    "evidence": "tokens/00-foundation/motion-patterns.json"
+  },
+  "responsive": {
+    "primaryBreakpoint": "breakpoint.family.content",
+    "changes": [
+      {
+        "at": "mobile",
+        "change": "resize",
+        "detail": "Card 380 tall."
+      }
+    ]
+  },
+  "assetSlots": [
+    {
+      "field": ".person.photo",
+      "assetRoles": [
+        "photo.real-person",
+        "avatar.fictional"
+      ]
+    },
+    {
+      "field": ".logo",
+      "assetRoles": [
+        "logo.customer",
+        "logo.fictional-company"
+      ]
+    }
+  ],
+  "generatedAssetRoles": [
+    "avatar.fictional",
+    "copy.original",
+    "logo.fictional-company",
+    "person.fictional",
+    "url.placeholder"
+  ],
+  "composes": [
+    "component.quote-card"
+  ],
+  "measured": {
+    "viewportWidth": 1440,
+    "instances": 3,
+    "routes": 3,
+    "heightPx": {
+      "min": 283,
+      "max": 283
+    },
+    "samples": [
+      {
+        "route": "/case-studies/financial-services",
+        "instance": 0,
+        "heightPx": 283
+      },
+      {
+        "route": "/case-studies/telecommunication",
+        "instance": 0,
+        "heightPx": 283
+      },
+      {
+        "route": "/case-studies/healthcare",
+        "instance": 0,
+        "heightPx": 283
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionHeights"
+  },
+  "referenceRoutes": [
+    "/case-studies/financial-services",
+    "/case-studies/healthcare",
+    "/case-studies/telecommunication"
+  ]
+}

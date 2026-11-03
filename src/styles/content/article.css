@@ -1,0 +1,63 @@
+/* /blog-articles/<slug> template (Framer page WD52k). Values transcribed from _source/pages/blog-articles__*.html.
+   Page breakpoints: desktop >=1200, tablet 810–1199.98, mobile <=809.98. */
+.ca-root { flex-flow: column; flex: none; place-content: center flex-start; align-items: center; gap: 60px; width: 100%; max-width: 100%; height: min-content; padding: 180px 120px 120px; display: flex; position: relative; }
+.ca-head { flex-flow: column; flex: none; place-content: center flex-start; align-items: center; gap: 32px; width: 800px; max-width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+.ca-meta { height: min-content; overflow: clip; flex-flow: row; flex: none; place-content: center; align-items: center; gap: 10px; width: 100%; padding: 0; display: flex; position: relative; }
+.ca-meta-item { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: auto; max-width: 600px; height: auto; position: relative; }
+.ca-titles { height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 8px; width: 100%; padding: 0; display: flex; position: relative; }
+.ca-title { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 100%; height: auto; position: relative; }
+.ca-desc { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 100%; max-width: 600px; height: auto; position: relative; }
+.ca-banner { aspect-ratio: 1.7778; border-radius: 8px; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 10px; width: 1064px; max-width: 1200px; height: auto; padding: 0; display: flex; position: relative; }
+.ca-banner-video { flex: none; width: 100%; height: 100%; position: relative; }
+.ca-banner-video > video { cursor: auto; width: 100%; height: 100%; border-radius: 8px; display: block; object-fit: cover; background-color: rgba(0, 0, 0, 0); object-position: 50% 50%; }
+.ca-row { flex-flow: row; flex: none; place-content: flex-start center; align-items: flex-start; gap: 60px; width: 100%; max-width: 1200px; height: min-content; padding: 0; display: flex; position: relative; }
+.ca-body { --framer-paragraph-spacing: 32px; white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: 1 0 0; width: 1px; max-width: 600px; height: auto; position: relative; }
+.ca-body .framer-text-module { position: relative; }
+.ca-body .framer-text-module > video { display: block; }
+
+/* Story Details sidebar (maccabi / mercado-libre / ote) */
+.ca-side { --border-bottom-width: 0px; --border-color: #e6e6e6; --border-left-width: 1px; --border-right-width: 0px; --border-style: solid; --border-top-width: 0px; height: min-content; overflow: clip; border-radius: 4px; flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 24px; width: 300px; padding: 28px; display: flex; position: sticky; top: 120px; }
+.ca-side-text { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 100%; height: auto; position: relative; }
+.ca-side-details { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 18px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+.ca-side-detail { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 5px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+.ca-side-metrics { --border-bottom-width: 0px; --border-color: #e6e6e6; --border-left-width: 0px; --border-right-width: 0px; --border-style: solid; --border-top-width: 1px; flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 20px; width: 100%; height: min-content; padding: 24px 0 0; display: flex; position: relative; }
+.ca-side-metric { flex-flow: column; flex: none; place-content: flex-start; align-items: flex-start; gap: 2px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; }
+
+.ca-divider { max-width: 1200px; height: 1px; overflow: clip; background-color: #e6e6e6; flex: none; width: 100%; position: relative; }
+.ca-more { max-width: 1200px; height: min-content; overflow: clip; flex-flow: column; flex: none; place-content: center; align-items: center; gap: 40px; width: 100%; padding: 0; display: flex; position: relative; }
+.ca-more-title { flex-flow: column; flex: none; place-content: flex-start center; align-items: flex-start; gap: 4px; width: 100%; height: min-content; padding: 0; display: flex; position: relative; overflow: visible; }
+.ca-more-title-text { --framer-link-text-color: #09f; --framer-link-text-decoration: underline; white-space: pre; flex: none; width: auto; height: auto; position: relative; }
+.ca-grid { flex: none; grid-template-columns: repeat(3, minmax(50px, 1fr)); grid-auto-rows: minmax(0, 1fr); justify-content: center; gap: 30px; width: 100%; height: min-content; padding: 0; display: grid; position: relative; }
+.ca-card-link { flex-flow: column; flex: none; place-content: center flex-start; place-self: start; align-items: center; gap: 20px; width: 100%; height: min-content; padding: 0; text-decoration: none; display: flex; position: relative; color: rgb(0, 0, 238); }
+.ca-card-wrap { flex: none; width: 100%; height: auto; position: relative; }
+
+/* Shared "Card" component (Framer fr5mj, variant 9rut2n) — also used by the blog featured card. */
+.cc-card { height: min-content; overflow: clip; flex-flow: column; place-content: center; align-items: center; gap: 24px; width: 100%; padding: 0; display: flex; position: relative; }
+.cc-image { aspect-ratio: 1.7778; flex: none; gap: 10px; width: 100%; height: auto; position: relative; overflow: visible; border-radius: 8px; }
+.cc-text { flex-flow: column; flex: none; place-content: flex-start center; align-items: flex-start; gap: 8px; width: 100%; height: min-content; padding: 0 0 0 8px; display: flex; position: relative; overflow: visible; }
+.cc-title { --framer-text-wrap-override: balance; --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; flex: none; width: 100%; max-width: 100%; height: auto; position: relative; }
+.cc-date, .cc-desc { white-space: pre-wrap; word-break: break-word; overflow-wrap: break-word; flex: none; width: 100%; height: auto; position: relative; }
+.cc-date { --extracted-r6o4lv: rgb(105, 105, 105); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; }
+
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .ca-root { padding: 180px 64px 120px; }
+  .ca-banner { width: 100%; }
+  .ca-row { flex-direction: column; align-content: center; align-items: center; gap: 40px; }
+  .ca-body { flex: none; width: 100%; }
+  .ca-side { --border-left-width: 0px; --border-top-width: 1px; max-width: 600px; top: unset; width: 100%; position: relative; }
+  .ca-grid { grid-template-columns: repeat(2, minmax(50px, 1fr)); }
+  .ca-card-wrap { align-self: stretch; width: auto; }
+}
+@media (max-width: 809.98px) {
+  .ca-root { gap: 40px; padding: 140px 24px 120px; }
+  .ca-head { align-content: flex-start; align-items: flex-start; }
+  .ca-meta { flex-direction: column; gap: 0; }
+  .ca-desc { opacity: .66; }
+  .ca-banner { width: 100%; }
+  .ca-row { flex-direction: column; align-content: center; align-items: center; gap: 32px; }
+  .ca-body { flex: none; width: 100%; }
+  .ca-side { --border-left-width: 0px; --border-top-width: 1px; max-width: 600px; top: unset; width: 100%; padding: 28px 0 0; position: relative; }
+  .ca-more-title { gap: 5px; }
+  .ca-grid { flex-flow: column; align-content: flex-start; align-items: flex-start; gap: 24px 10px; display: flex; }
+  .ca-card-link { align-self: unset; }
+}

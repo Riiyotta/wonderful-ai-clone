@@ -1,0 +1,525 @@
+{
+  "$description": "Closed list of motion patterns observed on the source. Section contracts may only reference these ids; every PageSpec node motion.pattern must be one of a section's allowedPatterns. Values cite the measured specs; MOTION_QA.md corrections are more authoritative than first-draft values.",
+  "version": "1.0.0",
+  "reducedMotionFallbacks": [
+    "static-final-state",
+    "paused-first-frame",
+    "instant-swap",
+    "none"
+  ],
+  "patterns": [
+    {
+      "id": "word-reveal-heading",
+      "kind": "per-word spring",
+      "trigger": "in-view once (amount 0.25), or on mount for page openers",
+      "params": {
+        "from": {
+          "opacity": 0.001,
+          "blur": "6px",
+          "y": "16px"
+        },
+        "spring": "motion.spring.heading",
+        "stagger": "motion.stagger.word",
+        "inView": "motion.inview.heading"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:385",
+        "src/components/WordReveal.jsx:7",
+        "MOTION_QA.md:7"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "word-reveal-paragraph",
+      "kind": "per-word spring",
+      "trigger": "in-view once (amount 0), or on mount",
+      "params": {
+        "from": {
+          "opacity": 0.001,
+          "blur": "10px",
+          "y": "10px"
+        },
+        "spring": "motion.spring.paragraph",
+        "stagger": "motion.stagger.word",
+        "inView": "motion.inview.paragraph"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:398",
+        "src/components/WordReveal.jsx:8"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "appear-fade-tween",
+      "kind": "opacity tween",
+      "trigger": "on load / in view",
+      "params": {
+        "from": {
+          "opacity": 0.001
+        },
+        "tween": "motion.tween.fade",
+        "delays": [
+          "0.4s",
+          "0.5s"
+        ]
+      },
+      "evidence": [
+        "CLONE_SPEC.md:376",
+        "CLONE_SPEC.md:381"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "appear-fade-spring",
+      "kind": "opacity spring",
+      "trigger": "on load / in view",
+      "params": {
+        "from": {
+          "opacity": 0.001
+        },
+        "spring": "motion.spring.soft",
+        "delays": [
+          "0.1s",
+          "0.5s"
+        ]
+      },
+      "evidence": [
+        "CLONE_SPEC.md:378",
+        "CLONE_SPEC_PRODUCT.md:20"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "appear-rise",
+      "kind": "opacity+y tween",
+      "trigger": "in view once",
+      "params": {
+        "from": {
+          "opacity": 0,
+          "y": "24px"
+        },
+        "tween": "motion.tween.fade",
+        "delay": "0.1s"
+      },
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:74"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "card-text-appear",
+      "kind": "opacity+y tween",
+      "trigger": "card mount / tab switch",
+      "params": {
+        "from": {
+          "opacity": 0.001,
+          "y": "10px"
+        },
+        "tween": "motion.tween.card-text"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:380"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "scroll-color-reveal",
+      "kind": "scroll-linked colour interpolation",
+      "trigger": "scroll position (reversible)",
+      "params": {
+        "from": "color.alpha.reveal-start",
+        "to": [
+          "color.ink.500",
+          "color.black"
+        ],
+        "wordWindowsPx": "see CLONE_SPEC 4.4 table"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:405",
+        "MOTION_QA.md:9"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "sticky-progress-reveal",
+      "kind": "scroll-linked per-word reveal",
+      "trigger": "scroll progress of a 185vh wrapper",
+      "params": {
+        "wordWindow": "[i/L*.8, +.15]",
+        "colorSnap": "rgb(118)->rgb(57)"
+      },
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:65"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "ticker-crossfade",
+      "kind": "timed crossfade loop",
+      "trigger": "interval",
+      "params": {
+        "interval": "motion.duration.ticker-interval",
+        "out": {
+          "opacity": "1->0",
+          "y": "0->-6px",
+          "duration": "250ms"
+        },
+        "inDelay": "166ms (live, MOTION_QA)",
+        "in": {
+          "opacity": "0->1",
+          "y": "6px->0",
+          "duration": "430ms"
+        }
+      },
+      "evidence": [
+        "CLONE_SPEC.md:432",
+        "MOTION_QA.md:8"
+      ],
+      "reducedMotion": "paused-first-frame"
+    },
+    {
+      "id": "nav-banner-collapse",
+      "kind": "height tween",
+      "trigger": "first scroll (never reopens)",
+      "params": {
+        "from": "48px",
+        "to": "0px",
+        "duration": "~250ms"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:131"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "nav-theme-swap",
+      "kind": "colour/blur transition",
+      "trigger": "section under the nav changes theme",
+      "params": {
+        "bg": "rgba(250,250,250,0)->rgba(250,250,250,.2)",
+        "blur": "0->10px",
+        "duration": "~240ms",
+        "pillCrossfade": "~900ms"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:140",
+        "MOTION_QA.md:3"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "mega-menu-open",
+      "kind": "panel open",
+      "trigger": "hover a nav trigger",
+      "params": {
+        "liveBehaviour": "header holds 61px ~300ms then jumps to ~427 in one frame; close snaps back (MOTION_QA)",
+        "firstDraft": "height spring ~200ms"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:152",
+        "MOTION_QA.md:4"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "lattice-loop",
+      "kind": "CSS keyframe loop",
+      "trigger": "always (infinite)",
+      "params": {
+        "cycle": "motion.duration.lattice-cycle",
+        "dot": "wfDotWave2",
+        "tag": [
+          "wfTagBox1",
+          "wfTagPanel3",
+          "wfType<N>"
+        ]
+      },
+      "evidence": [
+        "CLONE_SPEC.md:438",
+        "src/styles/lattice.css:127"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "expand-card-spring",
+      "kind": "width/colour spring between two cards",
+      "trigger": "hover the collapsed card",
+      "params": {
+        "home": "motion.spring.card-expand (480/44; live tail longer)",
+        "systems": "400/42",
+        "deployment": "360/38"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:364",
+        "CLONE_SPEC_PRODUCT.md:231",
+        "CLONE_SPEC_PLATFORM.md:148",
+        "MOTION_QA.md:6"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "tab-crossfade",
+      "kind": "chip background crossfade + content remount",
+      "trigger": "click a tab",
+      "params": {
+        "industries": "~146ms delay then ~130ms ease-in-out (MOTION_QA)",
+        "phases": "spring 540/38",
+        "blog": "instant (no transition)"
+      },
+      "evidence": [
+        "MOTION_QA.md:5",
+        "CLONE_SPEC_PLATFORM.md:158",
+        "CLONE_SPEC_CONTENT.md:80"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "accordion-spring",
+      "kind": "height/layout spring",
+      "trigger": "click an item",
+      "params": {
+        "agents": "layout spring 480/34",
+        "principles": "height 540/38, caret 280/28"
+      },
+      "evidence": [
+        "CLONE_SPEC_PRODUCT.md:137",
+        "CLONE_SPEC_PLATFORM.md:209"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "hover-reveal-row",
+      "kind": "row background + image fade + title slide",
+      "trigger": "hover a row (desktop only)",
+      "params": {
+        "ai-os": "0.4s ease",
+        "industries": "cubic-bezier(.1,0,.4,1) 420ms",
+        "careers": "spring 164/25.6"
+      },
+      "evidence": [
+        "CLONE_SPEC_PRODUCT.md:93",
+        "CLONE_SPEC_INDUSTRIES.md:139",
+        "CLONE_SPEC_COMPANY.md:83"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "carousel-scroll",
+      "kind": "native smooth scroll",
+      "trigger": "arrow click",
+      "params": {
+        "step": "400px",
+        "duration": "~450ms",
+        "arrowHoverOpacity": 0.7
+      },
+      "evidence": [
+        "CLONE_SPEC.md:361"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "counter-up",
+      "kind": "number count-up",
+      "trigger": "in view once",
+      "params": {
+        "deployment": "0->40 over 1.3s ease",
+        "industries": "1.5s cubic-bezier(.2,0,.15,1)"
+      },
+      "evidence": [
+        "CLONE_SPEC_PLATFORM.md:143",
+        "CLONE_SPEC_INDUSTRIES.md:103"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "progress-fill",
+      "kind": "bar width spring + label count",
+      "trigger": "tab change",
+      "params": {
+        "spring": "160/22 (slight overshoot)"
+      },
+      "evidence": [
+        "CLONE_SPEC_PLATFORM.md:164"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "scroll-video-stage",
+      "kind": "scroll-mapped frame growth",
+      "trigger": "scroll through a 240vh track",
+      "params": {
+        "u": "clamp((p-.04)/.66)",
+        "e": "1-(1-u)^2",
+        "mediaScale": "1.1->1"
+      },
+      "evidence": [
+        "CLONE_SPEC_PLATFORM.md:58",
+        "src/styles/platform/platform.css:65"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "lightbox-open",
+      "kind": "overlay scale/opacity",
+      "trigger": "click play",
+      "params": {
+        "open": ".25s motion.ease.overlay from scale .96",
+        "minimize": ".35s to 320x180 dock",
+        "close": ".2s"
+      },
+      "evidence": [
+        "CLONE_SPEC_PLATFORM.md:73"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "press-card-appear",
+      "kind": "opacity+y spring, replays",
+      "trigger": "each re-entry at ~10% visible",
+      "params": {
+        "from": {
+          "opacity": 0,
+          "y": "40px"
+        },
+        "spring": "320/52"
+      },
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:105"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "card-image-appear",
+      "kind": "opacity spring",
+      "trigger": "page load",
+      "params": {
+        "spring": "duration .4, bounce .2"
+      },
+      "evidence": [
+        "CLONE_SPEC_CONTENT.md:147"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "content-rise",
+      "kind": "opacity+y spring",
+      "trigger": "page load, delay .2s",
+      "params": {
+        "from": {
+          "opacity": 0.001,
+          "y": "50px"
+        },
+        "spring": "duration .5, bounce 0"
+      },
+      "evidence": [
+        "CLONE_SPEC_CONTENT.md:148"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "card-hover-dim",
+      "kind": "opacity spring",
+      "trigger": "hover",
+      "params": {
+        "to": 0.8,
+        "enter": "duration .4 bounce .2",
+        "leave": "duration .45 bounce 0"
+      },
+      "evidence": [
+        "CLONE_SPEC_CONTENT.md:149"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "button-hover-fade",
+      "kind": "opacity/background spring",
+      "trigger": "hover",
+      "params": {
+        "whitePill": "opacity -> .6 (spring 200/60)",
+        "blackPill": "bg -> rgba(0,0,0,.8)"
+      },
+      "evidence": [
+        "CLONE_SPEC.md:359",
+        "CLONE_SPEC_COMPANY.md:27"
+      ],
+      "reducedMotion": "instant-swap"
+    },
+    {
+      "id": "char-reveal",
+      "kind": "per-character spring",
+      "trigger": "page load",
+      "params": {
+        "stagger": "50ms per char (stats), per line ~45ms (subtitle)",
+        "h1": "spring ~140/24, blur 10 / y 10"
+      },
+      "evidence": [
+        "CLONE_SPEC_INDUSTRIES.md:192"
+      ],
+      "reducedMotion": "static-final-state"
+    },
+    {
+      "id": "globe-autorotate",
+      "kind": "canvas animation",
+      "trigger": "always; draggable",
+      "params": {
+        "stops": 32,
+        "dwell": "1.5s",
+        "startCity": "timezone guess in the clone (live: ipapi.co lookup)"
+      },
+      "evidence": [
+        "CLONE_SPEC_COMPANY.md:78",
+        "src/pages/company/sections/Globe.jsx:85"
+      ],
+      "reducedMotion": "paused-first-frame"
+    },
+    {
+      "id": "gradient-blob-spin",
+      "kind": "continuous rotation",
+      "trigger": "always",
+      "params": {
+        "period": "6s per turn, linear"
+      },
+      "evidence": [
+        "CLONE_SPEC_REGIONAL.md:207"
+      ],
+      "reducedMotion": "paused-first-frame"
+    },
+    {
+      "id": "canvas-shader-loop",
+      "kind": "WebGL / canvas loop",
+      "trigger": "while in view",
+      "params": {
+        "warp": "paper-design warp shader",
+        "ascii": "\" 01\" Fragment Mono pattern"
+      },
+      "evidence": [
+        "CLONE_SPEC_CONTENT.md:126"
+      ],
+      "reducedMotion": "paused-first-frame"
+    },
+    {
+      "id": "video-loop",
+      "kind": "muted autoplay loop",
+      "trigger": "on load / when visible",
+      "params": {
+        "muted": true,
+        "loop": true,
+        "playsinline": true
+      },
+      "evidence": [
+        "CLONE_SPEC.md:494"
+      ],
+      "reducedMotion": "paused-first-frame"
+    },
+    {
+      "id": "static",
+      "kind": "none",
+      "trigger": "none",
+      "params": {},
+      "evidence": [
+        "no motion measured for this element"
+      ],
+      "reducedMotion": "none"
+    }
+  ]
+}

@@ -1,0 +1,393 @@
+/* Navbar - CLONE_SPEC §1, §4.5. Values are measured; easings are built from the sampled curves:
+   - banner collapse 48->0: 109/104/81/65/61 at 60ms steps  -> linear(0, .104, .583, .917, 1) over 240ms
+   - bar bg/blur (re-measured, light-theme switch and menu open/close): blur 0->10 / alpha 0->.2 reach
+     .1@24% .29@49% .55@75% .78@91% of ~200ms (accelerating curve) -> linear() below over 200ms
+   - pill bg crossfade: 251->130@238->50@529->16@1000       -> linear(0, .515 23.8%, .855 52.9%, 1) over 1000ms
+   - mega-menu open/close: live header height snaps in one frame (no height animation); the panel items
+     fade/rise in with a per-item stagger instead (.nv-mm-anim below) */
+.nv {
+  --nv-ease-collapse: linear(0, 0.104, 0.583, 0.917, 1);
+  --nv-ease-bg: linear(0, 0.017 8%, 0.054 16%, 0.1 24%, 0.16 33%, 0.22 41%, 0.3 49%, 0.38 58%, 0.46 66%, 0.56 75%, 0.67 83%, 0.8 91%, 1);
+  --nv-ease-pill: linear(0, 0.515 23.8%, 0.855 52.9%, 1);
+  --nv-link: #ffffff;
+  --nv-blog: #fafafa;
+  --nv-logo: rgb(250, 250, 250);
+  --nv-rest: #fafafa; /* EN chip stroke/text */
+  --nv-pill-bg: #ffffff;
+  --nv-pill-fg: #000000;
+  --nv-bar-bg: rgba(250, 250, 250, 0);
+  --nv-bar-blur: blur(0px);
+  --nv-burger: #fafafa;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 100;
+  font-family: Inter, "Inter Placeholder", sans-serif;
+}
+.nv[data-theme="light"] {
+  --nv-link: #494949;
+  --nv-blog: rgba(31, 31, 31, 0.8);
+  --nv-logo: rgb(20, 20, 20);
+  --nv-rest: #171719;
+  --nv-pill-bg: #080808;
+  --nv-pill-fg: #fafafa;
+  --nv-bar-bg: rgba(250, 250, 250, 0.2);
+  --nv-bar-blur: blur(10px);
+  --nv-burger: rgb(20, 20, 20);
+}
+.nv[data-menu="open"] {
+  --nv-link: #494949;
+  --nv-blog: rgba(31, 31, 31, 0.8);
+  --nv-logo: rgb(20, 20, 20);
+  --nv-rest: #171719;
+  --nv-pill-bg: #080808;
+  --nv-pill-fg: #fafafa;
+  --nv-bar-bg: #ffffff;
+}
+.nv[data-mobile-open="true"] {
+  --nv-logo: rgb(20, 20, 20);
+  --nv-rest: #171719;
+  --nv-bar-bg: #ffffff;
+  --nv-burger: #000000;
+}
+
+/* ---------- Announcement bar ---------- */
+.nv-ann {
+  position: relative;
+  height: 48px;
+  padding: 12px 20px;
+  background: linear-gradient(268deg, #ffffff 0%, #fafafa 100%);
+  overflow: hidden;
+  transition: height 240ms var(--nv-ease-collapse), padding 240ms var(--nv-ease-collapse);
+}
+.nv-ann[data-collapsed="true"] { height: 0; padding-top: 0; padding-bottom: 0; }
+.nv-ann-inner { position: relative; max-width: 1680px; height: 100%; margin: 0 auto; }
+.nv-ann-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  transform: none;
+}
+.nv-ann-slide[data-phase="in"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 450ms ease-out 150ms, transform 450ms ease-out 150ms;
+}
+.nv-ann-slide[data-phase="out"] {
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 250ms ease-in, transform 250ms ease-in;
+}
+.nv-ann-slide[data-phase="wait"] {
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: none;
+}
+.nv-ann-row {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45.963%; /* live: top 11.03px of the 24px inner box, then translateY(-50%) -> text at y 12.5 */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  white-space: nowrap;
+}
+.nv-ann-lead { display: flex; align-items: center; gap: 6px; }
+.nv-ann-crest { position: relative; width: 21px; height: 21px; filter: invert(1); flex: none; }
+.nv-ann-crest img { width: 100%; height: 100%; object-fit: cover; }
+.nv-ann-text { margin: 0; font-size: 14px; line-height: 21px; letter-spacing: -0.28px; font-weight: 400; color: #393939; font-feature-settings: "ss03"; }
+.nv-ann-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.28px;
+  color: #171719;
+  text-decoration: none;
+  font-feature-settings: "ss03";
+}
+.nv-ann-arrow { width: 16px; height: 16px; flex: none; }
+
+/* ---------- Main bar (desktop) ---------- */
+.nv-bar {
+  position: relative;
+  height: 60px;
+  padding: 12px 24px;
+  background-color: var(--nv-bar-bg);
+  -webkit-backdrop-filter: var(--nv-bar-blur);
+  backdrop-filter: var(--nv-bar-blur);
+  transition: background-color 200ms var(--nv-ease-bg), backdrop-filter 200ms var(--nv-ease-bg), -webkit-backdrop-filter 200ms var(--nv-ease-bg);
+}
+.nv-bar-inner {
+  max-width: 1680px;
+  height: 36px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nv-left { display: flex; align-items: center; gap: 24px; }
+.nv-right { display: flex; align-items: center; justify-content: flex-end; gap: 8px; }
+.nv-logo { display: block; width: 102px; height: 25px; flex: none; color: var(--nv-logo); transition: color 200ms var(--nv-ease-bg); }
+.nv-logo:not(.nv-logo--m) > svg { width: 101px; } /* live: 102px link slot, 101px glyph -> triggers at x194 */
+.nv-name { width: 20px; height: 1px; flex: none; }
+.nv-trigger {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  color: var(--nv-link);
+  /* Live: trigger colour is a spring. Theme switch + menu open: stiffness 335 / damping 26 (~3% overshoot,
+     e.g. 255->67->73); menu close: stiffness 685 / damping 46. Values injected by Navbar.jsx. */
+  transition: color var(--nv-trig-open, 240ms ease);
+}
+.nv[data-menu-closing="true"] .nv-trigger { transition: color var(--nv-trig-close, 200ms ease); }
+/* Live: opening the menu from the dark (hero) variant starts the trigger colour ~40ms later than from light. */
+.nv[data-theme="dark"][data-menu="open"] .nv-trigger { transition-delay: 40ms; }
+.nv-trigger[data-active="true"] { color: #292929; }
+.nv-chev-slot { width: 14px; height: 14px; flex: none; }
+.nv-blog {
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: normal;
+  font-weight: 400;
+  color: var(--nv-blog);
+  text-decoration: none;
+  /* Live: Blog colour snaps (theme switch, menu open/close, hover). */
+}
+.nv[data-theme="dark"][data-menu="closed"] .nv-blog:hover { color: #ffffff; } /* live: 250 -> 255, instant */
+.nv-lang { width: 66px; height: 36px; flex: none; }
+.nv-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 8px;
+  background: transparent;
+  border: 1px solid var(--nv-rest);
+  border-radius: 100px;
+  color: var(--nv-rest);
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s, box-shadow 0.15s;
+}
+.nv-chip:hover,
+.nv-chip:focus-visible {
+  background: #fafafa;
+  border-color: #171719;
+  color: #171719;
+  box-shadow: 0 1px 3px rgba(8, 8, 8, 0.1), 0 4px 14px rgba(8, 8, 8, 0.1);
+}
+/* Keep the browser's focus ring (like every other control); the hover fill alone is invisible on the dark bar. */
+.nv-chip:focus-visible { outline: 1px auto -webkit-focus-ring-color; outline-offset: 2px; }
+.nv-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 6px 12px;
+  border-radius: 50px;
+  background-color: var(--nv-pill-bg);
+  color: var(--nv-pill-fg);
+  font-size: 12px;
+  line-height: 10px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+  white-space: nowrap;
+  text-decoration: none;
+  box-shadow: rgba(79, 26, 214, 0.118) 0 0 0 0;
+  transition: background-color 1000ms var(--nv-ease-pill), color 1000ms var(--nv-ease-pill);
+}
+.nv-line { height: 1px; background: transparent; }
+
+/* ---------- Mega-menu ---------- */
+.nv-mm {
+  overflow: hidden;
+  background: #ffffff;
+}
+/* Live mega-menu items: opacity 0 -> 1 + y 7px -> 0 (cards 40px, "Latest press" 20px), tween [.44,0,.56,1],
+   staggered per item (delays/durations measured, set inline from MegaMenu.jsx). Re-runs on every open/switch. */
+@keyframes nvMmIn { from { opacity: 0; transform: translateY(var(--mm-y, 7px)); } to { opacity: 1; transform: none; } }
+.nv[data-menu="open"] .nv-mm-anim { animation: nvMmIn var(--mm-dur, 270ms) cubic-bezier(.44, 0, .56, 1) var(--mm-d, 0ms) both; }
+.nv-mm-body {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 48px 24px 32px;
+  background: #ffffff;
+}
+.nv-mm-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1392px;
+}
+.nv-mm-left { display: flex; align-items: flex-start; gap: 56px; } /* logo x24 w102 -> links at x182 */
+/* The panel logo slot exists on live but is not visible (only the bar logo shows). */
+.nv-mm-logo { display: block; width: 102px; height: 25px; flex: none; color: rgb(20, 20, 20); visibility: hidden; }
+.nv-mm-cols { display: flex; align-items: flex-start; }
+.nv-mm-col { display: flex; flex-direction: column; }
+.nv-mm-cols--platform { gap: 12px; }
+.nv-mm-cols--platform .nv-mm-col { width: 282px; gap: 16px; }
+.nv-mm-cols--industries { gap: 12px; }
+.nv-mm-cols--industries .nv-mm-col { width: 295px; gap: 12px; }
+.nv-mm-list { display: flex; flex-direction: column; gap: 4px; }
+.nv-mm-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 282px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  text-decoration: none;
+}
+.nv-mm-item-title { font-size: 16px; line-height: 19.2px; font-weight: 300; letter-spacing: -0.5px; color: rgb(31, 31, 31); }
+.nv-mm-item-desc { font-size: 14px; line-height: 16.8px; font-weight: 300; letter-spacing: -0.5px; color: #777777; }
+.nv-mm-card { display: flex; flex-direction: column; gap: 12px; width: 368px; padding-top: 6px; text-decoration: none; flex: none; }
+.nv-mm-card-img { position: relative; display: block; width: 368px; height: 207px; border-radius: 4px; overflow: hidden; }
+.nv-mm-card-img img { width: 100%; height: 100%; object-fit: cover; }
+.nv-mm-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 38.1px;
+  background: #cccccc;
+}
+.nv-mm-card-text { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-decoration: none; }
+.nv-mm-card-title { font-size: 16px; line-height: 19.2px; font-weight: 400; color: #393939; }
+/* Live: <p> rgba(3,3,2,.59) underline wrapping an <a> #1f1f1f, so text is #1f1f1f and the underline is the p colour. */
+.nv-mm-card-sub { font-size: 14px; line-height: 16.8px; font-weight: 400; letter-spacing: -0.5px; color: rgb(31, 31, 31);
+  text-decoration: underline; text-decoration-color: rgba(3, 3, 2, 0.59); }
+.nv-mm-press { display: flex; flex-direction: column; gap: 16px; width: 746px; }
+.nv-mm-press-label { margin: 0; font-size: 14px; line-height: 10px; letter-spacing: -0.56px; font-weight: 400; color: #999999; }
+.nv-mm-press-cards { display: flex; gap: 10px; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 879.98px) {
+  .nv-ann { height: 40px; padding: 12px 8px; }
+  .nv-ann[data-collapsed="true"] { height: 0; padding-top: 0; padding-bottom: 0; }
+  .nv-line { display: none; } /* M total is 89 = 40 + 49 */
+  .nv-ann-more--msmall { font-size: 12px; line-height: 13.2px; color: rgba(31, 31, 31, 0.8); }
+}
+.nv-bar--m {
+  display: flex;
+  align-items: center; /* live closed logo at y13 in the 49px bar */
+  height: 49px;
+  padding: 12px 0 12px 16px;
+}
+.nv-logo--m { width: 93px; height: 23px; }
+.nv[data-mobile-open="true"] .nv-logo--m { width: 102px; height: 25px; } /* live open variant: 102x25 at y52 */
+.nv-lang--m { position: absolute; top: 3px; right: 46px; width: 44px; height: 44px; }
+.nv-chip--m { border-width: 0; }
+.nv-burger {
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.nv-burger-bar {
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  height: 2px;
+  border-radius: 10px;
+  background: var(--nv-burger);
+  transition: background-color 200ms var(--nv-ease-bg);
+}
+.nv-burger-bar--1 { top: 17px; }
+.nv-burger-bar--2 { top: 24px; }
+.nv[data-mobile-open="true"] .nv-burger-bar { top: 21px; }
+.nv[data-mobile-open="true"] .nv-burger-bar--1 { transform: rotate(45deg); }
+.nv[data-mobile-open="true"] .nv-burger-bar--2 { transform: rotate(-45deg); }
+
+/* Live "Mobile / Open": the whole nav (banner + bar + panel) is 95vh (801.8 on 844), white; content below shows. */
+.nv[data-mobile-open="true"] { display: flex; flex-direction: column; height: 95vh; background: #ffffff; }
+.nv-mob-panel {
+  background: #ffffff;
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  padding-top: 24px; /* list starts at y73 = 49 + 24 */
+}
+.nv-mob-list { display: flex; flex-direction: column; gap: 24px; padding: 0 16px; }
+.nv-mob-group { display: flex; flex-direction: column; gap: 24px; }
+.nv-mob-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  color: #393939;
+  text-align: left;
+}
+/* Expanded row: label + chevron at .5 x .75 opacity (live "Mobile / Open / Product"). */
+.nv-mob-row[data-open="true"] .nv-mob-row-label,
+.nv-mob-row[data-open="true"] .nv-mob-chev-slot { opacity: 0.375; }
+.nv-mob-chev-slot { position: relative; display: flex; align-items: center; justify-content: center; width: 14px; height: 14px; flex: none; color: #393939; }
+.nv-mob-chev-slot[data-open="true"] { margin-right: 14px; }
+.nv-mob-chev { display: block; overflow: visible; }
+.nv-mob-sub { display: flex; flex-direction: column; gap: 24px; } /* 19.2 + 24 = 43px pitch */
+.nv-mob-sublink { width: 250px; font-size: 16px; line-height: 19.2px; font-weight: 300; letter-spacing: -0.5px; color: rgb(31, 31, 31); text-decoration: none; }
+.nv-mob-sep { height: 1px; width: 100%; background: rgba(0, 0, 0, 0.1); }
+.nv-mob-blog { font-size: 16px; line-height: 19.2px; color: #292929; text-decoration: none; }
+.nv-mob-cta { padding: 42px 16px; }
+.nv-mob-cta-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  padding: 6px 18px;
+  border-radius: 50px;
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-decoration: none;
+}

@@ -1,0 +1,24 @@
+{
+  "id": "component.form-field",
+  "kind": "component",
+  "title": "Form field",
+  "purpose": "Label + input or select with required marker.",
+  "props": {
+    "label": {
+      "maxWords": 4
+    }
+  },
+  "tokens": [
+    "component.input.height"
+  ],
+  "source": {
+    "file": "src/pages/company/Contact.jsx",
+    "tag": "function Field",
+    "lines": "54-61",
+    "citation": "src/pages/company/Contact.jsx:54-61"
+  },
+  "composes": [
+    "primitive.text-input",
+    "primitive.select-field"
+  ]
+}
