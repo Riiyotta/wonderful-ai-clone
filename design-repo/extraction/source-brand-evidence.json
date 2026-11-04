@@ -1,0 +1,571 @@
+{
+  "$description": "Derived by extraction/build_source_brand.py from the real source (src/ and CLONE_SPEC*.md); never hand-edited. registryDigest is the sha256 of schema/source-brand.json it was derived from. expectHits=true entries must match the source at least once (otherwise the registry entry is invented); store and rating patterns are expected to match nothing (the source renders none).",
+  "version": "1.0.0",
+  "registryDigest": "9961e9a3b79e5f3e91bb6e5728b4376f16191b597250b81efd89a40f5909c83a",
+  "scanned": {
+    "roots": [
+      "src/",
+      "CLONE_SPEC*.md"
+    ],
+    "files": 226
+  },
+  "counts": {
+    "brandPattern": 6,
+    "ctaLabel": 8,
+    "ctaPattern": 1,
+    "customerOrPartner": 17,
+    "person": 27,
+    "ratingPattern": 2,
+    "statistic": 10,
+    "storePattern": 2,
+    "urlPattern": 5
+  },
+  "items": [
+    {
+      "kind": "brandPattern",
+      "id": "brand-name",
+      "expectHits": true,
+      "hits": 619,
+      "firstHit": "src/App.jsx:13"
+    },
+    {
+      "kind": "brandPattern",
+      "id": "brand-legal-entity",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/components/Footer.jsx:147"
+    },
+    {
+      "kind": "brandPattern",
+      "id": "brand-domain",
+      "expectHits": true,
+      "hits": 41,
+      "firstHit": "src/components/Footer.jsx:38"
+    },
+    {
+      "kind": "brandPattern",
+      "id": "brand-products",
+      "expectHits": true,
+      "hits": 97,
+      "firstHit": "src/components/DarkBand.jsx:34"
+    },
+    {
+      "kind": "brandPattern",
+      "id": "brand-handles",
+      "expectHits": true,
+      "hits": 5,
+      "firstHit": "src/components/Footer.jsx:45"
+    },
+    {
+      "kind": "brandPattern",
+      "id": "brand-lowercase-wordmark",
+      "expectHits": true,
+      "hits": 9,
+      "firstHit": "src/components/DarkBand.jsx:34"
+    },
+    {
+      "kind": "urlPattern",
+      "id": "url-source-domain",
+      "expectHits": true,
+      "hits": 38,
+      "firstHit": "src/components/Footer.jsx:38"
+    },
+    {
+      "kind": "urlPattern",
+      "id": "url-source-cdn",
+      "expectHits": true,
+      "hits": 19,
+      "firstHit": "src/pages/content/_extract/extract.cjs:7"
+    },
+    {
+      "kind": "urlPattern",
+      "id": "url-source-social",
+      "expectHits": true,
+      "hits": 5,
+      "firstHit": "src/components/Footer.jsx:45"
+    },
+    {
+      "kind": "urlPattern",
+      "id": "url-source-endpoints",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/pages/company/sections/Globe.jsx:7"
+    },
+    {
+      "kind": "urlPattern",
+      "id": "url-source-asset-path",
+      "expectHits": true,
+      "hits": 802,
+      "firstHit": "src/components/CaseStudies.jsx:44"
+    },
+    {
+      "kind": "storePattern",
+      "id": "store-links",
+      "expectHits": false,
+      "hits": 0,
+      "firstHit": null
+    },
+    {
+      "kind": "storePattern",
+      "id": "store-marks",
+      "expectHits": false,
+      "hits": 0,
+      "firstHit": null
+    },
+    {
+      "kind": "ratingPattern",
+      "id": "rating-score",
+      "expectHits": false,
+      "hits": 1,
+      "firstHit": "src/pages/company/data/globeLandmask.js:3"
+    },
+    {
+      "kind": "ratingPattern",
+      "id": "rating-platforms",
+      "expectHits": false,
+      "hits": 0,
+      "firstHit": null
+    },
+    {
+      "kind": "ctaPattern",
+      "id": "cta-brand-verb",
+      "expectHits": false,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/announcing-wonderful-ai-gateway.json:31"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Explore the OS",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/components/DarkBand.jsx:59"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Explore the platform",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/components/Hero.jsx:14"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "See the model",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/components/darkband/DeployCards.jsx:7"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Explore the approach",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/components/darkband/DeployCards.jsx:16"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Request my seat",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/pages/regional/FcbMatchday.jsx:76"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Submit your role",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/pages/company/Careers.jsx:13"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "See open positions",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/company/AboutUs.jsx:80"
+    },
+    {
+      "kind": "ctaLabel",
+      "id": "Watch now",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/pages/industries/sections/VideoSection.jsx:7"
+    },
+    {
+      "kind": "statistic",
+      "id": "$550M",
+      "expectHits": true,
+      "hits": 7,
+      "firstHit": "src/components/nav/Announcement.jsx:36"
+    },
+    {
+      "kind": "statistic",
+      "id": "$550 Million",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/pages/content/data/blog.json:28"
+    },
+    {
+      "kind": "statistic",
+      "id": "$150M",
+      "expectHits": true,
+      "hits": 12,
+      "firstHit": "src/pages/company/AboutUs.jsx:19"
+    },
+    {
+      "kind": "statistic",
+      "id": "$150 million",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets.json:23"
+    },
+    {
+      "kind": "statistic",
+      "id": "$5B",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/components/nav/menuData.js:40"
+    },
+    {
+      "kind": "statistic",
+      "id": "$2B",
+      "expectHits": true,
+      "hits": 7,
+      "firstHit": "src/pages/company/data/pressLayout.js:314"
+    },
+    {
+      "kind": "statistic",
+      "id": "$100M",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/pages/company/data/pressLayout.js:647"
+    },
+    {
+      "kind": "statistic",
+      "id": "$100 million",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/pages/company/data/pressLayout.js:647"
+    },
+    {
+      "kind": "statistic",
+      "id": "91.5%",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/components/CaseStudies.jsx:16"
+    },
+    {
+      "kind": "statistic",
+      "id": "2.5 million",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/components/CaseStudies.jsx:11"
+    },
+    {
+      "kind": "person",
+      "id": "Anat Lichtig-Achiaz",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/industries/data/caseStudies.js:62"
+    },
+    {
+      "kind": "person",
+      "id": "Antonis Avgeropoulos",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/content/data/articles/wonderful-greece.json:23"
+    },
+    {
+      "kind": "person",
+      "id": "Athanasios (Tom) Stratos",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/ote.json:57"
+    },
+    {
+      "kind": "person",
+      "id": "Bar Vinkler",
+      "expectHits": true,
+      "hits": 4,
+      "firstHit": "src/pages/company/data/pressLayout.js:288"
+    },
+    {
+      "kind": "person",
+      "id": "Bar Winkler",
+      "expectHits": true,
+      "hits": 23,
+      "firstHit": "src/pages/company/data/pressLayout.js:361"
+    },
+    {
+      "kind": "person",
+      "id": "Ben Avitouv",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/the-hard-part-of-ai-agents-isn’t-building-them.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Boaz Francis",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/let-the-field-build-the-product.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Claudius Boller",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/regional/countries.data.js:1377"
+    },
+    {
+      "kind": "person",
+      "id": "Daniel Endzweig",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/we-walked-out-with-a-real-deployment-path.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Daniel Sikorskiy",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/content/data/articles/computer-use.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Ehud Babnik",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/when-the-ceo-means-it.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Gadi Ganon",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/industries/data/caseStudies.js:29"
+    },
+    {
+      "kind": "person",
+      "id": "Georgios Kontogiannis",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/regional/countries.data.js:609"
+    },
+    {
+      "kind": "person",
+      "id": "Ilia Tzortzopoulou",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/pages/content/data/articles/wonderful-greece.json:23"
+    },
+    {
+      "kind": "person",
+      "id": "Lucia Stoicescu",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/regional/countries.data.js:1059"
+    },
+    {
+      "kind": "person",
+      "id": "Marcin Motel",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/regional/countries.data.js:935"
+    },
+    {
+      "kind": "person",
+      "id": "Meni Baruch",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/industries/data/caseStudies.js:95"
+    },
+    {
+      "kind": "person",
+      "id": "Noam Makavy",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/content/data/articles/the-3-levels-of-ai-adoption.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Ofir Rozenboim",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/announcing-wonderful-ai-gateway.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Ofir Steinherz",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/the-agent-needed-a-map.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Piotr Antropov",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/regional/countries.data.js:220"
+    },
+    {
+      "kind": "person",
+      "id": "Roey Lalazar",
+      "expectHits": true,
+      "hits": 10,
+      "firstHit": "src/pages/company/data/pressLayout.js:108"
+    },
+    {
+      "kind": "person",
+      "id": "Seb Johnson",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/components/nav/menuData.js:39"
+    },
+    {
+      "kind": "person",
+      "id": "Tomer Eichler",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/the-agent-needed-a-map.json:6"
+    },
+    {
+      "kind": "person",
+      "id": "Vedran Bajer",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/regional/countries.data.js:79"
+    },
+    {
+      "kind": "person",
+      "id": "Yannis Vitzilaios",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/ote.json:57"
+    },
+    {
+      "kind": "person",
+      "id": "Yoav Ben Azar",
+      "expectHits": true,
+      "hits": 2,
+      "firstHit": "src/pages/content/data/articles/build-vs-buy-isn’t-a-technical-choice.json:6"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "OTE",
+      "expectHits": true,
+      "hits": 312,
+      "firstHit": "src/App.jsx:4"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Cosmote",
+      "expectHits": true,
+      "hits": 1,
+      "firstHit": "src/pages/content/data/articles/ote.json:57"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Banco Caja Social",
+      "expectHits": true,
+      "hits": 5,
+      "firstHit": "src/pages/content/data/blog.json:237"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Telefonica",
+      "expectHits": true,
+      "hits": 10,
+      "firstHit": "src/components/CaseStudies.jsx:16"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Telefónica",
+      "expectHits": true,
+      "hits": 5,
+      "firstHit": "src/pages/content/data/blog.json:314"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "PPC",
+      "expectHits": true,
+      "hits": 28,
+      "firstHit": "src/components/CaseStudies.jsx:19"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Petrol Ofisi",
+      "expectHits": true,
+      "hits": 5,
+      "firstHit": "src/pages/content/data/blog.json:248"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "FC Bayern",
+      "expectHits": true,
+      "hits": 22,
+      "firstHit": "src/components/nav/Announcement.jsx:22"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Bank Hapoalim",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/pages/content/data/articles/bank-hapoalim.json:23"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Maccabi",
+      "expectHits": true,
+      "hits": 14,
+      "firstHit": "src/pages/content/_extract/categories.live.json:55"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Mercado Libre",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/pages/content/data/blog.json:83"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "ELTA",
+      "expectHits": true,
+      "hits": 10,
+      "firstHit": "src/pages/content/_extract/categories.live.json:56"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "McKinsey",
+      "expectHits": true,
+      "hits": 213,
+      "firstHit": "src/components/nav/menuData.js:39"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "KPN Ventures",
+      "expectHits": true,
+      "hits": 6,
+      "firstHit": "src/pages/company/ThankYou.jsx:9"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Anthropic",
+      "expectHits": true,
+      "hits": 15,
+      "firstHit": "src/pages/company/data/pressLayout.js:409"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Arsenal",
+      "expectHits": true,
+      "hits": 7,
+      "firstHit": "src/pages/regional/fcb.data.js:4"
+    },
+    {
+      "kind": "customerOrPartner",
+      "id": "Slavia Prague",
+      "expectHits": true,
+      "hits": 3,
+      "firstHit": "src/pages/regional/fcb.data.js:13"
+    }
+  ]
+}

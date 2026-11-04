@@ -1,0 +1,106 @@
+{
+  "$description": "Binding of this design-repo to the N0 common design policy (Common Composition IR v0.5). The classification is an agent decision from the clone's own evidence; every ref below is re-read from the source tree by extraction/verify_all.py (policy-binding) when that tree is present. registry.manifest.json designPolicy points here and carries the contentHash of the files this policy is enforced by.",
+  "policyId": "n0-saas-design-constraints-common",
+  "policyVersion": "0.1.0",
+  "commonIrVersion": "0.5",
+  "enforcementMode": "hard-and-soft",
+  "bindingType": "bound-to-common-policy",
+  "classification": {
+    "productCategory": "saas",
+    "productDomain": "enterprise-ai-agent-platform",
+    "marketModel": "B2B enterprise platform sold through sales under a Master Service Agreement; consumption-based pricing; delivered as multi-tenant SaaS, single-tenant or bring-your-own-cloud",
+    "isSaaS": true,
+    "surfaces": [
+      "marketing-site",
+      "product-pages",
+      "industry-pages",
+      "case-studies",
+      "blog",
+      "legal",
+      "company",
+      "regional-landing-pages",
+      "campaign-landing-pages",
+      "careers"
+    ],
+    "audiences": [
+      "enterprise technology and operations leaders",
+      "regulated-industry buyers (banking, telecom, insurance, airlines, utilities, healthcare, retail)",
+      "prospective employees"
+    ],
+    "decision": "Classified SaaS (enterprise B2B platform), with moderate confidence. Wonderful sells a software platform (AI OS, Agents, Systems, AI Gateway) that enterprises use to build, test, deploy and monitor AI agents; the product page states multi-tenant SaaS as a deployment option, the industry copy states consumption-based pricing, and the legal stack is an MSA with SLA, DPA and regulatory addenda. It is not a self-serve SaaS: there is no pricing page, no sign-up or log-in route and no free tier, the only conversion path is a sales-qualification contact form, and forward-deployed engineering teams are part of the offer. The binding therefore applies the common SaaS constraints to an enterprise-sales marketing surface and asks the architecture owner to ratify or reclassify it.",
+    "evidence": [
+      {
+        "ref": "src/pages/product/aios/Enterprise.jsx:7",
+        "quote": "Multi-tenant SaaS",
+        "claim": "deployment options include multi-tenant SaaS, single-tenant and BYOC"
+      },
+      {
+        "ref": "src/pages/industries/data/industries.js:115",
+        "quote": "Consumption-based pricing",
+        "claim": "usage-based commercial model"
+      },
+      {
+        "ref": "src/pages/content/data/legal/msa.json:11",
+        "quote": "Master Service Agreement",
+        "claim": "customers contract under an MSA"
+      },
+      {
+        "ref": "src/pages/content/data/legal/sla.json:11",
+        "quote": "Service Level Agreement",
+        "claim": "service-level commitments for a hosted service"
+      },
+      {
+        "ref": "src/pages/regional/jobs.data.js:16",
+        "quote": "build, test, deploy, and monitor AI agents",
+        "claim": "the product is a platform for building, testing, deploying and monitoring agents"
+      },
+      {
+        "ref": "CLONE_SPEC_PRODUCT.md:25",
+        "quote": "Code (AI OS), Agents, Systems, Gateway",
+        "claim": "four product lines presented as software products"
+      }
+    ],
+    "counterEvidence": [
+      {
+        "ref": "_source/routes.txt:103",
+        "claim": "no pricing, sign-up or log-in route exists among the 103 sitemap routes (an absence, so it cannot be quoted from a line)"
+      },
+      {
+        "ref": "src/pages/company/Contact.jsx:6",
+        "quote": "COMPANY_SIZES",
+        "claim": "the only conversion path is a sales-qualification form (industry, company size, country)"
+      },
+      {
+        "ref": "src/pages/content/data/articles/wonderful-india.json:23",
+        "quote": "forward-deployed engineering teams",
+        "claim": "delivery includes services-style forward-deployed engineering"
+      }
+    ]
+  },
+  "generationRules": [
+    "PageSpecs declare mode reference | generated (schema-required, closed). mode=generated pages may not contain Wonderful identity, copy, claims, people, customers, URLs, store marks, ratings or blocked / reference-only assets (GENERATED_MODE_* in schema/semantic_validate.py; patterns in schema/source-brand.json; availability pinned in code).",
+    "Pages are composed only from the 20 templates and the section contracts they list; node order, variants, slots and graph rules are enforced in both modes.",
+    "Style references are catalog tokens only (TOKEN_* rules); motion uses the closed motion patterns with a required reduced-motion fallback.",
+    "Runtime UI (cookie banner, menus, lightbox, ticker, language chip) is never retrievable page content (RETRIEVAL_PIN); no section may hold most of a page (extraction/wrapper_gate.py over measured heights).",
+    "Compliance claims, ratings and customer proof are never fabricated: generated pages use fictional or operator-supplied proof only."
+  ],
+  "enforcedBy": [
+    "schema/pagespec.schema.json",
+    "schema/semantic_validate.py",
+    "schema/section-contract.schema.json",
+    "schema/source-brand.json",
+    "assets/asset-roles.json",
+    "compatibility/graph.json",
+    "templates/templates.json",
+    "tokens/llm/token-catalog.json",
+    "tokens/llm/token-policy.json",
+    "extraction/wrapper_gate.py",
+    "extraction/wrapper-whitelist.json"
+  ],
+  "contentHashNote": "registry.manifest.json designPolicy.contentHash = sha256 over the files listed in enforcedBy (sorted by path; each contributes its path, a NUL byte, its bytes and a NUL byte). verify_all.py recomputes it. The text of the common policy n0-saas-design-constraints-common is not shipped here and was not available to this build, so the hash covers this repo's enforcing files, not the common policy document.",
+  "approval": {
+    "policyDecision": "bound-pending-architecture-review",
+    "architectureDecisionRecorded": false,
+    "note": "The SaaS classification and the binding are an agent decision from the evidence above (agent attestation, not a human sign-off). A human architecture owner must ratify it; productionApproved stays false."
+  }
+}

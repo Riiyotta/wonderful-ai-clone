@@ -19,6 +19,8 @@ Rule families
                         category for the field, invalid theme/token combination)
   GENERATED_MODE_*      mode=generated may not carry source identity or content:
                         BRAND, CUSTOMER, CTA, COPY, URL, STORE, ASSET, PERSON, RATING, STAT, BRAND_MISSING
+  Text is folded before matching (_fold: NFKC full-width, zero-width characters, curly quotes/dashes, a small table
+  of Cyrillic/Greek look-alikes). Detection is string based; look-alikes outside the table are not caught.
 Pins (independent of the JSON registries, so editing a registry alone cannot loosen them):
   PINNED_AVAILABILITY, PINNED_POLICY, RETRIEVAL_INELIGIBLE, RUNTIME_UI_PATTERN.
 Standard library only, except the optional schema layer.
@@ -140,8 +142,25 @@ def load_repo():
     return _REPO_CACHE
 
 
+# Evasion folding: generated-mode patterns are matched against folded text (NFKC full-width -> ASCII, zero-width and
+# soft-hyphen characters removed, curly quotes and dashes straightened, a small table of look-alike Cyrillic/Greek
+# letters mapped to Latin). Detection is still string based: look-alikes outside this table are NOT caught.
+_INVISIBLE = re.compile("[\u00ad\u034f\u061c\u115f\u1160\u17b4\u17b5\u180b-\u180e\u200b-\u200f\u202a-\u202e\u2060-\u206f\u3164\ufe00-\ufe0f\ufeff]")
+_FOLD_TABLE = str.maketrans({
+    "\u2018": "'", "\u2019": "'", "\u201a": "'", "\u201b": "'", "\u2032": "'", "\u201c": '"', "\u201d": '"', "\u201e": '"', "\u2033": '"',
+    "\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "-", "\u2014": "-", "\u2212": "-",
+    "\u0430": "a", "\u0435": "e", "\u043e": "o", "\u0440": "p", "\u0441": "c", "\u0445": "x", "\u0443": "y", "\u0456": "i", "\u0455": "s", "\u0501": "d",
+    "\u0410": "A", "\u0415": "E", "\u041e": "O", "\u0420": "P", "\u0421": "C", "\u0425": "X", "\u0406": "I", "\u0412": "B", "\u041c": "M", "\u041d": "H", "\u0422": "T", "\u041a": "K",
+    "\u03bf": "o", "\u03b1": "a", "\u03bd": "v", "\u0391": "A", "\u039f": "O", "\u0392": "B", "\u039d": "N", "\u03a1": "P",
+})
+
+
+def _fold(s):
+    return _INVISIBLE.sub("", unicodedata.normalize("NFKC", s)).translate(_FOLD_TABLE)
+
+
 def _norm(s):
-    return re.sub(r"\s+", " ", unicodedata.normalize("NFKC", s)).strip().lower()
+    return re.sub(r"\s+", " ", _fold(s)).strip().lower()
 
 
 def _words(s):
@@ -213,6 +232,8 @@ def _walk(schema, value, path, acc):
     t = schema.get("type")
     if t == "object" and isinstance(value, dict):
         props = schema.get("properties", {})
+        if "identityRole" in props:  # an inline person object (e.g. an article author) is a person like #/definitions/person
+            acc["persons"].append((path, value))
         for k, v in value.items():
             _walk(props.get(k), v, f"{path}.{k}", acc)
         return
@@ -334,6 +355,7 @@ def generated_checks(spec, items, repo, errors):
     for path, s, _ in strings:
         if not s:
             continue
+        s = _fold(s)
         for rx, pid in brand_rx:
             if rx.search(s):
                 errors.append(("GENERATED_MODE_BRAND", f"{path}: source brand pattern '{pid}' in {s[:80]!r}"))
@@ -365,10 +387,10 @@ def generated_checks(spec, items, repo, errors):
         elif len(w) >= k and any(" ".join(w[i:i + k]) in repo["shingles"] for i in range(len(w) - k + 1)):
             errors.append(("GENERATED_MODE_COPY", f"{path}: shares a {k}-word run with source copy {s[:80]!r}"))
     for path, cta in items["ctas"]:
-        label = cta.get("label", "")
+        label = _fold(cta.get("label", ""))
         if _norm(label) in cta_exact or any(rx.search(label) for rx, _ in cta_rx):
             errors.append(("GENERATED_MODE_CTA", f"{path}.label: source CTA {label!r}"))
-        href = cta.get("href", "")
+        href = _fold(cta.get("href", ""))
         hit = False
         for rx, pid, rule in url_rx:
             if rx.search(href):
@@ -391,7 +413,9 @@ def generated_checks(spec, items, repo, errors):
     for path, m, _ in medias:
         if not isinstance(m, dict):
             continue
-        src = m.get("src", "")
+        if path == "brand.mark" and m.get("assetRole") not in ("brand-mark.generated", "brand-mark.user-supplied"):
+            errors.append(("GENERATED_MODE_ASSET", f"{path}: brand mark role {m.get('assetRole')!r} must be brand-mark.generated or brand-mark.user-supplied"))
+        src = _fold(m.get("src", ""))
         if src:
             if any(rx.search(src) for rx, _, _ in url_rx) or any(rx.search(src) for rx, _ in store_rx):
                 errors.append(("GENERATED_MODE_ASSET", f"{path}.src: source asset/URL {src!r}"))

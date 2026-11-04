@@ -10339,15 +10339,6 @@
       }
     }
   },
-  "wrapperGateWhitelist": [
-    {
-      "route": "/blog",
-      "section": "editorial.post-grid",
-      "maxHeightPx": 7200,
-      "reviewedBy": "agent attestation (Claude Code design-repo build, 2026-11-03), not a human sign-off",
-      "justification": "The blog index lists all 50 posts in one auto-fill grid; it is a single listing unit with no internal headings or content boundaries, so splitting it would invent sections that do not exist."
-    }
-  ],
   "pageHeightParity": {
     "file": "../_source/parity/sweep-heights-live-vs-clone.json",
     "harness": "../_source/parity/sweep.cjs",
