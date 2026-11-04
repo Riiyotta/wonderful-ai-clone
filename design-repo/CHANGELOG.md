@@ -44,6 +44,8 @@ Changed
 * `schema/source-brand.json`: added the statistic `$100 million` (present in the source press titles).
 
 Verified at release
+* Section heights re-measured at 1440px from a production build of a fresh clone (`npm ci`, `vite build`, `vite preview`):
+  104 routes, 933 boxes, largest difference from `measured-values.json` 0px; the recorded values are unchanged.
 * `extraction/verify_all.py`, `schema/tests/adversarial_test.py`, `extraction/prove_drift.py`, root `node validate.mjs`
   and the baseline audit were run; their output is in the build report, not asserted here.
 * Visual parity from the earlier measurement: mean section score 0.993; 8 of 751 sections below the 0.80 gate (see README).

@@ -116,7 +116,9 @@ in the 1.0.0 packaging pass and cannot be re-checked offline without a live capt
 * The SaaS classification is moderate-confidence (no pricing or self-serve surface); see `policy/design-policy.json`.
 * The citation check proves a cited range exists and, for section sources, that the tag is inside it; it cannot prove a
   prose claim describes that code.
-* Heights were measured from the clone (which matches the live page heights within 1px), not from the live site.
+* Heights were measured from the clone (which matched the live page heights within 1px when parity was measured), not
+  from the live site. They were re-measured at 1440px on 2026-11-04 from a production build of the clean-installed clone
+  with `extraction/measure_sections.mjs`: all 104 routes and 933 boxes matched the recorded values (largest delta 0px).
 * Live quirks kept on purpose are listed in `extraction/measured-values.json` (`notes.liveBugsKeptOnPurpose`). The
   job application form content could not be captured from the live site (third-party iframe).
 * IR is not part of this repository's tooling and was left untouched by request.
