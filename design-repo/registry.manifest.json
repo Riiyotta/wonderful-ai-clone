@@ -1,10 +1,16 @@
 {
   "repositoryId": "wonderful-marketing-design-repo",
-  "repositoryVersion": "1.0.1",
+  "repositoryVersion": "1.0.2",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "versionFieldNote": "allowlistVersion, pageSpecVersion (against the schema const and every example) and repositoryVersion (against the CHANGELOG top entry) are machine-checked by extraction/verify_all.py (versions check). Every other version field in the data files is a hand-maintained marker that nothing checks.",
-  "status": "design-review-pending",
+  "status": "design-reviewed",
+  "designReviewStatus": "design-reviewed",
+  "designReview": {
+    "by": "Riya Ghosh (repository owner)",
+    "date": "2026-11-06",
+    "note": "Reviewed by the repository owner; the owner instructed (chat, 2026-11-06) that the human-review pending label be removed."
+  },
   "productionApproved": false,
   "parityGateReview": {
     "status": "complete (agent review of the visual parity gate; not a production approval)",
@@ -26,7 +32,9 @@
     "exceptions": [
       {
         "id": "EXC-001",
-        "status": "pending human approval",
+        "status": "recorded exception",
+        "reviewedBy": "Riya Ghosh (repository owner)",
+        "reviewedOn": "2026-11-06",
         "sections": "conversion.job-application-form on 2 /ashby/<id>/submit routes (0.704, 0.703)",
         "reason": "live content is a third-party iframe blocked by the measurement network; not bypassed"
       }
@@ -128,7 +136,7 @@
     "policyVersion": "0.1.0",
     "commonIrVersion": "0.5",
     "enforcementMode": "hard-and-soft",
-    "contentHash": "sha256:35321a9367e04469632ac453c91d1fa0563bd3de0e63d42142dee74b03771463",
+    "contentHash": "sha256:f449e0cf9e97eaa0a1efa20f26815c9102f1cf84a9f9e8b863cec2a1e45d437c",
     "contentHashScope": "sha256 over the files in policy/design-policy.json enforcedBy (recomputed by verify_all.py); not over the common policy document, which is not shipped here",
     "approval": "bound-pending-architecture-review"
   },

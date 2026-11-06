@@ -1,5 +1,31 @@
 # Changelog
 
+## 1.0.2 - 2026-11-06
+
+Status: design-reviewed (`designReviewStatus: design-reviewed`, `productionApproved: false`). Marked reviewed by the
+repository owner, Riya Ghosh, on 2026-11-06; the owner instructed (chat, 2026-11-06) that the human-review pending label be
+removed. Not production-approved. No measured value (score, count, height) changed. The policy binding's hash was recomputed
+because wrapper_gate.py and wrapper-whitelist.json are among its enforced files; its architecture-decision block is unchanged.
+
+Changed
+* `registry.manifest.json`: `status` and `designReviewStatus` are `design-reviewed` with `designReview { by, date, note }`
+  (the same reviewed state the N0 capture engine writes); version 1.0.2; EXC-001 is a `recorded exception` with
+  `reviewedBy` / `reviewedOn` instead of a pending status. The design-policy approval block
+  (`policy/design-policy.json`, bound-pending-architecture-review) is untouched: that is a separate architecture decision.
+* EXC-001 (the two `/ashby/<id>/submit` job-application-form sections, 0.704 and 0.703; cross-origin iframe blocked on the
+  measurement machine) is recorded as an exception reviewed by the owner: `extraction/measured-values.json#/sectionParity`,
+  README, manifest and `CLONE_SPEC_REGIONAL.md`. Cause, scores and the unchanged gate number are as before.
+* `extraction/wrapper-whitelist.json`: the three entries are attestation `human`, reviewedBy the owner, reviewedOn
+  2026-11-06. `extraction/wrapper_gate.py` now rejects a human attestation that names an agent or tool.
+* `extraction/verify_all.py`, `extraction/prove_drift.py`, `schema/tests/adversarial_test.py`: enforce the new state
+  (design-reviewed + a designReview by a named person with a date, productionApproved false, EXC-001 recorded with a named
+  reviewer) with matching drift and adversarial cases.
+* README: pending-review wording replaced by the owner review; the technical limits (string-based detection, not measured
+  widths and states) and "not production-approved" are kept.
+
+IR left untouched by request
+* No file under `ir/` and no IR schema exists in this repository; none was created, edited, regenerated or deleted.
+
 ## 1.0.1 - 2026-11-06
 
 Status: design-review-pending (`productionApproved: false`). Visual parity gate review complete (agent review, not a

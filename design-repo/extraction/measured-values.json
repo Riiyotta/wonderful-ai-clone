@@ -10391,7 +10391,7 @@
     "parityGateReview": {
       "status": "complete (agent review; not a production approval)",
       "completedAt": "2026-11-06",
-      "summary": "8 sections were below the 0.80 gate on 2026-11-03. 6 were fixed in src/ (causes below) and now score 0.807-1.000; 2 remain at 0.70 under EXC-001 (live content is a blocked third-party iframe), pending human approval.",
+      "summary": "8 sections were below the 0.80 gate on 2026-11-03. 6 were fixed in src/ (causes below) and now score 0.807-1.000; 2 remain at 0.70 under EXC-001 (live content is a blocked third-party iframe), recorded as an exception reviewed by the owner on 2026-11-06.",
       "productionApproved": false,
       "beforeAfter": [
         {
@@ -10473,8 +10473,9 @@
     "exceptions": [
       {
         "id": "EXC-001",
-        "status": "pending human approval",
-        "approvedBy": null,
+        "status": "recorded exception",
+        "reviewedBy": "Riya Ghosh (repository owner)",
+        "reviewedOn": "2026-11-06",
         "routes": [
           "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
           "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit"
@@ -10487,7 +10488,7 @@
         "kind": "source-site limitation (third-party cross-origin iframe, not capturable from the measurement machine)",
         "reason": "Live embeds jobs.ashbyhq.com/Wonderful/<id>/application in a 779x1059 iframe. On the measurement machine that request returns HTTP 403 and the network-policy interstitial (\"Non-compliant action\", Category Job Websites block) renders inside the box. The block was not bypassed, so the real form was never seen and the clone keeps a stand-in form (see notes.unverified). Matching the live pixels would mean copying a network-block page, which is not a valid implementation.",
         "evidence": "Outside the 779x1059 iframe rectangle the section matches 1.000 (1,102,140 px: Go-back chip and black canvas); inside the rectangle 0.309. Re-measured 2026-11-06 with the same result as 2026-11-03.",
-        "resolution": "A human reviewer either accepts the exception, or re-measures from a network that can load jobs.ashbyhq.com and approves or reworks the stand-in form. The gate number is not adjusted."
+        "resolution": "Recorded as an exception and reviewed by the repository owner on 2026-11-06. Verifying the stand-in form would need a re-measure from a network that can load jobs.ashbyhq.com. The gate number is not adjusted."
       }
     ],
     "interpretation": "Real pixel-compare numbers at 1440x900 (threshold 24/255 per channel, gate 0.80 per section). Not measured: 1100 and 390 widths per section, hover/interaction states, and animation timing (motion was verified separately in MOTION_QA.md and the CLONE_SPEC files)."

@@ -220,7 +220,7 @@ other route has it). The clone passes `hideLang` to `Navbar` for `/ashby` only. 
 forever (6s period); the screenshot phase depends on load timing, so that section's score varies run to run (0.77-0.82
 measured over six runs).
 
-### Exception (pending human approval): job application form parity
+### Recorded exception (reviewed by the repository owner, 2026-11-06): job application form parity
 
 `/ashby/<id>/submit` scores 0.70. Live embeds `https://jobs.ashbyhq.com/Wonderful/<id>/application` in a 779x1059
 cross-origin iframe; on the measurement machine that request returns 403 and the network policy interstitial ("Non-compliant

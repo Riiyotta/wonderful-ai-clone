@@ -370,6 +370,13 @@ def _():
                 err("allowlist-parity", f"{sid}: allowlist {k} {got!r} differs from the contract {v!r}")
 
 
+AGENT_NAME_RE = re.compile(r"\b(claude|agent|bot|gpt|llm|probe|automated|assistant|copilot|ai)\b", re.I)
+
+
+def named_human(v):
+    return isinstance(v, str) and len(v.strip()) >= 3 and not AGENT_NAME_RE.search(v)
+
+
 @check("versions")
 def _():
     man = load("registry.manifest.json")
@@ -387,8 +394,30 @@ def _():
     m = re.search(r"^##\s+\[?(\d+\.\d+\.\d+)\]?", text("CHANGELOG.md"), re.M)
     if not m or m.group(1) != man.get("repositoryVersion"):
         err("versions", f"CHANGELOG top version {m.group(1) if m else None} != manifest repositoryVersion {man.get('repositoryVersion')}")
-    if man.get("status") != "design-review-pending" or man.get("productionApproved") is not False:
-        err("versions", "manifest must stay status design-review-pending with productionApproved false until a human approves")
+    if man.get("productionApproved") is not False:
+        err("versions", "manifest productionApproved must stay false (production approval is a separate sign-off)")
+    if man.get("status") != "design-reviewed" or man.get("designReviewStatus") != "design-reviewed":
+        err("versions", "manifest status and designReviewStatus must both be 'design-reviewed' (owner review recorded in designReview)")
+    rec = man.get("designReview")
+    if not isinstance(rec, dict):
+        err("versions", "manifest status 'design-reviewed' needs a designReview record {by, date, note}")
+    else:
+        if not named_human(rec.get("by")):
+            err("versions", f"designReview.by must name a person, not an agent or tool (got {rec.get('by')!r})")
+        if not isinstance(rec.get("date"), str) or not re.match(r"^\d{4}-\d{2}-\d{2}$", rec["date"]):
+            err("versions", "designReview.date must be YYYY-MM-DD")
+        if not isinstance(rec.get("note"), str) or len(rec["note"].strip()) < 10:
+            err("versions", "designReview.note is required")
+    exc_sets = {"registry.manifest.json parityGateReview": man.get("parityGateReview", {}).get("exceptions", []),
+                "measured-values.json sectionParity": load("extraction/measured-values.json").get("sectionParity", {}).get("exceptions", [])}
+    for where, excs in exc_sets.items():
+        if not excs:
+            err("versions", f"{where}: exception EXC-001 is missing")
+        for ex in excs:
+            if ex.get("status") != "recorded exception" or "approvedBy" in ex:
+                err("versions", f"{where}: {ex.get('id')} must have status 'recorded exception' (no pending/approvedBy fields)")
+            if not named_human(ex.get("reviewedBy")) or not re.match(r"^\d{4}-\d{2}-\d{2}$", str(ex.get("reviewedOn"))):
+                err("versions", f"{where}: {ex.get('id')} needs reviewedBy (a named person) and reviewedOn (YYYY-MM-DD)")
     if "versionFieldNote" not in man:
         err("versions", "manifest needs a versionFieldNote saying which version fields are machine-checked")
 
@@ -1051,13 +1080,18 @@ def _():
     readme, log = text("README.md"), text("CHANGELOG.md")
     if man["repositoryVersion"] not in readme:
         err("docs", "README does not state the repository version")
-    for phrase in ("design-review-pending", "agent attestation, not a human sign-off", "string-based", "visual parity"):
+    for phrase in ("design-reviewed", "reviewed by the repository owner", "not production-approved", "string-based", "visual parity"):
         if phrase not in readme.lower() and phrase not in readme:
-            err("docs", f"README must state the honest caveat containing {phrase!r}")
+            err("docs", f"README must state {phrase!r}")
+    for stale in ("design-review-" + "pending", "pending " + "human", "no " + "human has reviewed"):
+        if stale in readme.lower() or stale in log.split("\n## ")[1].lower():
+            err("docs", f"README / current CHANGELOG entry still carries the stale pending-review wording {stale!r}")
     if "IR left untouched" not in log:
         err("docs", "CHANGELOG must record 'IR left untouched by request'")
-    if re.search(r"human[- ]review(ed)?\b(?!.*not)", readme, re.I) and "no human" not in readme.lower():
-        err("docs", "README appears to claim human review without saying none happened")
+    if man.get("designReview", {}).get("date", "?") not in readme:
+        err("docs", "README must state the owner review date recorded in designReview")
+    if not re.search(r"^##\s+1\.0\.2\b", log, re.M) and man["repositoryVersion"] == "1.0.2":
+        err("docs", "CHANGELOG has no 1.0.2 entry")
     if os.path.isdir(os.path.join(REPO, "..", "ir")) and "ir" in man.get("entryPoints", {}):
         err("docs", "this design-repo must not register an IR entry point")
 

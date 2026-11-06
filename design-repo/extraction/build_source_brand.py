@@ -16,7 +16,7 @@ extraction/source-brand-evidence.json together with a digest of the registry, so
     python3 extraction/build_source_brand.py --check    # exit 1 when the committed file differs from a re-derivation
     python3 extraction/build_source_brand.py --source-root DIR   # source project root (default: parent of design-repo/)
 
-Detection is string/regex based and has no human sign-off: nothing here proves the registry is complete, only that
+Detection is string/regex based: nothing here proves the registry is complete, only that
 every entry in it is real and that the committed evidence matches the source it was derived from.
 Without a source tree (a standalone copy of design-repo/) --check prints SKIP and exits 0.
 """

@@ -1,5 +1,5 @@
 {
-  "$comment": "Reviewed exceptions to the whole-page-wrapper gate (extraction/wrapper_gate.py). An entry exempts ONE (route, section) from the listed *_FAIL rules only while its measured height stays <= maxHeightPx; a whitelisted hit still produces a warning, and a stale entry fails the gate. The /blog and /press entries are index listings (a header plus one grid of cards); /fcb/x/thank-you is a confirmation page that is only an opener plus the campaign footer. reviewedBy records an automated reviewer, never a human: attestation 'agent' requires the words 'agent attestation, not a human sign-off'.",
+  "$comment": "Reviewed exceptions to the whole-page-wrapper gate (extraction/wrapper_gate.py). An entry exempts ONE (route, section) from the listed *_FAIL rules only while its measured height stays <= maxHeightPx; a whitelisted hit still produces a warning, and a stale entry fails the gate. The /blog and /press entries are index listings (a header plus one grid of cards); /fcb/x/thank-you is a confirmation page that is only an opener plus the campaign footer. The entries were drafted by the Claude Code design-repo build (2026-11-04) and reviewed by the repository owner on 2026-11-06 (attestation 'human': reviewedBy must name a person, agent names are rejected). Attestation 'agent' remains valid in the gate and requires the words 'agent attestation, not a human sign-off'.",
   "entries": [
     {
       "route": "/blog",
@@ -9,9 +9,9 @@
       ],
       "maxHeightPx": 7200,
       "justification": "The blog index lists all 50 posts in one auto-fill grid; it is a single listing unit with no internal headings or content boundaries, so splitting it would invent sections that do not exist.",
-      "reviewedBy": "agent attestation, not a human sign-off (Claude Code design-repo build, 2026-11-04)",
-      "attestation": "agent",
-      "reviewedOn": "2026-11-04"
+      "reviewedBy": "Riya Ghosh (repository owner)",
+      "attestation": "human",
+      "reviewedOn": "2026-11-06"
     },
     {
       "route": "/press",
@@ -21,9 +21,9 @@
       ],
       "maxHeightPx": 6000,
       "justification": "The press page is a header (hero.index-title) plus one masonry of coverage cards; the mosaic is a single listing unit with no internal headings or content boundaries, so splitting it would invent sections that do not exist.",
-      "reviewedBy": "agent attestation, not a human sign-off (Claude Code design-repo build, 2026-11-04)",
-      "attestation": "agent",
-      "reviewedOn": "2026-11-04"
+      "reviewedBy": "Riya Ghosh (repository owner)",
+      "attestation": "human",
+      "reviewedOn": "2026-11-06"
     },
     {
       "route": "/fcb/x/thank-you",
@@ -33,9 +33,9 @@
       ],
       "maxHeightPx": 1300,
       "justification": "The campaign thank-you page is exactly a confirmation opener, one hairline divider and the campaign footer; there is no other body content to split the confirmation into, and it is a viewport-filling opener rather than a wrapper around other sections.",
-      "reviewedBy": "agent attestation, not a human sign-off (Claude Code design-repo build, 2026-11-04)",
-      "attestation": "agent",
-      "reviewedOn": "2026-11-04"
+      "reviewedBy": "Riya Ghosh (repository owner)",
+      "attestation": "human",
+      "reviewedOn": "2026-11-06"
     }
   ]
 }

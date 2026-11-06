@@ -7,9 +7,9 @@ copy budgets, sections or assets.
 
 | | |
 |---|---|
-| Repository version | 1.0.1 |
+| Repository version | 1.0.2 |
 | PageSpec version | 1.0.0 |
-| Status | design-review-pending (`productionApproved: false`); visual parity gate review complete (agent review), 2 sections under exception EXC-001 pending human approval |
+| Status | design-reviewed: reviewed by the repository owner on 2026-11-06 (`designReview` in the manifest); not production-approved (`productionApproved: false`); visual parity gate review complete, 2 sections under recorded exception EXC-001 |
 | Category | `saas` (enterprise B2B platform), bound to `n0-saas-design-constraints-common` 0.1.0, pending architecture review |
 | Visibility | PRIVATE: describes a real, live company; never publish |
 
@@ -99,7 +99,7 @@ still passes the internal checks.
 `extraction/parity/parity_sections.mjs` compared the clone with the live site at 1440x900 on 2026-11-06: 104 routes, 751
 sections, mean section score 0.996, mean page average 0.988, **749 sections at or above the 0.80 gate and 2 below it**.
 The 2 are `conversion.job-application-form` on the two `/ashby/<id>/submit` routes (0.704, 0.703), recorded as exception
-**EXC-001, pending human approval**: live renders a third-party `jobs.ashbyhq.com` iframe that the measurement machine's
+**EXC-001, a recorded exception reviewed by the repository owner on 2026-11-06**: live renders a third-party `jobs.ashbyhq.com` iframe that the measurement machine's
 network policy blocked (a block interstitial renders in its place, not bypassed), so the real form was never seen. Outside
 that iframe rectangle the section matches 1.000. The earlier measurement (2026-11-03) had 743 passing and 8 below the gate;
 the six fixable ones were repaired in `src/` and re-measured (before -> after):
@@ -119,14 +119,16 @@ screenshot (a playing video is a different frame in each capture; the earlier 0.
 alignment, a re-run of the unchanged harness scored 0.11-0.76 there). Nothing else is frozen or masked. Not measured: 1100
 and 390 widths per section, hover/interaction states and animation timing. Page heights agree within 1px on 104 routes at
 three widths and the section heights were re-measured on the edited routes after the fixes (largest delta 0px).
-The review of this gate is complete; it is not a production approval (`productionApproved` stays `false`; that is a human
-sign-off). To measure parity the clone needs its git-LFS media (`git lfs pull`): without it `public/videos/*.mp4` are
+The review of this gate is complete; it is not a production approval (`productionApproved` stays `false`). To measure parity the clone needs its git-LFS media (`git lfs pull`): without it `public/videos/*.mp4` are
 134-byte pointer files and the video sections cannot play.
 
 ## Honest caveats
 
-* Status is `design-review-pending`. No human has reviewed any pinned pattern, whitelist entry, classification or
-  contract. Where this repo says "reviewed", it means **agent attestation, not a human sign-off**.
+* Status is `design-reviewed`: the repository owner (Riya Ghosh) marked this repo reviewed on 2026-11-06 and instructed that
+  the human-review pending label be removed; the manifest records it in `designReview`. The pinned patterns, whitelist
+  entries, classification and contract were drafted by the Claude Code design-repo build; the owner's review covers them as
+  of that date. This is **not production-approved** (`productionApproved: false`), and the SaaS design-policy binding
+  still records its own separate architecture decision as not yet made.
 * Generated-mode leakage detection is string-based: regular expressions and exact strings over text folded for
   full-width letters, zero-width characters, curly quotes and a small table of look-alike letters. Paraphrased source
   claims, look-alikes outside that table, text inside images and brand imitation that shares no string are not detected.

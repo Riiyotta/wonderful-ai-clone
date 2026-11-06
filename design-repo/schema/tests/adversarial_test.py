@@ -442,7 +442,9 @@ def gate():
             return w
         return f
     err("whitelist entry without a justification", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("justification", "tall")))
-    err("agent reviewer without the attestation phrase", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("reviewedBy", "Claude")))
+    err("agent reviewer without the attestation phrase", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: (e.__setitem__("attestation", "agent"), e.__setitem__("reviewedBy", "Claude"))))
+    err("human attestation naming an agent", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("reviewedBy", "Claude Code")))
+    err("human attestation naming a tool", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("reviewedBy", "probe bot")))
     err("whitelist attestation outside agent|human", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("attestation", "bot")))
     err("whitelist entry exempting a non-whitelistable rule", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("rules", ["HERO_HEIGHT_WARN"])))
     err("whitelist entry without a date", lambda h: None, "WHITELIST_INVALID", bad_wl(lambda e: e.__setitem__("reviewedOn", "yesterday")))

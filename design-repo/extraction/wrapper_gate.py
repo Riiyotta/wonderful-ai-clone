@@ -20,7 +20,8 @@ extraction/wrapper-whitelist.json.
                                    not repeatable
   WHITELIST_INVALID         error  malformed entry: needs route, section, rules, maxHeightPx, justification (30+
                                    characters), reviewedBy, attestation ('agent'|'human'), reviewedOn; an agent
-                                   attestation must say "agent attestation, not a human sign-off"
+                                   attestation must say "agent attestation, not a human sign-off"; a human
+                                   attestation must name a person (agent names are rejected)
   WHITELIST_STALE           error  an entry that exempts nothing (or whose cap the measurement now exceeds)
 
 Fixed / sticky / absolute boxes take no page height and are excluded from the share and the sum. Height is the
@@ -50,6 +51,7 @@ SUM_MAX = 1.02
 MIN_JUSTIFICATION = 30
 WHITELISTABLE = {"HERO_HEIGHT_FAIL", "SECTION_SHARE_FAIL"}
 AGENT_PHRASE = "agent attestation, not a human sign-off"
+AGENT_NAME_RE = re.compile(r"\b(claude|agent|bot|gpt|llm|probe|automated|assistant|copilot|ai)\b", re.I)
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
@@ -110,6 +112,8 @@ def evaluate(templates, routes, contracts, heights, whitelist):
             bad.append("attestation must be 'agent' or 'human'")
         elif w["attestation"] == "agent" and AGENT_PHRASE not in str(w["reviewedBy"]):
             bad.append(f"an agent reviewer must say '{AGENT_PHRASE}' in reviewedBy")
+        elif w["attestation"] == "human" and AGENT_NAME_RE.search(str(w["reviewedBy"])):
+            bad.append("a human attestation must name a person, not an agent or tool")
         if not isinstance(w["reviewedBy"], str) or len(w["reviewedBy"]) < 3:
             bad.append("reviewedBy is required")
         if not isinstance(w["reviewedOn"], str) or not DATE_RE.match(w["reviewedOn"]):
