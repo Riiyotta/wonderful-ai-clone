@@ -44,7 +44,7 @@ function Shell() {
   const chrome = route?.chrome !== 'none'
   return (
     <div className="relative min-h-screen w-full overflow-x-clip bg-white">
-      {chrome && <Navbar key={`nav${pathname}`} />}
+      {chrome && <Navbar key={`nav${pathname}`} hideLang={pathname === '/ashby'} />}
       <main key={`main${pathname}`}>
         <Routes>
           {ROUTES.map((r) => <Route key={r.path} path={r.path} element={<Page route={r} />} />)}

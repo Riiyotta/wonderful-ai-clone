@@ -235,3 +235,10 @@ FeatureGrid, light:
 - The video section scroll mapping matches live within 0.3px at D and T.
 - The dashboard's 7d state is pixel-identical to live.
 - The lightbox open, minimize and close geometry is identical.
+
+## Parity fix: card swap transitions armed on first hover (2026-11-06)
+
+`PlatformCards` (/deployment, /ai-transformation) set the width/colour spring on the cards at all times. When the page
+viewport is resized (a full-page screenshot does this), the 60%/40% widths animated through a mid-spring state and the
+capture caught it (scores 0.568 and 0.594). The transition is now armed by the first hover swap (`data-anim="on"`);
+before that the cards are static at 60/40. Behaviour after the first hover is unchanged (spring 360/38).

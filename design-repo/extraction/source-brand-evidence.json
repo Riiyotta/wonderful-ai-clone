@@ -25,7 +25,7 @@
       "kind": "brandPattern",
       "id": "brand-name",
       "expectHits": true,
-      "hits": 619,
+      "hits": 620,
       "firstHit": "src/App.jsx:13"
     },
     {
@@ -88,7 +88,7 @@
       "kind": "urlPattern",
       "id": "url-source-endpoints",
       "expectHits": true,
-      "hits": 6,
+      "hits": 7,
       "firstHit": "src/pages/company/sections/Globe.jsx:7"
     },
     {

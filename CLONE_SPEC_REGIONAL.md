@@ -212,3 +212,19 @@ Uses the standard nav and footer.
 
 ### /archive/comeet-style
 An archived page whose only content is a 600×400 Comeet careers embed. It renders nothing on live. The clone keeps the same empty box between the standard nav and footer.
+
+## Parity fix: /ashby header has no language chip (2026-11-06)
+
+Live renders the Framer 404 page (/ashby) with the nav bar lacking the "EN" language chip on desktop and mobile (every
+other route has it). The clone passes `hideLang` to `Navbar` for `/ashby` only. The 404 hero's two gradient blobs spin
+forever (6s period); the screenshot phase depends on load timing, so that section's score varies run to run (0.77-0.82
+measured over six runs).
+
+### Exception (pending human approval): job application form parity
+
+`/ashby/<id>/submit` scores 0.70. Live embeds `https://jobs.ashbyhq.com/Wonderful/<id>/application` in a 779x1059
+cross-origin iframe; on the measurement machine that request returns 403 and the network policy interstitial ("Non-compliant
+action ... Job Websites block") is what renders inside the box. That block was not bypassed, so the real form is unknown
+and the clone keeps its stand-in. Everything outside the iframe rectangle (Go-back chip, black canvas) matches: 1.000 on
+1,102,140 px. Inside the rectangle the live pixels are the interstitial, so the section cannot reach 0.80 without copying a
+network-block page, which is not a valid implementation.

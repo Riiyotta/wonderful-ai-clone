@@ -1,33 +1,33 @@
 {
  "summary": {
-  "measuredAt": "2026-11-03",
+  "measuredAt": "2026-11-06",
   "live": "https://www.wonderful.ai",
-  "clone": "http://localhost:5288",
+  "clone": "http://localhost:5771",
   "viewport": "1440x900",
   "threshold": 24,
   "gate": 0.8,
   "routesCompared": 104,
   "routesFailedCapture": 0,
   "sectionsCompared": 751,
-  "sectionsPassing": 743,
-  "meanSectionScore": 0.993,
-  "meanPageAverage": 0.985,
-  "routesAllSectionsPass": 96
+  "sectionsPassing": 749,
+  "meanSectionScore": 0.996,
+  "meanPageAverage": 0.988,
+  "routesAllSectionsPass": 102
  },
  "routes": {
   "/": {
    "liveHeight": 7078,
    "cloneHeight": 7078,
-   "average": 0.972,
-   "minSection": 0.76,
-   "allSectionsPass": false,
+   "average": 0.997,
+   "minSection": 0.994,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.video-statement",
      "instance": 0,
      "topPx": 0,
      "heightPx": 900,
-     "score": 0.995
+     "score": 0.996
     },
     {
      "section": "social-proof.logo-grid",
@@ -55,7 +55,7 @@
      "instance": 0,
      "topPx": 2940.9,
      "heightPx": 855,
-     "score": 0.989
+     "score": 0.998
     },
     {
      "section": "features.approach-cards",
@@ -76,7 +76,7 @@
      "instance": 0,
      "topPx": 5857.5,
      "heightPx": 715.8,
-     "score": 0.76
+     "score": 0.995
     },
     {
      "section": "shell.site-footer",
@@ -90,9 +90,9 @@
   "/deployment": {
    "liveHeight": 4417,
    "cloneHeight": 4417,
-   "average": 0.896,
-   "minSection": 0.568,
-   "allSectionsPass": false,
+   "average": 0.995,
+   "minSection": 0.991,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.approach",
@@ -106,7 +106,7 @@
      "instance": 0,
      "topPx": 765,
      "heightPx": 1027,
-     "score": 0.568
+     "score": 0.997
     },
     {
      "section": "features.phase-tabs",
@@ -141,9 +141,9 @@
   "/ai-transformation": {
    "liveHeight": 4350,
    "cloneHeight": 4350,
-   "average": 0.921,
-   "minSection": 0.594,
-   "allSectionsPass": false,
+   "average": 0.996,
+   "minSection": 0.993,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.approach",
@@ -185,7 +185,7 @@
      "instance": 0,
      "topPx": 2378.8,
      "heightPx": 705.8,
-     "score": 0.594
+     "score": 0.995
     },
     {
      "section": "conversion.closing-cta",
@@ -243,8 +243,8 @@
   "/about-us": {
    "liveHeight": 4709,
    "cloneHeight": 4709,
-   "average": 0.989,
-   "minSection": 0.902,
+   "average": 0.988,
+   "minSection": 0.894,
    "allSectionsPass": true,
    "sections": [
     {
@@ -280,7 +280,7 @@
      "instance": 0,
      "topPx": 3032.6,
      "heightPx": 411.4,
-     "score": 0.902
+     "score": 0.894
     },
     {
      "section": "conversion.closing-cta",
@@ -301,8 +301,8 @@
   "/careers": {
    "liveHeight": 6479,
    "cloneHeight": 6479,
-   "average": 0.988,
-   "minSection": 0.953,
+   "average": 0.989,
+   "minSection": 0.954,
    "allSectionsPass": true,
    "sections": [
     {
@@ -324,7 +324,7 @@
      "instance": 0,
      "topPx": 2142,
      "heightPx": 1350,
-     "score": 0.953
+     "score": 0.954
     },
     {
      "section": "listing.role-rows",
@@ -360,7 +360,7 @@
    "liveHeight": 1877,
    "cloneHeight": 1877,
    "average": 0.986,
-   "minSection": 0.977,
+   "minSection": 0.978,
    "allSectionsPass": true,
    "sections": [
     {
@@ -389,7 +389,7 @@
      "instance": 0,
      "topPx": 892,
      "heightPx": 985,
-     "score": 0.977
+     "score": 0.978
     }
    ]
   },
@@ -1141,16 +1141,16 @@
   "/ashby": {
    "liveHeight": 1088,
    "cloneHeight": 1088,
-   "average": 0.889,
-   "minSection": 0.792,
-   "allSectionsPass": false,
+   "average": 0.897,
+   "minSection": 0.807,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.not-found",
      "instance": 0,
      "topPx": 0,
      "heightPx": 583.2,
-     "score": 0.792
+     "score": 0.807
     },
     {
      "section": "shell.site-footer",
@@ -1294,8 +1294,8 @@
   "/press": {
    "liveHeight": 6628,
    "cloneHeight": 6628,
-   "average": 0.948,
-   "minSection": 0.942,
+   "average": 0.946,
+   "minSection": 0.94,
    "allSectionsPass": true,
    "sections": [
     {
@@ -1310,7 +1310,7 @@
      "instance": 0,
      "topPx": 386.6,
      "heightPx": 5636,
-     "score": 0.942
+     "score": 0.94
     },
     {
      "section": "shell.site-footer",
@@ -1325,7 +1325,7 @@
    "liveHeight": 6600,
    "cloneHeight": 6600,
    "average": 0.997,
-   "minSection": 0.991,
+   "minSection": 0.99,
    "allSectionsPass": true,
    "sections": [
     {
@@ -1333,14 +1333,14 @@
      "instance": 0,
      "topPx": 0,
      "heightPx": 855,
-     "score": 0.991
+     "score": 0.99
     },
     {
      "section": "features.infrastructure-explorer",
      "instance": 0,
      "topPx": 855,
      "heightPx": 842.7,
-     "score": 0.997
+     "score": 0.998
     },
     {
      "section": "structure.hairline-divider",
@@ -1433,7 +1433,7 @@
      "instance": 0,
      "topPx": 2620.5,
      "heightPx": 996.4,
-     "score": 0.999
+     "score": 0.998
     },
     {
      "section": "features.icon-feature-grid",
@@ -1461,9 +1461,9 @@
   "/systems": {
    "liveHeight": 6278,
    "cloneHeight": 6278,
-   "average": 0.937,
-   "minSection": 0.594,
-   "allSectionsPass": false,
+   "average": 0.998,
+   "minSection": 0.995,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.product",
@@ -1505,7 +1505,7 @@
      "instance": 0,
      "topPx": 3783.3,
      "heightPx": 945.8,
-     "score": 0.594
+     "score": 0.997
     },
     {
      "section": "features.product-cross-sell",
@@ -1577,7 +1577,7 @@
      "instance": 0,
      "topPx": 6949.8,
      "heightPx": 505,
-     "score": 0.998
+     "score": 0.999
     }
    ]
   },
@@ -2874,9 +2874,9 @@
   "/industries/insurance": {
    "liveHeight": 5860,
    "cloneHeight": 5860,
-   "average": 0.929,
-   "minSection": 0.725,
-   "allSectionsPass": false,
+   "average": 0.971,
+   "minSection": 0.9,
+   "allSectionsPass": true,
    "sections": [
     {
      "section": "hero.industry",
@@ -2904,7 +2904,7 @@
      "instance": 0,
      "topPx": 2092.5,
      "heightPx": 880,
-     "score": 0.725
+     "score": 1
     },
     {
      "section": "features.hover-reveal-rows",

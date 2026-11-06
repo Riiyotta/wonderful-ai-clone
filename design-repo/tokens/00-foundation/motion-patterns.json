@@ -354,7 +354,7 @@
       },
       "evidence": [
         "CLONE_SPEC_PLATFORM.md:58",
-        "src/styles/platform/platform.css:65"
+        "src/styles/platform/platform.css:67"
       ],
       "reducedMotion": "static-final-state"
     },

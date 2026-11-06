@@ -36,7 +36,7 @@ export default function Workflows({ data }) {
         </div>
         <div className="inx-wf-media">
           <div className="inx-cover">
-            <img src={data.media} alt={data.alt} decoding="async" loading="lazy" />
+            <img src={data.media} alt={data.alt} decoding="async" loading="lazy" style={data.mediaPosition ? { objectPosition: data.mediaPosition } : undefined} />
           </div>
         </div>
       </div>

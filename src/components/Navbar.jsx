@@ -18,7 +18,8 @@ const NAV_VARS = {
 
 // CLONE_SPEC §1. Fixed nav: announcement (48 D / 40 M, collapses on first scroll) + 60px bar (49 M) + 1px line.
 // Variant follows the section under the top edge: [data-nav-theme="dark"] -> "White", else frosted "Desktop".
-export default function Navbar() {
+// hideLang: the site's Framer 404 page (/ashby) renders the bar without the language chip (verified live, desktop and mobile).
+export default function Navbar({ hideLang = false }) {
   const isMobile = useMediaQuery('(max-width: 879.98px)')
   const scrolled = useHasScrolled()
   const theme = useNavTheme()
@@ -53,9 +54,11 @@ export default function Navbar() {
       {isMobile ? (
         <div className="nv-bar nv-bar--m">
           <a href="/" aria-label="Wonderful home" className="nv-logo nv-logo--m"><NavLogo className="block h-full w-full" /></a>
-          <div className="nv-lang nv-lang--m" data-name="Lang slot">
-            <button type="button" className="nv-chip nv-chip--m" aria-label="Language: English">EN</button>
-          </div>
+          {!hideLang && (
+            <div className="nv-lang nv-lang--m" data-name="Lang slot">
+              <button type="button" className="nv-chip nv-chip--m" aria-label="Language: English">EN</button>
+            </div>
+          )}
           <button
             type="button"
             className="nv-burger"
@@ -91,9 +94,11 @@ export default function Navbar() {
               <a href="/blog" className="nv-blog" onMouseEnter={close} onFocus={close}>Blog</a>
             </div>
             <div className="nv-right" onMouseEnter={close}>
-              <div className="nv-lang" data-name="Lang slot">
-                <button type="button" className="nv-chip" aria-label="Language: English">EN</button>
-              </div>
+              {!hideLang && (
+                <div className="nv-lang" data-name="Lang slot">
+                  <button type="button" className="nv-chip" aria-label="Language: English">EN</button>
+                </div>
+              )}
               <a href="/contact" className="nv-pill">Get in touch</a>
             </div>
           </div>

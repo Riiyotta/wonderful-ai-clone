@@ -10,8 +10,8 @@
   "source": {
     "file": "src/components/Navbar.jsx",
     "tag": "className=\"nv-chip\"",
-    "lines": "95-96",
-    "citation": "src/components/Navbar.jsx:95-96"
+    "lines": "98-101",
+    "citation": "src/components/Navbar.jsx:98-101"
   },
   "thirdParty": true
 }

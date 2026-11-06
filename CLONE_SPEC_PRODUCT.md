@@ -242,3 +242,10 @@ Shared `<ProductCards current="systems" />` with cards AI OS / Agents / Gateway,
 - **D:** height 6278 / 6278. All section boxes are within 1px. All text and image rects match within 2px.
 - **T:** height 7714 vs 7730. The whole −16 is in the shared ProductCards (see the report). Sections 1–5 are exact.
 - **M:** height 8856 / 8856. Sections are within 1px.
+
+## Parity fix: Deployed cards and heading (2026-11-06)
+
+* `/systems` "Deployed where you run" cards: the width/colour/title spring is armed by the first hover swap only (same
+  cause and fix as `PlatformCards`; the section scored 0.58 because the capture caught a mid-spring state).
+* The heading uses `text-wrap: wrap` (live computed value), not `balance`: live breaks "Deployed where you run, by local /
+  teams"; the clone had broken after "you".

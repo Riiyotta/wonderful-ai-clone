@@ -6,8 +6,8 @@
     "id": "src:Deployed#export-default-function-Deployed",
     "file": "src/pages/product/systems/Deployed.jsx",
     "tag": "export default function Deployed",
-    "lines": "45-63",
-    "citation": "src/pages/product/systems/Deployed.jsx:45-63",
+    "lines": "45-66",
+    "citation": "src/pages/product/systems/Deployed.jsx:45-66",
     "variantSources": {
       "linked": {
         "file": "src/pages/platform/PlatformCards.jsx",
@@ -149,5 +149,8 @@
   "referenceRoutes": [
     "/ai-transformation",
     "/systems"
+  ],
+  "notes": [
+    "Width and colour springs are armed by the first hover swap only, so a viewport resize (including a full-page screenshot) re-resolves the 60/40 widths instantly instead of animating through an intermediate state; this was the cause of the 0.58-0.60 parity scores. Both cards are static at 60/40 until the visitor hovers."
   ]
 }

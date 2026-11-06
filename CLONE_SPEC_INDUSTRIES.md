@@ -201,3 +201,8 @@ Nav: light variant throughout (no dark sections).
 - Utilities background video file names differ from live (local copies of the cdn files); geometry is identical.
 - Footer is shared: on live its variant follows each page's own breakpoints. Industries switch to the desktop footer at ≥1400; case studies at ≥1200, with tablet down to 810. The shared Footer switches at 1440 / 880, so heights differ between 1400–1439 (industries) and 1200–1439 / 810–879 (case studies).
 - Telecom's 8th logo changed on live during this session (`XdvldJ…` → `i3CYsJ…`); the data follows the current live version.
+
+## Parity fix: insurance workflow image focal point (2026-11-06)
+
+Live renders the insurance workflow image with `object-position: 25.1% 39%` (the other six industries use 50% 50%). Stored
+as `workflows.mediaPosition` in `src/pages/industries/data/industries.js` and applied by `Workflows.jsx`.

@@ -1,5 +1,48 @@
 # Changelog
 
+## 1.0.1 - 2026-11-06
+
+Status: design-review-pending (`productionApproved: false`). Visual parity gate review complete (agent review, not a
+production approval; production approval stays a human sign-off).
+
+Parity (1440x900, threshold 24/255, gate 0.80, 104 routes, 751 sections): mean section score 0.993 -> 0.996, sections at or
+above the gate 743 -> 749, below the gate 8 -> 2. Real numbers in `extraction/measured-values.json#/sectionParity` and
+`extraction/parity/parity-results.json`.
+
+Fixed in `src/` (each re-measured against the live site)
+* `PlatformCards.jsx`/`platform.css`, `Deployed.jsx`, `Closer.jsx`/`closer.css`: the width/colour springs ran from the first
+  paint, so a viewport resize (a full-page screenshot is one) animated the 60/40 cards through a mid-spring state. The
+  springs are now armed by the first hover swap. `/deployment` content.stat-intro 0.568 -> 0.997, `/ai-transformation`
+  0.594 -> 0.995, `/systems` 0.594 -> 0.997, `/` team-closer 0.760 -> 0.995.
+* `Deployed.jsx`: heading uses `text-wrap: wrap` (live computed value) instead of `balance`.
+* `industries.js` + `Workflows.jsx`: insurance workflow image focal point `25.1% 39%` (live); `/industries/insurance`
+  features.workflow-list 0.725 -> 1.000.
+* `App.jsx` + `Navbar.jsx`: `/ashby` (the Framer 404 page) renders the header without the language chip, as live does on
+  desktop and mobile; `/ashby` hero.not-found 0.792 -> 0.807 (the remainder is the 6s spinning gradient blob; 0.773-0.821
+  across runs).
+
+Exception (pending human approval, EXC-001)
+* `conversion.job-application-form` on `/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit` (0.704) and
+  `/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit` (0.703): live is a cross-origin `jobs.ashbyhq.com` iframe; on the
+  measurement machine it returns 403 and a network-policy interstitial renders in the box (not bypassed). Outside the iframe
+  rectangle the section matches 1.000. The stand-in form is unchanged and stays unverified. Not added to bypass the gate: the
+  score is recorded unchanged.
+
+Changed
+* `extraction/parity/parity_sections.mjs`: pauses every `<video>` on frame 0 on both sides before the screenshot (seek wait
+  up to 25s because a seek on the live CDN takes ~5s), overrides `play()` so in-view observers cannot resume it. The earlier
+  0.995 on the `/` hero was a lucky frame alignment; the unchanged harness scored 0.11-0.76 there. No other region is
+  frozen or masked.
+* Re-pointed source citations after the `src/` edits (`Closer`, `Deployed`, `Navbar` and its chip/trigger primitives,
+  `platform.css`); added notes to the four affected section contracts. Section heights unchanged (re-measured, 0px delta).
+* `registry.manifest.json`: version 1.0.1 and `parityGateReview`. README parity section rewritten with the before/after table.
+
+Note
+* Parity needs the clone's git-LFS media (`git lfs pull`); a plain checkout has pointer files for the videos.
+
+IR left untouched by request
+* No file under `ir/` and no IR schema exists in this repository; none was created, edited, regenerated or deleted.
+
 ## 1.0.0 - 2026-11-04
 
 Status: design-review-pending (`productionApproved: false`). First packaged release; the contract data (tokens,

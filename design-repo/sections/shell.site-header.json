@@ -6,8 +6,8 @@
     "id": "src:Navbar#export-default-function-Navbar",
     "file": "src/components/Navbar.jsx",
     "tag": "export default function Navbar",
-    "lines": "21-108",
-    "citation": "src/components/Navbar.jsx:21-108"
+    "lines": "22-113",
+    "citation": "src/components/Navbar.jsx:22-113"
   },
   "semantic": {
     "id": "shell.site-header",
@@ -167,6 +167,7 @@
     "/archive/comeet-style"
   ],
   "notes": [
-    "The contact page renders this header without the \"Get in touch\" pill (variant no-cta-pill)."
+    "The contact page renders this header without the \"Get in touch\" pill (variant no-cta-pill).",
+    "The /ashby route (the site's Framer 404 page) renders this header without the language chip on desktop and mobile (checked live 2026-11-06); the clone passes `hideLang` for that route only."
   ]
 }

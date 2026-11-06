@@ -166,6 +166,7 @@
     "/industries/utilities"
   ],
   "notes": [
-    "Tablet/mobile text column is 200% wide on live (a bug); the clone reproduces it."
+    "Tablet/mobile text column is 200% wide on live (a bug); the clone reproduces it.",
+    "Per-industry image focal point: insurance uses object-position 25.1% 39% (live), all other industries 50% 50%; data field `workflows.mediaPosition`."
   ]
 }

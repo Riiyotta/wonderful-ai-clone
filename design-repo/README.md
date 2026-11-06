@@ -7,9 +7,9 @@ copy budgets, sections or assets.
 
 | | |
 |---|---|
-| Repository version | 1.0.0 |
+| Repository version | 1.0.1 |
 | PageSpec version | 1.0.0 |
-| Status | design-review-pending (`productionApproved: false`) |
+| Status | design-review-pending (`productionApproved: false`); visual parity gate review complete (agent review), 2 sections under exception EXC-001 pending human approval |
 | Category | `saas` (enterprise B2B platform), bound to `n0-saas-design-constraints-common` 0.1.0, pending architecture review |
 | Visibility | PRIVATE: describes a real, live company; never publish |
 
@@ -96,11 +96,32 @@ still passes the internal checks.
 
 ## Visual parity (measured, with limits)
 
-`extraction/parity/parity_sections.mjs` compared the clone with the live site at 1440x900 on 2026-11-03: 104 routes, 751
-sections, mean section score 0.993, 743 sections at or above the 0.80 gate and **8 below it** (listed in
-`extraction/measured-values.json` under `sectionParity.sectionsBelowGate`; the worst is `content.stat-intro` on
-`/deployment` at 0.568). Page heights agree within 1px on 104 routes at three widths. Visual parity was **not** re-measured
-in the 1.0.0 packaging pass and cannot be re-checked offline without a live capture.
+`extraction/parity/parity_sections.mjs` compared the clone with the live site at 1440x900 on 2026-11-06: 104 routes, 751
+sections, mean section score 0.996, mean page average 0.988, **749 sections at or above the 0.80 gate and 2 below it**.
+The 2 are `conversion.job-application-form` on the two `/ashby/<id>/submit` routes (0.704, 0.703), recorded as exception
+**EXC-001, pending human approval**: live renders a third-party `jobs.ashbyhq.com` iframe that the measurement machine's
+network policy blocked (a block interstitial renders in its place, not bypassed), so the real form was never seen. Outside
+that iframe rectangle the section matches 1.000. The earlier measurement (2026-11-03) had 743 passing and 8 below the gate;
+the six fixable ones were repaired in `src/` and re-measured (before -> after):
+
+| Route | Section | Before | After | Cause |
+|---|---|---|---|---|
+| `/` | `conversion.team-closer` | 0.760 | 0.995 | card width/colour springs ran on viewport resize; the capture caught a mid-spring state |
+| `/deployment` | `content.stat-intro` | 0.568 | 0.997 | same cause (`PlatformCards`) |
+| `/ai-transformation` | `features.expanding-card-pair` | 0.594 | 0.995 | same cause (`PlatformCards`) |
+| `/systems` | `features.expanding-card-pair` | 0.594 | 0.997 | same cause (Deployed cards) plus heading `text-wrap` balance vs live wrap |
+| `/industries/insurance` | `features.workflow-list` | 0.725 | 1.000 | image focal point: live `object-position` 25.1% 39% |
+| `/ashby` | `hero.not-found` | 0.792 | 0.807 | clone showed a language chip the live 404 header does not; the rest is the spinning gradient blob |
+
+`/ashby` passes by a thin margin and varies 0.773-0.821 between runs because the blobs spin on a 6s loop; a low run is
+animation phase, not layout. The harness now pauses every `<video>` on frame 0 on both live and clone before the
+screenshot (a playing video is a different frame in each capture; the earlier 0.995 on the home hero was a lucky frame
+alignment, a re-run of the unchanged harness scored 0.11-0.76 there). Nothing else is frozen or masked. Not measured: 1100
+and 390 widths per section, hover/interaction states and animation timing. Page heights agree within 1px on 104 routes at
+three widths and the section heights were re-measured on the edited routes after the fixes (largest delta 0px).
+The review of this gate is complete; it is not a production approval (`productionApproved` stays `false`; that is a human
+sign-off). To measure parity the clone needs its git-LFS media (`git lfs pull`): without it `public/videos/*.mp4` are
+134-byte pointer files and the video sections cannot play.
 
 ## Honest caveats
 

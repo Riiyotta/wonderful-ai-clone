@@ -45,6 +45,20 @@ def jedit(rel, fn):
     return apply
 
 
+def changelog_top_version(new_version):
+    """Rewrite the top '## x.y.z' heading of CHANGELOG.md, whatever the current version is."""
+    def apply(root):
+        import re
+        p = os.path.join(root, "CHANGELOG.md")
+        with open(p, encoding="utf-8") as f:
+            s = f.read()
+        s2, n = re.subn(r"^##\s+\[?\d+\.\d+\.\d+\]?", "## " + new_version, s, count=1, flags=re.M)
+        assert n == 1, "no version heading in CHANGELOG.md"
+        with open(p, "w", encoding="utf-8") as f:
+            f.write(s2)
+    return apply
+
+
 def tedit(rel, old, new, count=1):
     def apply(root):
         p = os.path.join(root, rel)
@@ -195,7 +209,7 @@ CASES = [
     ("route-coverage", "fail", "phantom route the clone does not serve", jedit("templates/routes.json", lambda d: d["routes"].append({"path": "/pricing", "template": "press", "title": "x", "mountedIn": "src/App.jsx", "chrome": "site"})), True),
     ("versions", "fail", "manifest allowlistVersion drift", jedit("registry.manifest.json", lambda d: d.__setitem__("allowlistVersion", "1.0.1")), False),
     ("versions", "fail", "manifest pageSpecVersion drift", jedit("registry.manifest.json", lambda d: d.__setitem__("pageSpecVersion", "1.1.0")), False),
-    ("versions", "fail", "CHANGELOG version differs from the manifest", tedit("CHANGELOG.md", "## 1.0.0 - 2026-11-04", "## 1.0.1 - 2026-11-04"), False),
+    ("versions", "fail", "CHANGELOG version differs from the manifest", changelog_top_version("9.9.9"), False),
     ("versions", "fail", "productionApproved flipped to true", jedit("registry.manifest.json", lambda d: d.__setitem__("productionApproved", True)), False),
     ("manifest-counts", "fail", "hand-bumped manifest count", jedit("registry.manifest.json", lambda d: d["counts"].__setitem__("sections", 99)), False),
     ("manifest-counts", "fail", "stale README count", tedit("README.md", "| sections | 76 |", "| sections | 77 |"), False),

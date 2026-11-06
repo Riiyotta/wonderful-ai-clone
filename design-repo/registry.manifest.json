@@ -1,11 +1,39 @@
 {
   "repositoryId": "wonderful-marketing-design-repo",
-  "repositoryVersion": "1.0.0",
+  "repositoryVersion": "1.0.1",
   "pageSpecVersion": "1.0.0",
   "allowlistVersion": "1.0.0",
   "versionFieldNote": "allowlistVersion, pageSpecVersion (against the schema const and every example) and repositoryVersion (against the CHANGELOG top entry) are machine-checked by extraction/verify_all.py (versions check). Every other version field in the data files is a hand-maintained marker that nothing checks.",
   "status": "design-review-pending",
   "productionApproved": false,
+  "parityGateReview": {
+    "status": "complete (agent review of the visual parity gate; not a production approval)",
+    "measuredAt": "2026-11-06",
+    "gate": 0.8,
+    "viewport": "1440x900",
+    "threshold": 24,
+    "sectionsCompared": 751,
+    "sectionsPassing": 749,
+    "sectionsBelowGate": 2,
+    "meanSectionScore": 0.996,
+    "meanPageAverage": 0.988,
+    "previous": {
+      "measuredAt": "2026-11-03",
+      "sectionsPassing": 743,
+      "sectionsBelowGate": 8,
+      "meanSectionScore": 0.993
+    },
+    "exceptions": [
+      {
+        "id": "EXC-001",
+        "status": "pending human approval",
+        "sections": "conversion.job-application-form on 2 /ashby/<id>/submit routes (0.704, 0.703)",
+        "reason": "live content is a third-party iframe blocked by the measurement network; not bypassed"
+      }
+    ],
+    "evidence": "extraction/measured-values.json#/sectionParity",
+    "productionApprovedByThisReview": false
+  },
   "defaultTheme": "light",
   "schemaValidatedThemes": [
     "light",

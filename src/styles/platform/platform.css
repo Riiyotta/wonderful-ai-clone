@@ -2,7 +2,9 @@
 
 /* ---- Hover-expand card pair (PlatformCards) ---- */
 @media (min-width: 1440px) {
-  .pc-card { height: 542px; flex: none; transition: width var(--pc-dur) var(--pc-ease), background-color var(--pc-dur) var(--pc-ease); }
+  .pc-card { height: 542px; flex: none; }
+  /* Animate only after the first hover swap: a viewport resize must re-resolve the percentage widths instantly. */
+  .pc-card[data-anim="on"] { transition: width var(--pc-dur) var(--pc-ease), background-color var(--pc-dur) var(--pc-ease); }
   .pc-card[data-expanded="true"] { width: 60%; background-color: #000; }
   .pc-card[data-expanded="false"] { width: calc(40% - 10px); background-color: rgba(17, 17, 17, .05); }
   .pc-card[data-expanded="false"] .pc-title { color: #171719; }

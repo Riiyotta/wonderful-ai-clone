@@ -10359,67 +10359,135 @@
   "sectionParity": {
     "file": "extraction/parity/parity-results.json",
     "harness": "extraction/parity/parity_sections.mjs",
-    "measuredAt": "2026-11-03",
+    "measuredAt": "2026-11-06",
     "live": "https://www.wonderful.ai",
-    "clone": "http://localhost:5288",
+    "clone": "http://localhost:5771",
     "viewport": "1440x900",
     "threshold": 24,
     "gate": 0.8,
     "routesCompared": 104,
     "routesFailedCapture": 0,
     "sectionsCompared": 751,
-    "sectionsPassing": 743,
-    "meanSectionScore": 0.993,
-    "meanPageAverage": 0.985,
-    "routesAllSectionsPass": 96,
+    "sectionsPassing": 749,
+    "meanSectionScore": 0.996,
+    "meanPageAverage": 0.988,
+    "routesAllSectionsPass": 102,
     "sectionsBelowGate": [
-      {
-        "route": "/",
-        "section": "conversion.team-closer",
-        "instance": 0,
-        "score": 0.76
-      },
-      {
-        "route": "/deployment",
-        "section": "content.stat-intro",
-        "instance": 0,
-        "score": 0.568
-      },
-      {
-        "route": "/ai-transformation",
-        "section": "features.expanding-card-pair",
-        "instance": 0,
-        "score": 0.594
-      },
-      {
-        "route": "/ashby",
-        "section": "hero.not-found",
-        "instance": 0,
-        "score": 0.792
-      },
-      {
-        "route": "/systems",
-        "section": "features.expanding-card-pair",
-        "instance": 0,
-        "score": 0.594
-      },
-      {
-        "route": "/industries/insurance",
-        "section": "features.workflow-list",
-        "instance": 0,
-        "score": 0.725
-      },
       {
         "route": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
         "section": "conversion.job-application-form",
         "instance": 0,
-        "score": 0.704
+        "score": 0.704,
+        "exception": "EXC-001"
       },
       {
         "route": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
         "section": "conversion.job-application-form",
         "instance": 0,
-        "score": 0.703
+        "score": 0.703,
+        "exception": "EXC-001"
+      }
+    ],
+    "parityGateReview": {
+      "status": "complete (agent review; not a production approval)",
+      "completedAt": "2026-11-06",
+      "summary": "8 sections were below the 0.80 gate on 2026-11-03. 6 were fixed in src/ (causes below) and now score 0.807-1.000; 2 remain at 0.70 under EXC-001 (live content is a blocked third-party iframe), pending human approval.",
+      "productionApproved": false,
+      "beforeAfter": [
+        {
+          "route": "/",
+          "section": "conversion.team-closer",
+          "before": 0.76,
+          "after": 0.995,
+          "cause": "card width/colour/arrow springs ran on viewport resize, capture caught a mid-spring state"
+        },
+        {
+          "route": "/deployment",
+          "section": "content.stat-intro",
+          "before": 0.568,
+          "after": 0.997,
+          "cause": "same: PlatformCards springs armed on first hover only"
+        },
+        {
+          "route": "/ai-transformation",
+          "section": "features.expanding-card-pair",
+          "before": 0.594,
+          "after": 0.995,
+          "cause": "same: PlatformCards"
+        },
+        {
+          "route": "/ashby",
+          "section": "hero.not-found",
+          "before": 0.792,
+          "after": 0.807,
+          "cause": "language chip rendered on the clone but absent on the live 404 header; remaining difference is the 6s gradient-blob spin (time-based, 0.773-0.821 across runs)"
+        },
+        {
+          "route": "/systems",
+          "section": "features.expanding-card-pair",
+          "before": 0.594,
+          "after": 0.997,
+          "cause": "same springs-on-resize cause (Deployed cards) plus heading text-wrap balance vs live wrap"
+        },
+        {
+          "route": "/industries/insurance",
+          "section": "features.workflow-list",
+          "before": 0.725,
+          "after": 1.0,
+          "cause": "workflow image focal point: live object-position 25.1% 39%, clone 50% 50%"
+        },
+        {
+          "route": "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+          "section": "conversion.job-application-form",
+          "before": 0.704,
+          "after": 0.704,
+          "cause": "EXC-001",
+          "exception": "EXC-001"
+        },
+        {
+          "route": "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit",
+          "section": "conversion.job-application-form",
+          "before": 0.703,
+          "after": 0.703,
+          "cause": "EXC-001",
+          "exception": "EXC-001"
+        }
+      ],
+      "previousMeasurement": {
+        "measuredAt": "2026-11-03",
+        "sectionsPassing": 743,
+        "meanSectionScore": 0.993,
+        "meanPageAverage": 0.985,
+        "routesAllSectionsPass": 96,
+        "sectionsBelowGate": 8
+      },
+      "harnessChange": "parity_sections.mjs now pauses every <video> on frame 0 on both live and clone (seek waits up to 25s: a seek on the live CDN takes ~5s) before the screenshot. Before this a playing video was a different frame in each capture; the earlier 0.995 on the home hero was a lucky frame alignment (a re-run of the unchanged harness measured 0.11-0.76 there and 0.24-0.79 on other video sections). No other region is frozen or masked.",
+      "watch": [
+        {
+          "route": "/ashby",
+          "section": "hero.not-found",
+          "note": "passes at 0.807 but the spinning gradient blobs make it vary 0.773-0.821 between runs; a lower run is the animation phase, not a layout regression"
+        }
+      ]
+    },
+    "exceptions": [
+      {
+        "id": "EXC-001",
+        "status": "pending human approval",
+        "approvedBy": null,
+        "routes": [
+          "/ashby/55005121-d37f-463d-98b0-29d400eb52c0/submit",
+          "/ashby/8de2ffef-0059-4c5d-b2ac-c1fd0c8d31ba/submit"
+        ],
+        "section": "conversion.job-application-form",
+        "scores": [
+          0.704,
+          0.703
+        ],
+        "kind": "source-site limitation (third-party cross-origin iframe, not capturable from the measurement machine)",
+        "reason": "Live embeds jobs.ashbyhq.com/Wonderful/<id>/application in a 779x1059 iframe. On the measurement machine that request returns HTTP 403 and the network-policy interstitial (\"Non-compliant action\", Category Job Websites block) renders inside the box. The block was not bypassed, so the real form was never seen and the clone keeps a stand-in form (see notes.unverified). Matching the live pixels would mean copying a network-block page, which is not a valid implementation.",
+        "evidence": "Outside the 779x1059 iframe rectangle the section matches 1.000 (1,102,140 px: Go-back chip and black canvas); inside the rectangle 0.309. Re-measured 2026-11-06 with the same result as 2026-11-03.",
+        "resolution": "A human reviewer either accepts the exception, or re-measures from a network that can load jobs.ashbyhq.com and approves or reworks the stand-in form. The gate number is not adjusted."
       }
     ],
     "interpretation": "Real pixel-compare numbers at 1440x900 (threshold 24/255 per channel, gate 0.80 per section). Not measured: 1100 and 390 widths per section, hover/interaction states, and animation timing (motion was verified separately in MOTION_QA.md and the CLONE_SPEC files)."

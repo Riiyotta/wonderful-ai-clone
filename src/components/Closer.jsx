@@ -16,6 +16,8 @@ const CARDS = [
 
 export default function Closer() {
   const [hovered, setHovered] = useState(null)
+  // Spring transitions arm on the first hover only, so a viewport resize re-resolves widths/colours instantly.
+  const [armed, setArmed] = useState(false)
   // About us is expanded by default; hovering Careers expands it and collapses About us.
   const expanded = hovered === 'careers' ? 'careers' : 'about'
   // Live: the paragraph reveal fires when the Closer section's top edge enters the viewport (measured D and M),
@@ -52,6 +54,7 @@ export default function Closer() {
       <div className="relative w-full max-w-[1280px]">
         <div
           className="relative flex w-full items-center justify-center gap-[10px] overflow-hidden m:flex-col"
+          data-anim={armed ? 'on' : undefined}
           style={{ '--cl-dur': `${CARD_SPRING.duration}s`, '--cl-ease': CARD_SPRING.easing }}
           onMouseLeave={() => setHovered(null)}
         >
@@ -60,7 +63,7 @@ export default function Closer() {
               key={c.key}
               href={c.href}
               data-expanded={expanded === c.key}
-              onMouseEnter={() => setHovered(c.key)}
+              onMouseEnter={() => { if (c.key !== expanded) setArmed(true); setHovered(c.key) }}
               className="cl-card relative flex flex-none cursor-pointer flex-col items-start gap-[10px] overflow-hidden no-underline"
             >
               <div className={`relative z-[1] flex w-full items-start justify-between ${expanded === c.key ? 'overflow-visible' : 'overflow-hidden'}`}>

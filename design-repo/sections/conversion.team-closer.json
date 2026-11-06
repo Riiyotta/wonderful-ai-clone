@@ -6,8 +6,8 @@
     "id": "src:Closer#export-default-function-Closer",
     "file": "src/components/Closer.jsx",
     "tag": "export default function Closer",
-    "lines": "17-80",
-    "citation": "src/components/Closer.jsx:17-80"
+    "lines": "17-83",
+    "citation": "src/components/Closer.jsx:17-83"
   },
   "semantic": {
     "id": "conversion.team-closer",
@@ -131,5 +131,8 @@
   },
   "referenceRoutes": [
     "/"
+  ],
+  "notes": [
+    "Card width, colour and arrow transitions are armed by the first hover swap only (same reason as features.expanding-card-pair)."
   ]
 }

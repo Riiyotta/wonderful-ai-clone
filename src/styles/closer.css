@@ -6,11 +6,13 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   justify-content: flex-end;
+}
+[data-anim="on"] .cl-card {
   transition-property: width, background-color;
   transition-duration: var(--cl-dur);
   transition-timing-function: var(--cl-ease);
 }
-.cl-label, .cl-btn, .cl-icon {
+[data-anim="on"] .cl-label, [data-anim="on"] .cl-btn, [data-anim="on"] .cl-icon {
   transition-property: color, background-color, opacity;
   transition-duration: var(--cl-dur);
   transition-timing-function: var(--cl-ease);

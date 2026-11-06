@@ -9,10 +9,13 @@
 //   1. 1440x900 viewport, reducedMotion "no-preference", fresh isolated context per page.
 //   2. Load (networkidle), hide the live consent panel (it is runtime UI, see utility.cookie-consent),
 //      scroll the whole page in 600px steps (fires in-view reveals and lazy media), return to y=0, wait 1500ms.
-//   3. One full-page screenshot per side.
-//   4. Each section box comes from extraction/measured-values.json#/sectionHeights (clone geometry at 1440);
+//   3. Autoplay <video> elements are paused and seeked to t=0 on both sides (a playing video is a different frame in any
+//      two captures; the same frame of the same encode is the only comparable state). Everything else (CSS/JS loops such
+//      as gradient blobs, the lattice, tickers) is left running and reported with its real score.
+//   4. One full-page screenshot per side.
+//   5. Each section box comes from extraction/measured-values.json#/sectionHeights (clone geometry at 1440);
 //      the same page rectangle is cropped from both screenshots (same scroll offsets by construction).
-//   5. Score = share of pixels whose max channel difference is <= threshold (default 24/255).
+//   6. Score = share of pixels whose max channel difference is <= threshold (default 24/255).
 //      A section passes at >= gate (default 0.80). The page average is the area-weighted mean.
 // Time-based media (video frames, the lattice/globe/shader loops, the nav ticker) legitimately differ
 // between two captures; those sections are reported with their real score, never adjusted.
@@ -49,6 +52,23 @@ async function capture(browser, url) {
   for (let y = 0; y < H; y += 600) { await page.evaluate((y) => window.scrollTo(0, y), y).catch(() => {}); await page.waitForTimeout(120) }
   await page.evaluate(() => window.scrollTo(0, 0)).catch(() => {})
   await page.waitForTimeout(1500)
+  // Freeze autoplay video on frame 0 (same rule on live and clone): load the first frame, seek, wait for the seek to paint.
+  await page.evaluate(() => Promise.all([...document.querySelectorAll('video')].map((v) => new Promise((ok) => {
+    v.pause()
+    v.play = () => Promise.resolve() // in-view observers (live and clone) must not resume playback during the capture
+    const seek = () => {
+      if (v.readyState < 2) { ok(); return }
+      v.addEventListener('seeked', () => ok(), { once: true })
+      v.currentTime = 0
+      setTimeout(ok, 25000) // a seek on the live CDN video takes several seconds
+    }
+    if (v.readyState >= 2) { seek(); return }
+    v.preload = 'auto'
+    v.addEventListener('loadeddata', seek, { once: true })
+    v.load()
+    setTimeout(ok, 25000)
+  })))).catch(() => {})
+  await page.waitForTimeout(500)
   const png = await page.screenshot({ fullPage: true, type: 'png' }).catch(() => null)
   const h = await page.evaluate(() => document.documentElement.scrollHeight).catch(() => 0)
   await ctx.close()

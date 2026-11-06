@@ -414,6 +414,7 @@ export const INDUSTRIES = {
   },
   "workflows": {
    "media": "/assets/oZXLtxgrzCeEkFV4tFzqQ984Ws.jpg",
+   "mediaPosition": "25.1% 39%",
    "alt": "A ground crew member in a hi-vis vest marshalling an aircraft at the nose gear, a baggage tractor moving past",
    "items": [
     {

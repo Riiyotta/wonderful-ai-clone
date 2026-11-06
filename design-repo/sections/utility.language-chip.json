@@ -6,8 +6,8 @@
     "id": "src:Navbar#className-nv-lang",
     "file": "src/components/Navbar.jsx",
     "tag": "className=\"nv-lang\"",
-    "lines": "94-96",
-    "citation": "src/components/Navbar.jsx:94-96"
+    "lines": "97-101",
+    "citation": "src/components/Navbar.jsx:97-101"
   },
   "semantic": {
     "id": "utility.language-chip",

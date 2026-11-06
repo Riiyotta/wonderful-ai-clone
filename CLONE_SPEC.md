@@ -508,3 +508,9 @@ Knowledge     (931,702) right 12.057s 9
   These are not part of the design system; render a static "EN" chip if needed.
 - **Not measured:** the tablet breakpoint (880–1439) and the ≥1800 breakpoint. Their CSS rules exist; for example the hero is `85vh`, min 560, on tablet.
 - **Spring constants** marked "fit" were derived by least-squares fitting of sampled curves. The constants from `appearAnimationsContent` are exact.
+
+## Parity fix: closer cards (2026-11-06)
+
+The home closer ("The team building the future of applied AI.") About us / Careers cards animated width, colour and the
+arrow chip on a resize, so a full-page capture caught them mid-spring (0.76). The transitions are now armed by the first
+hover swap (`data-anim="on"` on the card row); spring 520/62 is unchanged.
